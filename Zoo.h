@@ -3,13 +3,42 @@
 
 #include "Cell.h"
 
+/** @class Zoo.
+  * Kelas Zoo merupakan simulasi dari kebun binatang berisi matriks Cell.
+  */
 class Zoo{
 public:
+	/** @brief Constructor.
+	  * Menciptakan zoo kosong yang berisi matriks kosong.
+	  */
+	Zoo();
+
+	/** @brief Constructor.
+	  * Menciptakan zoo kosong dengan jumlah baris b dan jumlah kolom k.
+	  * @param b Nilai ukuran baris matriks.
+	  * @param k Nilai ukuran kolom matriks.
+	  */
+	Zoo(int b,int k);
+
+	/** @brief Copy Constructor.
+	  * @param z Objek yang akan di-copy.
+	  */
+	Zoo(const Zoo& z);
+
+	/** @brief Operator =.
+	  * @param size Objek yang akan diassign.
+	  */
+
+	Zoo& operator= (const Zoo& z);
+
+	/** @brief Destrutor.
+	  */
+	~Zoo();
 
 protected:
 	Cell **cell;
-	int baris;
-	int kolom;
+	const int baris;
+	const int kolom;
 };
 
 #endif
