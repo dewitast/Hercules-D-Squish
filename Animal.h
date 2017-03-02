@@ -8,6 +8,7 @@ protected:
 	float weight;
 	float food;
 	bool tame;
+	Point pos; //lokasi
 };
 
 #endif

@@ -26,7 +26,7 @@ public:
 	Zoo(const Zoo& z);
 
 	/** @brief Operator =.
-	  * @param size Objek yang akan diassign.
+	  * @param z Objek yang akan di-assign.
 	  */
 
 	Zoo& operator= (const Zoo& z);
