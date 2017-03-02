@@ -6,6 +6,8 @@
   */
 class Renderable{
 public:
+	Renderable();
+
 	/** @brief Constructor.
 	  * @param c Char yang merepresentasikan objek ketika dicetak.
 	  */

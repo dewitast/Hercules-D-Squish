@@ -36,7 +36,7 @@ public:
 	~Zoo();
 
 protected:
-	Cell **cell;
+	Cell ***cell; //matrix of pointer to cell
 	const int baris;
 	const int kolom;
 };

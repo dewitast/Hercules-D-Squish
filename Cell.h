@@ -8,6 +8,7 @@
   */
 class Cell : public Renderable{
 public:
+	Cell();
 	char render();
 protected:
 
