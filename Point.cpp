@@ -1,5 +1,4 @@
 #include "Point.h"
-using namespace std;
 
 	Point::Point()
 	{
@@ -15,14 +14,15 @@ using namespace std;
 
 	Point::Point(const Point& P)
 	{
-		this->absis = P.GetAbsis();
-		this->ordinat = P.GetOrdinat();
+		absis = P.absis;
+		ordinat = P.ordinat;
 	}
 
 	Point& Point::operator= (const Point& P)
 	{
-		this->absis = P.GetAbsis();
-		this->ordinat = P.GetOrdinat();
+		absis = P.absis;
+		ordinat = P.ordinat;
+		return *this;
 	}
 
 	Point::~Point()
