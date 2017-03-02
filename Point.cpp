@@ -1,48 +1,49 @@
 #include "Point.h"
+using namespace std;
 
-	Point()
+	Point::Point()
 	{
 		absis = 0;
 		ordinat = 0;
 	}
 
-	Point(int abs, int ord)
+	Point::Point(int abs, int ord)
 	{
 		absis = abs;
 		ordinat = ord;
 	}
 
-	Point(const Point& P)
+	Point::Point(const Point& P)
 	{
 		this->absis = P.GetAbsis();
 		this->ordinat = P.GetOrdinat();
 	}
 
-	Point& operator= (const Point& P)
+	Point& Point::operator= (const Point& P)
 	{
 		this->absis = P.GetAbsis();
 		this->ordinat = P.GetOrdinat();
 	}
 
-	~Point()
+	Point::~Point()
 	{}
 
-	int GetAbsis()
+	int Point::GetAbsis()
 	{
 		return absis;
 	}
 
-	int GetOrdinat()
+	int Point::GetOrdinat()
 	{
 		return ordinat;
 	}
 
-	void SetAbsis(int abs)
+	void Point::SetAbsis(int abs)
 	{
 		absis = abs;
 	}
 
-	void SetOrdinat(int ord)
+	void Point::SetOrdinat(int ord)
 	{
 		ordinat = ord;
 	}
