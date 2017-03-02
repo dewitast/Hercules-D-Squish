@@ -3,8 +3,8 @@
 
 #include "Renderable.h"
 
-/** @class Cell
-  * Kelas abstrak Cell merepresentasikan tiap sel pada Zoo.
+/** @class Cell.
+  * Kelas abstrak Cell merupakan simulasi dari petak-petak yang terdapat dalam kebun binatang.
   */
 class Cell : public Renderable{
 public:

@@ -3,6 +3,9 @@
 
 #include "Animal.h"
 
+/*@class Mammal.
+ *Kelas abstrak Mammal.*/ 
+
 class Mammal : virtual public Animal {
 public:
 
