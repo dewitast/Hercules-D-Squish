@@ -6,22 +6,11 @@
   */
 class Renderable{
 public:
-	Renderable();
-
-	/** @brief Constructor.
-	  * @param c Char yang merepresentasikan objek ketika dicetak.
-	  */
-	Renderable(char c);
-
-	/** @brief Destructor.
-	  */
-	virtual ~Renderable();
-
 	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
 	  */
 	virtual char render() = 0;
 protected:
-	char name;
+	
 };
 
 #endif

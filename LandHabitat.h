@@ -26,6 +26,10 @@ public:
 	/** @brief Destrutor.
 	  */
 	~LandHabitat();
+
+	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	  */
+	char render(){return LH;}
 	
 protected:
 

@@ -4,7 +4,7 @@
 #include "Animal.h"
 
 /** @class LandAnimal.
-  * Kelas abstrak LandAnimal merupakan kelas bagi animal dengan habitat di daratan.
+  * Kelas abstrak LandAnimal merupakan kelas bagi animal dengan habitat di darat.
   */
 class LandAnimal : virtual public Animal {
 public:

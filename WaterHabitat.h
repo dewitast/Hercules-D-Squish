@@ -24,6 +24,10 @@ public:
 	/** @brief Destrutor.
 	  */
 	~WaterHabitat();
+
+	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	  */
+	char render(){return WH;}
 protected:
 
 
