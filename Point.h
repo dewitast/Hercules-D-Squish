@@ -2,7 +2,7 @@
 #define POINT_H
 
 /** @class Point.
-  * Kelas Point merupakan.
+  * Kelas Point merupakan kelas dengan atribut absis dan ordinat.
   */
 class Point {
 public :
