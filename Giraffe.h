@@ -29,6 +29,11 @@ public:
 	  * Menampilkan suara Giraffe ke layar.
 	  */
 	string interact() {return ("Hmm!");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to giraffe objek tersebut
+	  */
+	virtual Giraffe* clone() const {return new Giraffe(*this);};
 };
 
 #endif

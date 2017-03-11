@@ -29,6 +29,11 @@ public:
 	  * Menampilkan suara Duck ke layar.
 	  */
 	string interact() {return ("Quaackk!");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to duck objek tersebut
+	  */
+	virtual Duck* clone() const {return new Duck(*this)};
 };
 
 #endif

@@ -29,6 +29,11 @@ public:
 	  * Menampilkan suara Eagle ke layar.
 	  */
 	string interact() {return ("Nguiikk!");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to eagle objek tersebut
+	  */
+	virtual Eagle* clone() const {return new Eagle(*this)};
 };
 
 #endif

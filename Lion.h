@@ -29,6 +29,11 @@ public:
 	  * Menampilkan suara Lion ke layar.
 	  */
 	string interact() {return ("Roaarr!");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to lion objek tersebut
+	  */
+	virtual Lion* clone() const {return new Lion(*this);};
 };
 
 #endif

@@ -30,6 +30,11 @@ public:
 	  * Menampilkan suara Goat pada layar.
 	  */
 	string interact() {return ("Mbeeeee");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to goat objek tersebut
+	  */
+	virtual Goat* clone() const {return new Goat(*this);};
 };
 
 #endif

@@ -29,6 +29,11 @@ public :
 	  * Menampilkan suara owl pada layar.
 	  */
 	string interact() { return ("Hoot!"); }
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to owl objek tersebut
+	  */
+	virtual Owl* clone() const {return new Owl(*this);};
 };
 
 #endif

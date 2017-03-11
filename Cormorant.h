@@ -30,6 +30,11 @@ public:
 	  * Menampilkan suara Cormorant ke layar.
 	  */
 	string interact() {return ("Ooookkk!");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to cormorant objek tersebut
+	  */
+	virtual Cormorant* clone() const {return new Cormorant(*this);};
 };
 
 #endif

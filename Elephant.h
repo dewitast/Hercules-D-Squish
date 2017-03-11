@@ -29,6 +29,12 @@ public :
 	  * Menampilkan suara elephant pada layar.
 	  */
 	string interact() { return ("Prett!"); }
+
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to elephant objek tersebut
+	  */
+	virtual Elephant* clone() const {return new Elephant(*this);};
 };
 
 #endif

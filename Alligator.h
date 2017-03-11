@@ -28,6 +28,11 @@ public:
 	Alligator(float w, float f, bool t) : Animal(w, f, t) { }
 
 	string interact() {return ("Grrrrrr");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to alligator objek tersebut
+	  */
+	virtual Alligator* clone() const {return new Alligator(*this);};
 };
 
 #endif

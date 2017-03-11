@@ -29,6 +29,11 @@ public :
 	  * Menampilkan suara cobra pada layar.
 	  */
 	string interact() { return ("Ssshh!"); }
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to cobra objek tersebut
+	  */
+	virtual Cobra* clone() const {return new Cobra(*this);};
 };
 
 #endif

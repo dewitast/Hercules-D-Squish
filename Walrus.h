@@ -28,6 +28,11 @@ public:
 	Walrus(float w, float f, bool t) : Animal(w, f, t) { }
 
 	string interact() {return ("Aaarhhh");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to elephant objek tersebut
+	  */
+	virtual Walrus* clone() const {return new Walrus(*this);};
 };
 
 #endif

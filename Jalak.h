@@ -29,6 +29,11 @@ public :
 	  * Menampilkan suara jalak pada layar.
 	  */
 	string interact() { return ("Tweet!"); }
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to jalak objek tersebut
+	  */
+	virtual Jalak* clone() const {return new Jalak(*this);};
 };
 
 #endif

@@ -27,6 +27,11 @@ public:
 	Dolphin(float w, float f, bool t) : Animal(w, f, t) { }
 
 	string interact() {return ("A a a a a");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to dolphin objek tersebut
+	  */
+	virtual Dolphin* clone() const {return new Dolphin(*this);}
 };
 
 #endif

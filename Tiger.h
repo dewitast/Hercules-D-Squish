@@ -27,6 +27,11 @@ public:
 	Tiger(float w, float f, bool t) : Animal(w, f, t) { }
 
 	string interact() {return ("Growl");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to tiger objek tersebut
+	  */
+	virtual Tiger* clone() const {return new Tiger(*this);};
 };
 
 #endif

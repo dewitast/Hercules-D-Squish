@@ -27,6 +27,11 @@ public:
 	Parrot(float w, float f, bool t) : Animal(w, f, t) { }
 
 	string interact() {return ("Cuiitt");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to parrot objek tersebut
+	  */
+	virtual Parrot* clone() const {return new Parrot(*this);};
 };
 
 #endif

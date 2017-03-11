@@ -29,6 +29,11 @@ public :
 	  * Menampilkan suara orca pada layar.
 	  */
 	string interact() { return ("Ngiak!"); }
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to orca objek tersebut
+	  */
+	virtual Orca* clone() const {return new Orca(*this);};
 };
 
 #endif

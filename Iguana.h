@@ -30,6 +30,11 @@ public:
 	  * Menampilkan suara Iguana pada layar.
 	  */
 	string Interact() {return ("Purrrr");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to iguana objek tersebut
+	  */
+	virtual Iguana* clone() const {return new Iguana(*this);};
 };
 
 #endif
