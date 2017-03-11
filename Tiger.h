@@ -31,7 +31,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to tiger objek tersebut
 	  */
-	virtual Tiger* clone() const {return new Tiger(*this);};
+	virtual Tiger* clone() const {return new Tiger(*this);}
 };
 
 #endif

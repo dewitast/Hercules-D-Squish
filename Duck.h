@@ -33,7 +33,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to duck objek tersebut
 	  */
-	virtual Duck* clone() const {return new Duck(*this)};
+	virtual Duck* clone() const {return new Duck(*this);}
 };
 
 #endif

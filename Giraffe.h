@@ -33,7 +33,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to giraffe objek tersebut
 	  */
-	virtual Giraffe* clone() const {return new Giraffe(*this);};
+	virtual Giraffe* clone() const {return new Giraffe(*this);}
 };
 
 #endif

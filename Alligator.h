@@ -32,7 +32,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to alligator objek tersebut
 	  */
-	virtual Alligator* clone() const {return new Alligator(*this);};
+	virtual Alligator* clone() const {return new Alligator(*this);}
 };
 
 #endif

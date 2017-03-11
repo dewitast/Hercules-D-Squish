@@ -33,7 +33,7 @@ public :
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to orca objek tersebut
 	  */
-	virtual Orca* clone() const {return new Orca(*this);};
+	virtual Orca* clone() const {return new Orca(*this);}
 };
 
 #endif

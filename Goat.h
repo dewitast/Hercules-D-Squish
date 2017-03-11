@@ -34,7 +34,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to goat objek tersebut
 	  */
-	virtual Goat* clone() const {return new Goat(*this);};
+	virtual Goat* clone() const {return new Goat(*this);}
 };
 
 #endif

@@ -34,7 +34,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to Dugong objek tersebut
 	  */
-	virtual Dugong* clone() const {return new Dugong(*this)};
+	virtual Dugong* clone() const {return new Dugong(*this);}
 };
 
 #endif

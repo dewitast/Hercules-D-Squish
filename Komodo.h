@@ -33,7 +33,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to komodo objek tersebut
 	  */
-	virtual Komodo* clone() const {return new Komodo(*this);};
+	virtual Komodo* clone() const {return new Komodo(*this);}
 };
 
 #endif

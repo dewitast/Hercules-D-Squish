@@ -31,7 +31,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to parrot objek tersebut
 	  */
-	virtual Parrot* clone() const {return new Parrot(*this);};
+	virtual Parrot* clone() const {return new Parrot(*this);}
 };
 
 #endif

@@ -32,7 +32,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to polar bear objek tersebut
 	  */
-	virtual PolarBear* clone() const {return new PolarBear(*this);};
+	virtual PolarBear* clone() const {return new PolarBear(*this);}
 };
 
 #endif

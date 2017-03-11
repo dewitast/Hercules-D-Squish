@@ -31,7 +31,7 @@ public:
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to elephant objek tersebut
 	  */
-	virtual Walrus* clone() const {return new Walrus(*this);};
+	virtual Walrus* clone() const {return new Walrus(*this);}
 };
 
 #endif

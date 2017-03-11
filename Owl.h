@@ -33,7 +33,7 @@ public :
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to owl objek tersebut
 	  */
-	virtual Owl* clone() const {return new Owl(*this);};
+	virtual Owl* clone() const {return new Owl(*this);}
 };
 
 #endif
