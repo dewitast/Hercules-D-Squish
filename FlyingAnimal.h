@@ -1,12 +1,12 @@
-#ifndef AIRANIMAL_H
-#define AIRANIMAL_H
+#ifndef FLYINGANIMAL_H
+#define FLYINGANIMAL_H
 
 #include "Animal.h"
 
 /** @class AirAnimal.
   * Kelas abstrak AirAnimal merupakan kelas bagi animal dengan habitat di udara.
   */
-class AirAnimal : virtual public Animal {
+class FlyingAnimal : virtual public Animal {
 public:
 
 protected:
