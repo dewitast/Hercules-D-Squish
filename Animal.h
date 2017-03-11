@@ -1,6 +1,8 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
+#include <iostream>
+using namespace std;
 #include "Point.h"
 
 /** @class Animal.

@@ -1,3 +1,5 @@
+// file Elephant.h
+
 #ifndef ELEPHANT_H
 #define ELEPHANT_H
 
@@ -13,8 +15,7 @@ public :
 	/** @brief Constructor.
 	  * Menciptakan objek elephant kosong.
 	  */
-	Elephant() : Animal(1000,10,false)
-	{}
+	Elephant() : Animal(5000,250,true) {}
 
 	/** @brief Constructor.
 	  * Menciptakan objek elephant kosong dengan berat w, jumlah makanan f, dan status jinak t.
@@ -22,9 +23,12 @@ public :
 	  * @param f Jumlah makanan elephant.
 	  * @param t Status jinak elephant.
 	  */
-	Elephant(float w, float f, bool t) : Animal(w,f,t)
-	{}
+	Elephant(float w, float f, bool t) : Animal(w,f,t) {}
 
+	/** @brief Interact.
+	  * Menampilkan suara elephant pada layar.
+	  */
+	void Interact() { cout << "Prett!" << endl; }
 };
 
 #endif
