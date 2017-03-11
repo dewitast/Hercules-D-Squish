@@ -47,3 +47,8 @@
 	{
 		ordinat = ord;
 	}
+
+	bool Point::IsSame(Point P)
+	{
+		return ((absis==P.absis)&&(ordinat==P.ordinat));
+	}

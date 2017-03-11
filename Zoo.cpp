@@ -1,4 +1,8 @@
 #include "Zoo.h"
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
 Zoo::Zoo() : baris(0), kolom(0)
 {}
@@ -56,5 +60,19 @@ Cell& Zoo::GetElement(int b,int k)
 
 void Zoo::AddAnimal(int i,Animal& A)
 {
-	(cage[i]).AdoptAnimal(A);
+	Cage &c = cage[i];
+	if (c.IsFull())
+	{
+		cout << "Kandang penuh." << endl;
+	}
+	else
+	{
+		int size = c.GetSize();
+		(cage[i]).AdoptAnimal(A);
+		srand (time(NULL));
+		int random = rand() % size;
+		while (c.IsOccupied(random))
+			random = rand() % size;
+		A.SetPoint(c.GetPoint(random));
+	}
 }

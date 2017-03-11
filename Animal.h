@@ -65,6 +65,11 @@ public:
 	  */
 	void SetPoint(int abs, int ord);
 
+	/** @brief SetPoint.
+	  * @param P Objek point yang akan di-set pada lokasi animal.
+	  */
+	void SetPoint(const Point& P);
+
 	/** @brief Interact.
 	  */
 	virtual void Interact() = 0; 

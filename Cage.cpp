@@ -1,4 +1,5 @@
 #include "Cage.h"
+#include "Zoo.h"
 #include <iostream>
 using namespace std;
 
@@ -47,33 +48,21 @@ Cage::~Cage()
 	delete [] a;
 }
 
-bool Cage::IsFull()
-{
-	return (TotalAnimal == 3*size/10);
-}
-
-int Cage::GetSize()
-{
-	return size;
-}
-
-Animal& Cage::GetAnimal()
-{
-	return **a;
-}
-
-int Cage::GetTotalAnimal()
-{
-	return TotalAnimal;
-}
-
 void Cage::AdoptAnimal(Animal& A)
 {
-	if (IsFull())
-		cout << "Kandang penuh." << endl;
-	else
+	a[TotalAnimal] = &A;
+	++TotalAnimal;
+}
+
+bool Cage::IsOccupied(int i)
+{
+	bool found = false;
+	int ind = 0;
+	Point P1,P2;
+	while ((not found)&&(ind<TotalAnimal))
 	{
-		a[TotalAnimal] = &A;
-		++TotalAnimal;
+		if (((*(a[ind])).GetPos()).IsSame(Loc[ind])) found = true;
+		else ++ind;
 	}
+	return (!found);
 }

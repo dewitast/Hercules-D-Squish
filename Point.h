@@ -51,6 +51,11 @@ public :
 	  * @param ord Nilai ord yang akan di-set pada point.
 	  */
 	void SetOrdinat(int ord);
+
+	/** @brief Mengeluarkan true jika kedua point sama.
+		@param P Objek point yang akan diperiksa.
+	  */
+	bool IsSame(Point P) const;
 	
 private :
 	int absis;
