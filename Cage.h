@@ -44,23 +44,23 @@ public:
 	/** @brief Getter Size.
 		@return Mengeluarkan ukuran Cage.
 	  */
-	int GetSize() const {return size}
+	int GetSize() const {return size;}
 
 	/** @brief Getter Animal.
 		@return Mengeluarkan array animal pada Cage.
 	  */
-	Animal* GetAnimal() const {return *a}
+	Animal* GetAnimal() const {return *a;}
 
 	/** @brief Getter jumlah binatang.
 		@return Mengeluarkan jumlah binatang pada Cage.
 	  */
-	int GetTotalAnimal() const {return TotalAnimal}
+	int GetTotalAnimal() const {return TotalAnimal;}
 
 	/** @brief Getter Point.
 		@param i Nilai indeks yang akan diperiksa.
 		@return Mengeluarkan lokasi Cage pada indeks i.
 	  */
-	Point GetPoint(int i) const {return (Loc[i])}
+	Point GetPoint(int i) const {return (Loc[i]);}
 
 	/** @brief Setter.
 		@param A Objek binatang yang akan dimasukkan.
@@ -70,7 +70,7 @@ public:
 	/** @brief Menentukan apakah Cage kosong.
 		@return Mengeluarkan true jika Cage kosong
 	  */
-	bool IsEmpty() const {return size==0}
+	bool IsEmpty() const {return size==0;}
 
 	/** @brief Menentukan apakah Cage merupakan Cage berisi LandHabitat.
 		@return Mengembalikan true jika Habitat dalam Cage merupakan LandHabitat.

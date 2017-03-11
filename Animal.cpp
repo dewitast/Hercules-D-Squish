@@ -53,3 +53,8 @@ void Animal::SetPoint(int abs, int ord)
 	pos.SetAbsis(abs);
 	pos.SetOrdinat(ord);
 }
+
+void Animal::SetPoint(const Point& P)
+{
+	pos = P;
+}

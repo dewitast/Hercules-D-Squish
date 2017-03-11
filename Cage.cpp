@@ -57,11 +57,12 @@ void Cage::AdoptAnimal(Animal& A)
 bool Cage::IsOccupied(int i)
 {
 	bool found = false;
-	int i = 0;
-	while ((not found)&&(i<TotalAnimal))
+	int ind = 0;
+	Point P1,P2;
+	while ((not found)&&(ind<TotalAnimal))
 	{
-		if (((*(a[i])).GetPos).IsSame(Loc[i])) found = true;
-		else ++i;
+		if (((*(a[ind])).GetPos()).IsSame(Loc[ind])) found = true;
+		else ++ind;
 	}
 	return (!found);
 }

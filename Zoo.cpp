@@ -67,11 +67,12 @@ void Zoo::AddAnimal(int i,Animal& A)
 	}
 	else
 	{
+		int size = c.GetSize();
 		(cage[i]).AdoptAnimal(A);
 		srand (time(NULL));
-		int random = rand % c.GetSize();
+		int random = rand() % size;
 		while (c.IsOccupied(random))
-			random = rand % c.GetSize();
+			random = rand() % size;
 		A.SetPoint(c.GetPoint(random));
 	}
 }
