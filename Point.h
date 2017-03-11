@@ -35,12 +35,12 @@ public :
 	/** @brief GetAbsis.
 	  * @return Mengembalikan nilai absis point.
 	  */
-	int GetAbsis();
+	int GetAbsis() const;
 
 	/** @brief GetOrdinat.
 	  * @return Mengembalikan nilai ordinat point.
 	  */
-	int GetOrdinat();
+	int GetOrdinat() const;
 
 	/** @brief SetAbsis.
 	  * @param abs Nilai absis yang akan di-set pada point.

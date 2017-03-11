@@ -6,14 +6,14 @@ Cage::Cage() : size(MaxSize)
 {
 	Loc = new Point [size];
 	TotalAnimal = 0;
-	*a = new Animal [3*size/10];
+	a = new Animal*[3*size/10];
 }
 
 Cage::Cage(int s) : size(s)
 {
 	Loc = new Point [size];
 	TotalAnimal = 0;
-	*a = new Animal [3*size/10];
+	a = new Animal*[3*size/10];
 }
 
 Cage::Cage(const Cage& c) : size(c.size)
@@ -22,7 +22,7 @@ Cage::Cage(const Cage& c) : size(c.size)
 	for (int i = 0; i < size; ++i)
 		c.Loc[i] = Loc[i];
 	TotalAnimal = 0;
-	*a = new Animal [3*size/10];
+	a = new Animal*[3*size/10];
 }
 
 Cage& Cage::operator=(const Cage& c)
@@ -35,7 +35,7 @@ Cage& Cage::operator=(const Cage& c)
 	for (int i = 0; i < size; ++i)
 		c.Loc[i] = Loc[i];
 	TotalAnimal = 0;
-	*a = new Animal [3*size/10];
+	a = new Animal*[3*size/10];
 	return *this;
 }
 
@@ -57,7 +57,7 @@ int Cage::GetSize()
 	return size;
 }
 
-Animal Cage::GetAnimal()
+Animal& Cage::GetAnimal()
 {
 	return **a;
 }
@@ -67,14 +67,10 @@ int Cage::GetTotalAnimal()
 	return TotalAnimal;
 }
 
-void Cage::AdoptAnimal(const Animal& A)
+void Cage::AdoptAnimal(Animal& A)
 {
 	if (IsFull())
 		cout << "Kandang penuh." << endl;
-	else if (!(A.CanPut(*this)))
-	{
-		cout << "Binatang tidak dapat dimasukkan ke kandang" << endl;
-	}
 	else
 	{
 		a[TotalAnimal] = &A;

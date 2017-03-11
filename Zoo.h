@@ -53,7 +53,7 @@ public:
 		@param i Nilai indeks cage yang akan ditambah animal.
 		@param A Objek binatang yang akan dimasukkan.
 	  */
-	void AddAnimal(int i,const Animal& A);
+	void AddAnimal(int i,Animal& A);
 
 protected:
 	Cell ***cell; //matrix of pointer to cell

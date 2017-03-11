@@ -39,30 +39,34 @@ public:
 	/** @brief Menentukan apakah cage penuh.
 	  * @return Mengeluarkan true jika cage penuh.
 	  */
-	bool IsFull();
+	bool IsFull() const;
 
 	/** @brief Getter.
 	  */
-	int GetSize();
-	Animal GetAnimal();
-	int GetTotalAnimal();
+	int GetSize() const;
+	Animal& GetAnimal() const;
+	int GetTotalAnimal() const;
 
 	/** @brief Setter.
 		@param A Objek binatang yang akan dimasukkan.
 	  */
-	void AdoptAnimal(const Animal& A);
+	void AdoptAnimal(Animal& A);
 
-	/** @brief Mengembalikan true jika Habitat merupakan LandHabitat
+	/** @brief Mengembalikan true jika Cage kosong.
 	  */
-	bool IsLand();
+	bool IsEmpty() const;
 
-	/** @brief Mengembalikan true jika Habitat merupakan WaterHabitat
+	/** @brief Mengembalikan true jika Habitat merupakan LandHabitat.
 	  */
-	bool IsWater();
+	bool IsLand() const;
 
-	/** @brief Mengembalikan true jika Habitat merupakan AirHabitat
+	/** @brief Mengembalikan true jika Habitat merupakan WaterHabitat.
 	  */
-	bool IsAir();
+	bool IsWater() const;
+
+	/** @brief Mengembalikan true jika Habitat merupakan AirHabitat.
+	  */
+	bool IsAir() const;
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

@@ -2,7 +2,6 @@
 #define ANIMAL_H
 
 #include "Point.h"
-#include "Cage.h"
 
 /** @class Animal.
   * Kelas abstrak Animal merepresentasikan binatang dalam Virtual Zoo
@@ -77,11 +76,6 @@ public:
 	  * @param ord Nilai ordinat yang akan di-set pada lokasi animal.
 	  */
 	void SetPoint(int abs, int ord);
-
-	/** @brief Mengembalikan true jika binatang dapat diletakkan di kandang C.
-		@param C Objek kandang yang akan diperiksa.
-	  */
-	virtual bool CanPut(const Cage& C) = 0;
 
 protected:
 	float weight;
