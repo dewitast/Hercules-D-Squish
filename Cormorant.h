@@ -5,13 +5,13 @@
 
 #include "Aves.h"
 #include "Carnivore.h"
-#include "AirAnimal.h"
+#include "FlyingAnimal.h"
 #include "WaterAnimal.h"
 
 /** @class Cormorant.
   * Kelas Cormorant merupakan kelas untuk real object Cormorant.
   */
-class Cormorant : public AirAnimal, public WaterAnimal, public Carnivore, public Aves{
+class Cormorant : public FlyingAnimal, public WaterAnimal, public Carnivore, public Aves{
 public:
 	/** @brief Constructor.
 	  * Menciptakan objek Cormorant.
@@ -29,7 +29,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Cormorant ke layar.
 	  */
-	void Interact() {cout << "Ooookkk!" << endl;}
+	string interact() {return ("Ooookkk!");}
 };
 
 #endif

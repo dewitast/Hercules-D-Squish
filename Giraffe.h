@@ -28,7 +28,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Giraffe ke layar.
 	  */
-	void Interact() {cout << "Hmm!" << endl;}
+	string interact() {return ("Hmm!");}
 };
 
 #endif
