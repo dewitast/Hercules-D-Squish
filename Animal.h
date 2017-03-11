@@ -72,7 +72,7 @@ public:
 
 	/** @brief Interact.
 	  */
-	virtual void Interact() = 0; 
+	virtual string interact() = 0; 
 
 protected:
 	float weight;

@@ -20,9 +20,11 @@ Zoo::Zoo(const Zoo& z) : baris(z.baris), kolom(z.kolom)
 {
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
-	{
 		cell[i] = new Cell*[kolom];
-	}
+	for (int i=0;i<baris;++i)
+		for (int j=0;j<kolom;++j)
+			cell[i][j] = z.cell[i][j];
+
 }
 
 Zoo& Zoo::operator=(const Zoo& z)
@@ -36,7 +38,6 @@ Zoo& Zoo::operator=(const Zoo& z)
 	for (int i=0;i<baris;++i)
 		for (int j=0;j<kolom;++j)
 			cell[i][j] = z.cell[i][j];
-
 }
 
 Zoo::~Zoo()
