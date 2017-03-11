@@ -20,8 +20,9 @@ public:
 	  * Menciptakan zoo kosong dengan jumlah baris b dan jumlah kolom k.
 	  * @param b Nilai ukuran baris matriks.
 	  * @param k Nilai ukuran kolom matriks.
+	  * @param j Nilai banyak cage.
 	  */
-	Zoo(int b,int k);
+	Zoo(int b,int k,int j);
 
 	/** @brief Copy Constructor.
 	  * @param z Objek yang akan di-copy.
@@ -37,6 +38,20 @@ public:
 	/** @brief Destrutor.
 	  */
 	~Zoo();
+
+	/** @brief Melakukan print Zoo.
+		@param o Objek ostream.
+		@param z Objek zoo yang akan dicetak.
+		@return Mengeluarkan objek ostream yang akan dicetak.
+	  */
+	friend ostream& operator<<(ostream& o,const Zoo& z);
+
+	/** @brief Melakukan read Zoo.
+		@param i Objek istream.
+		@param z Objek zoo yang akan dibaca.
+		@return Mengeluarkan objek ostream yang akan dicetak.
+	  */
+	friend istream& operator>>(istream& i,const Zoo& z);
 
 	/** @brief Mengembalikan cell yang terdapat pada lokasi point P.
 		@param P Point yang akan diambil.
@@ -55,9 +70,10 @@ public:
 	  */
 	void AddAnimal(int i,Animal& A);
 
-protected:
+public:
 	Cell ***cell; //matrix of pointer to cell
 	Cage *cage; //array of cage
+	int jumlahcage;
 	const int baris;
 	const int kolom;
 };

@@ -14,6 +14,11 @@ public:
 	  */
 	char render() {return Pa;}
 
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to Park objek tersebut
+	  */
+	virtual Park* clone() const {return new Park(*this);}
+
 private:
 
 };

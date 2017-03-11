@@ -8,29 +8,15 @@
   */
 class LandHabitat : public Habitat{
 public:
-	/** @brief Constructor.
-	  * Menciptakan habitat darat.
-	  */
-	LandHabitat();
-
-	/** @brief Copy Constructor.
-	  * @param a Objek yang akan di-copy.
-	  */
-	LandHabitat(const LandHabitat& a);
-
-	/** @brief Operator =.
-	  * @param a Objek yang akan diassign.
-	  */
-	LandHabitat& operator= (const LandHabitat& a);
-
-	/** @brief Destrutor.
-	  */
-	~LandHabitat();
-
 	/** @brief Menentukan render dari LandHabitat.
 		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render(){return LH;}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to LandHabitat objek tersebut
+	  */
+	virtual LandHabitat* clone() const {return new LandHabitat(*this);}
 	
 protected:
 

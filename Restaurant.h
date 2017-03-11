@@ -14,6 +14,11 @@ public:
 	  */
 	char render() {return Re;}
 	
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to Restaurant objek tersebut
+	  */
+	virtual Restaurant* clone() const {return new Restaurant(*this);}
+
 private:
 
 };

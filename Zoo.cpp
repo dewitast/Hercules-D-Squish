@@ -5,26 +5,34 @@
 using namespace std;
 
 Zoo::Zoo() : baris(0), kolom(0)
-{}
+{
+	jumlahcage = 0;
+}
 
-Zoo::Zoo(int b, int k) : baris(b), kolom(k)
+Zoo::Zoo(int b, int k, int j) : baris(b), kolom(k)
 {
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
 	{
 		cell[i] = new Cell*[kolom];
 	}
+	jumlahcage = j;
+	cage = new Cage[jumlahcage];
 }
 
 Zoo::Zoo(const Zoo& z) : baris(z.baris), kolom(z.kolom)
 {
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
+	{
 		cell[i] = new Cell*[kolom];
-	for (int i=0;i<baris;++i)
 		for (int j=0;j<kolom;++j)
-			cell[i][j] = z.cell[i][j];
-
+			cell[i][j] = (z.cell[i][j])->clone();
+	}
+	jumlahcage = z.jumlahcage;
+	cage = new Cage[jumlahcage];
+	for (int i=0;i<jumlahcage;++i)
+		cage[i] = z.cage[i];
 }
 
 Zoo& Zoo::operator=(const Zoo& z)
@@ -34,18 +42,47 @@ Zoo& Zoo::operator=(const Zoo& z)
 	delete [] cell;
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
+	{
 		cell[i] = new Cell*[kolom];
-	for (int i=0;i<baris;++i)
 		for (int j=0;j<kolom;++j)
-			cell[i][j] = z.cell[i][j];
+			cell[i][j] = (z.cell[i][j])->clone();
+	}
+	jumlahcage = z.jumlahcage;
+	cage = new Cage[jumlahcage];
+	for (int i=0;i<jumlahcage;++i)
+		cage[i] = z.cage[i];
+	return *this;
 }
 
 Zoo::~Zoo()
 {
 	for (int i=0;i<baris;++i)
+	{
 		for (int j=0;j<kolom;++j)
-			delete [] cell[i][j];
+			delete [] cell[i][j],cout << "delete " << i << ' ' << j << endl;
+		delete [] cell[i];
+		cout << "delete " << i << endl;
+	}		
 	delete [] cell;
+	cout << "delete all" << endl;
+	delete [] cage;
+	cout << "delete cage" << endl;
+}
+
+ostream& operator<<(ostream& o,const Zoo& z)
+{
+	for (int i=0;i<z.baris;++i)
+	{
+		for (int j=0;j<z.kolom;++j)
+			o << z.cell[i][j]->render() << ' ';
+		o << endl;
+	}
+	return o;
+}
+
+istream& operator>>(istream& i,const Zoo& z)
+{
+	char c;
 }
 
 Cell& Zoo::GetElement(const Point& P)

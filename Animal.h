@@ -74,6 +74,11 @@ public:
 	  */
 	virtual string interact() = 0; 
 
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to animal objek tersebut
+	  */
+	virtual Animal* clone() const = 0;
+
 protected:
 	float weight;
 	float food;

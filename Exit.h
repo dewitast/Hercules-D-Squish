@@ -13,6 +13,12 @@ public:
 		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render() {return Ex;}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to Exit objek tersebut
+	  */
+	virtual Exit* clone() const {return new Exit(*this);}
+
 private:
 
 };

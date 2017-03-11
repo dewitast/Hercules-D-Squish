@@ -13,6 +13,11 @@ public:
 		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	virtual char render() {return Ro;}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to Road objek tersebut
+	  */
+	virtual Road* clone() const {return new Road(*this);}
 	
 protected:
 };

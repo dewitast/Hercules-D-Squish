@@ -8,29 +8,15 @@
   */
 class WaterHabitat : public Habitat{
 public:
-	/** @brief Constructor.
-	  * Menciptakan habitat air.
-	  */
-	WaterHabitat();
-
-	/** @brief Copy Constructor.
-	  * @param a Objek yang akan di-copy.
-	  */
-	WaterHabitat(const WaterHabitat& a);
-
-	/** @brief Operator =.
-	  * @param a Objek yang akan diassign.
-	  */
-	WaterHabitat& operator= (const WaterHabitat& a);
-
-	/** @brief Destrutor.
-	  */
-	~WaterHabitat();
-
 	/** @brief Menentukan render dari WaterHabitat.
 		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render(){return WH;}
+
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to WaterHabitat objek tersebut
+	  */
+	virtual WaterHabitat* clone() const {return new WaterHabitat(*this);}
 protected:
 
 

@@ -14,6 +14,11 @@ public:
 	  */
 	char render() {return Ent;}
 
+	/** @brief Melakukan cloning untuk menciptakan objek baru
+		@return Mengeluarkan pointer to Entrance objek tersebut
+	  */
+	virtual Entrance* clone() const {return new Entrance(*this);}
+
 private:
 
 };
