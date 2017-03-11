@@ -9,7 +9,10 @@
 class Exit : public Road
 {
 public:
-
+	/** @brief Menentukan render dari Exit.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render() {return Ex;}
 private:
 
 };

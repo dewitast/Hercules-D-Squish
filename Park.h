@@ -9,6 +9,10 @@
 class Park : public Facility
 {
 public:
+	/** @brief Menentukan render dari Park.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render() {return Pa;}
 
 private:
 

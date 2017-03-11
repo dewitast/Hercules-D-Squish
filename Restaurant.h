@@ -9,7 +9,11 @@
 class Restaurant : public Facility
 {
 public:
-
+	/** @brief Menentukan render dari Restaurant.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render() {return Re;}
+	
 private:
 
 };

@@ -9,6 +9,10 @@
 class Entrance : public Road
 {
 public:
+	/** @brief Menentukan render dari Entrance.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render() {return Ent;}
 
 private:
 
