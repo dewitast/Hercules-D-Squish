@@ -48,9 +48,21 @@ public:
 	int GetTotalAnimal();
 
 	/** @brief Setter.
+		@param A Objek binatang yang akan dimasukkan.
 	  */
-	void AdoptAnimal(Animal*);
+	void AdoptAnimal(const Animal& A);
 
+	/** @brief Mengembalikan true jika Habitat merupakan LandHabitat
+	  */
+	bool IsLand();
+
+	/** @brief Mengembalikan true jika Habitat merupakan WaterHabitat
+	  */
+	bool IsWater();
+
+	/** @brief Mengembalikan true jika Habitat merupakan AirHabitat
+	  */
+	bool IsAir();
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

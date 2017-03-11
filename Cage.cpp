@@ -67,13 +67,17 @@ int Cage::GetTotalAnimal()
 	return TotalAnimal;
 }
 
-void Cage::AdoptAnimal(Animal* A)
+void Cage::AdoptAnimal(const Animal& A)
 {
 	if (IsFull())
 		cout << "Kandang penuh." << endl;
+	else if (!(A.CanPut(*this)))
+	{
+		cout << "Binatang tidak dapat dimasukkan ke kandang" << endl;
+	}
 	else
 	{
-		a[TotalAnimal] = A;
+		a[TotalAnimal] = &A;
 		++TotalAnimal;
 	}
 }
