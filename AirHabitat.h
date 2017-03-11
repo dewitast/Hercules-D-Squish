@@ -1,6 +1,8 @@
 #ifndef AIRHABITAT_H
 #define AIRHABITAT_H
 
+#include "Habitat.h"
+
 /** @class AirHabitat.
   * Kelas real AirHabitat merupakan simulasi dari habitat udara.
   */
@@ -26,7 +28,8 @@ public:
 	  */
 	~AirHabitat();
 
-	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief Menentukan render dari AirHabitat.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render(){return AH;}
 	

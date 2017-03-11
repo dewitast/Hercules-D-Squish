@@ -9,23 +9,29 @@
 
 class Habitat : public Cell{
 public:
-	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief Menentukan render dari Habitat.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	virtual char render() = 0;
 
-	/** @brief Mengembalikan true jika Habitat merupakan LandHabitat
+	/** @brief Menentukan apakah Habitat merupakan LandHabitat.
+		@return Mengembalikan true jika Habitat merupakan LandHabitat.
 	  */
 	bool IsLand(){return (render()==LH);}
-	/** @brief Mengembalikan true jika Habitat merupakan WaterHabitat
+
+	/** @brief Menentukan apakah Habitat merupakan WaterHabitat.
+		@return Mengembalikan true jika Habitat merupakan WaterHabitat.
 	  */
 	bool IsWater(){return (render()==WH);}
-	/** @brief Mengembalikan true jika Habitat merupakan AirHabitat
+
+	/** @brief Menentukan apakah Habitat merupakan AirHabitat.
+		@return Mengembalikan true jika Habitat merupakan AirHabitat
 	  */
 	bool IsAir(){return (render()==AH);}
 protected:
-	const char LH = 'L';
-	const char AH = 'A';
-	const char WH = 'W';
+	static const char LH = 'L'; //representasi LandHabitat ketika dicetak ke layar
+	static const char AH = 'A'; //representasi AirHabitat ketika dicetak ke layar
+	static const char WH = 'W'; //representasi WaterHabitat ketika dicetak ke layar
 };
 
 #endif

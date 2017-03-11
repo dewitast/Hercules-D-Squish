@@ -27,7 +27,8 @@ public:
 	  */
 	~LandHabitat();
 
-	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief Menentukan render dari LandHabitat.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render(){return LH;}
 	

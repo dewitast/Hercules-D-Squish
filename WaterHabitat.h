@@ -1,6 +1,8 @@
 #ifndef WATERHABITAT_H
 #define WATERHABITAT_H
 
+#include "Habitat.h"
+
 /** @class WaterHabitat.
   * Kelas real WaterHabitat merupakan simulasi dari habitat air.
   */
@@ -25,7 +27,8 @@ public:
 	  */
 	~WaterHabitat();
 
-	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief Menentukan render dari WaterHabitat.
+		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
 	  */
 	char render(){return WH;}
 protected:
