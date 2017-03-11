@@ -29,7 +29,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Iguana pada layar.
 	  */
-	void Interact() {cout << "Purrrr" << endl;}
+	string Interact() {return ("Purrrr");}
 };
 
 #endif

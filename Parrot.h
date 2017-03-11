@@ -4,14 +4,14 @@
 #define PARROT_H
 
 #include "Omnivore.h"
-#include "AirAnimal.h"
+#include "FlyingAnimal.h"
 #include "Aves.h"
 
 /** @class Parrot
   * kelas Parrot merupakan kelas untuk real object Parrot
   */
 
-class Parrot : public AirAnimal, public Omnivore, public Aves {
+class Parrot : public FlyingAnimal, public Omnivore, public Aves {
 public:
 	/** @brief Constructor.
 	  * Menciptakan objek Parrot.
@@ -26,7 +26,7 @@ public:
 	  */
 	Parrot(float w, float f, bool t) : Animal(w, f, t) { }
 
-	void Interact() {cout << "Cuiitt" << endl;}
+	string interact() {return ("Cuiitt");}
 };
 
 #endif

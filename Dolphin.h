@@ -26,7 +26,7 @@ public:
 	  */
 	Dolphin(float w, float f, bool t) : Animal(w, f, t) { }
 
-	void Interact() {cout << "A a a a a" << endl;}
+	string interact() {return ("A a a a a");}
 };
 
 #endif

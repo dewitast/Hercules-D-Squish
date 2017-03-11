@@ -27,7 +27,7 @@ public:
 	  */
 	Walrus(float w, float f, bool t) : Animal(w, f, t) { }
 
-	void Interact() {cout << "Aaarhhh" << endl;}
+	string interact() {return ("Aaarhhh");}
 };
 
 #endif
