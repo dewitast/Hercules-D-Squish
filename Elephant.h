@@ -1,3 +1,5 @@
+// file Elephant.h
+
 #ifndef ELEPHANT_H
 #define ELEPHANT_H
 
