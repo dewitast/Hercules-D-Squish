@@ -39,34 +39,59 @@ public:
 	/** @brief Menentukan apakah cage penuh.
 	  * @return Mengeluarkan true jika cage penuh.
 	  */
-	bool IsFull() const;
+	bool IsFull() const {return (TotalAnimal == 3*size/10);}
 
-	/** @brief Getter.
+	/** @brief Getter Size.
+		@return Mengeluarkan ukuran Cage.
 	  */
-	int GetSize() const;
-	Animal& GetAnimal() const;
-	int GetTotalAnimal() const;
+	int GetSize() const {return size}
+
+	/** @brief Getter Animal.
+		@return Mengeluarkan array animal pada Cage.
+	  */
+	Animal* GetAnimal() const {return *a}
+
+	/** @brief Getter jumlah binatang.
+		@return Mengeluarkan jumlah binatang pada Cage.
+	  */
+	int GetTotalAnimal() const {return TotalAnimal}
+
+	/** @brief Getter Point.
+		@param i Nilai indeks yang akan diperiksa.
+		@return Mengeluarkan lokasi Cage pada indeks i.
+	  */
+	Point GetPoint(int i) const {return (Loc[i])}
 
 	/** @brief Setter.
 		@param A Objek binatang yang akan dimasukkan.
 	  */
 	void AdoptAnimal(Animal& A);
 
-	/** @brief Mengembalikan true jika Cage kosong.
+	/** @brief Menentukan apakah Cage kosong.
+		@return Mengeluarkan true jika Cage kosong
 	  */
-	bool IsEmpty() const;
+	bool IsEmpty() const {return size==0}
 
-	/** @brief Mengembalikan true jika Habitat merupakan LandHabitat.
+	/** @brief Menentukan apakah Cage merupakan Cage berisi LandHabitat.
+		@return Mengembalikan true jika Habitat dalam Cage merupakan LandHabitat.
 	  */
 	bool IsLand() const;
 
-	/** @brief Mengembalikan true jika Habitat merupakan WaterHabitat.
+	/** @brief Menentukan apakah Cage merupakan Cage berisi WaterHabitat.
+		@return Mengembalikan true jika Habitat dalam Cage merupakan WaterHabitat.
 	  */
 	bool IsWater() const;
 
-	/** @brief Mengembalikan true jika Habitat merupakan AirHabitat.
+	/** @brief Menentukan apakah Cage merupakan Cage berisi AirHabitat.
+		@return Mengembalikan true jika Habitat dalam Cage merupakan AirHabitat.
 	  */
 	bool IsAir() const;
+
+	/** @brief Menentukan apakah Cage sudah terisi.
+		@param i Nilai indeks yang akan diperiksa.
+		@return Mengembalikan true jika terdapat binatang habitat Cage pada indeks ke i.
+	  */
+	bool IsOccupied(int i);
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
