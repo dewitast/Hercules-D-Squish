@@ -9,10 +9,6 @@
   */
 class Animal{
 public:
-	/** @brief Constructor.
-	  * Menciptakan animal kosong dengan seluruh atribut bernilai 0.
-	  */
-	Animal();
 
 	/** @brief Constructor.
 	  * Menciptakan animal kosong dengan weight w, food f, tame t, dan pos p.

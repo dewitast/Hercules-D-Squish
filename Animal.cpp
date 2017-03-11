@@ -1,14 +1,5 @@
 #include "Animal.h"
 
-Animal::Animal()
-{
-	weight = 0;
-	food = 0;
-	tame = false;
-	pos.SetAbsis(0);
-	pos.SetOrdinat(0);
-}
-
 Animal::Animal(float w, float f, bool t, Point p)
 {
 	weight = w;
