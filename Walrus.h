@@ -4,7 +4,6 @@
 #define WALRUS_H
 
 #include "Carnivore.h"
-#include "LandAnimal.h"
 #include "WaterAnimal.h"
 #include "Mammal.h"
 
@@ -12,12 +11,12 @@
   * kelas Walrus merupakan kelas untuk real object Walrus
   */
 
-class Walrus : public LandAnimal, public WaterAnimal, public Carnivore, public Mammal {
+class Walrus : public WaterAnimal, public Carnivore, public Mammal {
 public:
 	/** @brief Constructor.
 	  * Menciptakan objek Walrus.
 	  */
-	Walrus() : Animal(1000, 5, false) { }
+	Walrus() : Animal(1000, 50, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Walrus dengan berat w, jumlah makanan f, dan status jinak t.

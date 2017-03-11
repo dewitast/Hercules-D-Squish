@@ -17,7 +17,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Alligator.
 	  */
-	Alligator() : Animal(125, 5, false) { }
+	Alligator() : Animal(125, 6.25, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Alligator dengan berat w, jumlah makanan f, dan status jinak t.

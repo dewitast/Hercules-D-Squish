@@ -17,7 +17,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek PolarBear.
 	  */
-	PolarBear() : Animal(300, 5, false) { }
+	PolarBear() : Animal(300, 15, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek PolarBear dengan berat w, jumlah makanan f, dan status jinak t.

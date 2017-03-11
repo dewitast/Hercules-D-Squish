@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Dolphin.
 	  */
-	Dolphin() : Animal(75, 5, false) { }
+	Dolphin() : Animal(75, 3.75, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Dolphin dengan berat w, jumlah makanan f, dan status jinak t.

@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Iguana.
 	  */
-	Iguana() : Animal(6, 5, true) { }
+	Iguana() : Animal(6, 0.3, true) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Iguana dengan berat w, jumlah makanan f, dan status jinak t.
