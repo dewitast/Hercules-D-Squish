@@ -17,20 +17,6 @@ public:
 	  * @param p Lokasi binatang.
 	  */
 	Animal(float w, float f, bool t);
-
-	/** @brief Copy Constructor.
-	  * @param A Objek yang akan di-copy.
-	  */
-	Animal(const Animal& A);
-
-	/** @brief Operator =.
-	  * @param A Objek yang akan di-assign.
-	  */
-	Animal& operator= (const Animal& A);
-
-	/** @brief Destrutor.
-	  */
-	~Animal();
 	
 	/** @brief GetWeight.
 	  * @return Mengembalikan nilai weight binatang.
