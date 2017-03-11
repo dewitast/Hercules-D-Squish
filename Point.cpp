@@ -28,12 +28,12 @@
 	Point::~Point()
 	{}
 
-	int Point::GetAbsis()
+	int Point::GetAbsis() const
 	{
 		return absis;
 	}
 
-	int Point::GetOrdinat()
+	int Point::GetOrdinat() const
 	{
 		return ordinat;
 	}

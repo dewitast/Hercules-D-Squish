@@ -1,49 +1,29 @@
 #include "Animal.h"
 
-Animal::Animal(float w, float f, bool t, Point p)
+Animal::Animal(float w, float f, bool t)
 {
 	weight = w;
 	food = f;
 	tame = t;
-	pos = p;
+	SetPoint(-1,-1);
 }
 
-Animal::Animal(const Animal& A)
-{
-	weight = A.weight;
-	food = A.food;
-	tame = A.tame;
-	pos = A.pos;
-}
-
-Animal& Animal::operator= (const Animal& A)
-{
-	weight = A.weight;
-	food = A.food;
-	tame = A.tame;
-	pos = A.pos;
-	return *this;
-}
-
-Animal::~Animal()
-{}
-
-float Animal::GetWeight()
+float Animal::GetWeight() const
 {
 	return weight;
 }
 
-float Animal::GetFood()
+float Animal::GetFood() const
 {
 	return food;
 }
 
-bool Animal::GetTame()
+bool Animal::GetTame() const
 {
 	return tame;
 }
 
-Point Animal::GetPos()
+Point Animal::GetPos() const
 {
 	return pos;
 }

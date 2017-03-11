@@ -16,7 +16,7 @@ public:
 	  * @param t Status jinak binatang.
 	  * @param p Lokasi binatang.
 	  */
-	Animal(float w, float f, bool t, Point p);
+	Animal(float w, float f, bool t);
 
 	/** @brief Copy Constructor.
 	  * @param A Objek yang akan di-copy.
@@ -35,22 +35,22 @@ public:
 	/** @brief GetWeight.
 	  * @return Mengembalikan nilai weight binatang.
 	  */
-	float GetWeight();
+	float GetWeight() const;
 
 	/** @brief GetFood.
 	  * @return Mengembalikan nilai food binatang.
 	  */
-	float GetFood();
+	float GetFood() const;
 
 	/** @brief GetTame.
 	  * @return Mengembalikan status tame binatang.
 	  */
-	bool GetTame();
+	bool GetTame() const;
 
 	/** @brief GetPos.
 	  * @return Mengembalikan nilai lokasi binatang.
 	  */
-	Point GetPos();
+	Point GetPos() const;
 
 	/** @brief SetWeight.
 	  * @param w Nilai weight yang akan di-set pada animal.
