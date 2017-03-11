@@ -29,7 +29,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Goat pada layar.
 	  */
-	void Interact() {cout << "Mbeeeee" << endl;}
+	string interact() {return ("Mbeeeee");}
 };
 
 #endif

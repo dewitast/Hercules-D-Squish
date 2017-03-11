@@ -5,12 +5,12 @@
 
 #include "Aves.h"
 #include "Carnivore.h"
-#include "AirAnimal.h"
+#include "FlyingAnimal.h"
 
 /** @class Eagle.
   * Kelas Eagle merupakan kelas untuk real object Eagle.
   */
-class Eagle : public AirAnimal, public Carnivore, public Aves{
+class Eagle : public FlyingAnimal, public Carnivore, public Aves{
 public:
 	/** @brief Constructor.
 	  * Menciptakan objek Eagle.
@@ -28,7 +28,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Eagle ke layar.
 	  */
-	void Interact() {cout << "Nguiikk!" << endl;}
+	string interact() {return ("Nguiikk!");}
 };
 
 #endif

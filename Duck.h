@@ -28,7 +28,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Duck ke layar.
 	  */
-	void Interact() {cout << "Quaackk!" << endl;}
+	string interact() {return ("Quaackk!");}
 };
 
 #endif

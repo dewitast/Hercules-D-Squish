@@ -26,7 +26,7 @@ public:
 	  */
 	Tiger(float w, float f, bool t) : Animal(w, f, t) { }
 
-	void Interact() {cout << "Growl" << endl;}
+	string interact() {return ("Growl");}
 };
 
 #endif

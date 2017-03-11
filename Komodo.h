@@ -28,7 +28,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Komodo ke layar.
 	  */
-	void Interact() {cout << "Slpp!" << endl;}
+	string interact() {return ("Slpp!");}
 };
 
 #endif

@@ -28,7 +28,7 @@ public :
 	/** @brief Interact.
 	  * Menampilkan suara orca pada layar.
 	  */
-	void Interact() { cout << "Ngiak!" << endl; }
+	string interact() { return ("Ngiak!"); }
 };
 
 #endif
