@@ -3,14 +3,14 @@
 #ifndef OWL_H
 #define OWL_H
 
-#include "AirAnimal.h"
+#include "FlyingAnimal.h"
 #include "Carnivore.h"
 #include "Aves.h"
 
 /** @class Owl.
   * Kelas Owl merupakan kelas untuk real object owl.
   */
-class Owl : public AirAnimal, public Carnivore, public Aves {
+class Owl : public FlyingAnimal, public Carnivore, public Aves {
 public :
 	/** @brief Constructor.
 	  * Menciptakan objek owl kosong.
@@ -28,7 +28,7 @@ public :
 	/** @brief Interact.
 	  * Menampilkan suara owl pada layar.
 	  */
-	void Interact() { cout << "Hoot!" << endl; }
+	string interact() { return ("Hoot!"); }
 };
 
 #endif

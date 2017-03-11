@@ -28,7 +28,7 @@ public :
 	/** @brief Interact.
 	  * Menampilkan suara elephant pada layar.
 	  */
-	void Interact() { cout << "Prett!" << endl; }
+	string interact() { return ("Prett!"); }
 };
 
 #endif

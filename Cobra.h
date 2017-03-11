@@ -28,7 +28,7 @@ public :
 	/** @brief Interact.
 	  * Menampilkan suara cobra pada layar.
 	  */
-	void Interact() { cout << "Ssshh!" << endl; }
+	string interact() { return ("Ssshh!"); }
 };
 
 #endif
