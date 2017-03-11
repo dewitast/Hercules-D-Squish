@@ -1,0 +1,17 @@
+15 15
+
+A	A	N	L	L	L	L	O	O	O	O	O	N	P	P
+A	A	O	O	L	L	L	O	A	A	A	O	W	W	P
+A	A	A	O	L	L	L	O	A	A	A	O	W	W	W
+A	A	A	O	W	W	W	O	A	A	A	O	W	W	W
+W	W	W	O	W	W	W	O	A	A	O	O	O	O	W
+P	W	W	O	W	W	W	O	O	O	O	L	L	O	W
+P	W	W	O	W	W	O	O	R	L	L	L	L	O	L
+W	W	W	O	O	O	O	R	R	L	L	L	L	O	L
+L	O	O	O	L	L	R	R	R	L	L	L	L	O	L
+L	O	L	L	L	L	O	O	O	O	O	O	O	O	L
+L	O	L	L	L	L	O	L	L	L	O	W	W	W	W
+L	O	O	O	O	O	O	L	L	L	O	L	L	L	L
+L	O	A	A	A	A	O	L	L	L	O	L	L	L	L
+L	O	O	O	O	O	O	O	O	L	O	A	A	L	L
+L	L	L	L	W	W	W	W	E	O	O	A	A	P	P
