@@ -10,11 +10,15 @@ class Animal{
 public:
 
 	/** @brief Constructor.
+	  * Menciptakan animal kosong
+	  */
+	Animal();
+
+	/** @brief Constructor.
 	  * Menciptakan animal kosong dengan weight w, food f, tame t, dan pos p.
 	  * @param w Nilai berat binatang.
 	  * @param f Nilai jumlah makanan yang dibutuhkan binatang.
 	  * @param t Status jinak binatang.
-	  * @param p Lokasi binatang.
 	  */
 	Animal(float w, float f, bool t);
 	
@@ -58,6 +62,10 @@ public:
 	  * @param ord Nilai ordinat yang akan di-set pada lokasi animal.
 	  */
 	void SetPoint(int abs, int ord);
+
+	/** @brief Interact.
+	  */
+	virtual void Interact() = 0; 
 
 protected:
 	float weight;

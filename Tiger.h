@@ -1,3 +1,5 @@
+//file : Tiger.h
+
 #ifndef TIGER_H
 #define TIGER_H
 
@@ -14,31 +16,15 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek tiger.
 	  */
-	Tiger();
+	Tiger() : Animal(200, 5, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek tiger dengan berat w, jumlah makanan f, dan status jinak t.
-	  * @param w Berat gajah.
-	  * @param k Jumlah makanan gajah.
-	  * @param t Status jinak gajah.
+	  * @param w Berat tiger.
+	  * @param f Jumlah makanan tiger.
+	  * @param t Status jinak tiger.
 	  */
-	Tiger(float w, float f, bool t, Point p);
-
-	/** @brief Copy Constructor.
-	  * @param G Objek yang akan di-copy.
-	  */
-	Tiger(const Tiger& T);
-
-	/** @brief Operator =.
-	  * @param G Objek yang akan diassign.
-	  */
-	Tiger& operator= (const Tiger& G);
-
-	/** @brief Destrutor.
-	  */
-	~Tiger();
-
-
+	Tiger(float w, float f, bool t) : Animal(w, f, t) { }
 };
 
 #endif
