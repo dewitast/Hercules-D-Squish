@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Tiger.
 	  */
-	Tiger() : Animal(200, 5, false) { }
+	Tiger() : Animal(200, 10, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Tiger dengan berat w, jumlah makanan f, dan status jinak t.

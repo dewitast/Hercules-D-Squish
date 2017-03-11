@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Parrot.
 	  */
-	Parrot() : Animal(1.2, 5, true) { }
+	Parrot() : Animal(1.2, 0.06, true) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Parrot dengan berat w, jumlah makanan f, dan status jinak t.

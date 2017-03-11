@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Goat.
 	  */
-	Goat() : Animal(90, 5, false) { }
+	Goat() : Animal(90, 4.5, false) { }
 
 	/** @brief Constructor.
 	  * Menciptakan objek Goat dengan berat w, jumlah makanan f, dan status jinak t.
