@@ -38,6 +38,12 @@ public:
 		@return Mengeluarkan pointer to komodo objek tersebut
 	  */
 	virtual Komodo* clone() const {return new Komodo(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari komodo.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'K';}
 };
 
 #endif

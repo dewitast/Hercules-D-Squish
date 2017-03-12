@@ -1,4 +1,5 @@
-// file Driver.cpp
+/**	@file	Driver.h
+  */
 
 #include "Driver.h"
 #include <fstream>
@@ -166,7 +167,6 @@
 		}
 		return sum;
 	}
+
 	Driver::~Driver()
-	{
-		
-	}
+	{}

@@ -1,4 +1,5 @@
-//file : Dolphin.h
+/**	@file	Dolphin.h
+  */
 
 #ifndef DOLPHIN_H
 #define DOLPHIN_H
@@ -7,8 +8,8 @@
 #include "WaterAnimal.h"
 #include "Mammal.h"
 
-/** @class Dolphin
-  * kelas Dolphin merupakan kelas untuk real object Dolphin
+/** @class Dolphin.
+  * Kelas Dolphin merupakan kelas untuk real object Dolphin.
   */
 
 class Dolphin : public WaterAnimal, public Carnivore, public Mammal {
@@ -30,15 +31,21 @@ public:
 	  */
 	virtual ~Dolphin() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Dolphin pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara dolpin.
 	  */
 	string interact() {return ("A a a a a");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to dolphin objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to dolphin objek tersebut.
 	  */
 	virtual Dolphin* clone() const {return new Dolphin(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'N';}
 };
 
 #endif

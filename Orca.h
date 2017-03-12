@@ -38,6 +38,12 @@ public :
 		@return Mengeluarkan pointer to orca objek tersebut
 	  */
 	virtual Orca* clone() const {return new Orca(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari orca.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'R';}
 };
 
 #endif

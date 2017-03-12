@@ -38,6 +38,12 @@ public :
 		@return Mengeluarkan pointer to owl objek tersebut
 	  */
 	virtual Owl* clone() const {return new Owl(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari owl.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'O';}
 };
 
 #endif

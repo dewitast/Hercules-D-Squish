@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to elephant objek tersebut
 	  */
 	virtual Walrus* clone() const {return new Walrus(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari walrus.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'W';}
 };
 
 #endif

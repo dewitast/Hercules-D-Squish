@@ -1,4 +1,5 @@
-// file Elephant.h
+/**	@file	Elephant.h
+  */
 
 #ifndef ELEPHANT_H
 #define ELEPHANT_H
@@ -29,15 +30,21 @@ public :
 	  */
 	virtual ~Elephant() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara elephant pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara elephant.
 	  */
 	string interact() { return ("Prett!"); }
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to elephant objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to elephant objek tersebut.
 	  */
 	virtual Elephant* clone() const {return new Elephant(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'H';}
 };
 
 #endif

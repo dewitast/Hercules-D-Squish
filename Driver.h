@@ -1,10 +1,14 @@
-// file Driver.h
+/**	@file	Driver.cpp
+  */
 
 #ifndef DRIVER_H
 #define DRIVER_H
 
 #include "Zoo.h"
 
+/** @class Driver.
+  * Kelas Driver merupakan kelas sebagai pilihan menu aplikasi.
+  */
 class Driver {
 	public :
 		/** @brief Constructor.
@@ -35,8 +39,9 @@ class Driver {
 		float FoodCalc();
 
 		/** @brief Destructor.
-		  */
+	 	 */
 		virtual ~Driver();
+		
 	private :
 		Zoo Z;
 		bool **visited; //matrix untuk menyatakan cell apa yang sudah dikunjungi.

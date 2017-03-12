@@ -1,3 +1,6 @@
+/**	@file	Cage.h
+  */
+
 #ifndef CAGE_H
 #define CAGE_H
 
@@ -7,8 +10,7 @@
 /** @class Cage.
   * Kelas Cage merupakan himpunan Cell yang bertipe sama.
   */
-class Cage
-{
+class Cage {
 public:
 	/** @brief Constructor.
 	  * Menciptakan Cage kosong tanpa animal.
@@ -36,55 +38,58 @@ public:
 	  */
 	~Cage();
 
-	/** @brief Menentukan apakah cage penuh.
+	/** @brief IsFull.
+	  * Menentukan apakah cage penuh.
 	  * @return Mengeluarkan true jika cage penuh.
 	  */
 	bool IsFull() const {return (TotalAnimal == 3*size/10);}
 
-	/** @brief Getter Size.
-	  * @return Mengeluarkan ukuran Cage.
+	/** @brief GetSize.
+	  * @return Mengembalikan nilai ukuran Cage.
 	  */
 	int GetSize() const {return size;}
 
-	/** @brief Getter Animal.
-	  * @param i Nilai indeks animal.
-	  * @return Mengeluarkan array animal pada Cage.
+	/** @brief GetAnimal.
+	  * @return Mengembalikan array animal pada Cage.
 	  */
 	Animal* GetAnimal(int i) const {return a[i];}
 
-	/** @brief Getter jumlah binatang.
-	  * @return Mengeluarkan jumlah binatang pada Cage.
+	/** @brief GetTotalAnimal.
+	  * @return Mengembalikan jumlah binatang pada Cage.
 	  */
 	int GetTotalAnimal() const {return TotalAnimal;}
 
-	/** @brief Getter Point.
+	/** @brief GetPoint.
 	  * @param i Nilai indeks yang akan diperiksa.
-	  * @return Mengeluarkan lokasi Cage pada indeks i.
+	  * @return Mengembalikan lokasi Cage pada indeks i.
 	  */
 	Point GetPoint(int i) const {return (Loc[i]);}
 
-	/** @brief Setter.
+	/** @brief AdoptAnimal.
 	  * @param A Objek binatang yang akan dimasukkan.
 	  */
 	void AdoptAnimal(Animal& A);
 
-	/** @brief Melepas suatu binatang yang terdapat pada cage.
+	/** @brief ReleaseAnimal.
+	  * Melepas suatu binatang yang terdapat pada cage.
 	  * @param i Nilai indeks binatang yang akan dibuang.
 	  */
 	void ReleaseAnimal(int i);
 
-	/** @brief Menentukan apakah Cage kosong.
-	  * @return Mengeluarkan true jika Cage kosong
+	/** @brief IsEmpty.
+	  * @return Menghasilkan true jika Cage kosong.
 	  */
 	bool IsEmpty() const {return size==0;}
 
-	/** @brief Menentukan apakah Cage sudah terisi.
+	/** @brief IsOccupied.
+	  * Menentukan apakah Cage sudah terisi.
 	  * @param i Nilai indeks yang akan diperiksa.
 	  * @return Mengembalikan true jika terdapat binatang habitat Cage pada indeks ke i.
 	  */
 	bool IsOccupied(int i) const;
 
-	/** @brief Menentukan apakah suatu binatang terdapat pada cage.
+	/** @brief IsInCage.
+	  * Menentukan apakah suatu binatang terdapat pada cage.
 	  * @param A Objek animal yang akan diperiksa.
 	  * @return Mengeluarkan indeks A jika A berada pada cage dan -1 jika tidak ada.
 	  */

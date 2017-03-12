@@ -1,4 +1,5 @@
-//File : Eagle.h
+/**	@file	Eagle.h
+  */
 
 #ifndef EAGLE_H
 #define EAGLE_H
@@ -29,15 +30,21 @@ public:
 	  */
 	virtual ~Eagle() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Eagle ke layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara eagle.
 	  */
 	string interact() {return ("Nguiikk!");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to eagle objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to eagle objek tersebut.
 	  */
 	virtual Eagle* clone() const {return new Eagle(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'E';}
 };
 
 #endif

@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to goat objek tersebut
 	  */
 	virtual Goat* clone() const {return new Goat(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari goat.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'G';}
 };
 
 #endif

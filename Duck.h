@@ -1,4 +1,5 @@
-//File : Duck.h
+/**	@file	Duck.h
+  */
 
 #ifndef DUCK_H
 #define DUCK_H
@@ -29,15 +30,21 @@ public:
 	  */
 	virtual ~Duck() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Duck ke layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara duck.
 	  */
 	string interact() {return ("Quaackk!");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to duck objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to duck objek tersebut.
 	  */
 	virtual Duck* clone() const {return new Duck(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'D';}
 };
 
 #endif

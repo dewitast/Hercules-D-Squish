@@ -1,4 +1,5 @@
-//File : Cormorant.h
+/**	@file	Cormorant.h
+  */
 
 #ifndef CORMORANT_H
 #define CORMORANT_H
@@ -30,15 +31,21 @@ public:
 	  */
 	virtual ~Cormorant() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Cormorant ke layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara Cormorant.
 	  */
 	string interact() {return ("Ooookkk!");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to cormorant objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to cormorant objek tersebut.
 	  */
 	virtual Cormorant* clone() const {return new Cormorant(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'M';}
 };
 
 #endif

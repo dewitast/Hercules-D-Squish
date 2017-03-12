@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to parrot objek tersebut
 	  */
 	virtual Parrot* clone() const {return new Parrot(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari parrot.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'P';}
 };
 
 #endif

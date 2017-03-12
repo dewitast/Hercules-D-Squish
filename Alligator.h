@@ -1,4 +1,5 @@
-//file : Alligator.h
+/**	@file	Alligator.h
+  */
 
 #ifndef ALLIGATOR_H
 #define ALLIGATOR_H
@@ -8,8 +9,8 @@
 #include "WaterAnimal.h"
 #include "Reptile.h"
 
-/** @class Alligator
-  * kelas Alligator merupakan kelas untuk real object Alligator
+/** @class Alligator.
+  * Kelas Alligator merupakan kelas untuk real object Alligator.
   */
 
 class Alligator : public LandAnimal, public WaterAnimal, public Carnivore, public Reptile {
@@ -31,15 +32,21 @@ public:
 	  */
 	virtual ~Alligator() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Alligator pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara alligator.
 	  */
 	string interact() {return ("Grrrrrr");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to alligator objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to alligator objek tersebut.
 	  */
 	virtual Alligator* clone() const {return new Alligator(*this);}
+
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	  */
+	char render(){return 'A';}
 };
 
 #endif
