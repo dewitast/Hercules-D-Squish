@@ -89,11 +89,10 @@ ostream& operator<<(ostream& o,const Zoo& z)
 	cout << "Absis kanan bawah : "; cin >> abs;
 	cout << "Ordinat kanan bawah : "; cin >> ord;
 	P2.SetAbsis(abs); P2.SetOrdinat(ord);
-	cout << 1 << endl;
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
 	{
 		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
-			cout << i << j << endl,o << z.cell[i][j]->render() << ' ';
+			o << z.cell[i][j]->render() << ' ';
 		o << endl;
 	}
 	return o;
@@ -107,66 +106,45 @@ istream& operator>>(istream& is, Zoo& z)
 	z.beff = (brs>z.baris)?z.baris:brs;
 	z.keff = (kol>z.kolom)?z.kolom:kol;
 	//jumlahcage = 0;
-	cout << 1 << endl;
 	for (int i=0; i<brs; i++)
 	{
 		if (i<z.beff)
-		cout << 2 << endl;
 		{
 			for (int j=0; j<kol; j++)
 			{
-				cout << i << " " << j << endl;
 				Point P;
 				P.SetAbsis(i);
 				P.SetOrdinat(j);
 				is >> c;
 				if (j<z.keff)
 				{
-					cout << i << ' ' << j << endl;
 					if (c=='@')
 					{
-						cout << "land" << endl;
 						z.cell[i][j] = new LandHabitat();
-						if (i!=0)
+						if ((i!=0)&&(z.cell[i-1][j]->IsLandHabitat()))
 						{
-							if (z.cell[i-1][j]->IsLandHabitat())
-							{
-								z.SearchPoint(i-1,j).AddPoint(P);
-								cout << "sini" <<endl;
-							}
+							z.SearchPoint(i-1,j).AddPoint(P);
 						}
-						else if (j!=0)
+						else if ((j!=0)&&(z.cell[i][j-1]->IsLandHabitat()))
 						{
-							if (z.cell[i][j-1]->IsLandHabitat())
-							{
-								cout << "sinia" <<endl;
-								z.SearchPoint(i,j-1).AddPoint(P);
-							}
+							z.SearchPoint(i,j-1).AddPoint(P);
 						}
 						else
 						{
-							cout << 4 << endl;
 							Cage c(i,j);
 							z.AddCage(c);
 						}
 					}
 					else if (c=='^')
 					{
-						cout << "air" << endl;
 						z.cell[i][j] = new AirHabitat();
-						if (i!=0)
+						if ((i!=0)&&(z.cell[i-1][j]->IsAirHabitat()))
 						{
-							if (z.cell[i-1][j]->IsAirHabitat())
-							{
-								z.SearchPoint(i-1,j).AddPoint(P);
-							}
+							z.SearchPoint(i-1,j).AddPoint(P);
 						}
-						else if (j!=0)
+						else if ((j!=0)&&(z.cell[i][j-1]->IsAirHabitat()))
 						{
-							if (z.cell[i][j-1]->IsAirHabitat())
-							{
-								z.SearchPoint(i,j-1).AddPoint(P);
-							}
+							z.SearchPoint(i,j-1).AddPoint(P);
 						}
 						else
 						{
@@ -177,19 +155,13 @@ istream& operator>>(istream& is, Zoo& z)
 					else if (c=='~')
 					{
 						z.cell[i][j] = new WaterHabitat();
-						if (i!=0)
+						if ((i!=0)&&(z.cell[i-1][j]->IsWaterHabitat()))
 						{
-							if (z.cell[i-1][j]->IsWaterHabitat())
-							{
 								z.SearchPoint(i-1,j).AddPoint(P);
-							}
 						}
-						else if (j!=0)
+						else if ((j!=0)&&(z.cell[i][j-1]->IsWaterHabitat()))
 						{
-							if (z.cell[i][j-1]->IsWaterHabitat())
-							{
 								z.SearchPoint(i,j-1).AddPoint(P);
-							}
 						}
 						else
 						{
