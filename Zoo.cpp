@@ -2,11 +2,18 @@
 #include <iostream>
 using namespace std;
 
-Zoo::Zoo():baris(100),kolom(100)
+Zoo::Zoo():baris(50),kolom(50)
 {
+	cout << "ctor" << endl;
 	beff = 0;
 	keff = 0;
 	jumlahcage = 0;
+	cell = new Cell**[baris];
+	for (int i=0;i<baris;++i)
+	{
+		cell[i] = new Cell*[kolom];
+	}
+	cage = new Cage[jumlahcage];
 }
 
 Zoo::Zoo(int b, int k, int j):baris(b),kolom(k)
@@ -30,9 +37,10 @@ Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 	for (int i=0;i<baris;++i)
 	{
 		cell[i] = new Cell*[kolom];
-		for (int j=0;j<kolom;++j)
-			cell[i][j] = (z.cell[i][j])->clone();
 	}
+	for (int i=0;i<beff;++i)
+		for (int j=0;j<keff;++j)
+			cell[i][j] = (z.cell[i][j])->clone();
 	jumlahcage = z.jumlahcage;
 	cage = new Cage[jumlahcage];
 	for (int i=0;i<jumlahcage;++i)
@@ -42,25 +50,26 @@ Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 Zoo& Zoo::operator=(const Zoo& z)
 {
 	for (int i=0;i<beff;++i)
-		for (int j=0;j<beff;++j)
+		for (int j=0;j<keff;++j)
 			delete cell[i][j];
 	beff = z.beff;
 	keff = z.keff;
 	for (int i=0;i<beff;++i)
 		for (int j=0;j<keff;++j)
 			cell[i][j] = (z.cell[i][j])->clone();
+	delete [] cage;
+	cage = new Cage[z.jumlahcage];
 	jumlahcage = z.jumlahcage;
-	int j = (jumlahcage>z.jumlahcage)? z.jumlahcage:jumlahcage;
-	for (int i=0;i<j;++i)
-		cage[i] = z.cage[i];
+	for (int i=0;i<jumlahcage;++i)
+		cage[i] = z.cage[i];	
 	return *this;
 }
 
 Zoo::~Zoo()
 {
-	for (int i=0;i<baris;++i)
+	for (int i=0;i<beff;++i)
 	{
-		for (int j=0;j<kolom;++j)
+		for (int j=0;j<keff;++j)
 			delete cell[i][j];
 		delete [] cell[i];
 	}		
@@ -137,6 +146,7 @@ istream& operator>>(istream& is, Zoo& z)
 					{
 						z.cell[i][j] = new Entrance();
 					}
+					cout << '#' << c << '#' << i << '#' << j << endl;
 				}
 			}
 		}
