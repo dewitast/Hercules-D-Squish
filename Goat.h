@@ -1,4 +1,5 @@
-//file : Goat.h
+/**	@file	Goat.h
+  */
 
 #ifndef GOAT_H
 #define GOAT_H
@@ -8,9 +9,8 @@
 #include "Mammal.h"
 
 /** @class Goat
-  * kelas Goat merupakan kelas untuk real object Goat
+  * Kelas Goat merupakan kelas untuk real object Goat
   */
-
 class Goat : public LandAnimal, public Herbivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -19,7 +19,7 @@ public:
 	Goat() : Animal(90, 4.5, false) { }
 
 	/** @brief Constructor.
-	  * Menciptakan objek Goat dengan berat w, jumlah makanan f, dan status jinak t.
+	  * Menciptakan objek Goat dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Goat.
 	  * @param f Jumlah makanan Goat.
 	  * @param t Status jinak Goat.
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Goat() {}
 	
-	/** @brief Interact.
-	  * Menampilkan suara Goat pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara Goat.
 	  */
 	string interact() {return ("Mbeeeee");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to goat objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Goat baru
+	  * @return Mengembalikan pointer to Goat objek tersebut.
 	  */
 	virtual Goat* clone() const {return new Goat(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari goat.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Goat.
 	  */
 	char render(){return 'G';}
+
 };
 
 #endif

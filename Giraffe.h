@@ -1,4 +1,5 @@
-//File : Giraffe.h
+/**	@file	Giraffe.h
+  */
 
 #ifndef GIRAFFE_H
 #define GIRAFFE_H
@@ -7,8 +8,8 @@
 #include "Herbivore.h"
 #include "LandAnimal.h"
 
-/** @class Giraffe.
-  * Kelas Giraffe merupakan kelas untuk real object Giraffe.
+/** @class Giraffe
+  * Kelas Giraffe merupakan kelas untuk real object Giraffe
   */
 class Giraffe : public LandAnimal, public Herbivore, public Mammal{
 public:
@@ -17,8 +18,8 @@ public:
 	  */
 	Giraffe() : Animal(1100, 55, true) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek Giraffe dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Giraffe dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Giraffe.
 	  * @param k Jumlah makanan Giraffe.
 	  * @param t Status jinak Giraffe.
@@ -29,21 +30,21 @@ public:
 	  */
 	virtual ~Giraffe() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Giraffe ke layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara Giraffe.
 	  */
 	string interact() {return ("Hmm!");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to giraffe objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Giraffe baru
+	  * @return Mengembalikan pointer to Giraffe objek tersebut.
 	  */
 	virtual Giraffe* clone() const {return new Giraffe(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari girraffe.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Giraffe.
 	  */
 	char render(){return 'F';}
+	
 };
 
 #endif

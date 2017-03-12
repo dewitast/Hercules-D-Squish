@@ -8,8 +8,8 @@
 #include "Carnivore.h"
 #include "FlyingAnimal.h"
 
-/** @class Eagle.
-  * Kelas Eagle merupakan kelas untuk real object Eagle.
+/** @class Eagle
+  * Kelas Eagle merupakan kelas untuk real object Eagle
   */
 class Eagle : public FlyingAnimal, public Carnivore, public Aves{
 public:
@@ -18,8 +18,8 @@ public:
 	  */
 	Eagle() : Animal(5.8, 0.29, false) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek Eagle dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Eagle dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Eagle.
 	  * @param k Jumlah makanan Eagle.
 	  * @param t Status jinak Eagle.
@@ -31,20 +31,20 @@ public:
 	virtual ~Eagle() {}
 
 	/** @brief interact.
-	  * @return Mengembalikan string yang merepresentasikan suara eagle.
+	  * @return Mengembalikan string yang merepresentasikan suara Eagle.
 	  */
 	string interact() {return ("Nguiikk!");}
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to eagle objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek Eagle baru
+	  * @return Mengembalikan pointer to Eagle objek tersebut.
 	  */
 	virtual Eagle* clone() const {return new Eagle(*this);}
 
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Eagle.
 	  */
 	char render(){return 'E';}
+	
 };
 
 #endif

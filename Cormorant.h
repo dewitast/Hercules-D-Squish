@@ -9,8 +9,8 @@
 #include "FlyingAnimal.h"
 #include "WaterAnimal.h"
 
-/** @class Cormorant.
-  * Kelas Cormorant merupakan kelas untuk real object Cormorant.
+/** @class Cormorant
+  * Kelas Cormorant merupakan kelas untuk real object Cormorant
   */
 class Cormorant : public FlyingAnimal, public WaterAnimal, public Carnivore, public Aves{
 public:
@@ -19,8 +19,8 @@ public:
 	  */
 	Cormorant() : Animal(3.6, 0.18, true) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek Cormorant dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Cormorant dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Cormorant.
 	  * @param k Jumlah makanan Cormorant.
 	  * @param t Status jinak Cormorant.
@@ -36,16 +36,16 @@ public:
 	  */
 	string interact() {return ("Ooookkk!");}
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to cormorant objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek Cormorant baru
+	  * @return Mengembalikan pointer to Cormorant objek tersebut.
 	  */
 	virtual Cormorant* clone() const {return new Cormorant(*this);}
 
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Cormorant.
 	  */
 	char render(){return 'M';}
+	
 };
 
 #endif

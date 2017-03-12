@@ -1,4 +1,5 @@
-//file : Tiger.h
+/**	@file	Tiger.h
+  */
 
 #ifndef TIGER_H
 #define TIGER_H
@@ -10,7 +11,6 @@
 /** @class Tiger
   * kelas Tiger merupakan kelas untuk real object Tiger
   */
-
 class Tiger : public LandAnimal, public Carnivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -18,11 +18,11 @@ public:
 	  */
 	Tiger() : Animal(200, 10, false) { }
 
-	/** @brief Constructor.
-	  * Menciptakan objek Tiger dengan berat w, jumlah makanan f, dan status jinak t.
-	  * @param w Berat tiger.
-	  * @param f Jumlah makanan tiger.
-	  * @param t Status jinak tiger.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Tiger dengan berat w, jumlah makanan f, dan status jinak t
+	  * @param w Berat Tiger.
+	  * @param f Jumlah makanan Tiger.
+	  * @param t Status jinak Tiger.
 	  */
 	Tiger(float w, float f, bool t) : Animal(w, f, t) { }
 
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Tiger() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Tiger pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara Tiger.
 	  */
 	string interact() {return ("Growl");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to tiger objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Tiger baru
+	  * @return Mengembalikan pointer to Tiger objek tersebut.
 	  */
 	virtual Tiger* clone() const {return new Tiger(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari tiger.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Tiger.
 	  */
 	char render(){return 'T';}
+
 };
 
 #endif

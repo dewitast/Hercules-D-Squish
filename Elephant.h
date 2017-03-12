@@ -8,21 +8,21 @@
 #include "Herbivore.h"
 #include "Mammal.h"
 
-/** @class Elephant.
-  * Kelas Elephant merupakan kelas untuk real object elephant.
+/** @class Elephant
+  * Kelas Elephant merupakan kelas untuk real object Elephant
   */
 class Elephant : public LandAnimal, public Herbivore, public Mammal {
 public :
 	/** @brief Constructor.
-	  * Menciptakan objek elephant kosong.
+	  * Menciptakan objek Elephant.
 	  */
 	Elephant() : Animal(5000,250,true) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek elephant kosong dengan berat w, jumlah makanan f, dan status jinak t.
-	  * @param w Berat elephant.
-	  * @param f Jumlah makanan elephant.
-	  * @param t Status jinak elephant.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Elephant dengan berat w, jumlah makanan f, dan status jinak t
+	  * @param w Berat Elephant.
+	  * @param f Jumlah makanan Elephant.
+	  * @param t Status jinak Elephant.
 	  */
 	Elephant(float w, float f, bool t) : Animal(w,f,t) {}
 
@@ -31,20 +31,20 @@ public :
 	virtual ~Elephant() {}
 
 	/** @brief interact.
-	  * @return Mengembalikan string yang merepresentasikan suara elephant.
+	  * @return Mengembalikan string yang merepresentasikan suara Elephant.
 	  */
 	string interact() { return ("Prett!"); }
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to elephant objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek Elephant baru
+	  * @return Mengembalikan pointer to Elephant objek tersebut.
 	  */
 	virtual Elephant* clone() const {return new Elephant(*this);}
 
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Elephant.
 	  */
 	char render(){return 'H';}
+	
 };
 
 #endif

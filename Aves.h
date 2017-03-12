@@ -6,15 +6,9 @@
 
 #include "Animal.h"
 
-/** @class Aves.
-  * Kelas abstrak Aves.
-  */ 
-
-class Aves : virtual public Animal {
-public:
-
-protected:
-
-};
+/** @class Aves
+  * Kelas abstrak Aves
+  */
+class Aves : virtual public Animal {};
 
 #endif

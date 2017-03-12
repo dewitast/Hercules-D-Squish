@@ -8,10 +8,9 @@
 #include "WaterAnimal.h"
 #include "Mammal.h"
 
-/** @class Dolphin.
-  * Kelas Dolphin merupakan kelas untuk real object Dolphin.
+/** @class Dolphin
+  * Kelas Dolphin merupakan kelas untuk real object Dolphin
   */
-
 class Dolphin : public WaterAnimal, public Carnivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -19,8 +18,8 @@ public:
 	  */
 	Dolphin() : Animal(75, 3.75, false) { }
 
-	/** @brief Constructor.
-	  * Menciptakan objek Dolphin dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Dolphin dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Dolphin.
 	  * @param f Jumlah makanan Dolphin.
 	  * @param t Status jinak Dolphin.
@@ -32,20 +31,20 @@ public:
 	virtual ~Dolphin() {}
 
 	/** @brief interact.
-	  * @return Mengembalikan string yang merepresentasikan suara dolpin.
+	  * @return Mengembalikan string yang merepresentasikan suara Dolpin.
 	  */
 	string interact() {return ("A a a a a");}
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to dolphin objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek Dolphin baru
+	  * @return Mengembalikan pointer to Dolphin objek tersebut.
 	  */
 	virtual Dolphin* clone() const {return new Dolphin(*this);}
 
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Dolphin.
 	  */
 	char render(){return 'N';}
+
 };
 
 #endif
