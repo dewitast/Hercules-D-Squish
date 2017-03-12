@@ -1,3 +1,6 @@
+/**	@file	Carnivore.h
+  */
+
 #ifndef CARNIVORE_H
 #define CARNIVORE_H
 

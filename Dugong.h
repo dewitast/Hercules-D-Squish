@@ -1,4 +1,5 @@
-//File : Dugong.h
+/**	@file	Dugong.h
+  */
 
 #ifndef DUGONG_H
 #define DUGONG_H
@@ -29,20 +30,19 @@ public:
 	  */
 	virtual ~Dugong() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Dugong ke layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara dugong.
 	  */
 	string interact() {return ("Splashh!");}
 
-	
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to Dugong objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to dugong objek tersebut.
 	  */
 	virtual Dugong* clone() const {return new Dugong(*this);}
 
 	/** @brief render.
-	  * Menentukan render dari dugong.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
 	char render(){return 'U';}
 };

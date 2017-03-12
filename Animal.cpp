@@ -1,9 +1,10 @@
+/**	@file	Animal.cpp
+  */
+
 #include "Animal.h"
 
 Animal::Animal()
-{
-	
-}
+{}
 
 Animal::Animal(float w, float f, bool t)
 {

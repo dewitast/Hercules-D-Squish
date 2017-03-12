@@ -1,3 +1,6 @@
+/**	@file	AirHabitat.h
+  */
+
 #ifndef AIRHABITAT_H
 #define AIRHABITAT_H
 
@@ -9,19 +12,17 @@
 
 class AirHabitat : public Habitat{
 public:
-	/** @brief Menentukan render dari AirHabitat.
-		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
 	char render(){return AH;}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to AirHabitat objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to AirHabitat objek tersebut.
 	  */
 	virtual AirHabitat* clone() const {return new AirHabitat(*this);}
 	
-private:
-
-
 };
 
 #endif

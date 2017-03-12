@@ -1,3 +1,6 @@
+/**	@file	Alligator.h
+  */
+
 #include "Zoo.h"
 #include <iostream>
 using namespace std;

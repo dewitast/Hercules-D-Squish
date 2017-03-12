@@ -1,3 +1,6 @@
+/**	@file	Animal.h
+  */
+
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
@@ -6,13 +9,12 @@ using namespace std;
 #include "Point.h"
 
 /** @class Animal.
-  * Kelas abstrak Animal merepresentasikan binatang dalam Virtual Zoo
+  * Kelas abstrak Animal merepresentasikan binatang dalam Virtual Zoo.
   */
-class Animal{
+class Animal {
 public:
-
 	/** @brief Constructor.
-	  * Menciptakan animal kosong
+	  * Menciptakan animal kosong.
 	  */
 	Animal();
 
@@ -74,22 +76,26 @@ public:
 	  */
 	void SetPoint(const Point& P);
 
-	/** @brief Menentukan apakah dua animal merupakan animal yang sama.
-		@param A Objek animal yang akan diperiksa.
-		@return Mengeluarkan true jika kedua objek sama.
+	/** @brief IsSame.
+	  * Menentukan apakah dua animal merupakan animal yang sama.
+	  * @param A Objek animal yang akan diperiksa.
+	  * @return Mengeluarkan true jika kedua objek sama.
 	  */
 	bool IsSame(const Animal& A) const;
 
-	/** @brief Interact.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara animal.
 	  */
 	virtual string interact() = 0; 
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to animal objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to animal objek tersebut.
 	  */
 	virtual Animal* clone() const = 0;
 
-	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
 	virtual char render() = 0;
 

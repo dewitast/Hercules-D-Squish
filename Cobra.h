@@ -1,4 +1,5 @@
-// file Cobra.h
+/**	@file	Cobra.h
+  */
 
 #ifndef COBRA_H
 #define COBRA_H
@@ -29,19 +30,19 @@ public :
 	  */
 	virtual ~Cobra() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara cobra pada layar.
+	/** @brief interact.
+	  * @return Mengembalikan string yang merepresentasikan suara cobra.
 	  */
 	string interact() { return ("Ssshh!"); }
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to cobra objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to cobra objek tersebut.
 	  */
 	virtual Cobra* clone() const {return new Cobra(*this);}
 
 	/** @brief render.
-	  * Menentukan render dari cobra.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
 	char render(){return 'C';}
 };

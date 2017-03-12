@@ -1,3 +1,6 @@
+/**	@file	Cell.h
+  */
+
 #ifndef CELL_H
 #define CELL_H
 
@@ -8,13 +11,14 @@
   */
 class Cell : public Renderable{
 public:
-	/** @brief Menentukan char yang akan dicetak oleh Cell.
-		@return Mengembalikan char yang merupakan representasi objek ketika dicetak
+	/** @brief render.
+	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
 	virtual char render() = 0;
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to cell objek tersebut
+	/** @brief clone.
+	  * Melakukan cloning untuk menciptakan objek baru.
+	  * @return Mengeluarkan pointer to cell objek tersebut.
 	  */
 	virtual Cell* clone() const = 0;
 
