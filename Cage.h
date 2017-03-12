@@ -107,6 +107,13 @@ public:
 	  */
 	void Interact() const;
 
+	/** @brief CanPut.
+	  * Menentukan apakah A dapat dimasukkan ke cage.
+	  * @param A Animal yang akan dimasukkan.
+	  * @return Mengeluarkan true jika A dapat dimasukkan ke cage.
+	  */
+	bool CanPut(const Animal& A) const;
+
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
 	const int MaxSize = 100; // ukuran maksimal Cage
