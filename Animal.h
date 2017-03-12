@@ -23,6 +23,10 @@ public:
 	  * @param t Status jinak binatang.
 	  */
 	Animal(float w, float f, bool t);
+
+	/** @brief Destructor.
+	  */
+	virtual ~Animal() {}
 	
 	/** @brief GetWeight.
 	  * @return Mengembalikan nilai weight binatang.
@@ -69,6 +73,12 @@ public:
 	  * @param P Objek point yang akan di-set pada lokasi animal.
 	  */
 	void SetPoint(const Point& P);
+
+	/** @brief Menentukan apakah dua animal merupakan animal yang sama.
+		@param A Objek animal yang akan diperiksa.
+		@return Mengeluarkan true jika kedua objek sama.
+	  */
+	bool IsSame(const Animal& A) const;
 
 	/** @brief Interact.
 	  */

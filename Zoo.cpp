@@ -1,7 +1,5 @@
 #include "Zoo.h"
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 
 Zoo::Zoo() : baris(0), kolom(0)
@@ -32,7 +30,7 @@ Zoo::Zoo(const Zoo& z) : baris(z.baris), kolom(z.kolom)
 	jumlahcage = z.jumlahcage;
 	cage = new Cage[jumlahcage];
 	for (int i=0;i<jumlahcage;++i)
-		cage[i] = z.cage[i];
+		cage[i] = z.cage[i];	
 }
 
 Zoo& Zoo::operator=(const Zoo& z)

@@ -58,3 +58,8 @@ void Animal::SetPoint(const Point& P)
 {
 	pos = P;
 }
+
+bool Animal::IsSame(const Animal& A) const
+{
+	return (pos.IsSame(A.pos));
+}

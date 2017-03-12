@@ -67,33 +67,29 @@ public:
 	  */
 	void AdoptAnimal(Animal& A);
 
+	/** @brief Melepas suatu binatang yang terdapat pada cage.
+		@param i Nilai indeks binatang yang akan dibuang.
+	  */
+	void ReleaseAnimal(int i);
+
 	/** @brief Menentukan apakah Cage kosong.
 		@return Mengeluarkan true jika Cage kosong
 	  */
 	bool IsEmpty() const {return size==0;}
 
-	/** @brief Menentukan apakah Cage merupakan Cage berisi LandHabitat.
-		@return Mengembalikan true jika Habitat dalam Cage merupakan LandHabitat.
-	  */
-	bool IsLand() const;
-
-	/** @brief Menentukan apakah Cage merupakan Cage berisi WaterHabitat.
-		@return Mengembalikan true jika Habitat dalam Cage merupakan WaterHabitat.
-	  */
-	bool IsWater() const;
-
-	/** @brief Menentukan apakah Cage merupakan Cage berisi AirHabitat.
-		@return Mengembalikan true jika Habitat dalam Cage merupakan AirHabitat.
-	  */
-	bool IsAir() const;
-
 	/** @brief Menentukan apakah Cage sudah terisi.
 		@param i Nilai indeks yang akan diperiksa.
 		@return Mengembalikan true jika terdapat binatang habitat Cage pada indeks ke i.
 	  */
-	bool IsOccupied(int i);
+	bool IsOccupied(int i) const;
 
-private:
+	/** @brief Menentukan apakah suatu binatang terdapat pada cage.
+		@param A Objek animal yang akan diperiksa.
+		@return Mengeluarkan indeks A jika A berada pada cage dan -1 jika tidak ada.
+	  */
+	int IsInCage(const Animal &A) const;
+
+public:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
 	const int MaxSize = 100; // ukuran maksimal Cage
 	const int size; //ukuran Cage

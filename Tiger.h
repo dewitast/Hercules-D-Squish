@@ -26,6 +26,8 @@ public:
 	  */
 	Tiger(float w, float f, bool t) : Animal(w, f, t) { }
 
+	virtual ~Tiger() {}
+
 	string interact() {return ("Growl");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru
