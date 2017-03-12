@@ -1,4 +1,5 @@
-//file : PolarBear.h
+/**	@file	PolarBear.h
+  */
 
 #ifndef POLARBEAR_H
 #define POLARBEAR_H
@@ -11,7 +12,6 @@
 /** @class PolarBear
   * kelas PolarBear merupakan kelas untuk real object PolarBear
   */
-
 class PolarBear : public LandAnimal, public WaterAnimal, public Carnivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -19,8 +19,8 @@ public:
 	  */
 	PolarBear() : Animal(300, 15, false) { }
 
-	/** @brief Constructor.
-	  * Menciptakan objek PolarBear dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek PolarBear dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat PolarBear.
 	  * @param f Jumlah makanan PolarBear.
 	  * @param t Status jinak PolarBear.
@@ -31,21 +31,21 @@ public:
 	  */
 	virtual ~PolarBear() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara PolarBear pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara PolarBear.
 	  */
 	string interact() {return ("Auuummm");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to polar bear objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek PolarBear baru
+	  * @return Mengembalikan pointer to PolarBear objek tersebut.
 	  */
 	virtual PolarBear* clone() const {return new PolarBear(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari polar bear.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode PolarBear.
 	  */
 	char render(){return 'B';}
+
 };
 
 #endif

@@ -1,4 +1,5 @@
-//file : Parrot.h
+/**	@file	Parrot.h
+  */
 
 #ifndef PARROT_H
 #define PARROT_H
@@ -10,7 +11,6 @@
 /** @class Parrot
   * kelas Parrot merupakan kelas untuk real object Parrot
   */
-
 class Parrot : public FlyingAnimal, public Omnivore, public Aves {
 public:
 	/** @brief Constructor.
@@ -18,8 +18,8 @@ public:
 	  */
 	Parrot() : Animal(1.2, 0.06, true) { }
 
-	/** @brief Constructor.
-	  * Menciptakan objek Parrot dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Parrot dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Parrot.
 	  * @param f Jumlah makanan Parrot.
 	  * @param t Status jinak Parrot.
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Parrot() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Parrot pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Parrot.
 	  */
 	string interact() {return ("Cuiitt");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to parrot objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Parrot baru
+	  * @return Mengembalikan pointer to Parrot objek tersebut.
 	  */
 	virtual Parrot* clone() const {return new Parrot(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari parrot.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Parrot.
 	  */
 	char render(){return 'P';}
+
 };
 
 #endif

@@ -1,4 +1,5 @@
-//file : Iguana.h
+/**	@file	Iguana.h
+  */
 
 #ifndef IGUANA_H
 #define IGUANA_H
@@ -10,7 +11,6 @@
 /** @class Iguana
   * kelas Iguana merupakan kelas untuk real object Iguana
   */
-
 class Iguana : public LandAnimal, public Herbivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -19,7 +19,7 @@ public:
 	Iguana() : Animal(6, 0.3, true) { }
 
 	/** @brief Constructor.
-	  * Menciptakan objek Iguana dengan berat w, jumlah makanan f, dan status jinak t.
+	  * Menciptakan objek Iguana dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Iguana.
 	  * @param f Jumlah makanan Iguana.
 	  * @param t Status jinak Iguana.
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Iguana() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Iguana pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Iguana.
 	  */
 	string interact() {return ("Purrrr");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to iguana objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Iguana baru
+	  * @return Mengembalikan pointer to Iguana objek tersebut.
 	  */
 	virtual Iguana* clone() const {return new Iguana(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari iguana.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Iguana.
 	  */
 	char render(){return 'I';}
+	
 };
 
 #endif

@@ -1,4 +1,4 @@
-/**	@file	Driver.cpp
+/**	@file	Driver.h
   */
 
 #ifndef DRIVER_H
@@ -40,7 +40,7 @@ class Driver {
 
 		/** @brief Destructor.
 	 	 */
-		virtual ~Driver();
+		virtual ~Driver() {}
 		
 	public:
 		Zoo Z;

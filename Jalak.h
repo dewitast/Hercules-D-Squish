@@ -1,4 +1,5 @@
-// file Jalak.h
+/**	@file	Jalak.h
+  */
 
 #ifndef JALAK_H
 #define JALAK_H
@@ -7,21 +8,21 @@
 #include "Herbivore.h"
 #include "Aves.h"
 
-/** @class Jalak.
-  * Kelas Jalak merupakan kelas untuk real object jalak.
+/** @class Jalak
+  * Kelas Jalak merupakan kelas untuk real object Jalak
   */
 class Jalak : public FlyingAnimal, public Herbivore, public Aves {
 public :
 	/** @brief Constructor.
-	  * Menciptakan objek Jalak kosong.
+	  * Menciptakan objek Jalak.
 	  */
 	Jalak() : Animal(0.1,0.005,true) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek jalak kosong dengan berat w, jumlah makanan f, dan status jinak t.
-	  * @param w Berat jalak.
-	  * @param f Jumlah makanan jalak.
-	  * @param t Status jinak jalak.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Jalak dengan berat w, jumlah makanan f, dan status jinak t
+	  * @param w Berat Jalak.
+	  * @param f Jumlah makanan Jalak.
+	  * @param t Status jinak Jalak.
 	  */
 	Jalak(float w, float f, bool t) : Animal(w,f,t) {}
 
@@ -29,21 +30,21 @@ public :
 	  */
 	virtual ~Jalak() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara jalak pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Jalak.
 	  */
 	string interact() { return ("Tweet!"); }
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to jalak objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Jalak baru
+	  * @return Mengembalikan pointer to Jalak objek tersebut.
 	  */
 	virtual Jalak* clone() const {return new Jalak(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari jalak.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Jalak.
 	  */
 	char render(){return 'J';}
+	
 };
 
 #endif
