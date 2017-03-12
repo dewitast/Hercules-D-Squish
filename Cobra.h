@@ -25,6 +25,10 @@ public :
 	  */
 	Cobra(float w, float f, bool t) : Animal(w,f,t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Cobra() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara cobra pada layar.
 	  */

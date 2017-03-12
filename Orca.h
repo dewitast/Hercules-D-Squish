@@ -25,6 +25,10 @@ public :
 	  */
 	Orca(float w, float f, bool t) : Animal(w,f,t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Orca() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara orca pada layar.
 	  */

@@ -28,7 +28,7 @@ public :
 	  */
 	Point& operator= (const Point& P);
 
-	/** @brief Destrutor.
+	/** @brief Destructor.
 	  */
 	~Point();
 
