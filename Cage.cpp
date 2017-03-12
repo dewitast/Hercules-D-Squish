@@ -52,7 +52,7 @@ Cage::~Cage()
 void Cage::AdoptAnimal(Animal& A)
 {
 	if (IsFull()) cout << "Kandang penuh." << endl;
-	else if (!IsInCage(A))
+	else if (IsInCage(A)==-1)
 	{
 		srand (time(NULL));
 		int random = rand() % size;
@@ -78,7 +78,7 @@ bool Cage::IsOccupied(int i) const
 	int ind = 0;
 	while ((!found)&&(ind<TotalAnimal))
 	{
-		if ((a[i]->GetPos()).IsSame(Loc[i])) found = true;
+		if (((*(a[ind])).GetPos()).IsSame(Loc[i])) found = true;
 		else ++ind;
 	}
 	return found;
@@ -94,5 +94,5 @@ int Cage::IsInCage(const Animal &A) const
 		else ++i;
 	}
 	if (found) return i;
-	else return 0;
+	else return -1;
 }

@@ -89,7 +89,7 @@ public:
 	  */
 	int IsInCage(const Animal &A) const;
 
-public:
+private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
 	const int MaxSize = 100; // ukuran maksimal Cage
 	const int size; //ukuran Cage
