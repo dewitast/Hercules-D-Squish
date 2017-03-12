@@ -64,6 +64,8 @@ public:
 	  */
 	friend istream& operator>>(istream& is, Zoo& z);
 
+	void ReadAnimal();
+
 	/** @brief GetElement.
 	  * @param P Point yang akan diambil.
 	  * @return Mengembalikan cell yang terdapat pada lokasi point P.

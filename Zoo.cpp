@@ -151,7 +151,181 @@ istream& operator>>(istream& is, Zoo& z)
 			}
 		}
 	}
+	
 	return is;
+}
+
+void Zoo::ReadAnimal()
+{
+	Cage ca;
+	char c;
+	int abs, ord;
+	ifstream myfile;
+	myfile.open("animal.txt");
+	while (myfile >> c)
+	{
+		if (c == 'A')
+		{
+			Alligator A;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(A);
+		}
+		else if (c == 'C')
+		{
+			Cobra C;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(C);
+		}
+		else if (c == 'M')
+		{
+			Cormorant M;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(M);
+		}
+		else if (c == 'N')
+		{
+			Dolphin N;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(N);
+		}
+		else if (c == 'D')
+		{
+			Duck D;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(D);
+		}
+		else if (c == 'U')
+		{
+			Dugong U;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(U);
+		}
+		else if (c == 'E')
+		{
+			Eagle E;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(E);
+		}
+		else if (c == 'H')
+		{
+			Elephant H;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(H);
+		}
+		else if (c == 'F')
+		{
+			Giraffe F;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(F);
+		}
+		else if (c == 'G')
+		{
+			Goat G;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(G);
+		}
+		else if (c == 'I')
+		{
+			Iguana I;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(I);
+		}
+		else if (c == 'J')
+		{
+			Jalak J;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(J);
+		}
+		else if (c == 'K')
+		{
+			Komodo K;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(K);
+		}
+		else if (c == 'L')
+		{
+			Lion L;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(L);
+		}
+		else if (c == 'R')
+		{
+			Orca R;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(R);
+		}
+		else if (c == 'O')
+		{
+			Owl O;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(O);
+		}
+		else if (c == 'P')
+		{
+			Parrot P;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(P);
+		}
+		else if (c == 'B')
+		{
+			PolarBear B;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(B);
+		}
+		else if (c == 'T')
+		{
+			Tiger T;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(T);
+		}
+		else if (c == 'W')
+		{
+			Walrus W;
+			myfile >> abs;
+			myfile >> ord;
+			ca = SearchPoint(abs, ord);
+			AdoptAnimal(W);
+		}
+	}
+	myfile.close();
 }
 
 Cell& Zoo::GetElement(const Point& P) const
