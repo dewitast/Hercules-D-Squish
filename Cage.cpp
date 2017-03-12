@@ -149,6 +149,7 @@ void Cage::AddPoint(Point P)
 	delete [] Loc;
 	Loc = temp;
 	++size;
+}
 
 bool Cage::CanPut(const Animal& A) const
 {

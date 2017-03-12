@@ -113,21 +113,17 @@ public:
 	  */
 	void Interact() const;
 
-<<<<<<< HEAD
 	/** @brief AddPoint.
 	  * Menambahkan Loc baru di dalam Cage.
 	  */
 	void AddPoint(Point P);
 
-
-=======
 	/** @brief CanPut.
 	  * Menentukan apakah A dapat dimasukkan ke cage.
 	  * @param A Animal yang akan dimasukkan.
 	  * @return Mengeluarkan true jika A dapat dimasukkan ke cage.
 	  */
 	bool CanPut(const Animal& A) const;
->>>>>>> e98f706df96b1fb5df3e3fecf0bfb9e0b7f964b2
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

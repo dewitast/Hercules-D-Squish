@@ -111,11 +111,11 @@ istream& operator>>(istream& is, Zoo& z)
 	{
 		if (i<z.beff)
 		{
-			Point P;
-			P.SetAbsis(i);
-			P.SetOrdinat(j);
 			for (int j=0; j<kol; j++)
 			{
+				Point P;
+				P.SetAbsis(i);
+				P.SetOrdinat(j);
 				is >> c;
 				if (j<z.keff)
 				{
@@ -124,14 +124,14 @@ istream& operator>>(istream& is, Zoo& z)
 						z.cell[i][j] = new LandHabitat();
 						if (i!=0)
 						{
-							if (z.cell[i-1][j].IsLandHabitat())
+							if (z.cell[i-1][j]->IsLandHabitat())
 							{
 								z.SearchPoint(i-1,j).AddPoint(P);
 							}
 						}
 						else if (j!=0)
 						{
-							if (z.cell[i][j-1].IsLandHabitat())
+							if (z.cell[i][j-1]->IsLandHabitat())
 							{
 								z.SearchPoint(i,j-1).AddPoint(P);
 							}
@@ -139,7 +139,7 @@ istream& operator>>(istream& is, Zoo& z)
 						else
 						{
 							Cage c(i,j);
-							z.AddCage(c)
+							z.AddCage(c);
 						}
 					}
 					else if (c=='^')
@@ -147,14 +147,14 @@ istream& operator>>(istream& is, Zoo& z)
 						z.cell[i][j] = new AirHabitat();
 						if (i!=0)
 						{
-							if (z.cell[i-1][j].IsAirHabitat())
+							if (z.cell[i-1][j]->IsAirHabitat())
 							{
 								z.SearchPoint(i-1,j).AddPoint(P);
 							}
 						}
 						else if (j!=0)
 						{
-							if (z.cell[i][j-1].IsAirHabitat())
+							if (z.cell[i][j-1]->IsAirHabitat())
 							{
 								z.SearchPoint(i,j-1).AddPoint(P);
 							}
@@ -162,7 +162,7 @@ istream& operator>>(istream& is, Zoo& z)
 						else
 						{
 							Cage c(i,j);
-							z.AddCage(c)
+							z.AddCage(c);
 						}
 					}
 					else if (c=='~')
@@ -170,14 +170,14 @@ istream& operator>>(istream& is, Zoo& z)
 						z.cell[i][j] = new WaterHabitat();
 						if (i!=0)
 						{
-							if (z.cell[i-1][j].IsWaterHabitat())
+							if (z.cell[i-1][j]->IsWaterHabitat())
 							{
 								z.SearchPoint(i-1,j).AddPoint(P);
 							}
 						}
 						else if (j!=0)
 						{
-							if (z.cell[i][j-1].IsWaterHabitat())
+							if (z.cell[i][j-1]->IsWaterHabitat())
 							{
 								z.SearchPoint(i,j-1).AddPoint(P);
 							}
@@ -185,7 +185,7 @@ istream& operator>>(istream& is, Zoo& z)
 						else
 						{
 							Cage c(i,j);
-							z.AddCage(c)
+							z.AddCage(c);
 						}
 					}
 					else if (c=='S')
