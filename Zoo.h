@@ -13,6 +13,26 @@
 #include "Road.h"
 #include "Exit.h"
 #include "Entrance.h"
+#include "Alligator.h"
+#include "Cobra.h"
+#include "Cormorant.h"
+#include "Dolphin.h"
+#include "Duck.h"
+#include "Dugong.h"
+#include "Eagle.h"
+#include "Elephant.h"
+#include "Giraffe.h"
+#include "Goat.h"
+#include "Iguana.h"
+#include "Jalak.h"
+#include "Komodo.h"
+#include "Lion.h"
+#include "Orca.h"
+#include "Owl.h"
+#include "Parrot.h"
+#include "PolarBear.h"
+#include "Tiger.h"
+#include "Walrus.h"
 
 /** @class Zoo.
   * Kelas abstrak Zoo merupakan simulasi dari kebun binatang berisi matriks Cell.
@@ -63,6 +83,11 @@ public:
 	  * @return Mengeluarkan objek ostream yang akan dicetak.
 	  */
 	friend istream& operator>>(istream& is, Zoo& z);
+
+	/** @brief ReadAnimal
+	  * Membaca Animal dari file eksternal.
+	  */
+	void ReadAnimal();
 
 	/** @brief GetElement.
 	  * @param P Point yang akan diambil.

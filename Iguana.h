@@ -33,7 +33,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara Iguana pada layar.
 	  */
-	string Interact() {return ("Purrrr");}
+	string interact() {return ("Purrrr");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to iguana objek tersebut

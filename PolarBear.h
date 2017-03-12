@@ -34,7 +34,7 @@ public:
 	/** @brief Interact.
 	  * Menampilkan suara PolarBear pada layar.
 	  */
-	void Interact() {cout << "Auuummm" << endl;}
+	string interact() {return ("Auuummm");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru
 		@return Mengeluarkan pointer to polar bear objek tersebut
