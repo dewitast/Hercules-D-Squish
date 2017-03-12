@@ -41,13 +41,14 @@ Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 
 Zoo& Zoo::operator=(const Zoo& z)
 {
-	int b = (baris>z.baris)? z.baris:baris , k = (kolom>z.kolom)? z.kolom:kolom;
-	for (int i=0;i<b;++i)
-		for (int j=0;j<k;++j)
-		{
+	for (int i=0;i<beff;++i)
+		for (int j=0;j<beff;++j)
 			delete cell[i][j];
+	beff = z.beff;
+	keff = z.keff;
+	for (int i=0;i<beff;++i)
+		for (int j=0;j<keff;++j)
 			cell[i][j] = (z.cell[i][j])->clone();
-		}
 	jumlahcage = z.jumlahcage;
 	int j = (jumlahcage>z.jumlahcage)? z.jumlahcage:jumlahcage;
 	for (int i=0;i<j;++i)
@@ -156,6 +157,7 @@ Cell& Zoo::GetElement(int b,int k)
 }
 
 void Zoo::AddAnimal(int i,Animal& A)
+//masi salah
 {
 	Cage &c = cage[i];
 	if (c.IsFull())
