@@ -26,6 +26,13 @@ public:
 	  */
 	Parrot(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~Parrot() {}
+
+	/** @brief Interact.
+	  * Menampilkan suara Parrot pada layar.
+	  */
 	string interact() {return ("Cuiitt");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru

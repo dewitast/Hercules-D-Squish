@@ -26,6 +26,13 @@ public:
 	  */
 	Dolphin(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~Dolphin() {}
+
+	/** @brief Interact.
+	  * Menampilkan suara Dolphin pada layar.
+	  */
 	string interact() {return ("A a a a a");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru

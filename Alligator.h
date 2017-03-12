@@ -27,6 +27,13 @@ public:
 	  */
 	Alligator(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~Alligator() {}
+
+	/** @brief Interact.
+	  * Menampilkan suara Alligator pada layar.
+	  */
 	string interact() {return ("Grrrrrr");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru
