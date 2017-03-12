@@ -26,6 +26,10 @@ public:
 	  */
 	Iguana(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~Iguana() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Iguana pada layar.
 	  */

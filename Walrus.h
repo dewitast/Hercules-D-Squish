@@ -26,6 +26,13 @@ public:
 	  */
 	Walrus(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~Walrus() {}
+
+	/** @brief Interact.
+	  * Menampilkan suara Walrus pada layar.
+	  */
 	string interact() {return ("Aaarhhh");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru

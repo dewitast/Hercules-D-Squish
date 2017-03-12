@@ -25,6 +25,10 @@ public:
 	  */
 	Dugong(float w, float f, bool t) : Animal(w, f, t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Dugong() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Dugong ke layar.
 	  */

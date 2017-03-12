@@ -25,6 +25,10 @@ public:
 	  */
 	Giraffe(float w, float f, bool t) : Animal(w, f, t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Giraffe() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Giraffe ke layar.
 	  */

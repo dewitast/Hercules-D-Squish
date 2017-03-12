@@ -25,6 +25,10 @@ public:
 	  */
 	Duck(float w, float f, bool t) : Animal(w, f, t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Duck() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Duck ke layar.
 	  */

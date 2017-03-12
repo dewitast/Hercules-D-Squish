@@ -27,6 +27,13 @@ public:
 	  */
 	PolarBear(float w, float f, bool t) : Animal(w, f, t) { }
 
+	/** @brief Destructor.
+	  */
+	virtual ~PolarBear() {}
+
+	/** @brief Interact.
+	  * Menampilkan suara PolarBear pada layar.
+	  */
 	void Interact() {cout << "Auuummm" << endl;}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru

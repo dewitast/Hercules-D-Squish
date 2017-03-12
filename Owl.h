@@ -25,6 +25,10 @@ public :
 	  */
 	Owl(float w, float f, bool t) : Animal(w,f,t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Owl() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara owl pada layar.
 	  */

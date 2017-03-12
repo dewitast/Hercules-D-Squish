@@ -2,13 +2,17 @@
 #include <iostream>
 using namespace std;
 
-Zoo::Zoo() : baris(100), kolom(100)
+Zoo::Zoo():baris(100),kolom(100)
 {
-	jumlahcage = 10;
+	beff = 0;
+	keff = 0;
+	jumlahcage = 0;
 }
 
-Zoo::Zoo(int b, int k, int j) : baris(b), kolom(k)
+Zoo::Zoo(int b, int k, int j):baris(b),kolom(k)
 {
+	beff = 0;
+	keff = 0;
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
 	{
@@ -18,8 +22,10 @@ Zoo::Zoo(int b, int k, int j) : baris(b), kolom(k)
 	cage = new Cage[jumlahcage];
 }
 
-Zoo::Zoo(const Zoo& z) : baris(z.baris), kolom(z.kolom)
+Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 {
+	beff = z.beff;
+	keff = z.keff;
 	cell = new Cell**[baris];
 	for (int i=0;i<baris;++i)
 	{
@@ -63,18 +69,79 @@ Zoo::~Zoo()
 
 ostream& operator<<(ostream& o,const Zoo& z)
 {
-	for (int i=0;i<z.baris;++i)
+	int abs, ord;
+	Point P1, P2;
+	cout << "Absis kiri atas : "; cin << abs; cout << endl;
+	cout << "Ordinat kiri atas : "; cin << ord; cout << endl;
+	P1.SetAbsis(abs); P1.SetOrdinat(ord);
+	cout << "Absis kanan atas : "; cin << abs; cout << endl;
+	cout << "Ordinat kanan atas : "; cin << ord; cout << endl;
+	P2.SetAbsis(abs); P2.SetOrdinat(ord);
+
+	for (int i=P1.GetAbsis();i<=P2.GetAbsis;++i)
 	{
-		for (int j=0;j<z.kolom;++j)
+		for (int j=P1.GetOrdinat();j<P2.GetOrdinat();++j)
 			o << z.cell[i][j]->render() << ' ';
 		o << endl;
 	}
 	return o;
 }
 
-istream& operator>>(istream& i,const Zoo& z)
+istream& operator>>(istream& is, Zoo& z)
 {
 	char c;
+	int brs, kol;
+	is >> brs >> kol;
+	z.beff = (brs>z.baris)?z.baris:brs;
+	z.keff = (kol>z.kolom)?z.kolom:kol;
+	for (int i=0; i<brs; i++)
+	{
+		if (i<z.beff)
+		{
+			for (int j=0; j<kol; j++)
+			{
+				is >> c;
+				if (j<z.keff)
+				{
+					cout << '#' << c << '#' << i << '#' << j << endl;
+					if (c=='L')
+					{
+						z.cell[i][j] = new LandHabitat();
+					}
+					else if (c=='A')
+					{
+						z.cell[i][j] = new AirHabitat();
+					}
+					else if (c=='W')
+					{
+						z.cell[i][j] = new WaterHabitat();
+					}
+					else if (c=='R')
+					{
+						z.cell[i][j] = new Restaurant();
+					}
+					else if (c=='P')
+					{
+						z.cell[i][j] = new Park();
+					}
+					else if (c=='O')
+					{
+						z.cell[i][j] = new Road();
+					}
+					else if (c=='X')
+					{
+						z.cell[i][j] = new Exit();
+					}
+					else if (c=='N')
+					{
+						z.cell[i][j] = new Entrance();
+					}
+				}
+			}
+		}
+	}
+	cout << 1 << endl;
+	return is;
 }
 
 Cell& Zoo::GetElement(const Point& P)
