@@ -24,6 +24,18 @@ Cage::Cage(int s)
 	a = new Animal*[3*size/10];
 }
 
+Cage::Cage(int i, int j)
+{
+	size = 1;
+	Loc = new Point [size];
+	Point P;
+	P.SetAbsis(i);
+	P.SetOrdinat(j);
+	Loc[0] = P;
+	TotalAnimal = 0;
+	a = new Animal*[3*size/10];
+}
+
 Cage::Cage(const Cage& c)
 {
 	size = c.size;
@@ -105,7 +117,7 @@ int Cage::IsInCage(const Animal &A) const
 	else return -1;
 }
 
-bool IsInCage(const Point& P) const
+bool Cage::IsInCage(const Point& P) const
 {
 	bool found = false;
 	int i=0;
@@ -117,8 +129,21 @@ bool IsInCage(const Point& P) const
 	return found;
 }
 
-void Interact() const
+void Cage::Interact() const
 {
 	for (int i=0;i<TotalAnimal;++i)
 		a[i]->interact();
+}
+
+void Cage::AddPoint(Point P)
+{
+	Point* temp = new Point[size+1];
+	for (int i=0; i<size; i++)
+	{
+		temp[i] = Loc[i];
+	}
+	temp[size] = P;
+	delete [] Loc;
+	Loc = temp;
+	++size;
 }

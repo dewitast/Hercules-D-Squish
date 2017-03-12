@@ -23,6 +23,12 @@ public:
 	  */
 	Cage(int s);
 
+	/** @brief Constructor.
+	  * Menciptakan Cage dengan size 1 dan loc i,j.
+	  * @param i,j absis dan ordinat Point pada Cage.
+	  */
+	Cage(int i, int j);
+
 	/** @brief Copy Constructor.
 	  * @param c Objek yang akan di-copy.
 	  */
@@ -106,6 +112,13 @@ public:
 	  * Mencetak interaksi animal cage ke layar.
 	  */
 	void Interact() const;
+
+	/** @brief AddPoint.
+	  * Menambahkan Loc baru di dalam Cage.
+	  */
+	void AddPoint(Point P);
+
+
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

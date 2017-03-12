@@ -106,36 +106,97 @@ istream& operator>>(istream& is, Zoo& z)
 	is >> brs >> kol;
 	z.beff = (brs>z.baris)?z.baris:brs;
 	z.keff = (kol>z.kolom)?z.kolom:kol;
+	//jumlahcage = 0;
 	for (int i=0; i<brs; i++)
 	{
 		if (i<z.beff)
 		{
+			Point P;
+			P.SetAbsis(i);
+			P.SetOrdinat(j);
 			for (int j=0; j<kol; j++)
 			{
 				is >> c;
 				if (j<z.keff)
 				{
-					if (c=='L')
+					if (c=='@')
 					{
 						z.cell[i][j] = new LandHabitat();
+						if (i!=0)
+						{
+							if (z.cell[i-1][j].IsLandHabitat())
+							{
+								z.SearchPoint(i-1,j).AddPoint(P);
+							}
+						}
+						else if (j!=0)
+						{
+							if (z.cell[i][j-1].IsLandHabitat())
+							{
+								z.SearchPoint(i,j-1).AddPoint(P);
+							}
+						}
+						else
+						{
+							Cage c(i,j);
+							z.AddCage(c)
+						}
 					}
-					else if (c=='A')
+					else if (c=='^')
 					{
 						z.cell[i][j] = new AirHabitat();
+						if (i!=0)
+						{
+							if (z.cell[i-1][j].IsAirHabitat())
+							{
+								z.SearchPoint(i-1,j).AddPoint(P);
+							}
+						}
+						else if (j!=0)
+						{
+							if (z.cell[i][j-1].IsAirHabitat())
+							{
+								z.SearchPoint(i,j-1).AddPoint(P);
+							}
+						}
+						else
+						{
+							Cage c(i,j);
+							z.AddCage(c)
+						}
 					}
-					else if (c=='W')
+					else if (c=='~')
 					{
 						z.cell[i][j] = new WaterHabitat();
+						if (i!=0)
+						{
+							if (z.cell[i-1][j].IsWaterHabitat())
+							{
+								z.SearchPoint(i-1,j).AddPoint(P);
+							}
+						}
+						else if (j!=0)
+						{
+							if (z.cell[i][j-1].IsWaterHabitat())
+							{
+								z.SearchPoint(i,j-1).AddPoint(P);
+							}
+						}
+						else
+						{
+							Cage c(i,j);
+							z.AddCage(c)
+						}
 					}
-					else if (c=='R')
+					else if (c=='S')
 					{
 						z.cell[i][j] = new Restaurant();
 					}
-					else if (c=='P')
+					else if (c=='#')
 					{
 						z.cell[i][j] = new Park();
 					}
-					else if (c=='O')
+					else if (c=='+')
 					{
 						z.cell[i][j] = new Road();
 					}
@@ -143,7 +204,7 @@ istream& operator>>(istream& is, Zoo& z)
 					{
 						z.cell[i][j] = new Exit();
 					}
-					else if (c=='N')
+					else if (c=='Z')
 					{
 						z.cell[i][j] = new Entrance();
 					}
@@ -151,6 +212,7 @@ istream& operator>>(istream& is, Zoo& z)
 			}
 		}
 	}
+
 	return is;
 }
 
@@ -205,4 +267,32 @@ Cage& Zoo::SearchPoint(const Point& P) const
 		else ++i;
 	}
 	return cage[i];
+}
+
+Cage& Zoo::SearchPoint(int i, int j) const
+{
+	bool found = false;
+	int a=0;
+	Point P;
+	P.SetAbsis(i);
+	P.SetOrdinat(j);
+	while (!found)
+	{
+		if (cage[a].IsInCage(P)) found = true;
+		else ++a;
+	}
+	return cage[a];
+}
+
+void Zoo::AddCage(Cage c)
+{
+	Cage* temp = new Cage[jumlahcage+1];
+	for (int i=0; i<jumlahcage; i++)
+	{
+		temp[i] = cage[i];
+	}
+	temp[jumlahcage] = c;
+	delete [] cage;
+	cage = temp;
+	++jumlahcage;
 }
