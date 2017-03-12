@@ -2,11 +2,18 @@
 #include <iostream>
 using namespace std;
 
-Zoo::Zoo():baris(100),kolom(100)
+Zoo::Zoo():baris(50),kolom(50)
 {
+	cout << "ctor" << endl;
 	beff = 0;
 	keff = 0;
 	jumlahcage = 0;
+	cell = new Cell**[baris];
+	for (int i=0;i<baris;++i)
+	{
+		cell[i] = new Cell*[kolom];
+	}
+	cage = new Cage[jumlahcage];
 }
 
 Zoo::Zoo(int b, int k, int j):baris(b),kolom(k)
@@ -62,10 +69,10 @@ Zoo& Zoo::operator=(const Zoo& z)
 
 Zoo::~Zoo()
 {
-	for (int i=0;i<baris;++i)
+	for (int i=0;i<beff;++i)
 	{
-		for (int j=0;j<kolom;++j)
-			delete [] cell[i][j],cout << "delete " << i << ' ' << j << endl;
+		for (int j=0;j<keff;++j)
+			delete cell[i][j],cout << "delete " << i << ' ' << j << endl;
 		delete [] cell[i];
 		cout << "delete " << i << endl;
 	}		
@@ -144,6 +151,7 @@ istream& operator>>(istream& is, Zoo& z)
 					{
 						z.cell[i][j] = new Entrance();
 					}
+					cout << '#' << c << '#' << i << '#' << j << endl;
 				}
 			}
 		}

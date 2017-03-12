@@ -1,9 +1,15 @@
 // file Driver.cpp
 
 #include "Driver.h"
+#include <fstream>
 
 	Driver::Driver()
-	{}
+	{
+		ifstream myfile;
+		myfile.open("map.txt");
+		myfile >> Z;
+		myfile.close();
+	}
 
 	void Driver::DisplayZoo()
 	{
@@ -24,4 +30,8 @@
 			}
 		}
 		return sum;
+	}
+	Driver::~Driver()
+	{
+		
 	}

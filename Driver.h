@@ -15,6 +15,7 @@ class Driver {
 		void DisplayZoo();
 		void TourZoo();
 		float FoodCalc();
+		virtual ~Driver();
 	private :
 		Zoo Z;
 };
