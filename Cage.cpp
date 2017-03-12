@@ -62,13 +62,16 @@ void Cage::AdoptAnimal(Animal& A)
 	if (IsFull()) cout << "Kandang penuh." << endl;
 	else if (IsInCage(A)==-1)
 	{
-		srand (time(NULL));
-		int random = rand() % size;
-		while (IsOccupied(random))
-			random = rand() % size;
-		A.SetPoint(GetPoint(random));
-		a[TotalAnimal] = A.clone();
-		++TotalAnimal;
+		if (CanPut(A))
+		{
+			srand (time(NULL));
+			int random = rand() % size;
+			while (IsOccupied(random))
+				random = rand() % size;
+			A.SetPoint(GetPoint(random));
+			a[TotalAnimal] = A.clone();
+			++TotalAnimal;
+		}
 	}
 }
 
@@ -105,7 +108,7 @@ int Cage::IsInCage(const Animal &A) const
 	else return -1;
 }
 
-bool IsInCage(const Point& P) const
+bool Cage::IsInCage(const Point& P) const
 {
 	bool found = false;
 	int i=0;
@@ -117,8 +120,15 @@ bool IsInCage(const Point& P) const
 	return found;
 }
 
-void Interact() const
+void Cage::Interact() const
 {
 	for (int i=0;i<TotalAnimal;++i)
 		a[i]->interact();
+}
+
+bool Cage::CanPut(const Animal& A) const
+{
+	if (TotalAnimal==0) return true;
+	if (a[0]->GetTame()==A.GetTame()) return true;
+	return false;
 }
