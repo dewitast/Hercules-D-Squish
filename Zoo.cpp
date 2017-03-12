@@ -89,11 +89,11 @@ ostream& operator<<(ostream& o,const Zoo& z)
 	cout << "Absis kanan bawah : "; cin >> abs;
 	cout << "Ordinat kanan bawah : "; cin >> ord;
 	P2.SetAbsis(abs); P2.SetOrdinat(ord);
-
+	cout << 1 << endl;
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
 	{
 		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
-			o << z.cell[i][j]->render() << ' ';
+			cout << i << j << endl,o << z.cell[i][j]->render() << ' ';
 		o << endl;
 	}
 	return o;
@@ -119,6 +119,7 @@ istream& operator>>(istream& is, Zoo& z)
 				is >> c;
 				if (j<z.keff)
 				{
+					cout << i << ' ' << j << endl;
 					if (c=='@')
 					{
 						z.cell[i][j] = new LandHabitat();
