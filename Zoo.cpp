@@ -131,14 +131,12 @@ istream& operator>>(istream& is, Zoo& z)
 							if (z.cell[i-1][j]->IsLandHabitat())
 							{
 								z.SearchPoint(i-1,j).AddPoint(P);
-								cout << "sini" <<endl;
 							}
 						}
 						else if (j!=0)
 						{
 							if (z.cell[i][j-1]->IsLandHabitat())
 							{
-								cout << "sinia" <<endl;
 								z.SearchPoint(i,j-1).AddPoint(P);
 							}
 						}
