@@ -89,6 +89,10 @@ public:
 	  */
 	virtual Animal* clone() const = 0;
 
+	/** @brief Mengembalikan char yang merupakan representasi objek ketika dicetak
+	  */
+	virtual char render() = 0;
+
 protected:
 	float weight;
 	float food;

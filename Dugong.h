@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to Dugong objek tersebut
 	  */
 	virtual Dugong* clone() const {return new Dugong(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari dugong.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'U';}
 };
 
 #endif

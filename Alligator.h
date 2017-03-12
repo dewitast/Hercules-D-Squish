@@ -37,9 +37,15 @@ public:
 	string interact() {return ("Grrrrrr");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to alligator objek tersebut
+	  * @return Mengeluarkan pointer to alligator objek tersebut
 	  */
 	virtual Alligator* clone() const {return new Alligator(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari alligator.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'A';}
 };
 
 #endif

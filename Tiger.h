@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to tiger objek tersebut
 	  */
 	virtual Tiger* clone() const {return new Tiger(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari tiger.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'T';}
 };
 
 #endif

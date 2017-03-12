@@ -38,6 +38,12 @@ public:
 		@return Mengeluarkan pointer to eagle objek tersebut
 	  */
 	virtual Eagle* clone() const {return new Eagle(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari eagle.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'E';}
 };
 
 #endif

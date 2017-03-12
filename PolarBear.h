@@ -40,6 +40,12 @@ public:
 		@return Mengeluarkan pointer to polar bear objek tersebut
 	  */
 	virtual PolarBear* clone() const {return new PolarBear(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari polar bear.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'B';}
 };
 
 #endif

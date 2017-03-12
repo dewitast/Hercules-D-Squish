@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to dolphin objek tersebut
 	  */
 	virtual Dolphin* clone() const {return new Dolphin(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari dolphin.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'N';}
 };
 
 #endif

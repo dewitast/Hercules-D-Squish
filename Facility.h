@@ -40,11 +40,11 @@ public:
 	bool IsExit(){return (render()==Ex);}
 
 protected:
-	static const char Re = 'R'; //representasi Restaurant ketika dicetak ke layar
-	static const char Pa = 'P'; //representasi Park ketika dicetak ke layar
-	static const char Ro = 'O'; //representasi Road ketika dicetak ke layar
+	static const char Re = 'S'; //representasi Restaurant ketika dicetak ke layar
+	static const char Pa = '#'; //representasi Park ketika dicetak ke layar
+	static const char Ro = '+'; //representasi Road ketika dicetak ke layar
 	static const char Ex = 'X'; //representasi Exit ketika dicetak ke layar
-	static const char Ent = 'N'; //representasi Entrance ketika dicetak ke layar
+	static const char Ent = 'Z'; //representasi Entrance ketika dicetak ke layar
 };
 
 #endif

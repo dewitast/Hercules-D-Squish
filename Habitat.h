@@ -29,9 +29,9 @@ public:
 	  */
 	bool IsAir(){return (render()==AH);}
 protected:
-	static const char LH = 'L'; //representasi LandHabitat ketika dicetak ke layar
-	static const char AH = 'A'; //representasi AirHabitat ketika dicetak ke layar
-	static const char WH = 'W'; //representasi WaterHabitat ketika dicetak ke layar
+	static const char LH = '@'; //representasi LandHabitat ketika dicetak ke layar
+	static const char AH = '^'; //representasi AirHabitat ketika dicetak ke layar
+	static const char WH = '~'; //representasi WaterHabitat ketika dicetak ke layar
 };
 
 #endif

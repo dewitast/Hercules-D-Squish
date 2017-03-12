@@ -38,6 +38,12 @@ public :
 		@return Mengeluarkan pointer to cobra objek tersebut
 	  */
 	virtual Cobra* clone() const {return new Cobra(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari cobra.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'C';}
 };
 
 #endif

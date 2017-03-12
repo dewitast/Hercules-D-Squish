@@ -38,6 +38,12 @@ public :
 		@return Mengeluarkan pointer to elephant objek tersebut
 	  */
 	virtual Elephant* clone() const {return new Elephant(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari elephant.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'H';}
 };
 
 #endif

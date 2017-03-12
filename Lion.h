@@ -38,6 +38,12 @@ public:
 		@return Mengeluarkan pointer to lion objek tersebut
 	  */
 	virtual Lion* clone() const {return new Lion(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari lion.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'L';}
 };
 
 #endif

@@ -38,6 +38,12 @@ public:
 		@return Mengeluarkan pointer to duck objek tersebut
 	  */
 	virtual Duck* clone() const {return new Duck(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari duck.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'D';}
 };
 
 #endif

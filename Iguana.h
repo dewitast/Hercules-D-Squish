@@ -39,6 +39,12 @@ public:
 		@return Mengeluarkan pointer to iguana objek tersebut
 	  */
 	virtual Iguana* clone() const {return new Iguana(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari iguana.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'I';}
 };
 
 #endif

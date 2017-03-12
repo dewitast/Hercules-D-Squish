@@ -38,6 +38,12 @@ public :
 		@return Mengeluarkan pointer to jalak objek tersebut
 	  */
 	virtual Jalak* clone() const {return new Jalak(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari jalak.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'J';}
 };
 
 #endif

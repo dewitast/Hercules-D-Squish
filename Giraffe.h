@@ -38,6 +38,12 @@ public:
 		@return Mengeluarkan pointer to giraffe objek tersebut
 	  */
 	virtual Giraffe* clone() const {return new Giraffe(*this);}
+
+	/** @brief render.
+	  * Menentukan render dari girraffe.
+	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	  */
+	char render(){return 'F';}
 };
 
 #endif
