@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
 	Zoo z;
+	cout << "tes" << endl;
 	ifstream fin;
 	fin.open("map.txt");
 	fin >> z;
