@@ -18,6 +18,8 @@ public:
 		@return Mengeluarkan pointer to Road objek tersebut
 	  */
 	virtual Road* clone() const {return new Road(*this);}
+
+	int dummy() {return 0;} 
 	
 protected:
 };

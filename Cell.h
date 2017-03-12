@@ -18,6 +18,17 @@ public:
 	  */
 	virtual Cell* clone() const = 0;
 
+	virtual bool IsLandHabitat() = 0;
+	virtual bool IsWaterHabitat() = 0;		
+	virtual bool IsAirHabitat() = 0;
+	virtual bool IsRoad() = 0;
+	virtual bool IsPark() = 0;
+	virtual bool IsRestaurant() = 0;
+	virtual bool IsExit() = 0;
+	virtual bool IsEntrance() = 0;
+
+	bool IsHabitat() {return ((IsLandHabitat())||(IsWaterHabitat())||(IsAirHabitat()));}
+
 protected:
 
 };

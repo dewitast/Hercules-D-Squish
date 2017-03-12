@@ -4,7 +4,6 @@ using namespace std;
 
 Zoo::Zoo():baris(50),kolom(50)
 {
-	cout << "ctor" << endl;
 	beff = 0;
 	keff = 0;
 	jumlahcage = 0;
@@ -113,7 +112,6 @@ istream& operator>>(istream& is, Zoo& z)
 				is >> c;
 				if (j<z.keff)
 				{
-					cout << '#' << c << '#' << i << '#' << j << endl;
 					if (c=='L')
 					{
 						z.cell[i][j] = new LandHabitat();
@@ -146,24 +144,32 @@ istream& operator>>(istream& is, Zoo& z)
 					{
 						z.cell[i][j] = new Entrance();
 					}
-					cout << '#' << c << '#' << i << '#' << j << endl;
 				}
 			}
 		}
 	}
-	cout << 1 << endl;
 	return is;
 }
 
-Cell& Zoo::GetElement(const Point& P)
+Cell& Zoo::GetElement(const Point& P) const
 {
 	int x = P.GetAbsis(), y = P.GetOrdinat();
 	return (*(cell[x][y]));
 }
 
-Cell& Zoo::GetElement(int b,int k)
+Cell& Zoo::GetElement(int b,int k) const
 {
 	return (*(cell[b][k]));
+}
+
+int Zoo::GetJumlahCage() const
+{
+	return jumlahcage;
+}
+
+Cage& Zoo::GetCage(int i) const
+{
+	return cage[i];
 }
 
 void Zoo::AddAnimal(int i,Animal& A)
@@ -184,4 +190,16 @@ void Zoo::AddAnimal(int i,Animal& A)
 			random = rand() % size;
 		A.SetPoint(c.GetPoint(random));
 	}
+}
+
+Cage& Zoo::SearchPoint(const Point& P) const
+{
+	bool found = false;
+	int i=0;
+	while (!found)
+	{
+		if (cage[i].IsInCage(P)) found = true;
+		else ++i;
+	}
+	return cage[i];
 }

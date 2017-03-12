@@ -5,22 +5,25 @@
 #include <ctime>
 using namespace std;
 
-Cage::Cage() : size(MaxSize)
+Cage::Cage()
 {
+	size = MaxSize;
 	Loc = new Point [size];
 	TotalAnimal = 0;
 	a = new Animal*[3*size/10];
 }
 
-Cage::Cage(int s) : size(s)
+Cage::Cage(int s)
 {
+	size = s;
 	Loc = new Point [size];
 	TotalAnimal = 0;
 	a = new Animal*[3*size/10];
 }
 
-Cage::Cage(const Cage& c) : size(c.size)
+Cage::Cage(const Cage& c)
 {
+	size = c.size;
 	Loc = new Point [size];
 	for (int i = 0; i < size; ++i)
 		Loc[i] = c.Loc[i];
@@ -32,10 +35,12 @@ Cage::Cage(const Cage& c) : size(c.size)
 
 Cage& Cage::operator=(const Cage& c)
 {
-	int temp = (size>c.size)? c.size : size;
-	for (int i = 0; i < temp; ++i)
+	size = c.size;
+	delete [] Loc;
+	Loc = new Point [size];
+	for (int i = 0; i < size; ++i)
 		Loc[i] = c.Loc[i];
-	TotalAnimal = (c.TotalAnimal>(3*size/10))?(3*size/10):c.TotalAnimal;
+	TotalAnimal = c.TotalAnimal;
 	for (int i=0;i<TotalAnimal;++i)
 		a[i] = (c.a[i])->clone();
 	return *this;
@@ -95,4 +100,22 @@ int Cage::IsInCage(const Animal &A) const
 	}
 	if (found) return i;
 	else return -1;
+}
+
+bool IsInCage(const Point& P) const
+{
+	bool found = false;
+	int i=0;
+	while ((!found)&&(i<size))
+	{
+		if (P.IsSame(Loc[i])) found = true;
+		else ++i;
+	}
+	return found;
+}
+
+void Interact() const
+{
+	for (int i=0;i<TotalAnimal;++i)
+		a[i]->interact();
 }

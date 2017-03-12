@@ -17,27 +17,33 @@ public:
 	/** @brief Menentukan apakah Facility merupakan Restaurant.
 		@return Mengembalikan true jika Facility merupakan Restaurant.
 	  */
-	bool IsRestaurant(){return (render()==Re);}
+	virtual bool IsRestaurant() {return (render()==Re);}
 
 	/** @brief Menentukan apakah Facility merupakan Park.
 		@return Mengembalikan true jika Facility merupakan Park.
 	  */
-	bool IsPark(){return (render()==Pa);}
+	virtual bool IsPark(){return (render()==Pa);}
 
 	/** @brief Menentukan apakah Facility merupakan Road.
 		@return Mengembalikan true jika Facility merupakan Road.
 	  */
-	bool IsRoad(){return (render()==Ro);}
+	virtual bool IsRoad(){return ((render()==Ro)||(render()==Ent)||(render()==Ex));}
 
 	/** @brief Menentukan apakah Facility merupakan Entrance.
 		@return Mengembalikan true jika Facility merupakan Entrance.
 	  */
-	bool IsEntrance(){return (render()==Ent);}
+	virtual bool IsEntrance(){return (render()==Ent);}
 
 	/** @brief Menentukan apakah Facility merupakan Exit.
 		@return Mengembalikan true jika Facility merupakan Exit.
 	  */
-	bool IsExit(){return (render()==Ex);}
+	virtual bool IsExit(){return (render()==Ex);}
+
+	virtual bool IsLandHabitat() {return false;}
+
+	virtual bool IsWaterHabitat() {return false;}	
+
+	virtual bool IsAirHabitat() {return false;}
 
 protected:
 	static const char Re = 'R'; //representasi Restaurant ketika dicetak ke layar

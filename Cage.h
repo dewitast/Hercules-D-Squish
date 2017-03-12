@@ -42,57 +42,70 @@ public:
 	bool IsFull() const {return (TotalAnimal == 3*size/10);}
 
 	/** @brief Getter Size.
-		@return Mengeluarkan ukuran Cage.
+	  * @return Mengeluarkan ukuran Cage.
 	  */
 	int GetSize() const {return size;}
 
 	/** @brief Getter Animal.
-		@return Mengeluarkan array animal pada Cage.
+	  * @param i Nilai indeks animal.
+	  * @return Mengeluarkan array animal pada Cage.
 	  */
-	Animal* GetAnimal() const {return *a;}
+	Animal* GetAnimal(int i) const {return a[i];}
 
 	/** @brief Getter jumlah binatang.
-		@return Mengeluarkan jumlah binatang pada Cage.
+	  * @return Mengeluarkan jumlah binatang pada Cage.
 	  */
 	int GetTotalAnimal() const {return TotalAnimal;}
 
 	/** @brief Getter Point.
-		@param i Nilai indeks yang akan diperiksa.
-		@return Mengeluarkan lokasi Cage pada indeks i.
+	  * @param i Nilai indeks yang akan diperiksa.
+	  * @return Mengeluarkan lokasi Cage pada indeks i.
 	  */
 	Point GetPoint(int i) const {return (Loc[i]);}
 
 	/** @brief Setter.
-		@param A Objek binatang yang akan dimasukkan.
+	  * @param A Objek binatang yang akan dimasukkan.
 	  */
 	void AdoptAnimal(Animal& A);
 
 	/** @brief Melepas suatu binatang yang terdapat pada cage.
-		@param i Nilai indeks binatang yang akan dibuang.
+	  * @param i Nilai indeks binatang yang akan dibuang.
 	  */
 	void ReleaseAnimal(int i);
 
 	/** @brief Menentukan apakah Cage kosong.
-		@return Mengeluarkan true jika Cage kosong
+	  * @return Mengeluarkan true jika Cage kosong
 	  */
 	bool IsEmpty() const {return size==0;}
 
 	/** @brief Menentukan apakah Cage sudah terisi.
-		@param i Nilai indeks yang akan diperiksa.
-		@return Mengembalikan true jika terdapat binatang habitat Cage pada indeks ke i.
+	  * @param i Nilai indeks yang akan diperiksa.
+	  * @return Mengembalikan true jika terdapat binatang habitat Cage pada indeks ke i.
 	  */
 	bool IsOccupied(int i) const;
 
 	/** @brief Menentukan apakah suatu binatang terdapat pada cage.
-		@param A Objek animal yang akan diperiksa.
-		@return Mengeluarkan indeks A jika A berada pada cage dan -1 jika tidak ada.
+	  * @param A Objek animal yang akan diperiksa.
+	  * @return Mengeluarkan indeks A jika A berada pada cage dan -1 jika tidak ada.
 	  */
 	int IsInCage(const Animal &A) const;
+
+	/** @brief IsInCage.
+	  * Menentukan apakah P terdapat dalam cage.
+	  * @param P Point yang akan dicari.
+	  * @return Mengeluarkan true jika P terdapat dalam cage;
+	  */
+	bool IsInCage(const Point& P) const;
+
+	/** @brief Interact.
+	  * Mencetak interaksi animal cage ke layar.
+	  */
+	void Interact() const;
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
 	const int MaxSize = 100; // ukuran maksimal Cage
-	const int size; //ukuran Cage
+	int size; //ukuran Cage
 	Animal** a; // array of pointer to binatang yang terdapat dalam cage tersebut
 	int TotalAnimal; // jumlah hewan yang ada pada cage
 };
