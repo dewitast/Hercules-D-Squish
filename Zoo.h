@@ -114,6 +114,19 @@ public:
 	  */
 	Cage& SearchPoint(const Point& P) const;
 
+	/** @brief SearchPoint.
+	  * Mencari point berada di cage mana.
+	  * @param i dan j absis dan ordinat yang akan dicari.
+	  * @return Mengeluarkan cage yang mengandung P.
+	  */
+	Cage& SearchPoint(int i, int j) const;
+
+	/** @brief AddCage.
+	  * Menambahkan cage baru
+	  * @param c Cage yang ingin ditambahkan
+	  */
+	void AddCage(Cage c);
+
 public:
 	Cell ***cell; //matrix of pointer to cell
 	Cage *cage; //array of cage
