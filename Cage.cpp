@@ -135,7 +135,7 @@ bool Cage::IsInCage(const Point& P) const
 void Cage::Interact() const
 {
 	for (int i=0;i<TotalAnimal;++i)
-		a[i]->interact();
+		cout << a[i]->interact() << endl;
 }
 
 void Cage::AddPoint(Point P)

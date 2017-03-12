@@ -150,7 +150,7 @@ public:
 	  */
 	void AddCage(Cage c);
 
-public:
+private:
 	Cell ***cell; //matrix of pointer to cell
 	Cage *cage; //array of cage
 	int jumlahcage;

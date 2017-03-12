@@ -17,6 +17,7 @@
 			for (int j=0;j<Z.GetKeff();++j)
 				visited[i][j] = false;
 		}
+		Z.ReadAnimal();
 	}
 
 	void Driver::DisplayZoo()
@@ -64,6 +65,9 @@
 		bool found = false;
 		if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
 		{
+			for (int i=0;i<Z.GetBeff();++i)
+				for (int j=0;j<Z.GetKeff();++j)
+					visited[i][j] = false;
 			while (!found)
 			{
 				random = rand() % Z.GetKeff();

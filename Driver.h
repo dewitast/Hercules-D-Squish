@@ -10,7 +10,7 @@
   * Kelas Driver merupakan kelas sebagai pilihan menu aplikasi.
   */
 class Driver {
-	public :
+	public:
 		/** @brief Constructor.
 		  * Menciptakan Cage kosong tanpa animal.
 		  */
@@ -42,7 +42,7 @@ class Driver {
 	 	 */
 		virtual ~Driver();
 		
-	private :
+	public:
 		Zoo Z;
 		bool **visited; //matrix untuk menyatakan cell apa yang sudah dikunjungi.
 		Point P; // current cell
