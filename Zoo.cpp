@@ -107,12 +107,15 @@ istream& operator>>(istream& is, Zoo& z)
 	z.beff = (brs>z.baris)?z.baris:brs;
 	z.keff = (kol>z.kolom)?z.kolom:kol;
 	//jumlahcage = 0;
+	cout << 1 << endl;
 	for (int i=0; i<brs; i++)
 	{
 		if (i<z.beff)
+		cout << 2 << endl;
 		{
 			for (int j=0; j<kol; j++)
 			{
+				cout << i << " " << j << endl;
 				Point P;
 				P.SetAbsis(i);
 				P.SetOrdinat(j);
@@ -122,29 +125,34 @@ istream& operator>>(istream& is, Zoo& z)
 					cout << i << ' ' << j << endl;
 					if (c=='@')
 					{
+						cout << "land" << endl;
 						z.cell[i][j] = new LandHabitat();
 						if (i!=0)
 						{
 							if (z.cell[i-1][j]->IsLandHabitat())
 							{
 								z.SearchPoint(i-1,j).AddPoint(P);
+								cout << "sini" <<endl;
 							}
 						}
 						else if (j!=0)
 						{
 							if (z.cell[i][j-1]->IsLandHabitat())
 							{
+								cout << "sinia" <<endl;
 								z.SearchPoint(i,j-1).AddPoint(P);
 							}
 						}
 						else
 						{
+							cout << 4 << endl;
 							Cage c(i,j);
 							z.AddCage(c);
 						}
 					}
 					else if (c=='^')
 					{
+						cout << "air" << endl;
 						z.cell[i][j] = new AirHabitat();
 						if (i!=0)
 						{
