@@ -5,6 +5,14 @@
 #include "Cage.h"
 #include "Point.h"
 #include "Animal.h"
+#include "LandHabitat.h"
+#include "WaterHabitat.h"
+#include "AirHabitat.h"
+#include "Restaurant.h"
+#include "Park.h"
+#include "Road.h"
+#include "Exit.h"
+#include "Entrance.h"
 
 /** @class Zoo.
   * Kelas abstrak Zoo merupakan simulasi dari kebun binatang berisi matriks Cell.
@@ -51,7 +59,7 @@ public:
 		@param z Objek zoo yang akan dibaca.
 		@return Mengeluarkan objek ostream yang akan dicetak.
 	  */
-	friend istream& operator>>(istream& i,const Zoo& z);
+	friend istream& operator>>(istream& is, Zoo& z);
 
 	/** @brief Mengembalikan cell yang terdapat pada lokasi point P.
 		@param P Point yang akan diambil.
@@ -76,6 +84,8 @@ public:
 	int jumlahcage;
 	const int baris;
 	const int kolom;
+	int beff;
+	int keff;
 };
 
 #endif
