@@ -79,16 +79,16 @@ ostream& operator<<(ostream& o,const Zoo& z)
 {
 	int abs, ord;
 	Point P1, P2;
-	cout << "Absis kiri atas : "; cin << abs; cout << endl;
-	cout << "Ordinat kiri atas : "; cin << ord; cout << endl;
+	cout << "Absis kiri atas : "; cin >> abs;
+	cout << "Ordinat kiri atas : "; cin >> ord;
 	P1.SetAbsis(abs); P1.SetOrdinat(ord);
-	cout << "Absis kanan atas : "; cin << abs; cout << endl;
-	cout << "Ordinat kanan atas : "; cin << ord; cout << endl;
+	cout << "Absis kanan bawah : "; cin >> abs;
+	cout << "Ordinat kanan bawah : "; cin >> ord;
 	P2.SetAbsis(abs); P2.SetOrdinat(ord);
 
-	for (int i=P1.GetAbsis();i<=P2.GetAbsis;++i)
+	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
 	{
-		for (int j=P1.GetOrdinat();j<P2.GetOrdinat();++j)
+		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
 			o << z.cell[i][j]->render() << ' ';
 		o << endl;
 	}
