@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 
-Zoo::Zoo() : baris(0), kolom(0)
+Zoo::Zoo() : baris(100), kolom(100)
 {
-	jumlahcage = 0;
+	jumlahcage = 10;
 }
 
 Zoo::Zoo(int b, int k, int j) : baris(b), kolom(k)
