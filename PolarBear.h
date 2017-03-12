@@ -31,7 +31,7 @@ public:
 	  */
 	virtual ~PolarBear() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara PolarBear.
 	  */
 	string interact() {return ("Auuummm");}

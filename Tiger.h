@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Tiger() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Tiger.
 	  */
 	string interact() {return ("Growl");}

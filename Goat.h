@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Goat() {}
 	
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Goat.
 	  */
 	string interact() {return ("Mbeeeee");}

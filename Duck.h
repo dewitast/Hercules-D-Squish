@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Duck() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Duck.
 	  */
 	string interact() {return ("Quaackk!");}

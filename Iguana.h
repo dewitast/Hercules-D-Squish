@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Iguana() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Iguana.
 	  */
 	string interact() {return ("Purrrr");}

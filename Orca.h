@@ -30,7 +30,7 @@ public :
 	  */
 	virtual ~Orca() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Orca.
 	  */
 	string interact() { return ("Ngiak!"); }

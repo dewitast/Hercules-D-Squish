@@ -30,7 +30,7 @@ public :
 	  */
 	virtual ~Owl() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Owl.
 	  */
 	string interact() { return ("Hoot!"); }

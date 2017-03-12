@@ -30,7 +30,7 @@ public :
 	  */
 	virtual ~Cobra() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Cobra.
 	  */
 	string interact() { return ("Ssshh!"); }

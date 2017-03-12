@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Parrot() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Parrot.
 	  */
 	string interact() {return ("Cuiitt");}

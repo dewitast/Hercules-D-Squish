@@ -30,7 +30,7 @@ public :
 	  */
 	virtual ~Jalak() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Jalak.
 	  */
 	string interact() { return ("Tweet!"); }

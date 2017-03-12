@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Dugong() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Dugong.
 	  */
 	string interact() {return ("Splashh!");}

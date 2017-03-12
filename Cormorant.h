@@ -31,7 +31,7 @@ public:
 	  */
 	virtual ~Cormorant() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Cormorant.
 	  */
 	string interact() {return ("Ooookkk!");}

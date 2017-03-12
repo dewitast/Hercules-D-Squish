@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Eagle() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Eagle.
 	  */
 	string interact() {return ("Nguiikk!");}

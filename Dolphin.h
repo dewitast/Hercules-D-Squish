@@ -16,7 +16,7 @@ public:
 	/** @brief Constructor.
 	  * Menciptakan objek Dolphin.
 	  */
-	Dolphin() : Animal(75, 3.75, false) { }
+	Dolphin() : Animal(75, 3.75, true) { }
 
 	/** @brief Constructor dengan parameter.
 	  * Menciptakan objek Dolphin dengan berat w, jumlah makanan f, dan status jinak t
@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Dolphin() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Dolpin.
 	  */
 	string interact() {return ("A a a a a");}

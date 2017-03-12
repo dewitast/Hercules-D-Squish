@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Lion() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Lion.
 	  */
 	string interact() {return ("Roaarr!");}

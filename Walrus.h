@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Walrus() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Walrus.
 	  */
 	string interact() {return ("Aaarhhh");}

@@ -30,7 +30,7 @@ public :
 	  */
 	virtual ~Elephant() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Elephant.
 	  */
 	string interact() { return ("Prett!"); }

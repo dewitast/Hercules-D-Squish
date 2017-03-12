@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Komodo() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Komodo.
 	  */
 	string interact() {return ("Slpp!");}

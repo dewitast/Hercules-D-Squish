@@ -30,7 +30,7 @@ public:
 	  */
 	virtual ~Giraffe() {}
 
-	/** @brief interact.
+	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Giraffe.
 	  */
 	string interact() {return ("Hmm!");}
