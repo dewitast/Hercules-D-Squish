@@ -35,19 +35,16 @@ Zoo::Zoo(const Zoo& z) : baris(z.baris), kolom(z.kolom)
 
 Zoo& Zoo::operator=(const Zoo& z)
 {
-	for (int i=0;i<baris;++i)
-		delete [] *cell;
-	delete [] cell;
-	cell = new Cell**[baris];
-	for (int i=0;i<baris;++i)
-	{
-		cell[i] = new Cell*[kolom];
-		for (int j=0;j<kolom;++j)
+	int b = (baris>z.baris)? z.baris:baris , k = (kolom>z.kolom)? z.kolom:kolom;
+	for (int i=0;i<b;++i)
+		for (int j=0;j<k;++j)
+		{
+			delete cell[i][j];
 			cell[i][j] = (z.cell[i][j])->clone();
-	}
+		}
 	jumlahcage = z.jumlahcage;
-	cage = new Cage[jumlahcage];
-	for (int i=0;i<jumlahcage;++i)
+	int j = (jumlahcage>z.jumlahcage)? z.jumlahcage:jumlahcage;
+	for (int i=0;i<j;++i)
 		cage[i] = z.cage[i];
 	return *this;
 }
@@ -57,14 +54,11 @@ Zoo::~Zoo()
 	for (int i=0;i<baris;++i)
 	{
 		for (int j=0;j<kolom;++j)
-			delete [] cell[i][j],cout << "delete " << i << ' ' << j << endl;
+			delete cell[i][j];
 		delete [] cell[i];
-		cout << "delete " << i << endl;
 	}		
 	delete [] cell;
-	cout << "delete all" << endl;
 	delete [] cage;
-	cout << "delete cage" << endl;
 }
 
 ostream& operator<<(ostream& o,const Zoo& z)
