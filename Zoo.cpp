@@ -3,6 +3,7 @@
 
 #include "Zoo.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 Zoo::Zoo():baris(50),kolom(50)
@@ -230,7 +231,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(A);
+			ca.AdoptAnimal(A);
 		}
 		else if (c == 'C')
 		{
@@ -238,7 +239,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(C);
+			ca.AdoptAnimal(C);
 		}
 		else if (c == 'M')
 		{
@@ -246,7 +247,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(M);
+			ca.AdoptAnimal(M);
 		}
 		else if (c == 'N')
 		{
@@ -254,7 +255,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(N);
+			ca.AdoptAnimal(N);
 		}
 		else if (c == 'D')
 		{
@@ -262,7 +263,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(D);
+			ca.AdoptAnimal(D);
 		}
 		else if (c == 'U')
 		{
@@ -270,7 +271,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(U);
+			ca.AdoptAnimal(U);
 		}
 		else if (c == 'E')
 		{
@@ -278,7 +279,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(E);
+			ca.AdoptAnimal(E);
 		}
 		else if (c == 'H')
 		{
@@ -286,7 +287,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(H);
+			ca.AdoptAnimal(H);
 		}
 		else if (c == 'F')
 		{
@@ -294,7 +295,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(F);
+			ca.AdoptAnimal(F);
 		}
 		else if (c == 'G')
 		{
@@ -302,7 +303,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(G);
+			ca.AdoptAnimal(G);
 		}
 		else if (c == 'I')
 		{
@@ -310,7 +311,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(I);
+			ca.AdoptAnimal(I);
 		}
 		else if (c == 'J')
 		{
@@ -318,7 +319,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(J);
+			ca.AdoptAnimal(J);
 		}
 		else if (c == 'K')
 		{
@@ -326,7 +327,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(K);
+			ca.AdoptAnimal(K);
 		}
 		else if (c == 'L')
 		{
@@ -334,7 +335,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(L);
+			ca.AdoptAnimal(L);
 		}
 		else if (c == 'R')
 		{
@@ -342,7 +343,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(R);
+			ca.AdoptAnimal(R);
 		}
 		else if (c == 'O')
 		{
@@ -350,7 +351,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(O);
+			ca.AdoptAnimal(O);
 		}
 		else if (c == 'P')
 		{
@@ -358,7 +359,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(P);
+			ca.AdoptAnimal(P);
 		}
 		else if (c == 'B')
 		{
@@ -366,7 +367,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(B);
+			ca.AdoptAnimal(B);
 		}
 		else if (c == 'T')
 		{
@@ -374,7 +375,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(T);
+			ca.AdoptAnimal(T);
 		}
 		else if (c == 'W')
 		{
@@ -382,7 +383,7 @@ void Zoo::ReadAnimal()
 			myfile >> abs;
 			myfile >> ord;
 			ca = SearchPoint(abs, ord);
-			AdoptAnimal(W);
+			ca.AdoptAnimal(W);
 		}
 	}
 	myfile.close();
