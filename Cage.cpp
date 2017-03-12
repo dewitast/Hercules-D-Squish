@@ -74,13 +74,16 @@ void Cage::AdoptAnimal(Animal& A)
 	if (IsFull()) cout << "Kandang penuh." << endl;
 	else if (IsInCage(A)==-1)
 	{
-		srand (time(NULL));
-		int random = rand() % size;
-		while (IsOccupied(random))
-			random = rand() % size;
-		A.SetPoint(GetPoint(random));
-		a[TotalAnimal] = A.clone();
-		++TotalAnimal;
+		if (CanPut(A))
+		{
+			srand (time(NULL));
+			int random = rand() % size;
+			while (IsOccupied(random))
+				random = rand() % size;
+			A.SetPoint(GetPoint(random));
+			a[TotalAnimal] = A.clone();
+			++TotalAnimal;
+		}
 	}
 }
 
@@ -146,4 +149,10 @@ void Cage::AddPoint(Point P)
 	delete [] Loc;
 	Loc = temp;
 	++size;
+
+bool Cage::CanPut(const Animal& A) const
+{
+	if (TotalAnimal==0) return true;
+	if (a[0]->GetTame()==A.GetTame()) return true;
+	return false;
 }
