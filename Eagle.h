@@ -25,6 +25,10 @@ public:
 	  */
 	Eagle(float w, float f, bool t) : Animal(w, f, t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Eagle() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Eagle ke layar.
 	  */

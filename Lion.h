@@ -25,6 +25,10 @@ public:
 	  */
 	Lion(float w, float f, bool t) : Animal(w, f, t) {}
 
+	/** @brief Destructor.
+	  */
+	virtual ~Lion() {}
+
 	/** @brief Interact.
 	  * Menampilkan suara Lion ke layar.
 	  */
