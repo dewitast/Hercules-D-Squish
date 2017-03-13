@@ -1,0 +1,7 @@
+<map id="Cormorant" name="Cormorant">
+<area shape="rect" id="node2" href="$classFlyingAnimal.html" title="{FlyingAnimal\n||}" alt="" coords="5,321,103,399"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="179,5,283,273"/>
+<area shape="rect" id="node4" href="$classWaterAnimal.html" title="{WaterAnimal\n||}" alt="" coords="127,321,224,399"/>
+<area shape="rect" id="node5" href="$classCarnivore.html" title="{Carnivore\n||}" alt="" coords="248,321,327,399"/>
+<area shape="rect" id="node6" href="$classAves.html" title="{Aves\n||}" alt="" coords="351,321,403,399"/>
+</map>

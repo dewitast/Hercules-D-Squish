@@ -1,0 +1,7 @@
+<map id="facility.h" name="facility.h">
+<area shape="rect" id="node2" href="$road_8h.html" title="road.h" alt="" coords="64,80,123,107"/>
+<area shape="rect" id="node5" href="$park_8h.html" title="park.h" alt="" coords="147,80,205,107"/>
+<area shape="rect" id="node6" href="$restaurant_8h.html" title="restaurant.h" alt="" coords="229,80,320,107"/>
+<area shape="rect" id="node3" href="$entrance_8h.html" title="entrance.h" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$exit_8h.html" title="exit.h" alt="" coords="113,155,167,181"/>
+</map>
