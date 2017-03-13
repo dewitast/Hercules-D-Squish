@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Lion.
 	  */
-	string interact() {return ("Roaarr!");}
+	string Interact() {return ("Roaarr!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Lion baru
 	  * @return Mengembalikan pointer to Lion objek tersebut.
 	  */
-	virtual Lion* clone() const {return new Lion(*this);}
+	virtual Lion* Clone() const {return new Lion(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Lion.
 	  */
-	char render(){return 'L';}
+	char Render(){return 'L';}
 	
 };
 

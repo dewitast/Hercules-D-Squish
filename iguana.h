@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Iguana.
 	  */
-	string interact() {return ("Purrrr");}
+	string Interact() {return ("Purrrr");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Iguana baru
 	  * @return Mengembalikan pointer to Iguana objek tersebut.
 	  */
-	virtual Iguana* clone() const {return new Iguana(*this);}
+	virtual Iguana* Clone() const {return new Iguana(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Iguana.
 	  */
-	char render(){return 'I';}
+	char Render(){return 'I';}
 	
 };
 

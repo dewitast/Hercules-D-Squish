@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Komodo.
 	  */
-	string interact() {return ("Slpp!");}
+	string Interact() {return ("Slpp!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Komodo baru
 	  * @return Mengembalikan pointer to Komodo objek tersebut.
 	  */
-	virtual Komodo* clone() const {return new Komodo(*this);}
+	virtual Komodo* Clone() const {return new Komodo(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Komodo.
 	  */
-	char render(){return 'K';}
+	char Render(){return 'K';}
 	
 };
 
