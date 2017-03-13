@@ -23,7 +23,7 @@ int main() {
   	    d.TourZoo();
   	  }
   	  d.GetPoint().SetAbsis(-1);
-	  d.GetPoint().SetOrdinat(-1);
+	    d.GetPoint().SetOrdinat(-1);
     }
     else {
   	  cout << "Your input is invalid. Please choose a number from range 1 to 4." << endl << endl;
