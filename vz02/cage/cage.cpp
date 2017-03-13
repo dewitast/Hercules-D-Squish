@@ -158,7 +158,7 @@ void Cage::AddPoint(Point P)
 bool Cage::CanPut(const Animal& A) const
 {
 	if (TotalAnimal==0) return true;
-	if (a[0].GetTame()==A.GetTame()) return true;
+	if (a[0].IsTame()==A.IsTame()) return true;
 	return false;
 }
 

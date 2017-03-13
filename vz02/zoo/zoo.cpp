@@ -1,10 +1,10 @@
 /**	@file zoo.cpp
   */
 
-#include "zoo.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
+#include "zoo.h"
 
 Zoo::Zoo():baris(50),kolom(50)
 {
@@ -52,9 +52,6 @@ Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 
 Zoo& Zoo::operator=(const Zoo& z)
 {
-	for (int i=0;i<beff;++i)
-		for (int j=0;j<keff;++j)
-			delete cell[i][j];
 	beff = z.beff;
 	keff = z.keff;
 	for (int i=0;i<beff;++i)
@@ -98,7 +95,7 @@ ostream& operator<<(ostream& o,const Zoo& z)
 		for (int j=0;j<c.GetTotalAnimal();++j)
 		{
 			P3 = c.GetAnimal(j).GetPos();
-			m[P3.GetAbsis()][P3.GetOrdinat()] = c.GetAnimal(j).GetRender();
+			m[P3.GetAbsis()][P3.GetOrdinat()] = c.GetAnimal(j).Render();
 		}
 	}
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
@@ -212,170 +209,218 @@ void Zoo::ReadAnimal()
 {
 	Cage ca;
 	char c;
-	int abs, ord;
+	int abs, ord, jh;
 	ifstream myfile;
 	myfile.open("animal.txt");
 	while (myfile >> c)
 	{
+		myfile >> abs;
+		myfile >> ord;
+		Point p;
+		p.SetAbsis(abs-1);
+		p.SetOrdinat(ord-1);
 		if (c == 'A')
-		{
-			Alligator A;
-			myfile >> abs;
-			myfile >> ord;
+		{	
+			string* h;
+			jh = 2;
+			h = new string[jh];
+			h[0] = "Land";
+			h[1] = "Water";
+			Animal A(p, "Alligator", "Grrrrrr", "Carnivore", h, 125, 6.25, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'C')
 		{
-			Cobra C;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Cobra", "Ssshh!", "Carnivore", h, 20, 1, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(C);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'M')
 		{
-			Cormorant M;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 2;
+			h = new string[jh];
+			h[0] = "Air";
+			h[1] = "Water";
+			Animal A(p, "Cormorant", "Ooookkk!", "Carnivore", h, 3.6, 0.18, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(M);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'N')
 		{
-			Dolphin N;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Water";
+			Animal A(p, "Dolphin", "A a a a a", "Carnivore", h, 75, 3.75, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(N);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'D')
 		{
-			Duck D;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Water";
+			Animal A(p, "Duck", "Quaackk!", "Omnivore", h, 12, 0.6, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(D);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'U')
 		{
-			Dugong U;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Water";
+			Animal A(p, "Dugong", "Splashh!", "Herbivore", h, 500, 25, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(U);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'E')
 		{
-			Eagle E;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Air";
+			Animal A(p, "Eagle", "Nguiikk!", "Carnivore", h, 5.8, 0.29, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(E);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'H')
 		{
-			Elephant H;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Elephant", "Prett!", "Herbivore", h, 5000, 250, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(H);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'F')
 		{
-			Giraffe F;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Giraffe", "Hmm!", "Herbivore", h, 1100, 55, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(F);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'G')
 		{
-			Goat G;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Goat", "Mbeeeee", "Herbivore", h, 90, 4.5, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(G);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'I')
 		{
-			Iguana I;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Iguana", "Purrrr", "Herbivore", h, 6, 0.3, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(I);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'J')
 		{
-			Jalak J;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Air";
+			Animal A(p, "Jalak", "Tweet!", "Herbivore", h, 0.1, 0.005, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(J);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'K')
 		{
-			Komodo K;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Komodo", "Slpp!", "Carnivore", h, 120, 6, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(K);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'L')
 		{
-			Lion L;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Lion", "Roaarr!", "Carnivore", h, 150, 7.5, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(L);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'R')
 		{
-			Orca R;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Water";
+			Animal A(p, "Orca", "Ngiak!", "Carnivore", h, 4000, 200, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(R);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'O')
 		{
-			Owl O;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Air";
+			Animal A(p, "Owl", "Hoot!", "Carnivore", h, 1.5, 0.075, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(O);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'P')
 		{
-			Parrot P;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Air";
+			Animal A(p, "Parrot", "Cuiitt", "Omnivore", h, 1.2, 0.06, jh, true, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(P);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'B')
 		{
-			PolarBear B;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 2;
+			h = new string[jh];
+			h[0] = "Land";
+			h[1] = "Water";
+			Animal A(p, "PolarBear", "Auuummm", "Carnivore", h, 300, 15, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(B);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'T')
 		{
-			Tiger T;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Land";
+			Animal A(p, "Tiger", "Growl", "Carnivore", h, 200, 10, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(T);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'W')
 		{
-			Walrus W;
-			myfile >> abs;
-			myfile >> ord;
+			string* h;
+			jh = 1;
+			h = new string[jh];
+			h[0] = "Water";
+			Animal A(p, "Walrus", "Aaarhhh", "Carnivore", h, 1000, 50, jh, false, c);
 			if (GetElement(abs-1,ord-1).IsHabitat())
-				SearchPoint(abs-1, ord-1).AdoptAnimal(W);
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		myfile >> c;
 	}

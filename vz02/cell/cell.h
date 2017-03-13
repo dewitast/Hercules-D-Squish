@@ -1,5 +1,7 @@
 /**	@file  cell.h
   */
+#include <iostream>
+using namespace std;
 
 #ifndef CELL_H
 #define CELL_H
@@ -50,6 +52,18 @@ public :
     * @return Menghasilkan true jika code pada layar merupakan kode Water Habitat.
     */
   bool IsWaterHabitat();
+  /** @brief IsExit.
+    * @return Menghasilkan true jika code pada layar merupakan kode Exit.
+    */
+  bool IsExit();
+  /** @brief IsRoad.
+    * @return Menghasilkan true jika code pada layar merupakan kode Road.
+    */
+  bool IsRoad();
+  /** @brief IsEntrance.
+    * @return Menghasilkan true jika code pada layar merupakan kode Entrance.
+    */
+  bool IsEntrance();
 
 private :
   string object_type;

@@ -172,7 +172,7 @@ float Driver::FoodCalc()
 	{
 		for(int j=0;j<(Z.GetCage(i)).GetTotalAnimal();j++)
 		{
-			sum += ((Z.GetCage(i)).GetAnimal(j))->GetFood();
+			sum += ((Z.GetCage(i)).GetAnimal(j)).GetFood();
 		}
 	}
 	return sum;
