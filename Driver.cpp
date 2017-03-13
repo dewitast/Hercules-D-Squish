@@ -13,10 +13,6 @@ Driver::Driver() : P(-1,-1)
 	visited = new bool*[Z.GetBeff()];
 	for (int i=0;i<Z.GetBeff();++i)
 	{
-		ifstream myfile;
-		myfile.open("map.txt");
-		myfile >> Z;
-		myfile.close();
 		visited = new bool*[Z.GetBeff()];
 		for (int i=0;i<Z.GetBeff();++i)
 		{
