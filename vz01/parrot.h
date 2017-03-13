@@ -10,7 +10,7 @@
 /** @class Parrot
   * kelas Parrot merupakan kelas untuk real object Parrot
   */
-class Parrot : public FlyingAnimal, public Omnivore, public Aves {
+class Parrot : public FlyingAnimal, public Aves {
 public :
   /** @brief Constructor.
 	* Menciptakan objek Parrot.
