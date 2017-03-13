@@ -1,7 +1,7 @@
 /**	@file zoo.cpp
   */
 
-#include "Zoo.h"
+#include "zoo.h"
 #include <iostream>
 #include <fstream>
 using namespace std;

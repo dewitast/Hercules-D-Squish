@@ -4,10 +4,10 @@
 #ifndef POLARBEAR_H
 #define POLARBEAR_H
 
-#include "Carnivore.h"
-#include "LandAnimal.h"
-#include "WaterAnimal.h"
-#include "Mammal.h"
+#include "carnivore.h"
+#include "land_animal.h"
+#include "water_animal.h"
+#include "mammal.h"
 
 /** @class PolarBear
   * kelas PolarBear merupakan kelas untuk real object PolarBear

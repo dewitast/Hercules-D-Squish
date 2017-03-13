@@ -4,9 +4,9 @@
 #ifndef TIGER_H
 #define TIGER_H
 
-#include "Carnivore.h"
-#include "LandAnimal.h"
-#include "Mammal.h"
+#include "carnivore.h"
+#include "landAnimal.h"
+#include "mammal.h"
 
 /** @class Tiger
   * kelas Tiger merupakan kelas untuk real object Tiger

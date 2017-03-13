@@ -1,19 +1,8 @@
-#include "Habitat.h"
-#include "LandHabitat.h"
-#include "WaterHabitat.h"
-#include "AirHabitat.h"
-#include <iostream>
-using namespace std;
+#include "Driver.h"
 
 int main()
 {
-	LandHabitat L;
-	cout << L.IsLand() << endl;
-	cout << L.IsAir() << endl;
-	cout << L.IsWater() << endl;
-	AirHabitat A;
-	cout << A.IsWater() << endl;
-	cout << A.IsLand() << endl;
-	cout << A.IsAir() << endl;
+	Driver D;
+	D.DisplayZoo();
 	return 0;
 }
