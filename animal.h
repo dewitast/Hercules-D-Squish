@@ -80,7 +80,7 @@ public :
   /** @brief Render dari Animal.
     * @return Mengembalikan char yang merupakan representasi kode Animal.
     */
-  virtual char render() = 0;
+  virtual char Render() = 0;
 protected:
   /** @brief Berat binatang.
     */

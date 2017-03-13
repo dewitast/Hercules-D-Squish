@@ -43,7 +43,7 @@ Zoo::Zoo(const Zoo& z):baris(z.baris),kolom(z.kolom)
 	}
 	for (int i=0;i<beff;++i)
 		for (int j=0;j<keff;++j)
-			cell[i][j] = (z.cell[i][j])->clone();
+			cell[i][j] = (z.cell[i][j])->Clone();
 	jumlahcage = z.jumlahcage;
 	cage = new Cage[jumlahcage];
 	for (int i=0;i<jumlahcage;++i)
@@ -59,7 +59,7 @@ Zoo& Zoo::operator=(const Zoo& z)
 	keff = z.keff;
 	for (int i=0;i<beff;++i)
 		for (int j=0;j<keff;++j)
-			cell[i][j] = (z.cell[i][j])->clone();
+			cell[i][j] = (z.cell[i][j])->Clone();
 	delete [] cage;
 	cage = new Cage[z.jumlahcage];
 	jumlahcage = z.jumlahcage;
@@ -100,7 +100,7 @@ ostream& operator<<(ostream& o,const Zoo& z)
 		for (int j=0;j<c.GetTotalAnimal();++j)
 		{
 			P3 = c.GetAnimal(j)->GetPos();
-			m[P3.GetAbsis()][P3.GetOrdinat()] = c.GetAnimal(j)->render();
+			m[P3.GetAbsis()][P3.GetOrdinat()] = c.GetAnimal(j)->Render();
 		}
 	}
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)

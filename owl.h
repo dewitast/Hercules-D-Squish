@@ -33,17 +33,17 @@ public :
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Owl.
 	  */
-	string interact() { return ("Hoot!"); }
+	string Interact() { return ("Hoot!"); }
 
 	/** @brief Melakukan cloning untuk menciptakan objek Owl baru
 	  * @return Mengembalikan pointer to Owl objek tersebut.
 	  */
-	virtual Owl* clone() const {return new Owl(*this);}
+	virtual Owl* Clone() const {return new Owl(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Owl.
 	  */
-	char render(){return 'O';}
+	char Render(){return 'O';}
 	
 };
 
