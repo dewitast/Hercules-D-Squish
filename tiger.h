@@ -5,7 +5,7 @@
 #define TIGER_H
 
 #include "carnivore.h"
-#include "landAnimal.h"
+#include "land_animal.h"
 #include "mammal.h"
 
 /** @class Tiger
