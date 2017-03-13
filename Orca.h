@@ -1,4 +1,5 @@
-// file Orca.h
+/**	@file	Orca.h
+  */
 
 #ifndef ORCA_H
 #define ORCA_H
@@ -7,21 +8,21 @@
 #include "Carnivore.h"
 #include "Mammal.h"
 
-/** @class Orca.
-  * Kelas Orca merupakan kelas untuk real object orca.
+/** @class Orca
+  * Kelas Orca merupakan kelas untuk real object Orca
   */
 class Orca : public WaterAnimal, public Carnivore, public Mammal {
 public :
 	/** @brief Constructor.
-	  * Menciptakan objek orca kosong.
+	  * Menciptakan objek Orca.
 	  */
 	Orca() : Animal(4000,200,false) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek orca kosong dengan berat w, jumlah makanan f, dan status jinak t.
-	  * @param w Berat orca.
-	  * @param f Jumlah makanan orca.
-	  * @param t Status jinak orca.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Orca dengan berat w, jumlah makanan f, dan status jinak t
+	  * @param w Berat Orca.
+	  * @param f Jumlah makanan Orca.
+	  * @param t Status jinak Orca.
 	  */
 	Orca(float w, float f, bool t) : Animal(w,f,t) {}
 
@@ -29,21 +30,21 @@ public :
 	  */
 	virtual ~Orca() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara orca pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Orca.
 	  */
 	string interact() { return ("Ngiak!"); }
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to orca objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Orca baru
+	  * @return Mengembalikan pointer to Orca objek tersebut.
 	  */
 	virtual Orca* clone() const {return new Orca(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari orca.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Orca.
 	  */
 	char render(){return 'R';}
+	
 };
 
 #endif

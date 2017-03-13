@@ -6,20 +6,18 @@
 
 #include "Habitat.h"
 
-/** @class AirHabitat.
-  * Kelas real AirHabitat merupakan simulasi dari habitat udara.
+/** @class AirHabitat
+  * Kelas real AirHabitat merupakan simulasi dari habitat udara
   */
-
 class AirHabitat : public Habitat{
 public:
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode air habitat.
 	  */
 	char render(){return AH;}
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to AirHabitat objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek air habitat baru
+	  * @return Mengembalikan pointer to AirHabitat objek tersebut.
 	  */
 	virtual AirHabitat* clone() const {return new AirHabitat(*this);}
 	

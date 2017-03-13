@@ -1,27 +1,31 @@
+/**	@file	Road.h
+  */
+
 #ifndef ROAD_H
 #define ROAD_H
 
 #include "Facility.h"
 
-/** @class Road.
-  * Kelas Road merepresentasikan fasilitas jalan.
+/** @class Road
+  * Kelas Road merepresentasikan fasilitas jalan
   */
-class Road : public Facility
-{
+class Road : public Facility {
 public:
-	/** @brief Menentukan render dari Road.
-		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Road.
 	  */
 	virtual char render() {return Ro;}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to Road objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Road baru
+	  * @return Mengembalikan pointer to Road objek tersebut.
 	  */
 	virtual Road* clone() const {return new Road(*this);}
 
-	int dummy() {return 0;} 
+	/** @brief Integer dummy
+	  * @return Mengembalikan nilai 0.
+	  */
+	int dummy() {return 0;}
 	
-protected:
 };
 
 #endif

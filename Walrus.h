@@ -1,4 +1,5 @@
-//file : Walrus.h
+/**	@file	Walrus.h
+  */
 
 #ifndef WALRUS_H
 #define WALRUS_H
@@ -10,7 +11,6 @@
 /** @class Walrus
   * kelas Walrus merupakan kelas untuk real object Walrus
   */
-
 class Walrus : public WaterAnimal, public Carnivore, public Mammal {
 public:
 	/** @brief Constructor.
@@ -18,8 +18,8 @@ public:
 	  */
 	Walrus() : Animal(1000, 50, false) { }
 
-	/** @brief Constructor.
-	  * Menciptakan objek Walrus dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Walrus dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Walrus.
 	  * @param f Jumlah makanan Walrus.
 	  * @param t Status jinak Walrus.
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Walrus() {}
 
-	/** @brief Interact.
-	  * Menampilkan suara Walrus pada layar.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Walrus.
 	  */
 	string interact() {return ("Aaarhhh");}
 
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to elephant objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Walrus baru
+	  * @return Mengembalikan pointer to Walrus objek tersebut.
 	  */
 	virtual Walrus* clone() const {return new Walrus(*this);}
 
-	/** @brief render.
-	  * Menentukan render dari walrus.
-	  * @return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Walrus.
 	  */
 	char render(){return 'W';}
+
 };
 
 #endif

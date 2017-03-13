@@ -1,3 +1,6 @@
+/**	@file	Zoo.h
+  */
+
 #ifndef ZOO_H
 #define ZOO_H
 
@@ -34,22 +37,21 @@
 #include "Tiger.h"
 #include "Walrus.h"
 
-/** @class Zoo.
-  * Kelas abstrak Zoo merupakan simulasi dari kebun binatang berisi matriks Cell.
+/** @class Zoo
+  * Kelas abstrak Zoo merupakan simulasi dari kebun binatang berisi matriks Cell
   */
-class Zoo
-{
+class Zoo {
 public:
 	/** @brief Constructor.
 	  * Menciptakan zoo kosong yang berisi matriks kosong.
 	  */
 	Zoo();
 
-	/** @brief Constructor.
-	  * Menciptakan zoo kosong dengan jumlah baris b dan jumlah kolom k.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan zoo kosong dengan jumlah baris b, jumlah kolom k, dan jumlah cage j
 	  * @param b Nilai ukuran baris matriks.
 	  * @param k Nilai ukuran kolom matriks.
-	  * @param j Nilai banyak cage.
+	  * @param j Nilai banyaknya cage.
 	  */
 	Zoo(int b,int k,int j);
 
@@ -60,27 +62,27 @@ public:
 
 	/** @brief Operator =.
 	  * @param z Objek yang akan di-assign.
+	  * @return Menghasilkan objek hasil copy objek z.
 	  */
-
 	Zoo& operator= (const Zoo& z);
 
 	/** @brief Destrutor.
 	  */
 	~Zoo();
 
-	/** @brief operator<<.
-	  * Melakukan print Zoo.
+	/** @brief Operator <<.
+	  * Melakukan print Zoo
 	  * @param o Objek ostream.
-	  * @param z Objek zoo yang akan dicetak.
-	  * @return Mengeluarkan objek ostream yang akan dicetak.
+	  * @param z Objek Zoo yang akan dicetak.
+	  * @return Menghasilkan objek ostream yang akan dicetak.
 	  */
 	friend ostream& operator<<(ostream& o,const Zoo& z);
 
-	/** @brief operator>>.
-	  * Melakukan read Zoo.
+	/** @brief Operator >>.
+	  * Melakukan read Zoo
 	  * @param i Objek istream.
-	  * @param z Objek zoo yang akan dibaca.
-	  * @return Mengeluarkan objek ostream yang akan dicetak.
+	  * @param z Objek Zoo yang akan dibaca.
+	  * @return Mengeluarkan objek istream yang telah dibaca.
 	  */
 	friend istream& operator>>(istream& is, Zoo& z);
 
@@ -150,7 +152,7 @@ public:
 	  */
 	void AddCage(Cage c);
 
-public:
+private:
 	Cell ***cell; //matrix of pointer to cell
 	Cage *cage; //array of cage
 	int jumlahcage;

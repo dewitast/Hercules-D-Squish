@@ -1,48 +1,59 @@
+/**	@file	Facility.h
+  */
+
 #ifndef FACILITY_H
 #define FACILITY_H
 
 #include "Cell.h"
 
-/** @class Facility.
-  * Kelas abstrak Facility merupakan simulasi dari fasilitas yang terdapat dalam kebun binatang.
+/** @class Facility
+  * Kelas abstrak Facility merupakan simulasi dari fasilitas yang terdapat dalam kebun binatang
   */
-
-class Facility : public Cell{
+class Facility : public Cell {
 public:
-	/** @brief Menentukan render dari Facility.
-		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode objek fasilitas.
 	  */
 	virtual char render() = 0;
 
-	/** @brief Menentukan apakah Facility merupakan Restaurant.
-		@return Mengembalikan true jika Facility merupakan Restaurant.
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan true jika Facility merupakan Restaurant.
 	  */
 	virtual bool IsRestaurant() {return (render()==Re);}
 
-	/** @brief Menentukan apakah Facility merupakan Park.
-		@return Mengembalikan true jika Facility merupakan Park.
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan true jika Facility merupakan Park.
 	  */
 	virtual bool IsPark(){return (render()==Pa);}
 
-	/** @brief Menentukan apakah Facility merupakan Road.
-		@return Mengembalikan true jika Facility merupakan Road.
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan true jika Facility merupakan Road, Entrance, atau Exit.
 	  */
 	virtual bool IsRoad(){return ((render()==Ro)||(render()==Ent)||(render()==Ex));}
 
-	/** @brief Menentukan apakah Facility merupakan Entrance.
-		@return Mengembalikan true jika Facility merupakan Entrance.
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan true jika Facility merupakan Entrance.
 	  */
 	virtual bool IsEntrance(){return (render()==Ent);}
 
-	/** @brief Menentukan apakah Facility merupakan Exit.
-		@return Mengembalikan true jika Facility merupakan Exit.
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan true jika Facility merupakan Exit.
 	  */
 	virtual bool IsExit(){return (render()==Ex);}
 
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan nilai false.
+	  */
 	virtual bool IsLandHabitat() {return false;}
 
-	virtual bool IsWaterHabitat() {return false;}	
-
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan nilai false.
+	  */
+	virtual bool IsWaterHabitat() {return false;}
+	
+	/** @brief Memeriksa kode objek Facility
+	  * @return Mengembalikan nilai false.
+	  */
 	virtual bool IsAirHabitat() {return false;}
 
 protected:
@@ -51,6 +62,7 @@ protected:
 	static const char Ro = '+'; //representasi Road ketika dicetak ke layar
 	static const char Ex = 'X'; //representasi Exit ketika dicetak ke layar
 	static const char Ent = 'Z'; //representasi Entrance ketika dicetak ke layar
+
 };
 
 #endif
