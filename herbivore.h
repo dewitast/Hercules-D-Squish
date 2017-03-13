@@ -1,4 +1,4 @@
-/**	@file	Herbivore.h
+/**	@file  herbivore.h
   */
 
 #ifndef HERBIVORE_H
