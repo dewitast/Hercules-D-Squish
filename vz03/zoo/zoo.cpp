@@ -219,6 +219,7 @@ void Zoo::ReadAnimal()
 	myfile.open("animal.txt");
 	while (myfile >> c)
 	{
+
 		if (c == 'A')
 		{
 			Alligator A;
@@ -379,7 +380,6 @@ void Zoo::ReadAnimal()
 			if (GetElement(abs-1,ord-1).IsHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(W);
 		}
-		myfile >> c;
 	}
 	myfile.close();
 }
