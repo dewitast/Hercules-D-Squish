@@ -1,4 +1,4 @@
-/**	@file road.h
+/**	@file  road.h
   */
 
 #ifndef ROAD_H
@@ -11,18 +11,18 @@
   */
 class Road : public Facility {
 public:
-	/** @brief render
-	  * @return Mengembalikan char yang merupakan representasi kode Road.
-	  */
-	virtual char Render() {
-		return Ro;
-	}
-	/** @brief Melakukan cloning untuk menciptakan objek Road baru
-	  * @return Mengembalikan pointer to Road objek tersebut.
-	  */
-	virtual Road* Clone() const {
-		return new Road(*this);
-	}
+  /** @brief Render dari Road.
+    * @return Mengembalikan char yang merupakan representasi kode Road.
+	*/
+  virtual char Render() {
+  	return Ro;
+  }
+  /** @brief Melakukan cloning untuk menciptakan objek Road baru.
+	* @return Mengembalikan pointer to Road objek tersebut.
+	*/
+  virtual Road* Clone() const {
+  	return new Road(*this);
+  }
 };
 
 #endif
