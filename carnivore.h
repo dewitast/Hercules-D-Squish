@@ -1,4 +1,4 @@
-/**	@file	Carnivore.h
+/**	@file  carnivore.h
   */
 
 #ifndef CARNIVORE_H

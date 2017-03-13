@@ -14,13 +14,13 @@ public:
 	/** @brief render.
 	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
 	  */
-	virtual char render() = 0;
+	virtual char Render() = 0;
 
 	/** @brief clone.
 	  * Melakukan cloning untuk menciptakan objek baru.
 	  * @return Mengeluarkan pointer to cell objek tersebut.
 	  */
-	virtual Cell* clone() const = 0;
+	virtual Cell* Clone() const = 0;
 
 	/** @brief IsLandHabitat.
 	  * @return Menghasilkan true jika code pada layar merupakan kode Land Habitat.

@@ -30,6 +30,7 @@ public :
   /** @brief Interaksi yang dilakukan Dolphin.
 	  * @return Mengembalikan string yang merepresentasikan suara Dolpin.
 	  */
+<<<<<<< HEAD
 	string Interact() {
     return ("A a a a a");
   }
@@ -45,6 +46,20 @@ public :
 	char Render() {
     return 'N';
   }
+=======
+	string Interact() {return ("A a a a a");}
+
+	/** @brief Melakukan cloning untuk menciptakan objek Dolphin baru
+	  * @return Mengembalikan pointer to Dolphin objek tersebut.
+	  */
+	virtual Dolphin* Clone() const {return new Dolphin(*this);}
+
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Dolphin.
+	  */
+	char Render(){return 'N';}
+
+>>>>>>> 094b874e3f6502c5a857df249a552bc11e26eeb3
 };
 
 #endif
