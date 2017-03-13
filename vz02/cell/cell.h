@@ -4,8 +4,6 @@
 #ifndef CELL_H
 #define CELL_H
 
-#include "../renderable/renderable.h"
-
 /** @class Cell.
   * Kelas Cell merupakan simulasi dari petak-petak yang terdapat dalam kebun binatang.
   */
@@ -40,6 +38,19 @@ public :
 	  * @return Menghasilkan true jika code pada layar merupakan kode Land, Air, atau Water Habitat.
 	  */
   bool IsHabitat();
+  /** @brief IsLandHabitat.
+    * @return Menghasilkan true jika code pada layar merupakan kode Land Habitat.
+    */
+  bool IsLandHabitat();
+  /** @brief IsAirHabitat.
+    * @return Menghasilkan true jika code pada layar merupakan kode Air Habitat.
+    */
+  bool IsAirHabitat();
+  /** @brief IsWaterHabitat.
+    * @return Menghasilkan true jika code pada layar merupakan kode Water Habitat.
+    */
+  bool IsWaterHabitat();
+
 private :
   string object_type;
   char render;

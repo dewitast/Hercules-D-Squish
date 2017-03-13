@@ -55,3 +55,12 @@ void Cell::SetObjectType(string ot) {
 bool Cell::IsHabitat() {
   return ((render == '@') || (render == '^') || (render == '~'));
 }
+bool IsLandHabitat() {
+  return (render == '@');
+}
+bool IsAirHabitat() {
+  return (render == '^');
+}
+bool IsWaterHabitat() {
+  return (render == '~');
+}
