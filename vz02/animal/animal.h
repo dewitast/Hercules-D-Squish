@@ -107,15 +107,15 @@ public :
   char Render();
 private:
   Point pos;
-  const string species;
-  const string sound;
-  const string food_type;
+  string species;
+  string sound;
+  string food_type;
   string* habitat;
-  const float weight;
-  const float food;
-  const int number_habitat;
-  const bool tame;
-  const char render;
+  float weight;
+  float food;
+  int number_habitat;
+  bool tame;
+  char render;
 };
 
 #endif

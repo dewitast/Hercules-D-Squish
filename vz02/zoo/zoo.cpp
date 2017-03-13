@@ -422,7 +422,6 @@ void Zoo::ReadAnimal()
 			if (GetElement(abs-1,ord-1).IsHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
-		myfile >> c;
 	}
 	myfile.close();
 }
