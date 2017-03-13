@@ -10,9 +10,6 @@ int main() {
   int x;
   Driver d;
 
-  cout << d.GetZoo().GetBeff() << endl;
-  cout << d.GetZoo().GetKeff() << endl;
-
   d.DisplayMenu();
   cin >> x;
   cout << endl;

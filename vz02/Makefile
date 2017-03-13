@@ -1,2 +1,2 @@
-Main: main/main.cpp zoo/zoo.cpp cage/cage.cpp point/point.cpp animal/animal.cpp driver/driver.cpp 
-	g++ main/main.cpp zoo/zoo.cpp cage/cage.cpp point/point.cpp animal/animal.cpp driver/driver.cpp -std=c++11
+Main: main/main.cpp zoo/zoo.cpp cage/cage.cpp point/point.cpp animal/animal.cpp driver/driver.cpp cell/cell.cpp
+	g++ main/main.cpp zoo/zoo.cpp cage/cage.cpp point/point.cpp animal/animal.cpp driver/driver.cpp cell/cell.cpp -std=c++11
