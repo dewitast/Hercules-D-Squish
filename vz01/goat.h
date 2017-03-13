@@ -4,26 +4,18 @@
 #ifndef GOAT_H
 #define GOAT_H
 
-#include "herbivore.h"
 #include "land_animal.h"
 #include "mammal.h"
 
 /** @class Goat
   * Kelas Goat merupakan kelas untuk real object Goat
   */
-class Goat : public LandAnimal, public Herbivore, public Mammal {
+class Goat : public LandAnimal, public Mammal {
 public:
   /** @brief Constructor.
     * Menciptakan objek Goat.
     */
-  Goat() : Animal(90, 4.5, false) {}
-  /** @brief Constructor.
-    * Menciptakan objek Goat dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Goat.
-    * @param f Jumlah makanan Goat.
-    * @param t Status jinak Goat.
-    */
-  Goat(float w, float f, bool t) : Animal(w, f, t) {}
+  Goat() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Goat() {}
