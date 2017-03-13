@@ -14,47 +14,63 @@ public:
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode objek fasilitas.
 	  */
-	virtual char render() = 0;
+	virtual char Render() = 0;
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan true jika Facility merupakan Restaurant.
 	  */
-	virtual bool IsRestaurant() {return (render()==Re);}
+	virtual bool IsRestaurant() {
+		return (Render()==Re);
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan true jika Facility merupakan Park.
 	  */
-	virtual bool IsPark(){return (render()==Pa);}
+	virtual bool IsPark() {
+		return (Render()==Pa);
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan true jika Facility merupakan Road, Entrance, atau Exit.
 	  */
-	virtual bool IsRoad(){return ((render()==Ro)||(render()==Ent)||(render()==Ex));}
+	virtual bool IsRoad() {
+		return ((Render()==Ro)||(Render()==Ent)||(Render()==Ex));
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan true jika Facility merupakan Entrance.
 	  */
-	virtual bool IsEntrance(){return (render()==Ent);}
+	virtual bool IsEntrance() {
+		return (Render()==Ent);
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan true jika Facility merupakan Exit.
 	  */
-	virtual bool IsExit(){return (render()==Ex);}
+	virtual bool IsExit() {
+		return (Render()==Ex);
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan nilai false.
 	  */
-	virtual bool IsLandHabitat() {return false;}
+	virtual bool IsLandHabitat() {
+		return false;
+	}
 
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan nilai false.
 	  */
-	virtual bool IsWaterHabitat() {return false;}
+	virtual bool IsWaterHabitat() {
+		return false;
+	}
 	
 	/** @brief Memeriksa kode objek Facility
 	  * @return Mengembalikan nilai false.
 	  */
-	virtual bool IsAirHabitat() {return false;}
+	virtual bool IsAirHabitat() {
+		return false;
+	}
 
 protected:
 	static const char Re = 'S'; //representasi Restaurant ketika dicetak ke layar

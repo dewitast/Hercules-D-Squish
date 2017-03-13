@@ -34,17 +34,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara PolarBear.
 	  */
-	string interact() {return ("Auuummm");}
+	string Interact() {return ("Auuummm");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek PolarBear baru
 	  * @return Mengembalikan pointer to PolarBear objek tersebut.
 	  */
-	virtual PolarBear* clone() const {return new PolarBear(*this);}
+	virtual PolarBear* Clone() const {return new PolarBear(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode PolarBear.
 	  */
-	char render(){return 'B';}
+	char Render(){return 'B';}
 
 };
 

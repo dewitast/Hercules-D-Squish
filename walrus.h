@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Walrus.
 	  */
-	string interact() {return ("Aaarhhh");}
+	string Interact() {return ("Aaarhhh");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Walrus baru
 	  * @return Mengembalikan pointer to Walrus objek tersebut.
 	  */
-	virtual Walrus* clone() const {return new Walrus(*this);}
+	virtual Walrus* Clone() const {return new Walrus(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Walrus.
 	  */
-	char render(){return 'W';}
+	char Render(){return 'W';}
 
 };
 

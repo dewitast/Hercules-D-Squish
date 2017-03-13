@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Parrot.
 	  */
-	string interact() {return ("Cuiitt");}
+	string Interact() {return ("Cuiitt");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Parrot baru
 	  * @return Mengembalikan pointer to Parrot objek tersebut.
 	  */
-	virtual Parrot* clone() const {return new Parrot(*this);}
+	virtual Parrot* Clone() const {return new Parrot(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Parrot.
 	  */
-	char render(){return 'P';}
+	char Render(){return 'P';}
 
 };
 
