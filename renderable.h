@@ -1,4 +1,4 @@
-/**	@file	Renderable.h
+/**	@file  renderable.h
   */
 
 #ifndef RENDERABLE_H
@@ -9,11 +9,10 @@
   */
 class Renderable {
 public:
-	/** @brief render
-	  * @return Mengembalikan char yang merupakan representasi kode objek.
-	  */
-	virtual char render() = 0;
-	
+  /** @brief Render dari objek.
+    * @return Mengembalikan char yang merupakan representasi kode objek.
+    */
+  virtual char Render() = 0;	
 };
 
 #endif

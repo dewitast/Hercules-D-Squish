@@ -1,66 +1,43 @@
-/**	@file	Animal.cpp
+/**	@file  animal.cpp
   */
 
-#include "Animal.h"
+#include "animal.h"
 
-Animal::Animal()
-{}
-
-Animal::Animal(float w, float f, bool t)
-{
-	weight = w;
-	food = f;
-	tame = t;
-	SetPoint(-1,-1);
+Animal::Animal() {}
+Animal::Animal(float w, float f, bool t) {
+  weight = w;
+  food = f;
+  tame = t;
+  SetPoint(-1,-1);
 }
-
-float Animal::GetWeight() const
-{
-	return weight;
+float Animal::GetWeight() const {
+  return weight;
 }
-
-float Animal::GetFood() const
-{
-	return food;
+float Animal::GetFood() const {
+  return food;
 }
-
-bool Animal::GetTame() const
-{
-	return tame;
+bool Animal::GetTame() const {
+  return tame;
 }
-
-Point Animal::GetPos() const
-{
-	return pos;
+Point Animal::GetPos() const {
+  return pos;
 }
-
-void Animal::SetWeight(float w)
-{
-	weight = w;
+void Animal::SetWeight(float w) {
+  weight = w;
 }
-
-void Animal::SetFood(float f)
-{
-	food = f;
+void Animal::SetFood(float f) {
+  food = f;
 }
-
-void Animal::SetTame(bool t)
-{
-	tame = t;
+void Animal::SetTame(bool t) {
+  tame = t;
 }
-
-void Animal::SetPoint(int abs, int ord)
-{
-	pos.SetAbsis(abs);
-	pos.SetOrdinat(ord);
+void Animal::SetPoint(int abs, int ord) {
+  pos.SetAbsis(abs);
+  pos.SetOrdinat(ord);
 }
-
-void Animal::SetPoint(const Point& P)
-{
-	pos = P;
+void Animal::SetPoint(const Point& p) {
+  pos = p;
 }
-
-bool Animal::IsSame(const Animal& A) const
-{
-	return (pos.IsSame(A.pos));
+bool Animal::IsSame(const Animal& a) const {
+  return (pos.IsSame(a.pos));
 }

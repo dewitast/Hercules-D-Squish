@@ -1,4 +1,4 @@
-/**	@file	Point.h
+/**	@file point.h
   */
 
 #ifndef POINT_H

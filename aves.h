@@ -1,10 +1,10 @@
-/**	@file	Aves.h
+/**	@file  aves.h
   */
 
 #ifndef AVES_H
 #define AVES_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class Aves
   * Kelas abstrak Aves

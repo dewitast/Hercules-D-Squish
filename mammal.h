@@ -1,10 +1,10 @@
-/**	@file	Mammal.h
+/**	@file mammal.h
   */
 
 #ifndef MAMMAL_H
 #define MAMMAL_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class Mammal
   * Kelas abstrak Mammal

@@ -1,10 +1,10 @@
-/**	@file	Reptile.h
+/**	@file  reptile.h
   */
 
 #ifndef REPTILE_H
 #define REPTILE_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class Reptile
   * Kelas abstrak Reptile

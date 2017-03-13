@@ -1,4 +1,4 @@
-/**	@file	Zoo.h
+/**	@file zoo.h
   */
 
 #ifndef ZOO_H

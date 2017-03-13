@@ -1,4 +1,4 @@
-/**	@file	Zoo.cpp
+/**	@file zoo.cpp
   */
 
 #include "Zoo.h"

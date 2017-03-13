@@ -1,4 +1,4 @@
-/**	@file	Cage.h
+/**	@file cage.h
   */
 
 #ifndef CAGE_H

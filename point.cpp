@@ -1,4 +1,4 @@
-/**	@file	Point.cpp
+/**	@file point.cpp
   */
 
 #include "Point.h"

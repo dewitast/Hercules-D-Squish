@@ -1,4 +1,4 @@
-/**	@file	Tiger.h
+/**	@file tiger.h
   */
 
 #ifndef TIGER_H

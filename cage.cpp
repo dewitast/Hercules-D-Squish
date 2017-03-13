@@ -1,4 +1,4 @@
-/**	@file	Cage.cpp
+/**	@file cage.cpp
   */
 
 #include "Cage.h"

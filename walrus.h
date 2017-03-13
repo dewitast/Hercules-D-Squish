@@ -1,4 +1,4 @@
-/**	@file	Walrus.h
+/**	@file walrus.h
   */
 
 #ifndef WALRUS_H

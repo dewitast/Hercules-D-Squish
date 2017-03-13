@@ -1,4 +1,4 @@
-/**	@file	PolarBear.h
+/**	@file polar_bear.h
   */
 
 #ifndef POLARBEAR_H
