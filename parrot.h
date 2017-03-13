@@ -5,7 +5,7 @@
 #define PARROT_H
 
 #include "omnivore.h"
-#include "flyingAnimal.h"
+#include "flying_animal.h"
 #include "aves.h"
 
 /** @class Parrot

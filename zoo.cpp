@@ -406,26 +406,6 @@ Cage& Zoo::GetCage(int i) const
 	return cage[i];
 }
 
-void Zoo::AddAnimal(int i,Animal& A)
-//masi salah
-{
-	Cage &c = cage[i];
-	if (c.IsFull())
-	{
-		cout << "Kandang penuh." << endl;
-	}
-	else
-	{
-		int size = c.GetSize();
-		(cage[i]).AdoptAnimal(A);
-		srand (time(NULL));
-		int random = rand() % size;
-		while (c.IsOccupied(random))
-			random = rand() % size;
-		A.SetPoint(c.GetPoint(random));
-	}
-}
-
 Cage& Zoo::SearchPoint(const Point& P) const
 {
 	bool found = false;
