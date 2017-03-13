@@ -1,0 +1,4 @@
+<map id="Mammal" name="Mammal">
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="6,277,110,531"/>
+<area shape="rect" id="node3" href="$classPoint.html" title="{Point\n||+ Point()\l+ Point()\l+ Point()\l+ operator=()\l+ ~Point()\l+ GetAbsis()\l+ GetOrdinat()\l+ SetAbsis()\l+ SetOrdinat()\l+ IsSame()\l}" alt="" coords="5,5,111,215"/>
+</map>

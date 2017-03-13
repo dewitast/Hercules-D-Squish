@@ -1,4 +1,4 @@
-/**	@file	Omnivore.h
+/**	@file  omnivore.h
   */
 
 #ifndef OMNIVORE_H

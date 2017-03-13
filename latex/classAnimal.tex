@@ -1,0 +1,374 @@
+\hypertarget{classAnimal}{}\section{Animal Class Reference}
+\label{classAnimal}\index{Animal@{Animal}}
+
+
+{\ttfamily \#include $<$animal.\+h$>$}
+
+
+
+Inheritance diagram for Animal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classAnimal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnimal_a1e726a49ec952443190ac62dad22353c}{Animal} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Menciptakan \hyperlink{classAnimal}{Animal} kosong. \end{DoxyCompactList}\item 
+\hyperlink{classAnimal_acc6020247b7d154583137a89c06971be}{Animal} (float w, float f, bool t)
+\begin{DoxyCompactList}\small\item\em Constructor dengan parameter. Menciptakan animal kosong dengan weight w, food f, dan tame t. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAnimal_a16d8b7f94611cc65f5cdb58cc105527b}{$\sim$\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_a84b2804414e0c5113a4fe1ca03fc3fff}{Get\+Weight} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk weight. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_a284817c8f57078ebce4fd1f17d824223}{Get\+Food} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk food. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnimal_a2c4de7b5eb65afd3208306d85b595560}{Get\+Tame} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk tame. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classAnimal_a183e4addbbccbe06a77e57bc8893cec1}{Get\+Pos} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk pos. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a255a8ea15491f55565d0ee0db4f40f66}{Set\+Weight} (float w)
+\begin{DoxyCompactList}\small\item\em Setter untuk weight. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a71051747b69f2747b5262491483e8662}{Set\+Food} (float f)
+\begin{DoxyCompactList}\small\item\em Setter untuk food. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_ad3a24c661579fc5caf63ecf8fc48cf4f}{Set\+Tame} (bool t)
+\begin{DoxyCompactList}\small\item\em Setter untuk tame. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a754c7eb7a8ca6d8bd3e30650546a410d}{Set\+Point} (int abs, int ord)
+\begin{DoxyCompactList}\small\item\em Setter point dengan parameter dua buah nilai integer. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a02e187a6407bc83c46698544c912be15}{Set\+Point} (const \hyperlink{classPoint}{Point} \&p)
+\begin{DoxyCompactList}\small\item\em Setter point dengan parameter sebuah point. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnimal_afc66abcbc6efb71c81d5306ea368cffb}{Is\+Same} (const \hyperlink{classAnimal}{Animal} \&a) const 
+\begin{DoxyCompactList}\small\item\em Memeriksa kesamaan dua animal. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classAnimal_ad5a55fb0355a9425fee6611003d9892c}{Interact} ()=0
+\begin{DoxyCompactList}\small\item\em Interaksi yang dilakukan animal. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAnimal}{Animal} $\ast$ \hyperlink{classAnimal_a3fc95e2a588b653b9b315e6c7a29c89f}{Clone} () const =0
+\begin{DoxyCompactList}\small\item\em Melakukan cloning untuk menciptakan objek \hyperlink{classAnimal}{Animal} baru. \end{DoxyCompactList}\item 
+virtual char \hyperlink{classAnimal_a43a47c0f41d211128e04abc6add53def}{Render} ()=0
+\begin{DoxyCompactList}\small\item\em Render dari \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}{weight}
+\begin{DoxyCompactList}\small\item\em Berat binatang. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_adb6cda9dddcd113576b887f01d648711}{food}
+\begin{DoxyCompactList}\small\item\em Jumlah makanan binatang. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}{tame}
+\begin{DoxyCompactList}\small\item\em Status jinak binatang. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}{pos}
+\begin{DoxyCompactList}\small\item\em Lokasi binatang. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas abstrak \hyperlink{classAnimal}{Animal} merepresentasikan binatang dalam Virtual \hyperlink{classZoo}{Zoo} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Animal()}{Animal()}}]{\setlength{\rightskip}{0pt plus 5cm}Animal\+::\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a1e726a49ec952443190ac62dad22353c}{}\label{classAnimal_a1e726a49ec952443190ac62dad22353c}
+
+
+Constructor. Menciptakan \hyperlink{classAnimal}{Animal} kosong. 
+
+\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Animal(float w, float f, bool t)}{Animal(float w, float f, bool t)}}]{\setlength{\rightskip}{0pt plus 5cm}Animal\+::\+Animal (
+\begin{DoxyParamCaption}
+\item[{float}]{w, }
+\item[{float}]{f, }
+\item[{bool}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_acc6020247b7d154583137a89c06971be}{}\label{classAnimal_acc6020247b7d154583137a89c06971be}
+
+
+Constructor dengan parameter. Menciptakan animal kosong dengan weight w, food f, dan tame t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Nilai berat binatang. \\
+\hline
+{\em f} & Nilai jumlah makanan yang dibutuhkan binatang. \\
+\hline
+{\em t} & Status jinak binatang. \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!````~Animal@{$\sim$\+Animal}}
+\index{````~Animal@{$\sim$\+Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{$\sim$\+Animal()}{~Animal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Animal\+::$\sim$\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAnimal_a16d8b7f94611cc65f5cdb58cc105527b}{}\label{classAnimal_a16d8b7f94611cc65f5cdb58cc105527b}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Animal@{Animal}!Clone@{Clone}}
+\index{Clone@{Clone}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Clone() const =0}{Clone() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Animal}$\ast$ Animal\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnimal_a3fc95e2a588b653b9b315e6c7a29c89f}{}\label{classAnimal_a3fc95e2a588b653b9b315e6c7a29c89f}
+
+
+Melakukan cloning untuk menciptakan objek \hyperlink{classAnimal}{Animal} baru. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan pointer to \hyperlink{classAnimal}{Animal} objek tersebut. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPolarBear_aad58cdb9b360996a94f12ade5b6743b7}{Polar\+Bear}, \hyperlink{classDuck_ae3ff98b443c887f37ce63e3ed2e3a690}{Duck}, \hyperlink{classDugong_a8209b4208bd32dfc0fa4e701679306c1}{Dugong}, \hyperlink{classElephant_a723a7c90f44a95d9886163e605aecea7}{Elephant}, \hyperlink{classGiraffe_aa29f8f77477a64fc72f814b7f225c94f}{Giraffe}, \hyperlink{classGoat_a1532200ef20734bb42d0a1306b14d8ad}{Goat}, \hyperlink{classIguana_a40e56fb855d09d2a8788dc73e2fdfc8a}{Iguana}, \hyperlink{classJalak_a85b145221386cdca75274b4438250161}{Jalak}, \hyperlink{classKomodo_aab3bd7ee8235c87e8bbafd8848968be8}{Komodo}, \hyperlink{classLion_ae63405ef106650644a8fcafc7393284e}{Lion}, \hyperlink{classOrca_ac44eb30486ba4051eefa914dc8cd670f}{Orca}, \hyperlink{classOwl_a585e73d53d76b2db489613b7f0b6eecc}{Owl}, \hyperlink{classParrot_aec7fd1385827d67522e1baf3242078b0}{Parrot}, \hyperlink{classTiger_aa376d57a4b2d56edb586f7ba1b170037}{Tiger}, \hyperlink{classWalrus_a9644eb3d51eb945b716bd37e25c7470e}{Walrus}, \hyperlink{classAlligator_aa317f0d37332919f638128c41cd7b53f}{Alligator}, \hyperlink{classCormorant_a7be371562fab8ab5c2e9e72386ee9aa2}{Cormorant}, and \hyperlink{classCobra_a1bfd2035a0a700b6362b1853cb12949b}{Cobra}.
+
+\index{Animal@{Animal}!Get\+Food@{Get\+Food}}
+\index{Get\+Food@{Get\+Food}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Get\+Food() const }{GetFood() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::\+Get\+Food (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classAnimal_a284817c8f57078ebce4fd1f17d824223}{}\label{classAnimal_a284817c8f57078ebce4fd1f17d824223}
+
+
+Getter untuk food. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan nilai food binatang. 
+\end{DoxyReturn}
+\index{Animal@{Animal}!Get\+Pos@{Get\+Pos}}
+\index{Get\+Pos@{Get\+Pos}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Get\+Pos() const }{GetPos() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Animal\+::\+Get\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classAnimal_a183e4addbbccbe06a77e57bc8893cec1}{}\label{classAnimal_a183e4addbbccbe06a77e57bc8893cec1}
+
+
+Getter untuk pos. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan nilai lokasi binatang. 
+\end{DoxyReturn}
+\index{Animal@{Animal}!Get\+Tame@{Get\+Tame}}
+\index{Get\+Tame@{Get\+Tame}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Get\+Tame() const }{GetTame() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Animal\+::\+Get\+Tame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classAnimal_a2c4de7b5eb65afd3208306d85b595560}{}\label{classAnimal_a2c4de7b5eb65afd3208306d85b595560}
+
+
+Getter untuk tame. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan status tame binatang. 
+\end{DoxyReturn}
+\index{Animal@{Animal}!Get\+Weight@{Get\+Weight}}
+\index{Get\+Weight@{Get\+Weight}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Get\+Weight() const }{GetWeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::\+Get\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classAnimal_a84b2804414e0c5113a4fe1ca03fc3fff}{}\label{classAnimal_a84b2804414e0c5113a4fe1ca03fc3fff}
+
+
+Getter untuk weight. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan nilai weight binatang. 
+\end{DoxyReturn}
+\index{Animal@{Animal}!Interact@{Interact}}
+\index{Interact@{Interact}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Interact()=0}{Interact()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Animal\+::\+Interact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnimal_ad5a55fb0355a9425fee6611003d9892c}{}\label{classAnimal_ad5a55fb0355a9425fee6611003d9892c}
+
+
+Interaksi yang dilakukan animal. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan string yang merepresentasikan suara \hyperlink{classAnimal}{Animal}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPolarBear_a2c266e69dd929ac3b10fe7484a77a5a4}{Polar\+Bear}, \hyperlink{classDuck_a9355aa821755703c02ac96e49692eaea}{Duck}, \hyperlink{classDugong_a861c589c05a791faf03297eb6e718d9e}{Dugong}, \hyperlink{classElephant_a4f2c4bef5ec886019ee88ad575f94fa7}{Elephant}, \hyperlink{classGiraffe_ad73e5ee5fc62f709c52a1cab68f2a1f3}{Giraffe}, \hyperlink{classGoat_a5f480d88c50724cee8c7a9d18f486144}{Goat}, \hyperlink{classIguana_a271ef320fd3d4973e50e89aa30cffe3e}{Iguana}, \hyperlink{classJalak_a864b931f04f1580759c4a108e1734bb8}{Jalak}, \hyperlink{classKomodo_a250e6b06c369a94faaa551751cd09196}{Komodo}, \hyperlink{classLion_a4c090a9b5f42b92c30d223b40435e167}{Lion}, \hyperlink{classOrca_adf95ca04578ac04aaa717ef2dd11bf4c}{Orca}, \hyperlink{classOwl_ac3c735f8a34b46780a0efd052319e7f3}{Owl}, \hyperlink{classParrot_a3fdf1aa0851d53d31b5d225d755e4995}{Parrot}, \hyperlink{classTiger_ae318cc373300a52e13598f42368a2c70}{Tiger}, \hyperlink{classWalrus_aa21a90ecf8aff97c4cf90a59449ce02c}{Walrus}, \hyperlink{classAlligator_a8f6141caa973d33f2066c3561cd817b3}{Alligator}, \hyperlink{classCormorant_af28984652ae999452d20aed885f0185a}{Cormorant}, and \hyperlink{classCobra_aa8dd0878e3d654e51bec9592c88bcab5}{Cobra}.
+
+\index{Animal@{Animal}!Is\+Same@{Is\+Same}}
+\index{Is\+Same@{Is\+Same}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Is\+Same(const Animal \&a) const }{IsSame(const Animal &a) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Animal\+::\+Is\+Same (
+\begin{DoxyParamCaption}
+\item[{const {\bf Animal} \&}]{a}
+\end{DoxyParamCaption}
+) const}\hypertarget{classAnimal_afc66abcbc6efb71c81d5306ea368cffb}{}\label{classAnimal_afc66abcbc6efb71c81d5306ea368cffb}
+
+
+Memeriksa kesamaan dua animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Objek animal yang akan dibandingkan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengeluarkan true jika current object sama dengan animal a. 
+\end{DoxyReturn}
+\index{Animal@{Animal}!Render@{Render}}
+\index{Render@{Render}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Render()=0}{Render()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual char Animal\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnimal_a43a47c0f41d211128e04abc6add53def}{}\label{classAnimal_a43a47c0f41d211128e04abc6add53def}
+
+
+Render dari \hyperlink{classAnimal}{Animal}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan char yang merupakan representasi kode \hyperlink{classAnimal}{Animal}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPolarBear_a7feccf8999fb0ab000c052583ad0217a}{Polar\+Bear}, \hyperlink{classAlligator_aa8f0a207888bf7f682ebc6b57270dd33}{Alligator}, \hyperlink{classCormorant_a6d388885acfc98de6020a01b90259dac}{Cormorant}, \hyperlink{classDuck_a8453f95adcf2e7ff1b35a1a9d9948510}{Duck}, \hyperlink{classDugong_af82a8983c960604aa27dabe7fec53362}{Dugong}, \hyperlink{classElephant_a7e412f36e1f88cd278dea76d4f383e95}{Elephant}, \hyperlink{classGiraffe_a64dccf030fdb54de9fd37f8381c64271}{Giraffe}, \hyperlink{classGoat_aedea4680fe17571c2f51d35b90397f6e}{Goat}, \hyperlink{classIguana_a18bbb71a80e6b2a9855623b1c7f108b9}{Iguana}, \hyperlink{classJalak_af500189104401b66d6ab4e3b1106ce74}{Jalak}, \hyperlink{classKomodo_a06ce8ed3d58a33968ecf4a12a3ebbd4d}{Komodo}, \hyperlink{classLion_ad782de7c88e4a7aad01287a2ed64827c}{Lion}, \hyperlink{classOrca_a0673bfc8e70af67b463a4fcae224d9d5}{Orca}, \hyperlink{classOwl_ab4ecc1fc8da822f97299709508f7806d}{Owl}, \hyperlink{classParrot_a27c491ab4ae56491fbe8d74e494bc46d}{Parrot}, \hyperlink{classTiger_a42b09a0bfc8c115e7383e926513fb371}{Tiger}, \hyperlink{classWalrus_a143f948e4c45e13a67f893caa435475d}{Walrus}, and \hyperlink{classCobra_abca7da2ee55ce825dc49f4f9a3e87208}{Cobra}.
+
+\index{Animal@{Animal}!Set\+Food@{Set\+Food}}
+\index{Set\+Food@{Set\+Food}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Set\+Food(float f)}{SetFood(float f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::\+Set\+Food (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a71051747b69f2747b5262491483e8662}{}\label{classAnimal_a71051747b69f2747b5262491483e8662}
+
+
+Setter untuk food. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Nilai food yang akan di-\/set pada animal. \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!Set\+Point@{Set\+Point}}
+\index{Set\+Point@{Set\+Point}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Set\+Point(int abs, int ord)}{SetPoint(int abs, int ord)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::\+Set\+Point (
+\begin{DoxyParamCaption}
+\item[{int}]{abs, }
+\item[{int}]{ord}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a754c7eb7a8ca6d8bd3e30650546a410d}{}\label{classAnimal_a754c7eb7a8ca6d8bd3e30650546a410d}
+
+
+Setter point dengan parameter dua buah nilai integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abs} & Nilai absis yang akan di-\/set pada lokasi animal. \\
+\hline
+{\em ord} & Nilai ordinat yang akan di-\/set pada lokasi animal. \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!Set\+Point@{Set\+Point}}
+\index{Set\+Point@{Set\+Point}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Set\+Point(const Point \&p)}{SetPoint(const Point &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::\+Set\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a02e187a6407bc83c46698544c912be15}{}\label{classAnimal_a02e187a6407bc83c46698544c912be15}
+
+
+Setter point dengan parameter sebuah point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Objek point yang akan di-\/set pada lokasi animal. \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!Set\+Tame@{Set\+Tame}}
+\index{Set\+Tame@{Set\+Tame}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Set\+Tame(bool t)}{SetTame(bool t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::\+Set\+Tame (
+\begin{DoxyParamCaption}
+\item[{bool}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_ad3a24c661579fc5caf63ecf8fc48cf4f}{}\label{classAnimal_ad3a24c661579fc5caf63ecf8fc48cf4f}
+
+
+Setter untuk tame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Status tame yang akan di-\/set pada animal. \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!Set\+Weight@{Set\+Weight}}
+\index{Set\+Weight@{Set\+Weight}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Set\+Weight(float w)}{SetWeight(float w)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::\+Set\+Weight (
+\begin{DoxyParamCaption}
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a255a8ea15491f55565d0ee0db4f40f66}{}\label{classAnimal_a255a8ea15491f55565d0ee0db4f40f66}
+
+
+Setter untuk weight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Nilai weight yang akan di-\/set pada animal. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Animal@{Animal}!food@{food}}
+\index{food@{food}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{food}{food}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::food\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_adb6cda9dddcd113576b887f01d648711}{}\label{classAnimal_adb6cda9dddcd113576b887f01d648711}
+
+
+Jumlah makanan binatang. 
+
+\index{Animal@{Animal}!pos@{pos}}
+\index{pos@{pos}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{pos}{pos}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Animal\+::pos\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}{}\label{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}
+
+
+Lokasi binatang. 
+
+\index{Animal@{Animal}!tame@{tame}}
+\index{tame@{tame}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{tame}{tame}}]{\setlength{\rightskip}{0pt plus 5cm}bool Animal\+::tame\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}{}\label{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}
+
+
+Status jinak binatang. 
+
+\index{Animal@{Animal}!weight@{weight}}
+\index{weight@{weight}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{weight}{weight}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::weight\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}{}\label{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}
+
+
+Berat binatang. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{animal_8h}{animal.\+h}\item 
+\hyperlink{animal_8cpp}{animal.\+cpp}\end{DoxyCompactItemize}

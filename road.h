@@ -14,17 +14,12 @@ public:
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Road.
 	  */
-	virtual char render() {return Ro;}
+	virtual char Render() {return Ro;}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Road baru
 	  * @return Mengembalikan pointer to Road objek tersebut.
 	  */
-	virtual Road* clone() const {return new Road(*this);}
-
-	/** @brief Integer dummy
-	  * @return Mengembalikan nilai 0.
-	  */
-	int dummy() {return 0;}
+	virtual Road* Clone() const {return new Road(*this);}
 	
 };
 
