@@ -204,8 +204,11 @@ void Zoo::ReadAnimal()
 	int abs, ord;
 	ifstream myfile;
 	myfile.open("animal.txt");
-	while (myfile >> c)
+	myfile >> c;
+	cout << 1;
+	while (!myfile.eof())
 	{
+		cout << 2;
 		if (c == 'A')
 		{
 			Alligator A;
@@ -366,6 +369,7 @@ void Zoo::ReadAnimal()
 			ca = SearchPoint(abs, ord);
 			ca.AdoptAnimal(W);
 		}
+		myfile >> c;
 	}
 	myfile.close();
 }

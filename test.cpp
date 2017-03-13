@@ -10,7 +10,7 @@ int main()
 		{
 			for(int j=0;j<(Z.GetCage(i)).GetTotalAnimal();j++)
 			{
-				operator<<(ostream& o, Z);
+				cout << Z;
 			}
 		}
 
