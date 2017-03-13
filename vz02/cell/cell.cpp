@@ -3,7 +3,7 @@
 
 #include "cell.h"
 
-Cell::Cell() : {
+Cell::Cell() {
 	object_type = "Road";
 	render = '+';
 }
@@ -54,4 +54,22 @@ void Cell::SetObjectType(string ot) {
 }
 bool Cell::IsHabitat() {
   return ((render == '@') || (render == '^') || (render == '~'));
+}
+bool Cell::IsLandHabitat() {
+  return (render == '@');
+}
+bool Cell::IsAirHabitat() {
+  return (render == '^');
+}
+bool Cell::IsWaterHabitat() {
+  return (render == '~');
+}
+bool Cell::IsExit() {
+  return (render == 'X');
+}
+bool Cell::IsRoad() {
+  return (render == '+');
+}
+bool Cell::IsEntrance() {
+  return (render == 'Z');
 }
