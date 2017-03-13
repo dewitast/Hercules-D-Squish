@@ -23,7 +23,6 @@ Driver::Driver() : P(-1,-1)
 void Driver::DisplayZoo()
 {
 	cout << Z;
-	cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;
 }
 
 void Driver::GetExperience()
@@ -61,11 +60,14 @@ void Driver::GetExperience()
 
 void Driver::TourZoo()
 {
+	for (int i=0;i<Z.GetJumlahCage();++i)
+		Z.GetCage(i).Move();
 	srand (time(NULL));
 	int random;
 	bool found = false;
 	if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
 	{
+		cout << "Anda masuk ke kebun binatang." << endl;
 		while (!found)
 		{
 			for (int i=0;i<Z.GetBeff();++i)
@@ -156,9 +158,11 @@ void Driver::TourZoo()
 		{
 			P.SetAbsis(-1);
 			P.SetOrdinat(-1);
+			cout << "Anda telah keluar dari kebun binatang." << endl;
 		}
 	}
-	cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;	
+	if (P.GetAbsis()!=-1)
+		cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;	
 }
 
 float Driver::FoodCalc()
