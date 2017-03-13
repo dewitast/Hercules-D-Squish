@@ -1,4 +1,4 @@
-/**	@file	Cell.h
+/**	@file  cell.h
   */
 
 #ifndef CELL_H
