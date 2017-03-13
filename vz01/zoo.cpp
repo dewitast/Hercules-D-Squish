@@ -90,23 +90,10 @@ ostream& operator<<(ostream& o,const Zoo& z)
 	cout << "Absis kanan bawah : "; cin >> abs;
 	cout << "Ordinat kanan bawah : "; cin >> ord;
 	P2.SetAbsis(abs); P2.SetOrdinat(ord);
-	char m[z.GetBeff()][z.GetKeff()];
-	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
-		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
-			m[i][j] = z.cell[i][j]->Render();
-	for (int i=0;i<z.jumlahcage;++i)
-	{
-		Cage &c = z.GetCage(i);
-		for (int j=0;j<c.GetTotalAnimal();++j)
-		{
-			P3 = c.GetAnimal(j)->GetPos();
-			m[P3.GetAbsis()][P3.GetOrdinat()] = c.GetAnimal(j)->Render();
-		}
-	}
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
 	{
 		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
-			o << m[i][j] << ' ';
+			o << z.cell[i][j]->Render();
 		o << endl;
 	}
 	return o;
