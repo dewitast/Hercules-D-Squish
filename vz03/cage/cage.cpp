@@ -165,7 +165,7 @@ bool Cage::CanPut(const Animal& A) const
 	return false;
 }
 
-bool Cage::Move()
+void Cage::Move()
 {
 	srand (time(NULL));
 	int random;

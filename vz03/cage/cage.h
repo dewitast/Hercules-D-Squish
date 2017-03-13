@@ -135,7 +135,7 @@ public:
 	/** @brief Move.
 	  * Menggerakkan semua binatang yang terdapat pada cage.
 	  */
-	bool Move();
+	void Move();
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
