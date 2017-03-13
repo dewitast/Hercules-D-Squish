@@ -33,17 +33,17 @@ public :
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Jalak.
 	  */
-	string interact() { return ("Tweet!"); }
+	string Interact() { return ("Tweet!"); }
 
 	/** @brief Melakukan cloning untuk menciptakan objek Jalak baru
 	  * @return Mengembalikan pointer to Jalak objek tersebut.
 	  */
-	virtual Jalak* clone() const {return new Jalak(*this);}
+	virtual Jalak* Clone() const {return new Jalak(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Jalak.
 	  */
-	char render(){return 'J';}
+	char Render(){return 'J';}
 	
 };
 

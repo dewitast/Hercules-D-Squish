@@ -45,7 +45,7 @@ Cage::Cage(const Cage& c)
 	TotalAnimal = c.TotalAnimal;
 	a = new Animal*[3*size/10];
 	for (int i=0;i<TotalAnimal;++i)
-		a[i] = (c.a[i])->clone();
+		a[i] = (c.a[i])->Clone();
 }
 
 Cage& Cage::operator=(const Cage& c)
@@ -57,7 +57,7 @@ Cage& Cage::operator=(const Cage& c)
 		Loc[i] = c.Loc[i];
 	TotalAnimal = c.TotalAnimal;
 	for (int i=0;i<TotalAnimal;++i)
-		a[i] = (c.a[i])->clone();
+		a[i] = (c.a[i])->Clone();
 	return *this;
 }
 
@@ -81,7 +81,7 @@ void Cage::AdoptAnimal(Animal& A)
 			while (IsOccupied(random))
 				random = rand() % size;
 			A.SetPoint(GetPoint(random));
-			a[TotalAnimal] = A.clone();
+			a[TotalAnimal] = A.Clone();
 			++TotalAnimal;
 		}
 	}
@@ -135,7 +135,7 @@ bool Cage::IsInCage(const Point& P) const
 void Cage::Interact() const
 {
 	for (int i=0;i<TotalAnimal;++i)
-		cout << a[i]->interact() << endl;
+		cout << a[i]->Interact() << endl;
 }
 
 void Cage::AddPoint(Point P)

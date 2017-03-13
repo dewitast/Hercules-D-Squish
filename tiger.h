@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Tiger.
 	  */
-	string interact() {return ("Growl");}
+	string Interact() {return ("Growl");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Tiger baru
 	  * @return Mengembalikan pointer to Tiger objek tersebut.
 	  */
-	virtual Tiger* clone() const {return new Tiger(*this);}
+	virtual Tiger* Clone() const {return new Tiger(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Tiger.
 	  */
-	char render(){return 'T';}
+	char Render(){return 'T';}
 
 };
 

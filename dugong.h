@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Dugong.
 	  */
-	string interact() {return ("Splashh!");}
+	string Interact() {return ("Splashh!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Dugong baru
 	  * @return Mengembalikan pointer to Dugong objek tersebut.
 	  */
-	virtual Dugong* clone() const {return new Dugong(*this);}
+	virtual Dugong* Clone() const {return new Dugong(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Dugong.
 	  */
-	char render(){return 'U';}
+	char Render(){return 'U';}
 	
 };
 

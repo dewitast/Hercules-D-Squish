@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Duck.
 	  */
-	string interact() {return ("Quaackk!");}
+	string Interact() {return ("Quaackk!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Duck baru
 	  * @return Mengembalikan pointer to Duck objek tersebut.
 	  */
-	virtual Duck* clone() const {return new Duck(*this);}
+	virtual Duck* Clone() const {return new Duck(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Duck.
 	  */
-	char render(){return 'D';}
+	char Render(){return 'D';}
 	
 };
 

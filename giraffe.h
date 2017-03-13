@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Giraffe.
 	  */
-	string interact() {return ("Hmm!");}
+	string Interact() {return ("Hmm!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Giraffe baru
 	  * @return Mengembalikan pointer to Giraffe objek tersebut.
 	  */
-	virtual Giraffe* clone() const {return new Giraffe(*this);}
+	virtual Giraffe* Clone() const {return new Giraffe(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Giraffe.
 	  */
-	char render(){return 'F';}
+	char Render(){return 'F';}
 	
 };
 

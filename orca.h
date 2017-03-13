@@ -33,17 +33,17 @@ public :
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Orca.
 	  */
-	string interact() { return ("Ngiak!"); }
+	string Interact() { return ("Ngiak!"); }
 
 	/** @brief Melakukan cloning untuk menciptakan objek Orca baru
 	  * @return Mengembalikan pointer to Orca objek tersebut.
 	  */
-	virtual Orca* clone() const {return new Orca(*this);}
+	virtual Orca* Clone() const {return new Orca(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Orca.
 	  */
-	char render(){return 'R';}
+	char Render(){return 'R';}
 	
 };
 

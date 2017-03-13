@@ -33,17 +33,17 @@ public :
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Elephant.
 	  */
-	string interact() { return ("Prett!"); }
+	string Interact() { return ("Prett!"); }
 
 	/** @brief Melakukan cloning untuk menciptakan objek Elephant baru
 	  * @return Mengembalikan pointer to Elephant objek tersebut.
 	  */
-	virtual Elephant* clone() const {return new Elephant(*this);}
+	virtual Elephant* Clone() const {return new Elephant(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Elephant.
 	  */
-	char render(){return 'H';}
+	char Render(){return 'H';}
 	
 };
 
