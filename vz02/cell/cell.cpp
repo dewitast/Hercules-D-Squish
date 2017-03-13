@@ -68,7 +68,7 @@ bool Cell::IsExit() {
   return (render == 'X');
 }
 bool Cell::IsRoad() {
-  return (render == '+');
+  return ((render == '+') || (render == 'X') || (render == 'Z'));
 }
 bool Cell::IsEntrance() {
   return (render == 'Z');
