@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Goat.
 	  */
-	string interact() {return ("Mbeeeee");}
+	string Interact() {return ("Mbeeeee");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Goat baru
 	  * @return Mengembalikan pointer to Goat objek tersebut.
 	  */
-	virtual Goat* clone() const {return new Goat(*this);}
+	virtual Goat* Clone() const {return new Goat(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Goat.
 	  */
-	char render(){return 'G';}
+	char Render(){return 'G';}
 
 };
 

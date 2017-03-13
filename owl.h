@@ -4,7 +4,7 @@
 #ifndef OWL_H
 #define OWL_H
 
-#include "flyingAnimal.h"
+#include "flying_animal.h"
 #include "carnivore.h"
 #include "aves.h"
 

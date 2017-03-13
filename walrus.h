@@ -5,7 +5,7 @@
 #define WALRUS_H
 
 #include "carnivore.h"
-#include "waterAnimal.h"
+#include "water_animal.h"
 #include "mammal.h"
 
 /** @class Walrus

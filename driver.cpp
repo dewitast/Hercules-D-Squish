@@ -1,4 +1,4 @@
-/**	@file	Driver.cpp
+/**	@file driver.cpp
   */
 
 #include "driver.h"
@@ -23,6 +23,7 @@ Driver::Driver() : P(-1,-1)
 void Driver::DisplayZoo()
 {
 	cout << Z;
+	cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;
 }
 
 void Driver::GetExperience()
@@ -157,6 +158,7 @@ void Driver::TourZoo()
 			P.SetOrdinat(-1);
 		}
 	}
+	cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;	
 }
 
 float Driver::FoodCalc()
