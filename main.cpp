@@ -4,16 +4,11 @@
 #include "air_habitat.h"
 #include <iostream>
 using namespace std;
+#include "driver.h"
 
 int main()
 {
-	LandHabitat L;
-	cout << L.IsLand() << endl;
-	cout << L.IsAir() << endl;
-	cout << L.IsWater() << endl;
-	AirHabitat A;
-	cout << A.IsWater() << endl;
-	cout << A.IsLand() << endl;
-	cout << A.IsAir() << endl;
+	Driver D;
+	D.DisplayZoo();
 	return 0;
 }

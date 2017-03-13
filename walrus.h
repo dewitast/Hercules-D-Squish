@@ -4,9 +4,9 @@
 #ifndef WALRUS_H
 #define WALRUS_H
 
-#include "Carnivore.h"
-#include "WaterAnimal.h"
-#include "Mammal.h"
+#include "carnivore.h"
+#include "waterAnimal.h"
+#include "mammal.h"
 
 /** @class Walrus
   * kelas Walrus merupakan kelas untuk real object Walrus

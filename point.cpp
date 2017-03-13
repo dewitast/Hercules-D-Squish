@@ -1,7 +1,7 @@
 /**	@file point.cpp
   */
 
-#include "Point.h"
+#include "point.h"
 
 Point::Point()
 {
