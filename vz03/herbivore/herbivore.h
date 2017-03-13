@@ -4,7 +4,7 @@
 #ifndef HERBIVORE_H
 #define HERBIVORE_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class Herbivore
   * Kelas abstrak Herbivore merupakan kelas bagi animal pemakan tumbuhan

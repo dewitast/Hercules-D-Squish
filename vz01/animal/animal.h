@@ -6,7 +6,7 @@
 
 #include <iostream>
 using namespace std;
-#include "point.h"
+#include "../point/point.h"
 
 /** @class Animal
   * Kelas abstrak Animal merepresentasikan binatang dalam Virtual Zoo

@@ -4,7 +4,7 @@
 #ifndef AIRHABITAT_H
 #define AIRHABITAT_H
 
-#include "habitat.h"
+#include "../habitat/habitat.h"
 
 /** @class AirHabitat
   * Kelas real AirHabitat merupakan simulasi dari habitat udara

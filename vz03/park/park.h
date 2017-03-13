@@ -4,7 +4,7 @@
 #ifndef PARK_H
 #define PARK_H
 
-#include "facility.h"
+#include "../facility/facility.h"
 
 /** @class Park
   * Kelas Park merepresentasikan fasilitas taman

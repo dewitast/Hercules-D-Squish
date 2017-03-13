@@ -1,14 +1,17 @@
 /**@file mainprog.cpp
   */
 
-#include "driver.h"
-#include "zoo.h"
+#include "../driver/driver.h"
+#include "../zoo/zoo.h"
 #include <iostream>
 using namespace std;
 
 int main() {
   int x;
   Driver d;
+
+  cout << d.GetZoo().GetBeff() << endl;
+  cout << d.GetZoo().GetKeff() << endl;
 
   d.DisplayMenu();
   cin >> x;
@@ -22,7 +25,7 @@ int main() {
       while (!d.GetZoo().GetElement(d.GetPoint()).IsExit()) {
   	    d.TourZoo();
   	  }
-  	  d.GetPoint().SetAbsis(-1);
+  	d.GetPoint().SetAbsis(-1);
 	  d.GetPoint().SetOrdinat(-1);
     }
     else if (x == 3){

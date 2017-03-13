@@ -4,8 +4,8 @@
 #ifndef DUCK_H
 #define DUCK_H
 
-#include "aves.h"
-#include "water_animal.h"
+#include "../aves/aves.h"
+#include "../water_animal/water_animal.h"
 
 /** @class Duck
   * Kelas Duck merupakan kelas untuk real object Duck

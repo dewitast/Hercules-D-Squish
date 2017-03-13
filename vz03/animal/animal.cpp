@@ -1,7 +1,7 @@
 /**	@file  animal.cpp
   */
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 Animal::Animal() {}
 Animal::Animal(float w, float f, bool t) {

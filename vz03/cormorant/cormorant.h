@@ -4,10 +4,10 @@
 #ifndef CORMORANT_H
 #define CORMORANT_H
 
-#include "aves.h"
-#include "carnivore.h"
-#include "flying_animal.h"
-#include "water_animal.h"
+#include "../aves/aves.h"
+#include "../carnivore/carnivore.h"
+#include "../flying_animal/flying_animal.h"
+#include "../water_animal/water_animal.h"
 
 /** @class Cormorant
   * Kelas Cormorant merupakan kelas untuk real object Cormorant

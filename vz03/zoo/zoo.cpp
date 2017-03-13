@@ -217,8 +217,7 @@ void Zoo::ReadAnimal()
 	int abs, ord;
 	ifstream myfile;
 	myfile.open("animal.txt");
-	myfile >> c;
-	while (!myfile.eof())
+	while (myfile >> c)
 	{
 		if (c == 'A')
 		{

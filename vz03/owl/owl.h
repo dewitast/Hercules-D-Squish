@@ -4,9 +4,9 @@
 #ifndef OWL_H
 #define OWL_H
 
-#include "flying_animal.h"
-#include "carnivore.h"
-#include "aves.h"
+#include "../flying_animal/flying_animal.h"
+#include "../carnivore/carnivore.h"
+#include "../aves/aves.h"
 
 /** @class Owl
   * Kelas Owl merupakan kelas untuk real object Owl

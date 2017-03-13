@@ -4,7 +4,7 @@
 #ifndef EXIT_H
 #define EXIT_H
 
-#include "road.h"
+#include "../road/road.h"
 
 /** @class Exit
   * Kelas Exit melambangkan jalan yang merupakan jalan keluar

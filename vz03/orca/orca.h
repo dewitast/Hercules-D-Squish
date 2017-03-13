@@ -4,9 +4,9 @@
 #ifndef ORCA_H
 #define ORCA_H
 
-#include "water_animal.h"
-#include "carnivore.h"
-#include "mammal.h"
+#include "../water_animal/water_animal.h"
+#include "../carnivore/carnivore.h"
+#include "../mammal/mammal.h"
 
 /** @class Orca
   * Kelas Orca merupakan kelas untuk real object Orca

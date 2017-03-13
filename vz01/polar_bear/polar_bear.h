@@ -4,8 +4,8 @@
 #ifndef POLARBEAR_H
 #define POLARBEAR_H
 
-#include "land_animal.h"
-#include "mammal.h"
+#include "../land_animal/land_animal.h"
+#include "../mammal/mammal.h"
 
 /** @class PolarBear
   * kelas PolarBear merupakan kelas untuk real object PolarBear

@@ -4,7 +4,7 @@
 #ifndef ENTRANCE_H
 #define ENTRANCE_H
 
-#include "road.h"
+#include "../road/road.h"
 
 /** @class Entrance
   * Kelas Entrance melambangkan jalan yang merupakan jalan masuk

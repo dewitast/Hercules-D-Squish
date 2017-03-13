@@ -4,7 +4,7 @@
 #ifndef REPTILE_H
 #define REPTILE_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class Reptile
   * Kelas abstrak Reptile
