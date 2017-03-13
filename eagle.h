@@ -33,17 +33,17 @@ public:
 	/** @brief interact
 	  * @return Mengembalikan string yang merepresentasikan suara Eagle.
 	  */
-	string interact() {return ("Nguiikk!");}
+	string Interact() {return ("Nguiikk!");}
 
 	/** @brief Melakukan cloning untuk menciptakan objek Eagle baru
 	  * @return Mengembalikan pointer to Eagle objek tersebut.
 	  */
-	virtual Eagle* clone() const {return new Eagle(*this);}
+	virtual Eagle* Clone() const {return new Eagle(*this);}
 
 	/** @brief render
 	  * @return Mengembalikan char yang merupakan representasi kode Eagle.
 	  */
-	char render(){return 'E';}
+	char Render(){return 'E';}
 	
 };
 

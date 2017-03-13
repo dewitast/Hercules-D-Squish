@@ -93,7 +93,7 @@ ostream& operator<<(ostream& o,const Zoo& z)
 	char m[z.GetBeff()][z.GetKeff()];
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
 		for (int j=P1.GetOrdinat();j<=P2.GetOrdinat();++j)
-			m[i][j] = z.cell[i][j]->render();
+			m[i][j] = z.cell[i][j]->Render();
 	for (int i=0;i<z.jumlahcage;++i)
 	{
 		Cage &c = z.GetCage(i);
