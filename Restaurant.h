@@ -1,25 +1,25 @@
+/**	@file	Restaurant.h
+  */
+
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
 
 #include "Facility.h"
 
-/** @class Restaurant.
-  * Kelas Restaurant merepresentasikan fasilitas restoran.
+/** @class Restaurant
+  * Kelas Restaurant merepresentasikan fasilitas restoran
   */
-class Restaurant : public Facility
-{
+class Restaurant : public Facility {
 public:
-	/** @brief Menentukan render dari Restaurant.
-		@return Mengembalikan char yang merupakan representasi objek ketika dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Restaurant.
 	  */
 	char render() {return Re;}
 	
-	/** @brief Melakukan cloning untuk menciptakan objek baru
-		@return Mengeluarkan pointer to Restaurant objek tersebut
+	/** @brief Melakukan cloning untuk menciptakan objek Restaurant baru
+	  * @return Mengembalikan pointer to Restaurant objek tersebut.
 	  */
 	virtual Restaurant* clone() const {return new Restaurant(*this);}
-
-private:
 
 };
 

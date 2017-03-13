@@ -8,8 +8,8 @@
 #include "Omnivore.h"
 #include "WaterAnimal.h"
 
-/** @class Duck.
-  * Kelas Duck merupakan kelas untuk real object Duck.
+/** @class Duck
+  * Kelas Duck merupakan kelas untuk real object Duck
   */
 class Duck : public WaterAnimal, public Omnivore, public Aves{
 public:
@@ -18,8 +18,8 @@ public:
 	  */
 	Duck() : Animal(120, 6, true) {}
 
-	/** @brief Constructor.
-	  * Menciptakan objek Duck dengan berat w, jumlah makanan f, dan status jinak t.
+	/** @brief Constructor dengan parameter.
+	  * Menciptakan objek Duck dengan berat w, jumlah makanan f, dan status jinak t
 	  * @param w Berat Duck.
 	  * @param k Jumlah makanan Duck.
 	  * @param t Status jinak Duck.
@@ -30,21 +30,21 @@ public:
 	  */
 	virtual ~Duck() {}
 
-	/** @brief interact.
-	  * @return Mengembalikan string yang merepresentasikan suara duck.
+	/** @brief interact
+	  * @return Mengembalikan string yang merepresentasikan suara Duck.
 	  */
 	string interact() {return ("Quaackk!");}
 
-	/** @brief clone.
-	  * Melakukan cloning untuk menciptakan objek baru.
-	  * @return Mengeluarkan pointer to duck objek tersebut.
+	/** @brief Melakukan cloning untuk menciptakan objek Duck baru
+	  * @return Mengembalikan pointer to Duck objek tersebut.
 	  */
 	virtual Duck* clone() const {return new Duck(*this);}
 
-	/** @brief render.
-	  * @return Mengembalikan char yang merupakan representasi objek yang dicetak.
+	/** @brief render
+	  * @return Mengembalikan char yang merupakan representasi kode Duck.
 	  */
 	char render(){return 'D';}
+	
 };
 
 #endif

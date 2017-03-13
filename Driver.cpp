@@ -1,10 +1,17 @@
-/**	@file	Driver.h
+/**	@file	Driver.cpp
   */
 
 #include "Driver.h"
 #include <fstream>
 
-	Driver::Driver() : P(-1,-1)
+Driver::Driver() : P(-1,-1)
+{
+	ifstream myfile;
+	myfile.open("map.txt");
+	myfile >> Z;
+	myfile.close();
+	visited = new bool*[Z.GetBeff()];
+	for (int i=0;i<Z.GetBeff();++i)
 	{
 		ifstream myfile;
 		myfile.open("map.txt");
@@ -17,156 +24,158 @@
 			for (int j=0;j<Z.GetKeff();++j)
 				visited[i][j] = false;
 		}
+		Z.ReadAnimal();
 	}
+}
 
-	void Driver::DisplayZoo()
-	{
-		cout << Z;
-	}
+void Driver::DisplayZoo()
+{
+	cout << Z;
+}
 
-	void Driver::GetExperience()
+void Driver::GetExperience()
+{
+	Point P1;
+	if (P.GetAbsis()>0)
 	{
-		Point P1;
-		if (P.GetAbsis()>0)
-		{
-			P1.SetAbsis(P.GetAbsis()-1);
-			P1.SetOrdinat(P.GetOrdinat());
-			if ((Z.GetElement(P1)).IsHabitat())
-				(Z.SearchPoint(P1)).Interact();
-		}
-		if (P.GetAbsis()<Z.GetBeff()-1)
-		{
-			P1.SetAbsis(P.GetAbsis()+1);
-			P1.SetOrdinat(P.GetOrdinat());
-			if ((Z.GetElement(P1)).IsHabitat())
-				(Z.SearchPoint(P1)).Interact();
-		}
-		if (P.GetOrdinat()>0)
-		{
-			P1.SetAbsis(P.GetAbsis());
-			P1.SetOrdinat(P.GetOrdinat()-1);
-			if ((Z.GetElement(P1)).IsHabitat())
-				(Z.SearchPoint(P1)).Interact();
-		}
-		if (P.GetAbsis()<Z.GetKeff()-1)
-		{
-			P1.SetAbsis(P.GetAbsis());
-			P1.SetOrdinat(P.GetOrdinat()+1);
-			if ((Z.GetElement(P1)).IsHabitat())
-				(Z.SearchPoint(P1)).Interact();
-		}
+		P1.SetAbsis(P.GetAbsis()-1);
+		P1.SetOrdinat(P.GetOrdinat());
+		if ((Z.GetElement(P1)).IsHabitat())
+			(Z.SearchPoint(P1)).Interact();
 	}
-	
-	void Driver::TourZoo()
+	if (P.GetAbsis()<Z.GetBeff()-1)
 	{
-		srand (time(NULL));
-		int random;
-		bool found = false;
-		if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
+		P1.SetAbsis(P.GetAbsis()+1);
+		P1.SetOrdinat(P.GetOrdinat());
+		if ((Z.GetElement(P1)).IsHabitat())
+			(Z.SearchPoint(P1)).Interact();
+	}
+	if (P.GetOrdinat()>0)
+	{
+		P1.SetAbsis(P.GetAbsis());
+		P1.SetOrdinat(P.GetOrdinat()-1);
+		if ((Z.GetElement(P1)).IsHabitat())
+			(Z.SearchPoint(P1)).Interact();
+	}
+	if (P.GetAbsis()<Z.GetKeff()-1)
+	{
+		P1.SetAbsis(P.GetAbsis());
+		P1.SetOrdinat(P.GetOrdinat()+1);
+		if ((Z.GetElement(P1)).IsHabitat())
+			(Z.SearchPoint(P1)).Interact();
+	}
+}
+
+void Driver::TourZoo()
+{
+	srand (time(NULL));
+	int random;
+	bool found = false;
+	if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
+	{
+		while (!found)
 		{
-			while (!found)
+			for (int i=0;i<Z.GetBeff();++i)
+				for (int j=0;j<Z.GetKeff();++j)
+					visited[i][j] = false;
+			random = rand() % Z.GetBeff();
+			if ((Z.GetElement(0,random)).IsEntrance()) 
+			{
+				found = true;
+				P.SetAbsis(0);
+				P.SetOrdinat(random);
+			}
+			else if ((Z.GetElement(Z.GetBeff()-1,random)).IsEntrance()) 
+			{
+				found = true;
+				P.SetAbsis(Z.GetBeff()-1);
+				P.SetOrdinat(random);
+			}	
+			if (!found)
 			{
 				random = rand() % Z.GetKeff();
-				if ((Z.GetElement(0,random)).IsEntrance()) 
+				if ((Z.GetElement(random,0)).IsEntrance()) 
 				{
 					found = true;
-					P.SetAbsis(0);
-					P.SetOrdinat(random);
+					P.SetAbsis(random);
+					P.SetOrdinat(0);
 				}
-				else if ((Z.GetElement(Z.GetBeff()-1,random)).IsEntrance()) 
+				else if ((Z.GetElement(random,Z.GetKeff()-1)).IsEntrance()) 
 				{
 					found = true;
-					P.SetAbsis(Z.GetBeff()-1);
-					P.SetOrdinat(random);
-				}	
-				if (!found)
-				{
-					random = rand() % Z.GetBeff();
-					if ((Z.GetElement(random,0)).IsEntrance()) 
-					{
-						found = true;
-						P.SetAbsis(random);
-						P.SetOrdinat(0);
-					}
-					else if ((Z.GetElement(random,Z.GetKeff()-1)).IsEntrance()) 
-					{
-						found = true;
-						P.SetAbsis(random);
-						P.SetOrdinat(Z.GetKeff()-1);
-					}
+					P.SetAbsis(random);
+					P.SetOrdinat(Z.GetKeff()-1);
 				}
-			}
-		}
-		else
-		{
-			visited[P.GetAbsis()][P.GetOrdinat()] = true;
-			bool b1 = ((P.GetAbsis()>0)&&(!visited[P.GetAbsis()-1][P.GetOrdinat()])&&((Z.GetElement(P.GetAbsis()-1,P.GetOrdinat()))).IsRoad());
-			bool b2 = ((P.GetOrdinat()<Z.GetKeff()-1)&&(!visited[P.GetAbsis()][P.GetOrdinat()+1])&&((Z.GetElement(P.GetAbsis(),P.GetOrdinat()+1))).IsRoad());
-			bool b3 = ((P.GetAbsis()<Z.GetBeff()-1)&&(!visited[P.GetAbsis()+1][P.GetOrdinat()])&&((Z.GetElement(P.GetAbsis()+1,P.GetOrdinat()))).IsRoad());
-			bool b4 = ((P.GetOrdinat()>0)&&(!visited[P.GetAbsis()][P.GetOrdinat()-1])&&((Z.GetElement(P.GetAbsis(),P.GetOrdinat()-1))).IsRoad());
-			if ((!b1)&&(!b2)&&(!b3)&&(!b4))
-			{
-				P.SetAbsis(-1);
-				P.SetOrdinat(-1);
-				return;
-			}
-			while (!found)
-			{
-				random = rand() % 4;
-				if (random==0)
-				{
-					if (b1)
-					{
-						found = true;
-						P.SetAbsis(P.GetAbsis()-1);
-					}	
-				}
-				else if (random==1)
-				{
-					if (b2)
-					{
-						found = true;
-						P.SetOrdinat(P.GetOrdinat()+1);
-					}		
-				}
-				else if (random==2)
-				{
-					if (b3)
-					{
-						found = true;
-						P.SetAbsis(P.GetAbsis()+1);
-					}	
-				}
-				else if (random==3)
-				{
-					if (b4)
-					{
-						found = true;
-						P.SetOrdinat(P.GetOrdinat()-1);
-					}	
-				}
-			}
-			GetExperience();
-			if ((Z.GetElement(P)).IsExit())
-			{
-				P.SetAbsis(-1);
-				P.SetOrdinat(-1);
 			}
 		}
 	}
-	
-	float Driver::FoodCalc()
+	else
 	{
-		float sum = 0;
-		for(int i=0;i<Z.GetJumlahCage();i++)
+		visited[P.GetAbsis()][P.GetOrdinat()] = true;
+		bool b1 = ((P.GetAbsis()>0)&&(!visited[P.GetAbsis()-1][P.GetOrdinat()])&&((Z.GetElement(P.GetAbsis()-1,P.GetOrdinat()))).IsRoad());
+		bool b2 = ((P.GetOrdinat()<Z.GetKeff()-1)&&(!visited[P.GetAbsis()][P.GetOrdinat()+1])&&((Z.GetElement(P.GetAbsis(),P.GetOrdinat()+1))).IsRoad());
+		bool b3 = ((P.GetAbsis()<Z.GetBeff()-1)&&(!visited[P.GetAbsis()+1][P.GetOrdinat()])&&((Z.GetElement(P.GetAbsis()+1,P.GetOrdinat()))).IsRoad());
+		bool b4 = ((P.GetOrdinat()>0)&&(!visited[P.GetAbsis()][P.GetOrdinat()-1])&&((Z.GetElement(P.GetAbsis(),P.GetOrdinat()-1))).IsRoad());
+		if ((!b1)&&(!b2)&&(!b3)&&(!b4))
 		{
-			for(int j=0;j<(Z.GetCage(i)).GetTotalAnimal();j++)
+			P.SetAbsis(-1);
+			P.SetOrdinat(-1);
+			return;
+		}
+		while (!found)
+		{
+			random = rand() % 4;
+			if (random==0)
 			{
-				sum += ((Z.GetCage(i)).GetAnimal(j))->GetFood();
+				if (b1)
+				{
+					found = true;
+					P.SetAbsis(P.GetAbsis()-1);
+				}	
+			}
+			else if (random==1)
+			{
+				if (b2)
+				{
+					found = true;
+					P.SetOrdinat(P.GetOrdinat()+1);
+				}		
+			}
+			else if (random==2)
+			{
+				if (b3)
+				{
+					found = true;
+					P.SetAbsis(P.GetAbsis()+1);
+				}	
+			}
+			else if (random==3)
+			{
+				if (b4)
+				{
+					found = true;
+					P.SetOrdinat(P.GetOrdinat()-1);
+				}	
 			}
 		}
-		return sum;
+		GetExperience();
+		if ((Z.GetElement(P)).IsExit())
+		{
+			P.SetAbsis(-1);
+			P.SetOrdinat(-1);
+		}
 	}
+}
 
-	Driver::~Driver()
-	{}
+float Driver::FoodCalc()
+{
+	float sum = 0;
+	for(int i=0;i<Z.GetJumlahCage();i++)
+	{
+		for(int j=0;j<(Z.GetCage(i)).GetTotalAnimal();j++)
+		{
+			sum += ((Z.GetCage(i)).GetAnimal(j))->GetFood();
+		}
+	}
+	return sum;
+}

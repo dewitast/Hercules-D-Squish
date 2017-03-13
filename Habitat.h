@@ -1,3 +1,6 @@
+/**	@file	Habitat.h
+  */
+
 #ifndef HABITAT_H
 #define HABITAT_H
 
