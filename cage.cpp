@@ -107,6 +107,13 @@ bool Cage::IsOccupied(int i) const
 	return found;
 }
 
+bool Cage::IsOccupied(const Point& p) const
+{
+	int i = 0;
+	while (!(Loc[i].IsSame(p))) ++i;
+	return IsOccupied(i);
+}
+
 int Cage::IsInCage(const Animal &A) const
 {
 	bool found = false;
@@ -156,4 +163,40 @@ bool Cage::CanPut(const Animal& A) const
 	if (TotalAnimal==0) return true;
 	if (a[0]->GetTame()==A.GetTame()) return true;
 	return false;
+}
+
+bool Cage::Move()
+{
+	srand (time(NULL));
+	int random;
+	Point p2;
+	for (int i=0;i<TotalAnimal;++i)
+	{
+		p2 = a[i]->GetPos();
+		random = rand() % 4;
+		if (random==1)
+		{
+			Point p(p2.GetAbsis()-1,p2.GetOrdinat());
+			if ((IsInCage(p))&&(!IsOccupied(p)))
+				a[i]->SetPoint(p);
+		}
+		else if (random==2)
+		{
+			Point p(p2.GetAbsis()-1,p2.GetOrdinat());
+			if ((IsInCage(p))&&(!IsOccupied(p)))
+				a[i]->SetPoint(p);
+		}
+		else if (random==3)
+		{
+			Point p(p2.GetAbsis()-1,p2.GetOrdinat());
+			if ((IsInCage(p))&&(!IsOccupied(p)))
+				a[i]->SetPoint(p);
+		}
+		else if (random==4)
+		{
+			Point p(p2.GetAbsis()-1,p2.GetOrdinat());
+			if ((IsInCage(p))&&(!IsOccupied(p)))
+				a[i]->SetPoint(p);
+		}
+	}
 }

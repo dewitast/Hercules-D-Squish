@@ -94,6 +94,13 @@ public:
 	  */
 	bool IsOccupied(int i) const;
 
+	/** @brief IsOccupied.
+	  * Menentukan apakah Cage sudah terisi.
+	  * @param p Objek point lokasi yang akan diperiksa.
+	  * @return Mengembalikan true jika terdapat binatang habitat Cage pada point p.
+	  */
+	bool IsOccupied(const Point& p) const;
+
 	/** @brief IsInCage.
 	  * Menentukan apakah suatu binatang terdapat pada cage.
 	  * @param A Objek animal yang akan diperiksa.
@@ -124,6 +131,11 @@ public:
 	  * @return Mengeluarkan true jika A dapat dimasukkan ke cage.
 	  */
 	bool CanPut(const Animal& A) const;
+
+	/** @brief Move.
+	  * Menggerakkan semua binatang yang terdapat pada cage.
+	  */
+	bool Move();
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

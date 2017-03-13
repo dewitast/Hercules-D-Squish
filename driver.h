@@ -26,6 +26,10 @@ class Driver {
 		  */
 		void GetExperience();
 
+		/** @brief DisplayZoo.
+		  * Menampilkan tur yang terjadi ke layar
+		  */
+		 void DisplayTour();
 
 		/** @brief TourZoo.
 		  * Melakukan tur zoo.
