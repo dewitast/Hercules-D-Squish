@@ -133,11 +133,11 @@ istream& operator>>(istream& is, Zoo& z)
 					if (c=='@')
 					{
 						z.cell[i][j].SetObjectType("LandHabitat");
-						if ((i!=0)&&(z.cell[i-1][j]->IsLandHabitat()))
+						if ((i!=0)&&(z.cell[i-1][j].IsLandHabitat()))
 						{
 							z.SearchPoint(i-1,j).AddPoint(P);
 						}
-						else if ((j!=0)&&(z.cell[i][j-1]->IsLandHabitat()))
+						else if ((j!=0)&&(z.cell[i][j-1].IsLandHabitat()))
 						{
 							z.SearchPoint(i,j-1).AddPoint(P);
 						}
@@ -149,12 +149,12 @@ istream& operator>>(istream& is, Zoo& z)
 					}
 					else if (c=='^')
 					{
-						z.cell[i][j] = new AirHabitat();
-						if ((i!=0)&&(z.cell[i-1][j]->IsAirHabitat()))
+						z.cell[i][j].SetObjectType("AirHabitat");
+						if ((i!=0)&&(z.cell[i-1][j].IsAirHabitat()))
 						{
 							z.SearchPoint(i-1,j).AddPoint(P);
 						}
-						else if ((j!=0)&&(z.cell[i][j-1]->IsAirHabitat()))
+						else if ((j!=0)&&(z.cell[i][j-1].IsAirHabitat()))
 						{
 							z.SearchPoint(i,j-1).AddPoint(P);
 						}
@@ -166,12 +166,12 @@ istream& operator>>(istream& is, Zoo& z)
 					}
 					else if (c=='~')
 					{
-						z.cell[i][j] = new WaterHabitat();
-						if ((i!=0)&&(z.cell[i-1][j]->IsWaterHabitat()))
+						z.cell[i][j].SetObjectType("WaterHabitat");
+						if ((i!=0)&&(z.cell[i-1][j].IsWaterHabitat()))
 						{
 								z.SearchPoint(i-1,j).AddPoint(P);
 						}
-						else if ((j!=0)&&(z.cell[i][j-1]->IsWaterHabitat()))
+						else if ((j!=0)&&(z.cell[i][j-1].IsWaterHabitat()))
 						{
 								z.SearchPoint(i,j-1).AddPoint(P);
 						}
@@ -183,23 +183,23 @@ istream& operator>>(istream& is, Zoo& z)
 					}
 					else if (c=='S')
 					{
-						z.cell[i][j] = new Restaurant();
+						z.cell[i][j].SetObjectType("Restaurant");
 					}
 					else if (c=='#')
 					{
-						z.cell[i][j] = new Park();
+						z.cell[i][j].SetObjectType("Park");
 					}
 					else if (c=='+')
 					{
-						z.cell[i][j] = new Road();
+						z.cell[i][j].SetObjectType("Road");
 					}
 					else if (c=='X')
 					{
-						z.cell[i][j] = new Exit();
+						z.cell[i][j].SetObjectType("Exit");
 					}
 					else if (c=='Z')
 					{
-						z.cell[i][j] = new Entrance();
+						z.cell[i][j].SetObjectType("Entrance");
 					}
 				}
 			}
@@ -385,12 +385,12 @@ void Zoo::ReadAnimal()
 Cell& Zoo::GetElement(const Point& P) const
 {
 	int x = P.GetAbsis(), y = P.GetOrdinat();
-	return (*(cell[x][y]));
+	return (cell[x][y]);
 }
 
 Cell& Zoo::GetElement(int b,int k) const
 {
-	return (*(cell[b][k]));
+	return (cell[b][k]);
 }
 
 int Zoo::GetJumlahCage() const

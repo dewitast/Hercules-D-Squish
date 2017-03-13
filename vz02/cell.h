@@ -4,8 +4,6 @@
 #ifndef CELL_H
 #define CELL_H
 
-#include "../renderable/renderable.h"
-
 /** @class Cell.
   * Kelas Cell merupakan simulasi dari petak-petak yang terdapat dalam kebun binatang.
   */
