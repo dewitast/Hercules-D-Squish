@@ -45,6 +45,21 @@ class Driver {
 		/** @brief Destructor.
 	 	 */
 		virtual ~Driver() {}
+
+		/** @brief DisplayMenu.
+		  * Menampilkan menu utama ke layar.
+		  */
+		void DisplayMenu();
+
+	    /** @brief GetZoo.
+	      * @return Mengembalikan zoo.
+	      */
+		Zoo& GetZoo();
+
+		/** @brief GetZoo.
+	      * @return Mengembalikan point.
+	      */
+		Point& GetPoint();
 		
 	public:
 		Zoo Z;
