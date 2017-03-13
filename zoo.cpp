@@ -217,148 +217,170 @@ void Zoo::ReadAnimal()
 	int abs, ord;
 	ifstream myfile;
 	myfile.open("animal.txt");
-	while (myfile >> c)
+	myfile >> c;
+	while (!myfile.eof())
 	{
 		if (c == 'A')
 		{
 			Alligator A;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(A);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'C')
 		{
 			Cobra C;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(C);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(C);
 		}
 		else if (c == 'M')
 		{
 			Cormorant M;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(M);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(M);
 		}
 		else if (c == 'N')
 		{
 			Dolphin N;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(N);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(N);
 		}
 		else if (c == 'D')
 		{
 			Duck D;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(D);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(D);
 		}
 		else if (c == 'U')
 		{
 			Dugong U;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(U);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(U);
 		}
 		else if (c == 'E')
 		{
 			Eagle E;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(E);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(E);
 		}
 		else if (c == 'H')
 		{
 			Elephant H;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(H);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(H);
 		}
 		else if (c == 'F')
 		{
 			Giraffe F;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(F);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(F);
 		}
 		else if (c == 'G')
 		{
 			Goat G;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(G);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(G);
 		}
 		else if (c == 'I')
 		{
 			Iguana I;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(I);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(I);
 		}
 		else if (c == 'J')
 		{
 			Jalak J;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(J);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(J);
 		}
 		else if (c == 'K')
 		{
 			Komodo K;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(K);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(K);
 		}
 		else if (c == 'L')
 		{
 			Lion L;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(L);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(L);
 		}
 		else if (c == 'R')
 		{
 			Orca R;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(R);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(R);
 		}
 		else if (c == 'O')
 		{
 			Owl O;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(O);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(O);
 		}
 		else if (c == 'P')
 		{
 			Parrot P;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(P);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(P);
 		}
 		else if (c == 'B')
 		{
 			PolarBear B;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(B);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(B);
 		}
 		else if (c == 'T')
 		{
 			Tiger T;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(T);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(T);
 		}
 		else if (c == 'W')
 		{
 			Walrus W;
 			myfile >> abs;
 			myfile >> ord;
-			SearchPoint(abs-1, ord-1).AdoptAnimal(W);
+			if (GetElement(abs-1,ord-1).IsHabitat())
+				SearchPoint(abs-1, ord-1).AdoptAnimal(W);
 		}
+		myfile >> c;
 	}
 	myfile.close();
 }

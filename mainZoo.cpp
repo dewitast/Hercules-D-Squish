@@ -1,21 +1,20 @@
 #include "Zoo.h"
+#include "Driver.h"
 #include <fstream>
 using namespace std;
 
 int main()
 {
-	Zoo z;
-	cout << "tes" << endl;
+	/*Zoo Z;
 	ifstream fin;
 	fin.open("map.txt");
-	fin >> z;
+	fin >> Z;
 	fin.close();
-	cout << 1 << endl;
-	cout << z;
-	Zoo z2=z;
-	cout << z2;
-	Zoo z3;
-	z3 = z2;
-	cout << z3;
+	Z.ReadAnimal();
+	cout << Z;*/
+	Driver D;
+	D.DisplayZoo();
+
+
 	return 0;
 }
