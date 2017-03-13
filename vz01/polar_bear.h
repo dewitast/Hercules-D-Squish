@@ -4,27 +4,18 @@
 #ifndef POLARBEAR_H
 #define POLARBEAR_H
 
-#include "carnivore.h"
 #include "land_animal.h"
-#include "water_animal.h"
 #include "mammal.h"
 
 /** @class PolarBear
   * kelas PolarBear merupakan kelas untuk real object PolarBear
   */
-class PolarBear : public LandAnimal, public WaterAnimal, public Carnivore, public Mammal {
+class PolarBear : public LandAnimal, public Mammal {
 public:
   /** @brief Constructor.
     * Menciptakan objek PolarBear.
     */
-  PolarBear() : Animal(300, 15, false) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek PolarBear dengan berat w, jumlah makanan f, dan status jinak t
-    * @param w Berat PolarBear.
-    * @param f Jumlah makanan PolarBear.
-    * @param t Status jinak PolarBear.
-    */
-  PolarBear(float w, float f, bool t) : Animal(w, f, t) {}
+  PolarBear() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~PolarBear() {}

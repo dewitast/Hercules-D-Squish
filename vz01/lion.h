@@ -5,25 +5,17 @@
 #define LION_H
 
 #include "mammal.h"
-#include "carnivore.h"
 #include "land_animal.h"
 
 /** @class Lion
   * Kelas Lion merupakan kelas untuk real object Lion
   */
-class Lion : public LandAnimal, public Carnivore, public Mammal{
+class Lion : public LandAnimal, public Mammal{
 public:
   /** @brief Constructor.
     * Menciptakan objek Lion.
     */
-  Lion() : Animal(150, 7.5, false) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Lion dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Lion.
-    * @param k Jumlah makanan Lion.
-    * @param t Status jinak Lion.
-    */
-  Lion(float w, float f, bool t) : Animal(w, f, t) {}
+  Lion() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Lion() {}

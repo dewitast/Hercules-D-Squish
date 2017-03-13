@@ -5,25 +5,17 @@
 #define KOMODO_H
 
 #include "reptile.h"
-#include "carnivore.h"
 #include "land_animal.h"
 
 /** @class Komodo
   * Kelas Komodo merupakan kelas untuk real object Komodo
   */
-class Komodo : public LandAnimal, public Carnivore, public Reptile {
+class Komodo : public LandAnimal, public Reptile {
 public :
   /** @brief Constructor.
     * Menciptakan objek Komodo.
     */
-  Komodo() : Animal(120,6,false) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Komodo dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Komodo.
-    * @param k Jumlah makanan Komodo.
-    * @param t Status jinak Komodo.
-    */
-  Komodo(float w, float f, bool t) : Animal(w,f,t) {}
+  Komodo() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Komodo() {}

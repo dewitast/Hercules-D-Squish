@@ -4,26 +4,18 @@
 #ifndef WALRUS_H
 #define WALRUS_H
 
-#include "carnivore.h"
 #include "water_animal.h"
 #include "mammal.h"
 
 /** @class Walrus
   * kelas Walrus merupakan kelas untuk real object Walrus
   */
-class Walrus : public WaterAnimal, public Carnivore, public Mammal {
+class Walrus : public WaterAnimal, public Mammal {
 public :
   /** @brief Constructor.
     * Menciptakan objek Walrus.
     */
-  Walrus() : Animal(1000,50,false) {}
-  /** @brief Constructor dengan parameter.
-	* Menciptakan objek Walrus dengan berat w, jumlah makanan f, dan status jinak t.
-	* @param w Berat Walrus.
-	* @param f Jumlah makanan Walrus.
-	* @param t Status jinak Walrus.
-	*/
-  Walrus(float w, float f, bool t) : Animal(w,f,t) {}
+  Walrus() : Animal() {}
   /** @brief Destructor.
 	*/
   virtual ~Walrus() {}

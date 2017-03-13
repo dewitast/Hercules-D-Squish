@@ -4,26 +4,18 @@
 #ifndef TIGER_H
 #define TIGER_H
 
-#include "carnivore.h"
 #include "land_animal.h"
 #include "mammal.h"
 
 /** @class Tiger
   * kelas Tiger merupakan kelas untuk real object Tiger
   */
-class Tiger : public LandAnimal, public Carnivore, public Mammal {
+class Tiger : public LandAnimal, public Mammal {
 public:
   /** @brief Constructor.
     * Menciptakan objek Tiger.
     */
-  Tiger() : Animal(200, 10, false) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Tiger dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Tiger.
-    * @param f Jumlah makanan Tiger.
-    * @param t Status jinak Tiger.
-    */
-  Tiger(float w, float f, bool t) : Animal(w, f, t) {}
+  Tiger() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Tiger() {}

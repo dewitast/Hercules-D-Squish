@@ -5,25 +5,17 @@
 #define ORCA_H
 
 #include "water_animal.h"
-#include "carnivore.h"
 #include "mammal.h"
 
 /** @class Orca
   * Kelas Orca merupakan kelas untuk real object Orca
   */
-class Orca : public WaterAnimal, public Carnivore, public Mammal {
+class Orca : public WaterAnimal, public Mammal {
 public :
   /** @brief Constructor.
     * Menciptakan objek Orca.
     */
-  Orca() : Animal(4000,200,false) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Orca dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Orca.
-    * @param f Jumlah makanan Orca.
-    * @param t Status jinak Orca.
-    */
-  Orca(float w, float f, bool t) : Animal(w,f,t) {}
+  Orca() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Orca() {}

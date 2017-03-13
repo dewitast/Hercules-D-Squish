@@ -4,7 +4,6 @@
 #ifndef PARROT_H
 #define PARROT_H
 
-#include "omnivore.h"
 #include "flying_animal.h"
 #include "aves.h"
 
@@ -16,14 +15,7 @@ public :
   /** @brief Constructor.
 	* Menciptakan objek Parrot.
 	*/
-  Parrot() : Animal(1.2,0.06,true) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Parrot dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Parrot.
-    * @param f Jumlah makanan Parrot.
-    * @param t Status jinak Parrot.
-    */
-  Parrot(float w, float f, bool t) : Animal(w,f,t) {}
+  Parrot() : Animal() {}
   /** @brief Destructor.
 	*/
   virtual ~Parrot() {}

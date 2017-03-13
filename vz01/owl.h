@@ -5,25 +5,17 @@
 #define OWL_H
 
 #include "flying_animal.h"
-#include "carnivore.h"
 #include "aves.h"
 
 /** @class Owl
   * Kelas Owl merupakan kelas untuk real object Owl
   */
-class Owl : public FlyingAnimal, public Carnivore, public Aves {
+class Owl : public FlyingAnimal, public Aves {
 public :
   /** @brief Constructor.
 	* Menciptakan objek Owl.
 	*/
-  Owl() : Animal(1.5,0.075,true) {}
-  /** @brief Constructor dengan parameter.
-	* Menciptakan objek Owl dengan berat w, jumlah makanan f, dan status jinak t.
-	* @param w Berat Owl.
-	* @param f Jumlah makanan Owl.
-	* @param t Status jinak Owl.
-	*/
-  Owl(float w, float f, bool t) : Animal(w,f,t) {}
+  Owl() : Animal() {}
   /** @brief Destructor.
 	*/
   virtual ~Owl() {}

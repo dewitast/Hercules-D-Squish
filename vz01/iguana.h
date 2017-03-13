@@ -4,26 +4,18 @@
 #ifndef IGUANA_H
 #define IGUANA_H
 
-#include "herbivore.h"
 #include "land_animal.h"
 #include "reptile.h"
 
 /** @class Iguana
   * kelas Iguana merupakan kelas untuk real object Iguana
   */
-class Iguana : public LandAnimal, public Herbivore, public Mammal {
+class Iguana : public LandAnimal, public Mammal {
 public :
   /** @brief Constructor.
     * Menciptakan objek Iguana.
     */
-  Iguana() : Animal(6,0.3,true) {}
-  /** @brief Constructor.
-    * Menciptakan objek Iguana dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Iguana.
-    * @param f Jumlah makanan Iguana.
-    * @param t Status jinak Iguana.
-    */
-  Iguana(float w, float f, bool t) : Animal(w,f,t) {}
+  Iguana() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Iguana() {}
