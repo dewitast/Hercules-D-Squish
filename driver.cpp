@@ -3,6 +3,8 @@
 
 #include "driver.h"
 #include <fstream>
+#include <iostream>
+using namespace std;
 
 Driver::Driver() : P(-1,-1)
 {
@@ -67,7 +69,7 @@ void Driver::TourZoo()
 	bool found = false;
 	if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
 	{
-		cout << "Anda masuk ke kebun binatang." << endl;
+		cout << "Welcome to the zoo." << endl;
 		while (!found)
 		{
 			for (int i=0;i<Z.GetBeff();++i)
@@ -156,9 +158,7 @@ void Driver::TourZoo()
 		GetExperience();
 		if ((Z.GetElement(P)).IsExit())
 		{
-			P.SetAbsis(-1);
-			P.SetOrdinat(-1);
-			cout << "Anda telah keluar dari kebun binatang." << endl;
+			cout << "You've reached the end of this journey." << endl;
 		}
 	}
 	if (P.GetAbsis()!=-1)
@@ -176,4 +176,20 @@ float Driver::FoodCalc()
 		}
 	}
 	return sum;
+}
+
+void Driver::DisplayMenu() {
+  cout << endl;
+  cout << "Main Menu:" << endl << "1. Display Zoo" << endl;
+  cout << "2. Tour Around Zoo" << endl;
+  cout << "3. Animal's Food Calculation" << endl << "4. Exit" << endl << endl;
+  cout << "Input your number of choice here: ";
+}
+
+Zoo& Driver::GetZoo() {
+  return Z;
+}
+
+Point& Driver::GetPoint() {
+	return P;
 }
