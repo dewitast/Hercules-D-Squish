@@ -19,11 +19,9 @@ int main() {
     }
     else if (x == 2){
       d.TourZoo();
-      while (!d.GetZoo().GetElement(d.GetPoint()).IsExit()) {
+      while (d.GetPoint().GetAbsis()!=-1) {
   	    d.TourZoo();
   	  }
-  	  d.GetPoint().SetAbsis(-1);
-	    d.GetPoint().SetOrdinat(-1);
     }
     else if (x == 3){
   	  cout << "Total food calculation : " << d.FoodCalc() << endl;

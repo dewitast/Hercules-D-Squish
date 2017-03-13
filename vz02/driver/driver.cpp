@@ -158,7 +158,9 @@ void Driver::TourZoo()
 		GetExperience();
 		if ((Z.GetElement(P)).IsExit())
 		{
-			cout << "You've reached the end of this journey." << endl;
+			cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() << ')' << endl << "You've reached the end of this journey." << endl;
+			P.SetAbsis(-1);
+			P.SetOrdinat(-1);
 		}
 	}
 	if (P.GetAbsis()!=-1)
