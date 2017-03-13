@@ -16,7 +16,7 @@ public :
   /** @brief Constructor.
     * Menciptakan objek Duck.
     */
-  Duck() : Animal(120,6,true) {}
+  Duck() : Animal(12,0.6,true) {}
   /** @brief Constructor dengan parameter.
     * Menciptakan objek Duck dengan berat w, jumlah makanan f, dan status jinak t.
     * @param w Berat Duck.
