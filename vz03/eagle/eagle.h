@@ -4,9 +4,9 @@
 #ifndef EAGLE_H
 #define EAGLE_H
 
-#include "aves.h"
-#include "carnivore.h"
-#include "flying_animal.h"
+#include "../aves/aves.h"
+#include "../carnivore/carnivore.h"
+#include "../flying_animal/flying_animal.h"
 
 /** @class Eagle
   * Kelas Eagle merupakan kelas untuk real object Eagle

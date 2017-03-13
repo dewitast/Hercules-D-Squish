@@ -4,7 +4,7 @@
 #ifndef PISCES_H
 #define PISCES_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class Pisces
   * Kelas abstrak Pisces

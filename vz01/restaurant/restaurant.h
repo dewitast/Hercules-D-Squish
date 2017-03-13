@@ -4,7 +4,7 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
 
-#include "facility.h"
+#include "../facility/facility.h"
 
 /** @class Restaurant
   * Kelas Restaurant merepresentasikan fasilitas restoran

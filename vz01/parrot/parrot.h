@@ -4,8 +4,8 @@
 #ifndef PARROT_H
 #define PARROT_H
 
-#include "flying_animal.h"
-#include "aves.h"
+#include "../flying_animal/flying_animal.h"
+#include "../aves/aves.h"
 
 /** @class Parrot
   * kelas Parrot merupakan kelas untuk real object Parrot

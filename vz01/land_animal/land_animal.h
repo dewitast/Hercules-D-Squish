@@ -4,7 +4,7 @@
 #ifndef LANDANIMAL_H
 #define LANDANIMAL_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class LandAnimal
   * Kelas abstrak LandAnimal merupakan kelas bagi animal dengan habitat di darat

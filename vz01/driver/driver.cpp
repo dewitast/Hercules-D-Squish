@@ -1,7 +1,7 @@
 /**	@file driver.cpp
   */
 
-#include "driver.h"
+#include "../driver/driver.h"
 #include <fstream>
 #include <iostream>
 using namespace std;

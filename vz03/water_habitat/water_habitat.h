@@ -4,7 +4,7 @@
 #ifndef WATERHABITAT_H
 #define WATERHABITAT_H
 
-#include "habitat.h"
+#include "../habitat/habitat.h"
 
 /** @class WaterHabitat
   * Kelas real WaterHabitat merupakan simulasi dari habitat air

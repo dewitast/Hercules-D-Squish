@@ -1,7 +1,7 @@
 /**	@file driver.cpp
   */
 
-#include "driver.h"
+#include "../driver/driver.h"
 #include <fstream>
 #include <iostream>
 using namespace std;
@@ -16,8 +16,8 @@ Driver::Driver() : P(-1,-1)
 	for (int i=0;i<Z.GetBeff();++i)
 	{
 		visited[i] = new bool[Z.GetKeff()];
-		for (int j=0;j<Z.GetKeff();++j)
-			visited[i][j] = false;
+		for (int j=0;j<Z.GetKeff();++j) {
+			visited[i][j] = false;}
 	}
 	Z.ReadAnimal();
 }

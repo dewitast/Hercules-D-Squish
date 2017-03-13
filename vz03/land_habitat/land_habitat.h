@@ -4,7 +4,7 @@
 #ifndef LANDHABITAT_H
 #define LANDHABITAT_H
 
-#include "habitat.h"
+#include "../habitat/habitat.h"
 
 /** @class LandHabitat
   * Kelas real LandHabitat merupakan simulasi dari habitat darat

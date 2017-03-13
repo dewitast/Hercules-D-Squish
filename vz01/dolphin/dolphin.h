@@ -4,8 +4,8 @@
 #ifndef DOLPHIN_H
 #define DOLPHIN_H
 
-#include "water_animal.h"
-#include "mammal.h"
+#include "../water_animal/water_animal.h"
+#include "../mammal/mammal.h"
 
 /** @class Dolphin
   * Kelas Dolphin merupakan kelas untuk real object Dolphin

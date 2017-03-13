@@ -4,8 +4,8 @@
 #ifndef COBRA_H
 #define COBRA_H
 
-#include "land_animal.h"
-#include "reptile.h"
+#include "../land_animal/land_animal.h"
+#include "../reptile/reptile.h"
 
 /** @class Cobra
   * Kelas Cobra merupakan kelas untuk real object Cobra

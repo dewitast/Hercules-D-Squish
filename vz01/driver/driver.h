@@ -4,7 +4,7 @@
 #ifndef DRIVER_H
 #define DRIVER_H
 
-#include "zoo.h"
+#include "../zoo/zoo.h"
 
 /** @class Driver.
   * Kelas Driver merupakan kelas sebagai pilihan menu aplikasi.

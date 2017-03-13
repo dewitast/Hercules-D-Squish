@@ -4,7 +4,7 @@
 #ifndef MAMMAL_H
 #define MAMMAL_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class Mammal
   * Kelas abstrak Mammal
