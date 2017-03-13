@@ -8,6 +8,10 @@ void Animal::SetPoint(int abs, int ord) {
   pos.SetAbsis(abs);
   pos.SetOrdinat(ord);
 }
+Point Animal::GetPos() const
+{
+	return pos;
+}
 void Animal::SetPoint(const Point& p) {
   pos = p;
 }

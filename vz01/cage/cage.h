@@ -48,7 +48,7 @@ public:
 	  * Menentukan apakah cage penuh.
 	  * @return Mengeluarkan true jika cage penuh.
 	  */
-	bool IsFull() const {return (TotalAnimal == 3*size/10);}
+	bool IsFull() const {return (TotalAnimal == size);}
 
 	/** @brief GetSize.
 	  * @return Mengembalikan nilai ukuran Cage.
@@ -124,13 +124,6 @@ public:
 	  * Menambahkan Loc baru di dalam Cage.
 	  */
 	void AddPoint(Point P);
-
-	/** @brief CanPut.
-	  * Menentukan apakah A dapat dimasukkan ke cage.
-	  * @param A Animal yang akan dimasukkan.
-	  * @return Mengeluarkan true jika A dapat dimasukkan ke cage.
-	  */
-	bool CanPut(const Animal& A) const;
 
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage

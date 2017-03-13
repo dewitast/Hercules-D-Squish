@@ -13,7 +13,7 @@ Cage::Cage()
 	size = MaxSize;
 	Loc = new Point [size];
 	TotalAnimal = 0;
-	a = new Animal*[3*size/10];
+	a = new Animal*[size];
 }
 
 Cage::Cage(int s)
@@ -21,7 +21,7 @@ Cage::Cage(int s)
 	size = s;
 	Loc = new Point [size];
 	TotalAnimal = 0;
-	a = new Animal*[3*size/10];
+	a = new Animal*[size];
 }
 
 Cage::Cage(int i, int j)
@@ -33,7 +33,7 @@ Cage::Cage(int i, int j)
 	P.SetOrdinat(j);
 	Loc[0] = P;
 	TotalAnimal = 0;
-	a = new Animal*[3*size/10];
+	a = new Animal*[size];
 }
 
 Cage::Cage(const Cage& c)
@@ -43,7 +43,7 @@ Cage::Cage(const Cage& c)
 	for (int i = 0; i < size; ++i)
 		Loc[i] = c.Loc[i];
 	TotalAnimal = c.TotalAnimal;
-	a = new Animal*[3*size/10];
+	a = new Animal*[size];
 	for (int i=0;i<TotalAnimal;++i)
 		a[i] = (c.a[i])->Clone();
 }
@@ -74,16 +74,13 @@ void Cage::AdoptAnimal(Animal& A)
 	if (IsFull()) cout << "Kandang penuh." << endl;
 	else if (IsInCage(A)==-1)
 	{
-		if (CanPut(A))
-		{
-			srand (time(NULL));
-			int random = rand() % size;
-			while (IsOccupied(random))
-				random = rand() % size;
-			A.SetPoint(GetPoint(random));
-			a[TotalAnimal] = A.Clone();
-			++TotalAnimal;
-		}
+		srand (time(NULL));
+		int random = rand() % size;
+		while (IsOccupied(random))
+			random = rand() % size;
+		A.SetPoint(GetPoint(random));
+		a[TotalAnimal] = A.Clone();
+		++TotalAnimal;
 	}
 }
 
@@ -156,11 +153,4 @@ void Cage::AddPoint(Point P)
 	delete [] Loc;
 	Loc = temp;
 	++size;
-}
-
-bool Cage::CanPut(const Animal& A) const
-{
-	if (TotalAnimal==0) return true;
-	if (a[0]->GetTame()==A.GetTame()) return true;
-	return false;
 }

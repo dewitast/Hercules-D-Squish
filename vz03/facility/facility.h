@@ -1,4 +1,4 @@
-/**	@file	Facility.h
+/**	@file  facility.h
   */
 
 #ifndef FACILITY_H
