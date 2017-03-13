@@ -5,25 +5,17 @@
 #define ELEPHANT_H
 
 #include "land_animal.h"
-#include "herbivore.h"
 #include "mammal.h"
 
 /** @class Elephant
   * Kelas Elephant merupakan kelas untuk real object Elephant
   */
-class Elephant : public LandAnimal, public Herbivore, public Mammal {
+class Elephant : public LandAnimal, public Mammal {
 public :
   /** @brief Constructor.
     * Menciptakan objek Elephant.
     */
-  Elephant() : Animal(5000,250,true) {}
-  /** @brief Constructor dengan parameter.
-    * Menciptakan objek Elephant dengan berat w, jumlah makanan f, dan status jinak t.
-    * @param w Berat Elephant.
-    * @param f Jumlah makanan Elephant.
-    * @param t Status jinak Elephant.
-    */
-  Elephant(float w, float f, bool t) : Animal(w,f,t) {}
+  Elephant() : Animal() {}
   /** @brief Destructor.
     */
   virtual ~Elephant() {}
