@@ -36,12 +36,6 @@ class Driver {
 		  */
 		void TourZoo();
 
-		/** @brief FoodCalc.
-		  * Melakukan perhitungan makanan yang harus disiapkan.
-		  * @return Mengembalikan jumlah makanan yang harus disiapkan.
-		  */
-		float FoodCalc();
-
 		/** @brief Destructor.
 	 	 */
 		virtual ~Driver() {}

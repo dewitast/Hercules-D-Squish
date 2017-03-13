@@ -13,7 +13,7 @@ int main() {
   d.DisplayMenu();
   cin >> x;
   cout << endl;
-  while (x != 4) {
+  while (x != 3) {
     if (x == 1) {
   	  d.DisplayZoo();
     }
@@ -24,9 +24,6 @@ int main() {
   	  }
   	  d.GetPoint().SetAbsis(-1);
 	  d.GetPoint().SetOrdinat(-1);
-    }
-    else if (x == 3){
-  	  cout << "Total food calculation : " << d.FoodCalc() << endl;
     }
     else {
   	  cout << "Your input is invalid. Please choose a number from range 1 to 4." << endl << endl;

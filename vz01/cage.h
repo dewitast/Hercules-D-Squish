@@ -132,11 +132,6 @@ public:
 	  */
 	bool CanPut(const Animal& A) const;
 
-	/** @brief Move.
-	  * Menggerakkan semua binatang yang terdapat pada cage.
-	  */
-	bool Move();
-
 private:
 	Point* Loc; // himpunan Cell yang terdapat dalam Cage
 	const int MaxSize = 100; // ukuran maksimal Cage

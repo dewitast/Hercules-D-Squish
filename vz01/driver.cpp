@@ -62,8 +62,6 @@ void Driver::GetExperience()
 
 void Driver::TourZoo()
 {
-	for (int i=0;i<Z.GetJumlahCage();++i)
-		Z.GetCage(i).Move();
 	srand (time(NULL));
 	int random;
 	bool found = false;
@@ -165,24 +163,11 @@ void Driver::TourZoo()
 		cout << endl << "Posisi : (" << P.GetAbsis() << ',' << P.GetOrdinat() <<  ')' << endl;	
 }
 
-float Driver::FoodCalc()
-{
-	float sum = 0;
-	for(int i=0;i<Z.GetJumlahCage();i++)
-	{
-		for(int j=0;j<(Z.GetCage(i)).GetTotalAnimal();j++)
-		{
-			sum += ((Z.GetCage(i)).GetAnimal(j))->GetFood();
-		}
-	}
-	return sum;
-}
-
 void Driver::DisplayMenu() {
   cout << endl;
   cout << "Main Menu:" << endl << "1. Display Zoo" << endl;
   cout << "2. Tour Around Zoo" << endl;
-  cout << "3. Animal's Food Calculation" << endl << "4. Exit" << endl << endl;
+  cout << "3. Exit" << endl << endl;
   cout << "Input your number of choice here: ";
 }
 
