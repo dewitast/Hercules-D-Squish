@@ -3,15 +3,16 @@
 
 #include "animal.h"
 
-Animal::Animal() : species("Dugong"),
-                   sound("Splashh!"),
-                   food_type("Herbivore"),
-                   number_habitat(1),
-                   tame(true),
-                   render('U'),
-                   weight(500),
-                   food(25)
+Animal::Animal() 
 {
+  species = "Dugong",
+  sound = "Splashh!";
+  food_type = "Herbivore";
+  number_habitat = 1;
+  tame = true;
+  render = 'U';
+  weight = 500;
+  food = 25;
   pos.SetAbsis(-1);
   pos.SetOrdinat(-1);
   habitat = new string[number_habitat];
@@ -27,15 +28,16 @@ Animal::Animal(Point p,
                float f,
                int jh,
                bool t,
-               char r) : species(sp),
-                         sound(so),
-                         food_type(ft),
-                         number_habitat(jh),
-                         tame(t),
-                         render(r),
-                         weight(w),
-                         food(f)
+               char r)
 {
+  species = sp;
+  sound = so;
+  food_type = ft;
+  number_habitat = jh;
+  tame = t;
+  render = r;
+  weight = w;
+  food = f;
   pos = p;
   habitat = new string[number_habitat];
   for (int i = 0; i<number_habitat; i++) {
@@ -43,15 +45,16 @@ Animal::Animal(Point p,
   }
 }
 
-Animal::Animal(const Animal& a) : species(a.species),
-                                  sound(a.sound),
-                                  food_type(a.food_type),
-                                  number_habitat(a.number_habitat),
-                                  tame(a.tame),
-                                  render(a.render),
-                                  weight(a.weight),
-                                  food(a.food)
+Animal::Animal(const Animal& a)
 {
+  species = a.species;
+  sound = a.sound;
+  food_type = a.food_type;
+  number_habitat = a.number_habitat;
+  tame = a.tame;
+  render = a.render;
+  weight = a.weight;
+  food = a.food;
   pos = a.pos;
   habitat = new string[number_habitat];
   for (int i = 0; i<number_habitat; i++) {
@@ -61,6 +64,14 @@ Animal::Animal(const Animal& a) : species(a.species),
 
 Animal& Animal::operator=(const Animal& a)
 {
+  species = a.species;
+  sound = a.sound;
+  food_type = a.food_type;
+  number_habitat = a.number_habitat;
+  tame = a.tame;
+  render = a.render;
+  weight = a.weight;
+  food = a.food;
   delete [] habitat;
   pos = a.pos;
   habitat = new string[number_habitat];
