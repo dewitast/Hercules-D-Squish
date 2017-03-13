@@ -4,7 +4,7 @@
 #ifndef ROAD_H
 #define ROAD_H
 
-#include "facility.h"
+#include "../facility/facility.h"
 
 /** @class Road
   * Kelas Road merepresentasikan fasilitas jalan

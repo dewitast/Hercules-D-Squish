@@ -4,9 +4,9 @@
 #ifndef GOAT_H
 #define GOAT_H
 
-#include "herbivore.h"
-#include "land_animal.h"
-#include "mammal.h"
+#include "../herbivore/herbivore.h"
+#include "../land_animal/land_animal.h"
+#include "../mammal/mammal.h"
 
 /** @class Goat
   * Kelas Goat merupakan kelas untuk real object Goat

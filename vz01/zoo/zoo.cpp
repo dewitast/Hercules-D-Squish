@@ -1,7 +1,7 @@
 /**	@file zoo.cpp
   */
 
-#include "zoo.h"
+#include "../zoo/zoo.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -204,8 +204,7 @@ void Zoo::ReadAnimal()
 	int abs, ord;
 	ifstream myfile;
 	myfile.open("animal.txt");
-	myfile >> c;
-	while (!myfile.eof())
+	while (myfile >> c)
 	{
 		if (c == 'A')
 		{

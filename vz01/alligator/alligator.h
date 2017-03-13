@@ -4,8 +4,8 @@
 #ifndef ALLIGATOR_H
 #define ALLIGATOR_H
 
-#include "water_animal.h"
-#include "reptile.h"
+#include "../water_animal/water_animal.h"
+#include "../reptile/reptile.h"
 
 /** @class Alligator
   * Kelas Alligator merupakan kelas untuk real object Alligator

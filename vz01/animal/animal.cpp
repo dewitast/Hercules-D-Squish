@@ -1,7 +1,7 @@
 /**	@file  animal.cpp
   */
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 Animal::Animal() {}
 void Animal::SetPoint(int abs, int ord) {

@@ -4,7 +4,7 @@
 #ifndef HABITAT_H
 #define HABITAT_H
 
-#include "cell.h"
+#include "../cell/cell.h"
 
 /** @class Habitat
   * Kelas abstrak Habitat merupakan simulasi dari habitat

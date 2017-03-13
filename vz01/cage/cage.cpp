@@ -1,8 +1,8 @@
 /**	@file cage.cpp
   */
 
-#include "cage.h"
-#include "zoo.h"
+#include "../cage/cage.h"
+#include "../zoo/zoo.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

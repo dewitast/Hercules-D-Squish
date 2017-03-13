@@ -1,8 +1,8 @@
 /**@file mainprog.cpp
   */
 
-#include "driver.h"
-#include "zoo.h"
+#include "../driver/driver.h"
+#include "../zoo/zoo.h"
 #include <iostream>
 using namespace std;
 

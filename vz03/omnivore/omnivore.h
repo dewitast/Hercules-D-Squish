@@ -4,7 +4,7 @@
 #ifndef OMNIVORE_H
 #define OMNIVORE_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class Omnivore
   * Kelas abstrak Omnivore merupakan kelas abstrak untuk hewan pemakan daging dan tumbuhan

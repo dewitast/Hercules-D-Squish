@@ -4,7 +4,7 @@
 #ifndef WATERANIMAL_H
 #define WATERANIMAL_H
 
-#include "animal.h"
+#include "../animal/animal.h"
 
 /** @class WaterAnimal
   * Kelas abstrak WaterAnimal merupakan kelas bagi animal dengan habitat di air
