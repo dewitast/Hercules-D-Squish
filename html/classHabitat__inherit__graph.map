@@ -1,0 +1,7 @@
+<map id="Habitat" name="Habitat">
+<area shape="rect" id="node4" href="$classAirHabitat.html" title="{AirHabitat\n||+ Render()\l+ Clone()\l}" alt="" coords="5,675,89,767"/>
+<area shape="rect" id="node5" href="$classLandHabitat.html" title="{LandHabitat\n||+ Render()\l+ Clone()\l}" alt="" coords="113,675,205,767"/>
+<area shape="rect" id="node6" href="$classWaterHabitat.html" title="{WaterHabitat\n||+ Render()\l+ Clone()\l}" alt="" coords="230,675,329,767"/>
+<area shape="rect" id="node2" href="$classCell.html" title="{Cell\n||+ render()\l+ clone()\l+ IsLandHabitat()\l+ IsWaterHabitat()\l+ IsAirHabitat()\l+ IsRoad()\l+ IsPark()\l+ IsRestaurant()\l+ IsExit()\l+ IsEntrance()\l+ IsHabitat()\l}" alt="" coords="94,131,225,355"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="115,5,203,83"/>
+</map>

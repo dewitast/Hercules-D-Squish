@@ -125,13 +125,6 @@ public:
 	  */
 	int GetKeff() const {return keff;}
 
-	/** @brief AddAnimal.
-	  * Menambah animal A ke cage pada indeks ke-i.
-	  * @param i Nilai indeks cage yang akan ditambah animal.
-	  * @param A Objek binatang yang akan dimasukkan.
-	  */
-	void AddAnimal(int i,Animal& A);
-
 	/** @brief SearchPoint.
 	  * Mencari point berada di cage mana.
 	  * @param P Point yang akan dicari.
