@@ -4,9 +4,9 @@
 #ifndef KOMODO_H
 #define KOMODO_H
 
-#include "Reptile.h"
-#include "Carnivore.h"
-#include "LandAnimal.h"
+#include "reptile.h"
+#include "carnivore.h"
+#include "land_animal.h"
 
 /** @class Komodo
   * Kelas Komodo merupakan kelas untuk real object Komodo

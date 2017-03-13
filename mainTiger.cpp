@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "Tiger.h"
-#include "Point.h"
+#include "tiger.h"
+#include "point.h"
 
 int main()
 {

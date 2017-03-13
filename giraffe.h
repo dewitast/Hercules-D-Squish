@@ -4,9 +4,9 @@
 #ifndef GIRAFFE_H
 #define GIRAFFE_H
 
-#include "Mammal.h"
-#include "Herbivore.h"
-#include "LandAnimal.h"
+#include "mammal.h"
+#include "herbivore.h"
+#include "land_animal.h"
 
 /** @class Giraffe
   * Kelas Giraffe merupakan kelas untuk real object Giraffe

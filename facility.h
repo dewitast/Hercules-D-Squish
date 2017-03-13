@@ -4,7 +4,7 @@
 #ifndef FACILITY_H
 #define FACILITY_H
 
-#include "Cell.h"
+#include "cell.h"
 
 /** @class Facility
   * Kelas abstrak Facility merupakan simulasi dari fasilitas yang terdapat dalam kebun binatang

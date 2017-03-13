@@ -1,7 +1,7 @@
-#include "Habitat.h"
-#include "LandHabitat.h"
-#include "WaterHabitat.h"
-#include "AirHabitat.h"
+#include "habitat.h"
+#include "land_habitat.h"
+#include "water_habitat.h"
+#include "air_habitat.h"
 #include <iostream>
 using namespace std;
 

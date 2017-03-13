@@ -1,5 +1,5 @@
-#include "Zoo.h"
-#include "Driver.h"
+#include "zoo.h"
+#include "driver.h"
 #include <fstream>
 using namespace std;
 

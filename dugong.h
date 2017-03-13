@@ -4,9 +4,9 @@
 #ifndef DUGONG_H
 #define DUGONG_H
 
-#include "Mammal.h"
-#include "Herbivore.h"
-#include "WaterAnimal.h"
+#include "mammal.h"
+#include "herbivore.h"
+#include "water_animal.h"
 
 /** @class Dugong
   * Kelas Dugong merupakan kelas untuk real object Dugong
