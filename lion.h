@@ -4,9 +4,9 @@
 #ifndef LION_H
 #define LION_H
 
-#include "Mammal.h"
-#include "Carnivore.h"
-#include "LandAnimal.h"
+#include "mammal.h"
+#include "carnivore.h"
+#include "land_animal.h"
 
 /** @class Lion
   * Kelas Lion merupakan kelas untuk real object Lion

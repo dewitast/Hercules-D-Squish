@@ -4,7 +4,7 @@
 #ifndef CARNIVORE_H
 #define CARNIVORE_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class Carnivore
   * Kelas abstrak Carnivore merupakan kelas bagi animal pemakan daging

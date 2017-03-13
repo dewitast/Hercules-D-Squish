@@ -4,9 +4,9 @@
 #ifndef IGUANA_H
 #define IGUANA_H
 
-#include "Herbivore.h"
-#include "LandAnimal.h"
-#include "Reptile.h"
+#include "herbivore.h"
+#include "land_animal.h"
+#include "reptile.h"
 
 /** @class Iguana
   * kelas Iguana merupakan kelas untuk real object Iguana

@@ -4,9 +4,9 @@
 #ifndef ELEPHANT_H
 #define ELEPHANT_H
 
-#include "LandAnimal.h"
-#include "Herbivore.h"
-#include "Mammal.h"
+#include "land_animal.h"
+#include "herbivore.h"
+#include "mammal.h"
 
 /** @class Elephant
   * Kelas Elephant merupakan kelas untuk real object Elephant

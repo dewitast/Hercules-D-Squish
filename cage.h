@@ -4,8 +4,8 @@
 #ifndef CAGE_H
 #define CAGE_H
 
-#include "Point.h"
-#include "Animal.h"
+#include "point.h"
+#include "animal.h"
 
 /** @class Cage.
   * Kelas Cage merupakan himpunan Cell yang bertipe sama.

@@ -4,9 +4,9 @@
 #ifndef JALAK_H
 #define JALAK_H
 
-#include "FlyingAnimal.h"
-#include "Herbivore.h"
-#include "Aves.h"
+#include "flying_animal.h"
+#include "herbivore.h"
+#include "aves.h"
 
 /** @class Jalak
   * Kelas Jalak merupakan kelas untuk real object Jalak
