@@ -10,7 +10,7 @@
 /** @class Iguana
   * kelas Iguana merupakan kelas untuk real object Iguana
   */
-class Iguana : public LandAnimal, public Mammal {
+class Iguana : public LandAnimal, public Reptile {
 public :
   /** @brief Constructor.
     * Menciptakan objek Iguana.

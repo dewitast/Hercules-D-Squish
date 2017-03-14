@@ -1,4 +1,4 @@
-/**	@file  Jalak.h
+/**	@file  jalak.h
   */
 
 #ifndef JALAK_H

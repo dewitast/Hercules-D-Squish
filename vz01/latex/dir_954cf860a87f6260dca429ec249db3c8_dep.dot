@@ -1,8 +1,0 @@
-digraph "cell" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_954cf860a87f6260dca429ec249db3c8 [shape=box, label="cell", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_954cf860a87f6260dca429ec249db3c8.html"];
-  dir_571ab6a145096c7c064754e2518f184b [shape=box label="renderable" URL="dir_571ab6a145096c7c064754e2518f184b.html"];
-  dir_954cf860a87f6260dca429ec249db3c8->dir_571ab6a145096c7c064754e2518f184b [headlabel="1", labeldistance=1.5 headhref="dir_000005_000035.html"];
-}

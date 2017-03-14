@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['getabsis',['GetAbsis',['../classPoint.html#af9d064339ffb2f87abb6574dbfc9cdb2',1,'Point']]],
-  ['getanimal',['GetAnimal',['../classCage.html#a298833379b741edbdaf5115e4993db1e',1,'Cage']]],
-  ['getbeff',['GetBeff',['../classZoo.html#a21590932eb500dd07226c1bbe2ce4726',1,'Zoo']]],
-  ['getcage',['GetCage',['../classZoo.html#a3956c403bc9f854aba57146896d264ea',1,'Zoo']]],
-  ['getelement',['GetElement',['../classZoo.html#a0128c0b360793ac6aa8922b4cf2cc57f',1,'Zoo::GetElement(const Point &amp;P) const '],['../classZoo.html#a5d21cf8cb0acdc6d4c9b625699a1d4a9',1,'Zoo::GetElement(int b, int k) const ']]],
-  ['getexperience',['GetExperience',['../classDriver.html#a2bc17a8251eab4cfdb7d74c7f7299c6e',1,'Driver']]],
-  ['getfood',['GetFood',['../classAnimal.html#a284817c8f57078ebce4fd1f17d824223',1,'Animal']]],
-  ['getfoodtype',['GetFoodType',['../classAnimal.html#a5517a48b723e94618de2ed908a109938',1,'Animal']]],
-  ['gethabitat',['GetHabitat',['../classAnimal.html#a07ea7b90c55213f0475ed3e7044101eb',1,'Animal']]],
-  ['getjumlahcage',['GetJumlahCage',['../classZoo.html#ae0465354e9418560540b516b8563a590',1,'Zoo']]],
-  ['getkeff',['GetKeff',['../classZoo.html#a759d40e997b024236da2a503662dca88',1,'Zoo']]],
-  ['getnumberhabitat',['GetNumberHabitat',['../classAnimal.html#a7268c5783ff0ee4cb6e4ea9500663021',1,'Animal']]],
-  ['getobjecttype',['GetObjectType',['../classCell.html#a6218f05e1d9dcdf9ed61c5196040b1bd',1,'Cell']]],
-  ['getordinat',['GetOrdinat',['../classPoint.html#ace648a3faea60f8102d645d4b5a40b1a',1,'Point']]],
-  ['getpoint',['GetPoint',['../classCage.html#ae01123979c931296ca477d9d15d9efba',1,'Cage::GetPoint()'],['../classDriver.html#a5efd12ebb8faa45d7c95a23ed83ac5d5',1,'Driver::GetPoint()']]],
-  ['getpos',['GetPos',['../classAnimal.html#a183e4addbbccbe06a77e57bc8893cec1',1,'Animal']]],
-  ['getrender',['GetRender',['../classCell.html#a81e6357d206db3a6e6299029dc2273e5',1,'Cell']]],
-  ['getsize',['GetSize',['../classCage.html#abf801136c687ea862b64d0c36a2ce5cd',1,'Cage']]],
-  ['getspecies',['GetSpecies',['../classAnimal.html#a4c251e18f587980e69ec9f4c5cca3cfd',1,'Animal']]],
-  ['gettotalanimal',['GetTotalAnimal',['../classCage.html#a49312121ccca0c0b731f3fe1256a28a2',1,'Cage']]],
-  ['getweight',['GetWeight',['../classAnimal.html#a84b2804414e0c5113a4fe1ca03fc3fff',1,'Animal']]],
-  ['getzoo',['GetZoo',['../classDriver.html#a61680a5ffa5a314e4cb411b7bff29f26',1,'Driver']]]
+  ['food',['food',['../classAnimal.html#adb6cda9dddcd113576b887f01d648711',1,'Animal']]],
+  ['food_5ftype',['food_type',['../classAnimal.html#a8c5c0ed2cffff3e84f95c15347412737',1,'Animal']]],
+  ['foodcalc',['FoodCalc',['../classDriver.html#a0f85e40efd4983b0434307ca0647f378',1,'Driver']]]
 ];

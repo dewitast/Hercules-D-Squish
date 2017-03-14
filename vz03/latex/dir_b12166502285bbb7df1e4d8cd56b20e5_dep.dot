@@ -1,8 +1,0 @@
-digraph "exit" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_b12166502285bbb7df1e4d8cd56b20e5 [shape=box, label="exit", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b12166502285bbb7df1e4d8cd56b20e5.html"];
-  dir_77276496e01ee7b5ef97c93f64e2940a [shape=box label="road" URL="dir_77276496e01ee7b5ef97c93f64e2940a.html"];
-  dir_b12166502285bbb7df1e4d8cd56b20e5->dir_77276496e01ee7b5ef97c93f64e2940a [headlabel="1", labeldistance=1.5 headhref="dir_000016_000042.html"];
-}

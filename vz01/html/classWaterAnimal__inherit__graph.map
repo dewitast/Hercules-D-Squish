@@ -1,0 +1,9 @@
+<map id="WaterAnimal" name="WaterAnimal">
+<area shape="rect" id="node3" href="$classAlligator.html" title="{Alligator\n||+ Alligator()\l+ ~Alligator()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,373,103,509"/>
+<area shape="rect" id="node4" href="$classDolphin.html" title="{Dolphin\n||+ Dolphin()\l+ ~Dolphin()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="127,373,221,509"/>
+<area shape="rect" id="node5" href="$classDuck.html" title="{Duck\n||+ Duck()\l+ ~Duck()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="245,373,332,509"/>
+<area shape="rect" id="node6" href="$classDugong.html" title="{Dugong\n||+ Dugong()\l+ ~Dugong()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="356,373,451,509"/>
+<area shape="rect" id="node7" href="$classOrca.html" title="{Orca\n||+ Orca()\l+ ~Orca()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="475,373,561,509"/>
+<area shape="rect" id="node8" href="$classWalrus.html" title="{Walrus\n||+ Walrus()\l+ ~Walrus()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="586,373,677,509"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# pos\l|+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="300,5,392,200"/>
+</map>

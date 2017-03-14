@@ -1,4 +1,4 @@
-/**	@file  Elephant.h
+/**	@file  elephant.h
   */
 
 #ifndef ELEPHANT_H

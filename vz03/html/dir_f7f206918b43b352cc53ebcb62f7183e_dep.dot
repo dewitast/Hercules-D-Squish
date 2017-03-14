@@ -1,8 +1,0 @@
-digraph "park" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_f7f206918b43b352cc53ebcb62f7183e [shape=box, label="park", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f7f206918b43b352cc53ebcb62f7183e.html"];
-  dir_f908cf4a60302c78d5369cbdd4fdfced [shape=box label="facility" URL="dir_f908cf4a60302c78d5369cbdd4fdfced.html"];
-  dir_f7f206918b43b352cc53ebcb62f7183e->dir_f908cf4a60302c78d5369cbdd4fdfced [headlabel="1", labeldistance=1.5 headhref="dir_000035_000017.html"];
-}

@@ -7,7 +7,13 @@
 
 
 Collaboration diagram for Cage\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCage__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,6 +66,19 @@ bool \hyperlink{classCage_aece0c17d0299b55c596eb68175df71a8}{Can\+Put} (const \h
 \begin{DoxyCompactList}\small\item\em Can\+Put. Menentukan apakah A dapat dimasukkan ke cage. \end{DoxyCompactList}\item 
 bool \hyperlink{classCage_a973611397e576888027012237486cd25}{Move} ()
 \begin{DoxyCompactList}\small\item\em Move. Menggerakkan semua binatang yang terdapat pada cage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} $\ast$ \hyperlink{classCage_a7712bc324e5caed92541ba32715b6090}{Loc}
+\item 
+const int \hyperlink{classCage_ae5023dd45202e149e5b6321699a85923}{Max\+Size} = 100
+\item 
+int \hyperlink{classCage_a7cd8d649b27803c0a73410d56e54a7a9}{size}
+\item 
+\hyperlink{classAnimal}{Animal} $\ast$ \hyperlink{classCage_a74d7cb315de147c7159de6412a0c13e2}{a}
+\item 
+int \hyperlink{classCage_a54e4bd8f133dede67af5f6557b22a514}{Total\+Animal}
+\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -407,6 +426,24 @@ Release\+Animal. Melepas suatu binatang yang terdapat pada cage.
 {\em i} & Nilai indeks binatang yang akan dibuang. \\
 \hline
 \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Cage@{Cage}!a@{a}}
+\index{a@{a}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal}$\ast$ Cage\+::a\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCage_a74d7cb315de147c7159de6412a0c13e2}{}\label{classCage_a74d7cb315de147c7159de6412a0c13e2}
+\index{Cage@{Cage}!Loc@{Loc}}
+\index{Loc@{Loc}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Loc}{Loc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point}$\ast$ Cage\+::\+Loc\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCage_a7712bc324e5caed92541ba32715b6090}{}\label{classCage_a7712bc324e5caed92541ba32715b6090}
+\index{Cage@{Cage}!Max\+Size@{Max\+Size}}
+\index{Max\+Size@{Max\+Size}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Max\+Size}{MaxSize}}]{\setlength{\rightskip}{0pt plus 5cm}const int Cage\+::\+Max\+Size = 100\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCage_ae5023dd45202e149e5b6321699a85923}{}\label{classCage_ae5023dd45202e149e5b6321699a85923}
+\index{Cage@{Cage}!size@{size}}
+\index{size@{size}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\+::size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCage_a7cd8d649b27803c0a73410d56e54a7a9}{}\label{classCage_a7cd8d649b27803c0a73410d56e54a7a9}
+\index{Cage@{Cage}!Total\+Animal@{Total\+Animal}}
+\index{Total\+Animal@{Total\+Animal}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Total\+Animal}{TotalAnimal}}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\+::\+Total\+Animal\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCage_a54e4bd8f133dede67af5f6557b22a514}{}\label{classCage_a54e4bd8f133dede67af5f6557b22a514}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

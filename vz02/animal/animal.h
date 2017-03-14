@@ -106,15 +106,35 @@ public :
     */
   char Render();
 private:
+  /** @brief Posisi Binatang.
+    */
   Point pos;
+  /** @brief Nama spesies binatang.
+    */
   string species;
+  /** @brief suara binatang.
+    */
   string sound;
+  /** @brief jenis makanan binatang.
+    */
   string food_type;
+  /** @brief jenis habitat binatang.
+    */
   string* habitat;
+  /** @brief Berat binatang.
+    */
   float weight;
+  /** @brief Berat makanan binatang per hari.
+    */
   float food;
+  /** @brief jumlah habitat yang dapat ditinggali oleh binatang.
+    */
   int number_habitat;
+  /** @brief jinak atau tidaknya binatang.
+    */
   bool tame;
+  /** @brief karakter binatang ketika dicetak.
+    */
   char render;
 };
 

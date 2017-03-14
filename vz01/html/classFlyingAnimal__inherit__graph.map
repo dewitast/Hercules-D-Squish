@@ -1,0 +1,8 @@
+<map id="FlyingAnimal" name="FlyingAnimal">
+<area shape="rect" id="node3" href="$classCormorant.html" title="{Cormorant\n||+ Cormorant()\l+ ~Cormorant()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,373,116,509"/>
+<area shape="rect" id="node4" href="$classEagle.html" title="{Eagle\n||+ Eagle()\l+ ~Eagle()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="140,373,227,509"/>
+<area shape="rect" id="node5" href="$classJalak.html" title="{Jalak\n||+ Jalak()\l+ ~Jalak()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="251,373,337,509"/>
+<area shape="rect" id="node6" href="$classOwl.html" title="{Owl\n||+ Owl()\l+ ~Owl()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="361,373,448,509"/>
+<area shape="rect" id="node7" href="$classParrot.html" title="{Parrot\n||+ Parrot()\l+ ~Parrot()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="472,373,559,509"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# pos\l|+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="248,5,340,200"/>
+</map>

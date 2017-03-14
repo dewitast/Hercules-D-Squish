@@ -1,8 +1,0 @@
-digraph "air_habitat" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_6e7d08c560fbb3eef573d362ffcfb033 [shape=box, label="air_habitat", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6e7d08c560fbb3eef573d362ffcfb033.html"];
-  dir_7c7fb6c17f1c855dc92d1642a19d1edd [shape=box label="habitat" URL="dir_7c7fb6c17f1c855dc92d1642a19d1edd.html"];
-  dir_6e7d08c560fbb3eef573d362ffcfb033->dir_7c7fb6c17f1c855dc92d1642a19d1edd [headlabel="1", labeldistance=1.5 headhref="dir_000000_000020.html"];
-}

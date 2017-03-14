@@ -1,0 +1,9 @@
+<map id="Herbivore" name="Herbivore">
+<area shape="rect" id="node3" href="$classDugong.html" title="{Dugong\n||+ Dugong()\l+ Dugong()\l+ ~Dugong()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,447,100,597"/>
+<area shape="rect" id="node4" href="$classElephant.html" title="{Elephant\n||+ Elephant()\l+ Elephant()\l+ ~Elephant()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="125,447,226,597"/>
+<area shape="rect" id="node5" href="$classGiraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Giraffe()\l+ ~Giraffe()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="251,447,340,597"/>
+<area shape="rect" id="node6" href="$classGoat.html" title="{Goat\n||+ Goat()\l+ Goat()\l+ ~Goat()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="364,447,451,597"/>
+<area shape="rect" id="node7" href="$classIguana.html" title="{Iguana\n||+ Iguana()\l+ Iguana()\l+ ~Iguana()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="475,447,564,597"/>
+<area shape="rect" id="node8" href="$classJalak.html" title="{Jalak\n||+ Jalak()\l+ Jalak()\l+ ~Jalak()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="588,447,675,597"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="299,5,403,273"/>
+</map>
