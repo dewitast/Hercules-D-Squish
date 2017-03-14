@@ -24,6 +24,8 @@ Driver::Driver() : P(-1,-1)
 
 void Driver::DisplayZoo()
 {
+	for (int i=0;i<Z.GetJumlahCage();++i)
+		Z.GetCage(i).Move();
 	cout << Z;
 }
 

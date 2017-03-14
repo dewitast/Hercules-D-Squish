@@ -227,7 +227,7 @@ void Zoo::ReadAnimal()
 			h[0] = "Land";
 			h[1] = "Water";
 			Animal A(p, "Alligator", "Grrrrrr", "Carnivore", h, 125, 6.25, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if ((GetElement(abs-1,ord-1).IsLandHabitat())||(GetElement(abs-1,ord-1).IsWaterHabitat()))
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'C')
@@ -237,7 +237,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Cobra", "Ssshh!", "Carnivore", h, 20, 1, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'M')
@@ -248,7 +248,7 @@ void Zoo::ReadAnimal()
 			h[0] = "Air";
 			h[1] = "Water";
 			Animal A(p, "Cormorant", "Ooookkk!", "Carnivore", h, 3.6, 0.18, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if ((GetElement(abs-1,ord-1).IsAirHabitat())||(GetElement(abs-1,ord-1).IsWaterHabitat()))
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'N')
@@ -258,7 +258,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Water";
 			Animal A(p, "Dolphin", "A a a a a", "Carnivore", h, 75, 3.75, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'D')
@@ -268,7 +268,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Water";
 			Animal A(p, "Duck", "Quaackk!", "Omnivore", h, 12, 0.6, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'U')
@@ -278,7 +278,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Water";
 			Animal A(p, "Dugong", "Splashh!", "Herbivore", h, 500, 25, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'E')
@@ -288,7 +288,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Air";
 			Animal A(p, "Eagle", "Nguiikk!", "Carnivore", h, 5.8, 0.29, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'H')
@@ -298,7 +298,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Elephant", "Prett!", "Herbivore", h, 5000, 250, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'F')
@@ -308,7 +308,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Giraffe", "Hmm!", "Herbivore", h, 1100, 55, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'G')
@@ -318,7 +318,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Goat", "Mbeeeee", "Herbivore", h, 90, 4.5, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'I')
@@ -328,7 +328,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Iguana", "Purrrr", "Herbivore", h, 6, 0.3, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'J')
@@ -338,7 +338,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Air";
 			Animal A(p, "Jalak", "Tweet!", "Herbivore", h, 0.1, 0.005, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'K')
@@ -348,7 +348,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Komodo", "Slpp!", "Carnivore", h, 120, 6, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'L')
@@ -358,7 +358,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Lion", "Roaarr!", "Carnivore", h, 150, 7.5, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'R')
@@ -368,7 +368,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Water";
 			Animal A(p, "Orca", "Ngiak!", "Carnivore", h, 4000, 200, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'O')
@@ -378,7 +378,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Air";
 			Animal A(p, "Owl", "Hoot!", "Carnivore", h, 1.5, 0.075, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'P')
@@ -388,7 +388,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Air";
 			Animal A(p, "Parrot", "Cuiitt", "Omnivore", h, 1.2, 0.06, jh, true, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'B')
@@ -399,7 +399,7 @@ void Zoo::ReadAnimal()
 			h[0] = "Land";
 			h[1] = "Water";
 			Animal A(p, "PolarBear", "Auuummm", "Carnivore", h, 300, 15, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if ((GetElement(abs-1,ord-1).IsLandHabitat())||(GetElement(abs-1,ord-1).IsWaterHabitat()))
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'T')
@@ -409,7 +409,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Land";
 			Animal A(p, "Tiger", "Growl", "Carnivore", h, 200, 10, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'W')
@@ -419,7 +419,7 @@ void Zoo::ReadAnimal()
 			h = new string[jh];
 			h[0] = "Water";
 			Animal A(p, "Walrus", "Aaarhhh", "Carnivore", h, 1000, 50, jh, false, c);
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 	}
