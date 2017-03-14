@@ -224,7 +224,7 @@ void Zoo::ReadAnimal()
 			Alligator A;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(A);
 		}
 		else if (c == 'C')
@@ -232,7 +232,7 @@ void Zoo::ReadAnimal()
 			Cobra C;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(C);
 		}
 		else if (c == 'M')
@@ -240,7 +240,7 @@ void Zoo::ReadAnimal()
 			Cormorant M;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(M);
 		}
 		else if (c == 'N')
@@ -248,7 +248,7 @@ void Zoo::ReadAnimal()
 			Dolphin N;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(N);
 		}
 		else if (c == 'D')
@@ -256,7 +256,7 @@ void Zoo::ReadAnimal()
 			Duck D;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(D);
 		}
 		else if (c == 'U')
@@ -264,7 +264,7 @@ void Zoo::ReadAnimal()
 			Dugong U;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(U);
 		}
 		else if (c == 'E')
@@ -272,7 +272,7 @@ void Zoo::ReadAnimal()
 			Eagle E;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(E);
 		}
 		else if (c == 'H')
@@ -280,7 +280,7 @@ void Zoo::ReadAnimal()
 			Elephant H;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(H);
 		}
 		else if (c == 'F')
@@ -288,7 +288,7 @@ void Zoo::ReadAnimal()
 			Giraffe F;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(F);
 		}
 		else if (c == 'G')
@@ -296,7 +296,7 @@ void Zoo::ReadAnimal()
 			Goat G;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(G);
 		}
 		else if (c == 'I')
@@ -304,7 +304,7 @@ void Zoo::ReadAnimal()
 			Iguana I;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(I);
 		}
 		else if (c == 'J')
@@ -312,7 +312,7 @@ void Zoo::ReadAnimal()
 			Jalak J;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(J);
 		}
 		else if (c == 'K')
@@ -320,7 +320,7 @@ void Zoo::ReadAnimal()
 			Komodo K;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(K);
 		}
 		else if (c == 'L')
@@ -328,7 +328,7 @@ void Zoo::ReadAnimal()
 			Lion L;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(L);
 		}
 		else if (c == 'R')
@@ -336,7 +336,7 @@ void Zoo::ReadAnimal()
 			Orca R;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(R);
 		}
 		else if (c == 'O')
@@ -344,7 +344,7 @@ void Zoo::ReadAnimal()
 			Owl O;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(O);
 		}
 		else if (c == 'P')
@@ -352,7 +352,7 @@ void Zoo::ReadAnimal()
 			Parrot P;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsAirHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(P);
 		}
 		else if (c == 'B')
@@ -360,7 +360,7 @@ void Zoo::ReadAnimal()
 			PolarBear B;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(B);
 		}
 		else if (c == 'T')
@@ -368,7 +368,7 @@ void Zoo::ReadAnimal()
 			Tiger T;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsLandHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(T);
 		}
 		else if (c == 'W')
@@ -376,7 +376,7 @@ void Zoo::ReadAnimal()
 			Walrus W;
 			myfile >> abs;
 			myfile >> ord;
-			if (GetElement(abs-1,ord-1).IsHabitat())
+			if (GetElement(abs-1,ord-1).IsWaterHabitat())
 				SearchPoint(abs-1, ord-1).AdoptAnimal(W);
 		}
 	}
