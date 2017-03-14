@@ -1,4 +1,4 @@
-/**	@file  Lion.h
+/**	@file  lion.h
   */
 
 #ifndef LION_H
