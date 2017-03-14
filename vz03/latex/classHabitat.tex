@@ -1,0 +1,245 @@
+\hypertarget{classHabitat}{}\section{Habitat Class Reference}
+\label{classHabitat}\index{Habitat@{Habitat}}
+
+
+{\ttfamily \#include $<$habitat.\+h$>$}
+
+
+
+Inheritance diagram for Habitat\+:
+% FIG 0
+
+
+Collaboration diagram for Habitat\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual char \hyperlink{classHabitat_ad1bf10205d38e8e308eb9acc3aa2872c}{Render} ()=0
+\begin{DoxyCompactList}\small\item\em Render dari \hyperlink{classHabitat}{Habitat}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aaf69aab7e1ce1075188651d2cb388b6b}{Is\+Land\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classLandHabitat}{Land\+Habitat}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_acfdb3e3911d536c5564c91d60c368fc4}{Is\+Water\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classWaterHabitat}{Water\+Habitat}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aef29f87fdc6be7ae4e44279d816e173b}{Is\+Air\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classAirHabitat}{Air\+Habitat}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aedc03784a83bef591a2441d1c062cd57}{Is\+Entrance} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classEntrance}{Entrance}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aece5f38292630cf5860001ae8fdd084d}{Is\+Exit} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classExit}{Exit}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_a0ab72de6d88706b4eb693ea2a2c7de53}{Is\+Restaurant} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRestaurant}{Restaurant}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aa4cd06885065d8b7e3c4477c626d2fe7}{Is\+Park} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classPark}{Park}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classHabitat_aafd95775cc1e0876b40955c3e0126fe3}{Is\+Road} ()
+\begin{DoxyCompactList}\small\item\em Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRoad}{Road}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char \hyperlink{classHabitat_a87fbedb46cde325396e3ef39350e14d7}{LH} = \textquotesingle{}@\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Representasi \hyperlink{classLandHabitat}{Land\+Habitat} ketika dicetak ke layar. \end{DoxyCompactList}\item 
+static const char \hyperlink{classHabitat_af5c4388fa9d305995799c61cc6f5231d}{AH} = \textquotesingle{}$^\wedge$\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Representasi \hyperlink{classAirHabitat}{Air\+Habitat} ketika dicetak ke layar. \end{DoxyCompactList}\item 
+static const char \hyperlink{classHabitat_aeba269066b13b0f7b632526af4d547d3}{WH} = \textquotesingle{}$\sim$\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Representasi \hyperlink{classWaterHabitat}{Water\+Habitat} ketika dicetak ke layar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas abstrak \hyperlink{classHabitat}{Habitat} merupakan simulasi dari habitat 
+
+\subsection{Member Function Documentation}
+\index{Habitat@{Habitat}!Is\+Air\+Habitat@{Is\+Air\+Habitat}}
+\index{Is\+Air\+Habitat@{Is\+Air\+Habitat}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Air\+Habitat()}{IsAirHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Air\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aef29f87fdc6be7ae4e44279d816e173b}{}\label{classHabitat_aef29f87fdc6be7ae4e44279d816e173b}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classAirHabitat}{Air\+Habitat}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan true jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classAirHabitat}{Air\+Habitat}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_a24f8abceee9ce115d47b588992407a4d}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Entrance@{Is\+Entrance}}
+\index{Is\+Entrance@{Is\+Entrance}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Entrance()}{IsEntrance()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Entrance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aedc03784a83bef591a2441d1c062cd57}{}\label{classHabitat_aedc03784a83bef591a2441d1c062cd57}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classEntrance}{Entrance}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan false jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classEntrance}{Entrance}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_ab10ef0ffe5c971c59d0e6167131dd521}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Exit@{Is\+Exit}}
+\index{Is\+Exit@{Is\+Exit}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Exit()}{IsExit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aece5f38292630cf5860001ae8fdd084d}{}\label{classHabitat_aece5f38292630cf5860001ae8fdd084d}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classExit}{Exit}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan false jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classExit}{Exit}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_adfef5e446c31ace0e9fef1235e4f8fef}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Land\+Habitat@{Is\+Land\+Habitat}}
+\index{Is\+Land\+Habitat@{Is\+Land\+Habitat}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Land\+Habitat()}{IsLandHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Land\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aaf69aab7e1ce1075188651d2cb388b6b}{}\label{classHabitat_aaf69aab7e1ce1075188651d2cb388b6b}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classLandHabitat}{Land\+Habitat}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan true jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classLandHabitat}{Land\+Habitat}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_a6cc005c27ee600d76a91459b7733b90e}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Park@{Is\+Park}}
+\index{Is\+Park@{Is\+Park}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Park()}{IsPark()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Park (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aa4cd06885065d8b7e3c4477c626d2fe7}{}\label{classHabitat_aa4cd06885065d8b7e3c4477c626d2fe7}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classPark}{Park}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan false jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classPark}{Park}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_ad87cbdb9c06b19c7c6571053c3888a51}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Restaurant@{Is\+Restaurant}}
+\index{Is\+Restaurant@{Is\+Restaurant}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Restaurant()}{IsRestaurant()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Restaurant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_a0ab72de6d88706b4eb693ea2a2c7de53}{}\label{classHabitat_a0ab72de6d88706b4eb693ea2a2c7de53}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRestaurant}{Restaurant}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan false jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRestaurant}{Restaurant}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_a804041eef60df6b659032dc5a1fe3854}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Road@{Is\+Road}}
+\index{Is\+Road@{Is\+Road}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Road()}{IsRoad()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Road (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_aafd95775cc1e0876b40955c3e0126fe3}{}\label{classHabitat_aafd95775cc1e0876b40955c3e0126fe3}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRoad}{Road}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan false jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classRoad}{Road}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_a6afd033fa34492761e1de9fd1f7c8a95}{Cell}.
+
+\index{Habitat@{Habitat}!Is\+Water\+Habitat@{Is\+Water\+Habitat}}
+\index{Is\+Water\+Habitat@{Is\+Water\+Habitat}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Is\+Water\+Habitat()}{IsWaterHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Habitat\+::\+Is\+Water\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classHabitat_acfdb3e3911d536c5564c91d60c368fc4}{}\label{classHabitat_acfdb3e3911d536c5564c91d60c368fc4}
+
+
+Menentukan apakah \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classWaterHabitat}{Water\+Habitat}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan true jika \hyperlink{classHabitat}{Habitat} merupakan \hyperlink{classWaterHabitat}{Water\+Habitat}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_af620aac2cb7ce59657ca158255462fef}{Cell}.
+
+\index{Habitat@{Habitat}!Render@{Render}}
+\index{Render@{Render}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{Render()=0}{Render()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual char Habitat\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classHabitat_ad1bf10205d38e8e308eb9acc3aa2872c}{}\label{classHabitat_ad1bf10205d38e8e308eb9acc3aa2872c}
+
+
+Render dari \hyperlink{classHabitat}{Habitat}. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan char yang merupakan representasi kode \hyperlink{classHabitat}{Habitat}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCell_a1d72940d69d96132a445212155e3e789}{Cell}.
+
+
+
+Implemented in \hyperlink{classAirHabitat_a6dd1a0d8235d9687874bb229099d40ff}{Air\+Habitat}, \hyperlink{classLandHabitat_ad2147498f493b01429ae315f0145d3a9}{Land\+Habitat}, and \hyperlink{classWaterHabitat_a014ef4d2a9e5f37ac70a61d3f060b983}{Water\+Habitat}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Habitat@{Habitat}!AH@{AH}}
+\index{AH@{AH}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{AH}{AH}}]{\setlength{\rightskip}{0pt plus 5cm}const char Habitat\+::\+AH = \textquotesingle{}$^\wedge$\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHabitat_af5c4388fa9d305995799c61cc6f5231d}{}\label{classHabitat_af5c4388fa9d305995799c61cc6f5231d}
+
+
+Representasi \hyperlink{classAirHabitat}{Air\+Habitat} ketika dicetak ke layar. 
+
+\index{Habitat@{Habitat}!LH@{LH}}
+\index{LH@{LH}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{LH}{LH}}]{\setlength{\rightskip}{0pt plus 5cm}const char Habitat\+::\+LH = \textquotesingle{}@\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHabitat_a87fbedb46cde325396e3ef39350e14d7}{}\label{classHabitat_a87fbedb46cde325396e3ef39350e14d7}
+
+
+Representasi \hyperlink{classLandHabitat}{Land\+Habitat} ketika dicetak ke layar. 
+
+\index{Habitat@{Habitat}!WH@{WH}}
+\index{WH@{WH}!Habitat@{Habitat}}
+\subsubsection[{\texorpdfstring{WH}{WH}}]{\setlength{\rightskip}{0pt plus 5cm}const char Habitat\+::\+WH = \textquotesingle{}$\sim$\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHabitat_aeba269066b13b0f7b632526af4d547d3}{}\label{classHabitat_aeba269066b13b0f7b632526af4d547d3}
+
+
+Representasi \hyperlink{classWaterHabitat}{Water\+Habitat} ketika dicetak ke layar. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+habitat/\hyperlink{habitat_8h}{habitat.\+h}\end{DoxyCompactItemize}

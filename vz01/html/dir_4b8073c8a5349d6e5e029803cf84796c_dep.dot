@@ -1,0 +1,10 @@
+digraph "alligator" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_4b8073c8a5349d6e5e029803cf84796c [shape=box, label="alligator", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4b8073c8a5349d6e5e029803cf84796c.html"];
+  dir_43077ec27605880ea06137d5578c96fe [shape=box label="water_animal" URL="dir_43077ec27605880ea06137d5578c96fe.html"];
+  dir_fa7757de16a5f4e19850c013963341ae [shape=box label="reptile" URL="dir_fa7757de16a5f4e19850c013963341ae.html"];
+  dir_4b8073c8a5349d6e5e029803cf84796c->dir_43077ec27605880ea06137d5578c96fe [headlabel="1", labeldistance=1.5 headhref="dir_000001_000041.html"];
+  dir_4b8073c8a5349d6e5e029803cf84796c->dir_fa7757de16a5f4e19850c013963341ae [headlabel="1", labeldistance=1.5 headhref="dir_000001_000036.html"];
+}

@@ -1,0 +1,30 @@
+digraph "Mammal"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Mammal\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{Animal\n|# pos\l|+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnimal.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node3 [label="{Dolphin\n||+ Dolphin()\l+ ~Dolphin()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDolphin.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node4 [label="{Dugong\n||+ Dugong()\l+ ~Dugong()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDugong.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node5 [label="{Elephant\n||+ Elephant()\l+ ~Elephant()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classElephant.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node6 [label="{Giraffe\n||+ Giraffe()\l+ ~Giraffe()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGiraffe.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node7 [label="{Goat\n||+ Goat()\l+ ~Goat()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGoat.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node8 [label="{Iguana\n||+ Iguana()\l+ ~Iguana()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIguana.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node9 [label="{Lion\n||+ Lion()\l+ ~Lion()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLion.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node10 [label="{Orca\n||+ Orca()\l+ ~Orca()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOrca.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node11 [label="{PolarBear\n||+ PolarBear()\l+ ~PolarBear()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPolarBear.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node12 [label="{Tiger\n||+ Tiger()\l+ ~Tiger()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTiger.html"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node13 [label="{Walrus\n||+ Walrus()\l+ ~Walrus()\l+ Interact()\l+ Clone()\l+ Render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWalrus.html"];
+}

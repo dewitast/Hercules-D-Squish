@@ -1,0 +1,8 @@
+digraph "carnivore" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_edf397f3234c08e1347fc2ffaa9619ef [shape=box, label="carnivore", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_edf397f3234c08e1347fc2ffaa9619ef.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box label="animal" URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
+  dir_edf397f3234c08e1347fc2ffaa9619ef->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000002.html"];
+}

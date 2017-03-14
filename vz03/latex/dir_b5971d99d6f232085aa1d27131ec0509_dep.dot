@@ -1,0 +1,8 @@
+digraph "land_habitat" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_b5971d99d6f232085aa1d27131ec0509 [shape=box, label="land_habitat", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b5971d99d6f232085aa1d27131ec0509.html"];
+  dir_7c7fb6c17f1c855dc92d1642a19d1edd [shape=box label="habitat" URL="dir_7c7fb6c17f1c855dc92d1642a19d1edd.html"];
+  dir_b5971d99d6f232085aa1d27131ec0509->dir_7c7fb6c17f1c855dc92d1642a19d1edd [headlabel="1", labeldistance=1.5 headhref="dir_000027_000021.html"];
+}

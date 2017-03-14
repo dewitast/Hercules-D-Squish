@@ -1,0 +1,12 @@
+digraph "jalak" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_90e165fc2c7d47c12d2f5995c415db5c [shape=box, label="jalak", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_90e165fc2c7d47c12d2f5995c415db5c.html"];
+  dir_b1c35ce512719b49e7917450efc9175b [shape=box label="flying_animal" URL="dir_b1c35ce512719b49e7917450efc9175b.html"];
+  dir_f8960d0c328634cb81407409d616a6c5 [shape=box label="aves" URL="dir_f8960d0c328634cb81407409d616a6c5.html"];
+  dir_d4ca59e490dfb2dbec08597c24ba1a3e [shape=box label="herbivore" URL="dir_d4ca59e490dfb2dbec08597c24ba1a3e.html"];
+  dir_90e165fc2c7d47c12d2f5995c415db5c->dir_b1c35ce512719b49e7917450efc9175b [headlabel="1", labeldistance=1.5 headhref="dir_000024_000018.html"];
+  dir_90e165fc2c7d47c12d2f5995c415db5c->dir_f8960d0c328634cb81407409d616a6c5 [headlabel="1", labeldistance=1.5 headhref="dir_000024_000003.html"];
+  dir_90e165fc2c7d47c12d2f5995c415db5c->dir_d4ca59e490dfb2dbec08597c24ba1a3e [headlabel="1", labeldistance=1.5 headhref="dir_000024_000022.html"];
+}

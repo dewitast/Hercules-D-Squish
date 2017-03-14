@@ -1,0 +1,8 @@
+digraph "animal" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box, label="animal", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
+  dir_f59069e834fbed27be5aa2a5d523e2f9 [shape=box label="point" URL="dir_f59069e834fbed27be5aa2a5d523e2f9.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2->dir_f59069e834fbed27be5aa2a5d523e2f9 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000037.html"];
+}

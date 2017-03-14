@@ -1,0 +1,8 @@
+digraph "aves" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_f8960d0c328634cb81407409d616a6c5 [shape=box, label="aves", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f8960d0c328634cb81407409d616a6c5.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box label="animal" URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
+  dir_f8960d0c328634cb81407409d616a6c5->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000003_000002.html"];
+}

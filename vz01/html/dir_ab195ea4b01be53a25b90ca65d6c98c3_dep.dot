@@ -1,0 +1,10 @@
+digraph "giraffe" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_ab195ea4b01be53a25b90ca65d6c98c3 [shape=box, label="giraffe", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ab195ea4b01be53a25b90ca65d6c98c3.html"];
+  dir_7d9fa14e413bd664dca6d5c8691fddd9 [shape=box label="mammal" URL="dir_7d9fa14e413bd664dca6d5c8691fddd9.html"];
+  dir_83a52d803fb4dfb8ef6086e0996b54b1 [shape=box label="land_animal" URL="dir_83a52d803fb4dfb8ef6086e0996b54b1.html"];
+  dir_ab195ea4b01be53a25b90ca65d6c98c3->dir_7d9fa14e413bd664dca6d5c8691fddd9 [headlabel="1", labeldistance=1.5 headhref="dir_000018_000028.html"];
+  dir_ab195ea4b01be53a25b90ca65d6c98c3->dir_83a52d803fb4dfb8ef6086e0996b54b1 [headlabel="1", labeldistance=1.5 headhref="dir_000018_000024.html"];
+}
