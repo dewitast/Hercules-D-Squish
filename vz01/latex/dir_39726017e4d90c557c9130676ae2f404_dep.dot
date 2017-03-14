@@ -1,0 +1,8 @@
+digraph "entrance" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_39726017e4d90c557c9130676ae2f404 [shape=box, label="entrance", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_39726017e4d90c557c9130676ae2f404.html"];
+  dir_77276496e01ee7b5ef97c93f64e2940a [shape=box label="road" URL="dir_77276496e01ee7b5ef97c93f64e2940a.html"];
+  dir_39726017e4d90c557c9130676ae2f404->dir_77276496e01ee7b5ef97c93f64e2940a [headlabel="1", labeldistance=1.5 headhref="dir_000014_000038.html"];
+}

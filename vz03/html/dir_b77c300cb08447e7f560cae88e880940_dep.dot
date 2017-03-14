@@ -1,0 +1,16 @@
+digraph "cage" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_b77c300cb08447e7f560cae88e880940 [shape=box, label="cage", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b77c300cb08447e7f560cae88e880940.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box label="animal" URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
+  dir_354d718f1041826f2b4ccadeeaa578ff [shape=box label="zoo" URL="dir_354d718f1041826f2b4ccadeeaa578ff.html"];
+  dir_f59069e834fbed27be5aa2a5d523e2f9 [shape=box label="point" URL="dir_f59069e834fbed27be5aa2a5d523e2f9.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2->dir_f59069e834fbed27be5aa2a5d523e2f9 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000037.html"];
+  dir_354d718f1041826f2b4ccadeeaa578ff->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000047_000002.html"];
+  dir_354d718f1041826f2b4ccadeeaa578ff->dir_b77c300cb08447e7f560cae88e880940 [headlabel="1", labeldistance=1.5 headhref="dir_000047_000004.html"];
+  dir_354d718f1041826f2b4ccadeeaa578ff->dir_f59069e834fbed27be5aa2a5d523e2f9 [headlabel="1", labeldistance=1.5 headhref="dir_000047_000037.html"];
+  dir_b77c300cb08447e7f560cae88e880940->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000002.html"];
+  dir_b77c300cb08447e7f560cae88e880940->dir_354d718f1041826f2b4ccadeeaa578ff [headlabel="1", labeldistance=1.5 headhref="dir_000004_000047.html"];
+  dir_b77c300cb08447e7f560cae88e880940->dir_f59069e834fbed27be5aa2a5d523e2f9 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000037.html"];
+}

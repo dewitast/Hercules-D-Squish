@@ -1,0 +1,8 @@
+digraph "reptile" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_fa7757de16a5f4e19850c013963341ae [shape=box, label="reptile", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fa7757de16a5f4e19850c013963341ae.html"];
+  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box label="animal" URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
+  dir_fa7757de16a5f4e19850c013963341ae->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000040_000002.html"];
+}

@@ -1,0 +1,10 @@
+digraph "dolphin" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_bda53094dc65375c8f01379f7d9244dc [shape=box, label="dolphin", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bda53094dc65375c8f01379f7d9244dc.html"];
+  dir_7d9fa14e413bd664dca6d5c8691fddd9 [shape=box label="mammal" URL="dir_7d9fa14e413bd664dca6d5c8691fddd9.html"];
+  dir_43077ec27605880ea06137d5578c96fe [shape=box label="water_animal" URL="dir_43077ec27605880ea06137d5578c96fe.html"];
+  dir_bda53094dc65375c8f01379f7d9244dc->dir_7d9fa14e413bd664dca6d5c8691fddd9 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000028.html"];
+  dir_bda53094dc65375c8f01379f7d9244dc->dir_43077ec27605880ea06137d5578c96fe [headlabel="1", labeldistance=1.5 headhref="dir_000008_000041.html"];
+}

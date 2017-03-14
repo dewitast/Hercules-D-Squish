@@ -1,0 +1,359 @@
+\hypertarget{classZoo}{}\section{Zoo Class Reference}
+\label{classZoo}\index{Zoo@{Zoo}}
+
+
+{\ttfamily \#include $<$zoo.\+h$>$}
+
+
+
+Collaboration diagram for Zoo\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZoo_aaa0bf87b544fccd087e471ee0913709c}{Zoo} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Menciptakan zoo kosong yang berisi matriks kosong. \end{DoxyCompactList}\item 
+\hyperlink{classZoo_a1d2ee3cc08057d114174ad997632f604}{Zoo} (int b, int k, int j)
+\begin{DoxyCompactList}\small\item\em Constructor dengan parameter. Menciptakan zoo kosong dengan jumlah baris b, jumlah kolom k, dan jumlah cage j. \end{DoxyCompactList}\item 
+\hyperlink{classZoo_a891edf2fa47d023068058e3745964e18}{Zoo} (const \hyperlink{classZoo}{Zoo} \&z)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classZoo}{Zoo} \& \hyperlink{classZoo_a62df0863e76f6d75a837c0445326deb7}{operator=} (const \hyperlink{classZoo}{Zoo} \&z)
+\begin{DoxyCompactList}\small\item\em Operator =. \end{DoxyCompactList}\item 
+\hyperlink{classZoo_ab65ebe1fa60f6cf2a7cc55f78ff06ba5}{$\sim$\+Zoo} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+void \hyperlink{classZoo_a56db9c646afb72b7d277b6bea76e675c}{Read\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Read\+Animal Membaca \hyperlink{classAnimal}{Animal} dari file eksternal. \end{DoxyCompactList}\item 
+\hyperlink{classCell}{Cell} \& \hyperlink{classZoo_a0128c0b360793ac6aa8922b4cf2cc57f}{Get\+Element} (const \hyperlink{classPoint}{Point} \&P) const 
+\begin{DoxyCompactList}\small\item\em Get\+Element. \end{DoxyCompactList}\item 
+\hyperlink{classCell}{Cell} \& \hyperlink{classZoo_a5d21cf8cb0acdc6d4c9b625699a1d4a9}{Get\+Element} (int b, int k) const 
+\begin{DoxyCompactList}\small\item\em Get\+Element. \end{DoxyCompactList}\item 
+int \hyperlink{classZoo_ae0465354e9418560540b516b8563a590}{Get\+Jumlah\+Cage} () const 
+\begin{DoxyCompactList}\small\item\em Get\+Jumlah\+Cage. \end{DoxyCompactList}\item 
+\hyperlink{classCage}{Cage} \& \hyperlink{classZoo_a3956c403bc9f854aba57146896d264ea}{Get\+Cage} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get\+Cage. \end{DoxyCompactList}\item 
+int \hyperlink{classZoo_a21590932eb500dd07226c1bbe2ce4726}{Get\+Beff} () const 
+\begin{DoxyCompactList}\small\item\em Get\+Beff. \end{DoxyCompactList}\item 
+int \hyperlink{classZoo_a759d40e997b024236da2a503662dca88}{Get\+Keff} () const 
+\begin{DoxyCompactList}\small\item\em Get\+Keff. \end{DoxyCompactList}\item 
+\hyperlink{classCage}{Cage} \& \hyperlink{classZoo_a99470f6b1415873b4e5f8cd25b2cf5a6}{Search\+Point} (const \hyperlink{classPoint}{Point} \&P) const 
+\begin{DoxyCompactList}\small\item\em Search\+Point. Mencari point berada di cage mana. \end{DoxyCompactList}\item 
+\hyperlink{classCage}{Cage} \& \hyperlink{classZoo_a8a984fb1f2c3b513cf986dec67c287bf}{Search\+Point} (int i, int j) const 
+\begin{DoxyCompactList}\small\item\em Search\+Point. Mencari point berada di cage mana. \end{DoxyCompactList}\item 
+void \hyperlink{classZoo_ad6095030bd48a8f51b4f83ff13fdf3b2}{Add\+Cage} (\hyperlink{classCage}{Cage} c)
+\begin{DoxyCompactList}\small\item\em Add\+Cage. Menambahkan cage baru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classZoo_a9a5a25ae9291345b74f5d8f7af9719db}{operator$<$$<$} (ostream \&o, const \hyperlink{classZoo}{Zoo} \&z)
+\begin{DoxyCompactList}\small\item\em Operator $<$$<$. Melakukan print \hyperlink{classZoo}{Zoo}. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classZoo_a66565ea7c66ddb3acdcb0b67930b8615}{operator$>$$>$} (istream \&is, \hyperlink{classZoo}{Zoo} \&z)
+\begin{DoxyCompactList}\small\item\em Operator $>$$>$. Melakukan read \hyperlink{classZoo}{Zoo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas \hyperlink{classZoo}{Zoo} merupakan simulasi dari kebun binatang berisi matriks \hyperlink{classCell}{Cell} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Zoo()}{Zoo()}}]{\setlength{\rightskip}{0pt plus 5cm}Zoo\+::\+Zoo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_aaa0bf87b544fccd087e471ee0913709c}{}\label{classZoo_aaa0bf87b544fccd087e471ee0913709c}
+
+
+Constructor. Menciptakan zoo kosong yang berisi matriks kosong. 
+
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Zoo(int b, int k, int j)}{Zoo(int b, int k, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}Zoo\+::\+Zoo (
+\begin{DoxyParamCaption}
+\item[{int}]{b, }
+\item[{int}]{k, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_a1d2ee3cc08057d114174ad997632f604}{}\label{classZoo_a1d2ee3cc08057d114174ad997632f604}
+
+
+Constructor dengan parameter. Menciptakan zoo kosong dengan jumlah baris b, jumlah kolom k, dan jumlah cage j. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Nilai ukuran baris matriks. \\
+\hline
+{\em k} & Nilai ukuran kolom matriks. \\
+\hline
+{\em j} & Nilai banyaknya cage. \\
+\hline
+\end{DoxyParams}
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\index{Zoo@{Zoo}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Zoo(const Zoo \&z)}{Zoo(const Zoo &z)}}]{\setlength{\rightskip}{0pt plus 5cm}Zoo\+::\+Zoo (
+\begin{DoxyParamCaption}
+\item[{const {\bf Zoo} \&}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_a891edf2fa47d023068058e3745964e18}{}\label{classZoo_a891edf2fa47d023068058e3745964e18}
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & Objek yang akan di-\/copy. \\
+\hline
+\end{DoxyParams}
+\index{Zoo@{Zoo}!````~Zoo@{$\sim$\+Zoo}}
+\index{````~Zoo@{$\sim$\+Zoo}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{$\sim$\+Zoo()}{~Zoo()}}]{\setlength{\rightskip}{0pt plus 5cm}Zoo\+::$\sim$\+Zoo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_ab65ebe1fa60f6cf2a7cc55f78ff06ba5}{}\label{classZoo_ab65ebe1fa60f6cf2a7cc55f78ff06ba5}
+
+
+Destrutor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Zoo@{Zoo}!Add\+Cage@{Add\+Cage}}
+\index{Add\+Cage@{Add\+Cage}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Add\+Cage(\+Cage c)}{AddCage(Cage c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Zoo\+::\+Add\+Cage (
+\begin{DoxyParamCaption}
+\item[{{\bf Cage}}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_ad6095030bd48a8f51b4f83ff13fdf3b2}{}\label{classZoo_ad6095030bd48a8f51b4f83ff13fdf3b2}
+
+
+Add\+Cage. Menambahkan cage baru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \hyperlink{classCage}{Cage} yang ingin ditambahkan \\
+\hline
+\end{DoxyParams}
+\index{Zoo@{Zoo}!Get\+Beff@{Get\+Beff}}
+\index{Get\+Beff@{Get\+Beff}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Beff() const }{GetBeff() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::\+Get\+Beff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classZoo_a21590932eb500dd07226c1bbe2ce4726}{}\label{classZoo_a21590932eb500dd07226c1bbe2ce4726}
+
+
+Get\+Beff. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan baris efektif zoo. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Get\+Cage@{Get\+Cage}}
+\index{Get\+Cage@{Get\+Cage}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Cage(int i) const }{GetCage(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cage} \& Zoo\+::\+Get\+Cage (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_a3956c403bc9f854aba57146896d264ea}{}\label{classZoo_a3956c403bc9f854aba57146896d264ea}
+
+
+Get\+Cage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Nilai indeks yang akan dikeluarkan cage nya. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengembalikan cage zoo pada indeks ke-\/i. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Get\+Element@{Get\+Element}}
+\index{Get\+Element@{Get\+Element}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Element(const Point \&\+P) const }{GetElement(const Point &P) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell} \& Zoo\+::\+Get\+Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{P}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_a0128c0b360793ac6aa8922b4cf2cc57f}{}\label{classZoo_a0128c0b360793ac6aa8922b4cf2cc57f}
+
+
+Get\+Element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{classPoint}{Point} yang akan diambil. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengembalikan cell yang terdapat pada lokasi point P. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Get\+Element@{Get\+Element}}
+\index{Get\+Element@{Get\+Element}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Element(int b, int k) const }{GetElement(int b, int k) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell} \& Zoo\+::\+Get\+Element (
+\begin{DoxyParamCaption}
+\item[{int}]{b, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_a5d21cf8cb0acdc6d4c9b625699a1d4a9}{}\label{classZoo_a5d21cf8cb0acdc6d4c9b625699a1d4a9}
+
+
+Get\+Element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Nilai baris yang akan diambil. \\
+\hline
+{\em k} & Nilai kolom yang akan diambil. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengembalikan cell yang terdapat pada baris ke b dan kolom ke k. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Get\+Jumlah\+Cage@{Get\+Jumlah\+Cage}}
+\index{Get\+Jumlah\+Cage@{Get\+Jumlah\+Cage}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Jumlah\+Cage() const }{GetJumlahCage() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::\+Get\+Jumlah\+Cage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_ae0465354e9418560540b516b8563a590}{}\label{classZoo_ae0465354e9418560540b516b8563a590}
+
+
+Get\+Jumlah\+Cage. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan jumlah cage pada zoo. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Get\+Keff@{Get\+Keff}}
+\index{Get\+Keff@{Get\+Keff}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Get\+Keff() const }{GetKeff() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::\+Get\+Keff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classZoo_a759d40e997b024236da2a503662dca88}{}\label{classZoo_a759d40e997b024236da2a503662dca88}
+
+
+Get\+Keff. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan kolom efektif zoo. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!operator=@{operator=}}
+\index{operator=@{operator=}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{operator=(const Zoo \&z)}{operator=(const Zoo &z)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zoo} \& Zoo\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Zoo} \&}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_a62df0863e76f6d75a837c0445326deb7}{}\label{classZoo_a62df0863e76f6d75a837c0445326deb7}
+
+
+Operator =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & Objek yang akan di-\/assign. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Menghasilkan objek hasil copy objek z. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Read\+Animal@{Read\+Animal}}
+\index{Read\+Animal@{Read\+Animal}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Read\+Animal()}{ReadAnimal()}}]{\setlength{\rightskip}{0pt plus 5cm}void Zoo\+::\+Read\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classZoo_a56db9c646afb72b7d277b6bea76e675c}{}\label{classZoo_a56db9c646afb72b7d277b6bea76e675c}
+
+
+Read\+Animal Membaca \hyperlink{classAnimal}{Animal} dari file eksternal. 
+
+\index{Zoo@{Zoo}!Search\+Point@{Search\+Point}}
+\index{Search\+Point@{Search\+Point}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Search\+Point(const Point \&\+P) const }{SearchPoint(const Point &P) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cage} \& Zoo\+::\+Search\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{P}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_a99470f6b1415873b4e5f8cd25b2cf5a6}{}\label{classZoo_a99470f6b1415873b4e5f8cd25b2cf5a6}
+
+
+Search\+Point. Mencari point berada di cage mana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{classPoint}{Point} yang akan dicari. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengeluarkan cage yang mengandung P. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!Search\+Point@{Search\+Point}}
+\index{Search\+Point@{Search\+Point}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{Search\+Point(int i, int j) const }{SearchPoint(int i, int j) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cage} \& Zoo\+::\+Search\+Point (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const}\hypertarget{classZoo_a8a984fb1f2c3b513cf986dec67c287bf}{}\label{classZoo_a8a984fb1f2c3b513cf986dec67c287bf}
+
+
+Search\+Point. Mencari point berada di cage mana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & dan j absis dan ordinat yang akan dicari. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengeluarkan cage yang mengandung P. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Zoo@{Zoo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o, }
+\item[{const {\bf Zoo} \&}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classZoo_a9a5a25ae9291345b74f5d8f7af9719db}{}\label{classZoo_a9a5a25ae9291345b74f5d8f7af9719db}
+
+
+Operator $<$$<$. Melakukan print \hyperlink{classZoo}{Zoo}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Objek ostream. \\
+\hline
+{\em z} & Objek \hyperlink{classZoo}{Zoo} yang akan dicetak. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Menghasilkan objek ostream yang akan dicetak. 
+\end{DoxyReturn}
+\index{Zoo@{Zoo}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{{\bf Zoo} \&}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classZoo_a66565ea7c66ddb3acdcb0b67930b8615}{}\label{classZoo_a66565ea7c66ddb3acdcb0b67930b8615}
+
+
+Operator $>$$>$. Melakukan read \hyperlink{classZoo}{Zoo}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Objek istream. \\
+\hline
+{\em z} & Objek \hyperlink{classZoo}{Zoo} yang akan dibaca. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mengeluarkan objek istream yang telah dibaca. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+zoo/\hyperlink{zoo_8h}{zoo.\+h}\item 
+zoo/\hyperlink{zoo_8cpp}{zoo.\+cpp}\end{DoxyCompactItemize}
