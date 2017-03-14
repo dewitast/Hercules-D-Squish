@@ -26,7 +26,7 @@ public :
   Animal(float w, float f, bool t);
   /** @brief Destructor.
     */
-  virtual ~Animal() {}	
+  virtual ~Animal() {}
   /** @brief Getter untuk weight.
     * @return Mengembalikan nilai weight binatang.
     */
