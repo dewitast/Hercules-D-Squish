@@ -38,7 +38,7 @@
 #include "../walrus/walrus.h"
 
 /** @class Zoo
-  * Kelas abstrak Zoo merupakan simulasi dari kebun binatang berisi matriks Cell
+  * Kelas Zoo merupakan simulasi dari kebun binatang berisi matriks Cell
   */
 class Zoo {
 public:
