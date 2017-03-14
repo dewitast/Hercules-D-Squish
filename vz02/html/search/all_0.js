@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['a',['a',['../classCage.html#a74d7cb315de147c7159de6412a0c13e2',1,'Cage']]],
+  ['absis',['absis',['../classPoint.html#a6160d46b20dd62135d3b6d35b1c7acda',1,'Point']]],
   ['addcage',['AddCage',['../classZoo.html#ad6095030bd48a8f51b4f83ff13fdf3b2',1,'Zoo']]],
   ['addpoint',['AddPoint',['../classCage.html#aed8ca487fb22db2ca755bc9d784342fc',1,'Cage']]],
   ['adoptanimal',['AdoptAnimal',['../classCage.html#a928e4a1686c1c9ca4f7e703d107de415',1,'Cage']]],

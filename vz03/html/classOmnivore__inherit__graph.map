@@ -1,0 +1,5 @@
+<map id="Omnivore" name="Omnivore">
+<area shape="rect" id="node3" href="$classDuck.html" title="{Duck\n||+ Duck()\l+ Duck()\l+ ~Duck()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,447,92,597"/>
+<area shape="rect" id="node4" href="$classParrot.html" title="{Parrot\n||+ Parrot()\l+ Parrot()\l+ ~Parrot()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="116,447,203,597"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="51,5,155,273"/>
+</map>

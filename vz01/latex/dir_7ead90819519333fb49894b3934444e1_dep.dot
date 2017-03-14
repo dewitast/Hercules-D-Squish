@@ -1,8 +1,0 @@
-digraph "restaurant" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_7ead90819519333fb49894b3934444e1 [shape=box, label="restaurant", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7ead90819519333fb49894b3934444e1.html"];
-  dir_f908cf4a60302c78d5369cbdd4fdfced [shape=box label="facility" URL="dir_f908cf4a60302c78d5369cbdd4fdfced.html"];
-  dir_7ead90819519333fb49894b3934444e1->dir_f908cf4a60302c78d5369cbdd4fdfced [headlabel="1", labeldistance=1.5 headhref="dir_000037_000016.html"];
-}

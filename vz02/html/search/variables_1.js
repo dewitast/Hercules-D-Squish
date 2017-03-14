@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['visited',['visited',['../classDriver.html#ab338d327140ab7a1a9469d5c16c2697f',1,'Driver']]]
+  ['baris',['baris',['../classZoo.html#a5aab4219fc1f6877609c6cd294abbc59',1,'Zoo']]],
+  ['beff',['beff',['../classZoo.html#a859a09c6586ebfe53dc7504d0219e7cb',1,'Zoo']]]
 ];

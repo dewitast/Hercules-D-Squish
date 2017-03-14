@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classZoo-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,7 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Collaboration diagram for Zoo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classZoo__coll__graph.png" border="0" usemap="#Zoo_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 0 -->
+<map name="Zoo_coll__map" id="Zoo_coll__map">
+<area shape="rect" id="node2" href="classCell.html" title="{Cell\n|&#45; object_type\l&#45; render\l|+ Cell()\l+ Cell()\l+ ~Cell()\l+ GetObjectType()\l+ GetRender()\l+ SetObjectType()\l+ IsHabitat()\l+ IsLandHabitat()\l+ IsAirHabitat()\l+ IsWaterHabitat()\l+ IsExit()\l+ IsRoad()\l+ IsEntrance()\l}" alt="" coords="5,696,136,964"/>
+<area shape="rect" id="node3" href="classCage.html" title="{Cage\n|&#45; MaxSize\l&#45; size\l&#45; TotalAnimal\l|+ Cage()\l+ Cage()\l+ Cage()\l+ Cage()\l+ operator=()\l+ ~Cage()\l+ IsFull()\l+ GetSize()\l+ GetAnimal()\l+ GetTotalAnimal()\land 12 more...\l}" alt="" coords="161,703,293,957"/>
+<area shape="rect" id="node4" href="classAnimal.html" title="{Animal\n|&#45; species\l&#45; sound\l&#45; food_type\l&#45; habitat\l&#45; weight\l&#45; food\l&#45; number_habitat\l&#45; tame\l&#45; render\l|+ Animal()\l+ Animal()\l+ Animal()\l+ operator=()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ GetSpecies()\l+ GetFoodType()\land 8 more...\l}" alt="" coords="241,292,362,633"/>
+<area shape="rect" id="node5" href="classPoint.html" title="{Point\n|&#45; absis\l&#45; ordinat\l|+ Point()\l+ Point()\l+ Point()\l+ operator=()\l+ ~Point()\l+ GetAbsis()\l+ GetOrdinat()\l+ SetAbsis()\l+ SetOrdinat()\l+ IsSame()\l}" alt="" coords="173,5,278,229"/>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -145,6 +151,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6095030bd48a8f51b4f83ff13fdf3b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#ad6095030bd48a8f51b4f83ff13fdf3b2">AddCage</a> (<a class="el" href="classCage.html">Cage</a> c)</td></tr>
 <tr class="memdesc:ad6095030bd48a8f51b4f83ff13fdf3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AddCage. Menambahkan cage baru.  <a href="#ad6095030bd48a8f51b4f83ff13fdf3b2">More...</a><br /></td></tr>
 <tr class="separator:ad6095030bd48a8f51b4f83ff13fdf3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a264dc6d031ca713ca28969120bb599ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCell.html">Cell</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a264dc6d031ca713ca28969120bb599ab">cell</a></td></tr>
+<tr class="separator:a264dc6d031ca713ca28969120bb599ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92269930ce6363c83b2b8fc7c8abd81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCage.html">Cage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a92269930ce6363c83b2b8fc7c8abd81d">cage</a></td></tr>
+<tr class="separator:a92269930ce6363c83b2b8fc7c8abd81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9db4289e7ecd6856e4b7329dbde19d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#ab9db4289e7ecd6856e4b7329dbde19d6">jumlahcage</a></td></tr>
+<tr class="separator:ab9db4289e7ecd6856e4b7329dbde19d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aab4219fc1f6877609c6cd294abbc59"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a5aab4219fc1f6877609c6cd294abbc59">baris</a></td></tr>
+<tr class="separator:a5aab4219fc1f6877609c6cd294abbc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac40c8ba9d8a115c90c2aad733ee59c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a5ac40c8ba9d8a115c90c2aad733ee59c">kolom</a></td></tr>
+<tr class="separator:a5ac40c8ba9d8a115c90c2aad733ee59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859a09c6586ebfe53dc7504d0219e7cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a859a09c6586ebfe53dc7504d0219e7cb">beff</a></td></tr>
+<tr class="separator:a859a09c6586ebfe53dc7504d0219e7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e90eb77a17d3767773b2a660d0ce981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoo.html#a9e90eb77a17d3767773b2a660d0ce981">keff</a></td></tr>
+<tr class="separator:a9e90eb77a17d3767773b2a660d0ce981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -627,6 +650,147 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mengeluarkan objek istream yang telah dibaca. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5aab4219fc1f6877609c6cd294abbc59"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Zoo::baris</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a859a09c6586ebfe53dc7504d0219e7cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zoo::beff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92269930ce6363c83b2b8fc7c8abd81d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCage.html">Cage</a>* Zoo::cage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a264dc6d031ca713ca28969120bb599ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCell.html">Cell</a>** Zoo::cell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9db4289e7ecd6856e4b7329dbde19d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zoo::jumlahcage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e90eb77a17d3767773b2a660d0ce981"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zoo::keff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ac40c8ba9d8a115c90c2aad733ee59c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Zoo::kolom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

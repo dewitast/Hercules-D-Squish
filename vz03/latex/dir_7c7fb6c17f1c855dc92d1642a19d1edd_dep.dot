@@ -1,8 +1,0 @@
-digraph "habitat" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_7c7fb6c17f1c855dc92d1642a19d1edd [shape=box, label="habitat", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7c7fb6c17f1c855dc92d1642a19d1edd.html"];
-  dir_954cf860a87f6260dca429ec249db3c8 [shape=box label="cell" URL="dir_954cf860a87f6260dca429ec249db3c8.html"];
-  dir_7c7fb6c17f1c855dc92d1642a19d1edd->dir_954cf860a87f6260dca429ec249db3c8 [headlabel="1", labeldistance=1.5 headhref="dir_000021_000006.html"];
-}

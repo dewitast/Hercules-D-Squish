@@ -7,7 +7,13 @@
 
 
 Collaboration diagram for Animal\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimal__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,6 +53,29 @@ string \hyperlink{classAnimal_a7303717426fc66292257a75e737822fb}{Interact} ()
 \begin{DoxyCompactList}\small\item\em Interaksi yang dilakukan animal. \end{DoxyCompactList}\item 
 char \hyperlink{classAnimal_a0c8bf63a558039095c06ccb369f1ddda}{Render} ()
 \begin{DoxyCompactList}\small\item\em Render dari \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}{pos}
+\begin{DoxyCompactList}\small\item\em Posisi Binatang. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a70a223fc101b56962088b16a8b18534b}{species}
+\begin{DoxyCompactList}\small\item\em Nama spesies binatang. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_ac800bcdcb21d51f0da161896ef28fd23}{sound}
+\begin{DoxyCompactList}\small\item\em suara binatang. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a8c5c0ed2cffff3e84f95c15347412737}{food\+\_\+type}
+\begin{DoxyCompactList}\small\item\em jenis makanan binatang. \end{DoxyCompactList}\item 
+string $\ast$ \hyperlink{classAnimal_ab92cf1826b20ac02c8b342ac9517a9ba}{habitat}
+\begin{DoxyCompactList}\small\item\em jenis habitat binatang. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}{weight}
+\begin{DoxyCompactList}\small\item\em Berat binatang. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_adb6cda9dddcd113576b887f01d648711}{food}
+\begin{DoxyCompactList}\small\item\em Berat makanan binatang per hari. \end{DoxyCompactList}\item 
+int \hyperlink{classAnimal_a4dfc7016e0fc6b658f41edf9b7867e30}{number\+\_\+habitat}
+\begin{DoxyCompactList}\small\item\em jumlah habitat yang dapat ditinggali oleh binatang. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}{tame}
+\begin{DoxyCompactList}\small\item\em jinak atau tidaknya binatang. \end{DoxyCompactList}\item 
+char \hyperlink{classAnimal_a2651aa2a0b61dce72125919b52400550}{render}
+\begin{DoxyCompactList}\small\item\em karakter binatang ketika dicetak. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -350,6 +379,79 @@ Setter point dengan parameter sebuah point.
 {\em p} & Objek point yang akan di-\/set pada lokasi animal. \\
 \hline
 \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Animal@{Animal}!food@{food}}
+\index{food@{food}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{food}{food}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::food\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_adb6cda9dddcd113576b887f01d648711}{}\label{classAnimal_adb6cda9dddcd113576b887f01d648711}
+
+
+Berat makanan binatang per hari. 
+
+\index{Animal@{Animal}!food\+\_\+type@{food\+\_\+type}}
+\index{food\+\_\+type@{food\+\_\+type}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{food\+\_\+type}{food_type}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::food\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a8c5c0ed2cffff3e84f95c15347412737}{}\label{classAnimal_a8c5c0ed2cffff3e84f95c15347412737}
+
+
+jenis makanan binatang. 
+
+\index{Animal@{Animal}!habitat@{habitat}}
+\index{habitat@{habitat}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{habitat}{habitat}}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ Animal\+::habitat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_ab92cf1826b20ac02c8b342ac9517a9ba}{}\label{classAnimal_ab92cf1826b20ac02c8b342ac9517a9ba}
+
+
+jenis habitat binatang. 
+
+\index{Animal@{Animal}!number\+\_\+habitat@{number\+\_\+habitat}}
+\index{number\+\_\+habitat@{number\+\_\+habitat}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{number\+\_\+habitat}{number_habitat}}]{\setlength{\rightskip}{0pt plus 5cm}int Animal\+::number\+\_\+habitat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a4dfc7016e0fc6b658f41edf9b7867e30}{}\label{classAnimal_a4dfc7016e0fc6b658f41edf9b7867e30}
+
+
+jumlah habitat yang dapat ditinggali oleh binatang. 
+
+\index{Animal@{Animal}!pos@{pos}}
+\index{pos@{pos}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{pos}{pos}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Animal\+::pos\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}{}\label{classAnimal_ae4e9a6fe53c7ebfbb00536f0e38de5c8}
+
+
+Posisi Binatang. 
+
+\index{Animal@{Animal}!render@{render}}
+\index{render@{render}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{render}{render}}]{\setlength{\rightskip}{0pt plus 5cm}char Animal\+::render\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a2651aa2a0b61dce72125919b52400550}{}\label{classAnimal_a2651aa2a0b61dce72125919b52400550}
+
+
+karakter binatang ketika dicetak. 
+
+\index{Animal@{Animal}!sound@{sound}}
+\index{sound@{sound}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{sound}{sound}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::sound\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_ac800bcdcb21d51f0da161896ef28fd23}{}\label{classAnimal_ac800bcdcb21d51f0da161896ef28fd23}
+
+
+suara binatang. 
+
+\index{Animal@{Animal}!species@{species}}
+\index{species@{species}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{species}{species}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::species\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a70a223fc101b56962088b16a8b18534b}{}\label{classAnimal_a70a223fc101b56962088b16a8b18534b}
+
+
+Nama spesies binatang. 
+
+\index{Animal@{Animal}!tame@{tame}}
+\index{tame@{tame}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{tame}{tame}}]{\setlength{\rightskip}{0pt plus 5cm}bool Animal\+::tame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}{}\label{classAnimal_a2f41d5123d973bd889ff9ee9d7ac6fd1}
+
+
+jinak atau tidaknya binatang. 
+
+\index{Animal@{Animal}!weight@{weight}}
+\index{weight@{weight}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{weight}{weight}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::weight\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}{}\label{classAnimal_a055c4df7dacb89eb4c2ca9bbee11ff24}
+
+
+Berat binatang. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

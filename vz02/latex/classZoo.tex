@@ -7,7 +7,13 @@
 
 
 Collaboration diagram for Zoo\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classZoo__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +47,23 @@ int \hyperlink{classZoo_a759d40e997b024236da2a503662dca88}{Get\+Keff} () const
 \begin{DoxyCompactList}\small\item\em Search\+Point. Mencari point berada di cage mana. \end{DoxyCompactList}\item 
 void \hyperlink{classZoo_ad6095030bd48a8f51b4f83ff13fdf3b2}{Add\+Cage} (\hyperlink{classCage}{Cage} c)
 \begin{DoxyCompactList}\small\item\em Add\+Cage. Menambahkan cage baru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCell}{Cell} $\ast$$\ast$ \hyperlink{classZoo_a264dc6d031ca713ca28969120bb599ab}{cell}
+\item 
+\hyperlink{classCage}{Cage} $\ast$ \hyperlink{classZoo_a92269930ce6363c83b2b8fc7c8abd81d}{cage}
+\item 
+int \hyperlink{classZoo_ab9db4289e7ecd6856e4b7329dbde19d6}{jumlahcage}
+\item 
+const int \hyperlink{classZoo_a5aab4219fc1f6877609c6cd294abbc59}{baris}
+\item 
+const int \hyperlink{classZoo_a5ac40c8ba9d8a115c90c2aad733ee59c}{kolom}
+\item 
+int \hyperlink{classZoo_a859a09c6586ebfe53dc7504d0219e7cb}{beff}
+\item 
+int \hyperlink{classZoo_a9e90eb77a17d3767773b2a660d0ce981}{keff}
+\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -351,6 +374,30 @@ Operator $>$$>$. Melakukan read \hyperlink{classZoo}{Zoo}.
 \begin{DoxyReturn}{Returns}
 Mengeluarkan objek istream yang telah dibaca. 
 \end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Zoo@{Zoo}!baris@{baris}}
+\index{baris@{baris}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{baris}{baris}}]{\setlength{\rightskip}{0pt plus 5cm}const int Zoo\+::baris\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a5aab4219fc1f6877609c6cd294abbc59}{}\label{classZoo_a5aab4219fc1f6877609c6cd294abbc59}
+\index{Zoo@{Zoo}!beff@{beff}}
+\index{beff@{beff}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{beff}{beff}}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::beff\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a859a09c6586ebfe53dc7504d0219e7cb}{}\label{classZoo_a859a09c6586ebfe53dc7504d0219e7cb}
+\index{Zoo@{Zoo}!cage@{cage}}
+\index{cage@{cage}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{cage}{cage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cage}$\ast$ Zoo\+::cage\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a92269930ce6363c83b2b8fc7c8abd81d}{}\label{classZoo_a92269930ce6363c83b2b8fc7c8abd81d}
+\index{Zoo@{Zoo}!cell@{cell}}
+\index{cell@{cell}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{cell}{cell}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell}$\ast$$\ast$ Zoo\+::cell\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a264dc6d031ca713ca28969120bb599ab}{}\label{classZoo_a264dc6d031ca713ca28969120bb599ab}
+\index{Zoo@{Zoo}!jumlahcage@{jumlahcage}}
+\index{jumlahcage@{jumlahcage}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{jumlahcage}{jumlahcage}}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::jumlahcage\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_ab9db4289e7ecd6856e4b7329dbde19d6}{}\label{classZoo_ab9db4289e7ecd6856e4b7329dbde19d6}
+\index{Zoo@{Zoo}!keff@{keff}}
+\index{keff@{keff}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{keff}{keff}}]{\setlength{\rightskip}{0pt plus 5cm}int Zoo\+::keff\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a9e90eb77a17d3767773b2a660d0ce981}{}\label{classZoo_a9e90eb77a17d3767773b2a660d0ce981}
+\index{Zoo@{Zoo}!kolom@{kolom}}
+\index{kolom@{kolom}!Zoo@{Zoo}}
+\subsubsection[{\texorpdfstring{kolom}{kolom}}]{\setlength{\rightskip}{0pt plus 5cm}const int Zoo\+::kolom\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classZoo_a5ac40c8ba9d8a115c90c2aad733ee59c}{}\label{classZoo_a5ac40c8ba9d8a115c90c2aad733ee59c}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

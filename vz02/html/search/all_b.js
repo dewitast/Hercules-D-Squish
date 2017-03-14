@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['searchpoint',['SearchPoint',['../classZoo.html#a99470f6b1415873b4e5f8cd25b2cf5a6',1,'Zoo::SearchPoint(const Point &amp;P) const '],['../classZoo.html#a8a984fb1f2c3b513cf986dec67c287bf',1,'Zoo::SearchPoint(int i, int j) const ']]],
-  ['setabsis',['SetAbsis',['../classPoint.html#a0ba1dc33923b3aaa7678a07ffa022b06',1,'Point']]],
-  ['setobjecttype',['SetObjectType',['../classCell.html#ad814dd782c42728917888c893b99b9df',1,'Cell']]],
-  ['setordinat',['SetOrdinat',['../classPoint.html#ae672d4952c6c730d104588a67304aed1',1,'Point']]],
-  ['setpoint',['SetPoint',['../classAnimal.html#a754c7eb7a8ca6d8bd3e30650546a410d',1,'Animal::SetPoint(int abs, int ord)'],['../classAnimal.html#a02e187a6407bc83c46698544c912be15',1,'Animal::SetPoint(const Point &amp;p)']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['map_2etxt',['map.txt',['../map_8txt.html',1,'']]],
+  ['maxsize',['MaxSize',['../classCage.html#ae5023dd45202e149e5b6321699a85923',1,'Cage']]],
+  ['move',['Move',['../classCage.html#a973611397e576888027012237486cd25',1,'Cage']]]
 ];

@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['_7eanimal',['~Animal',['../classAnimal.html#a476af25adde5f0dfa688129c8f86fa5c',1,'Animal']]],
-  ['_7ecage',['~Cage',['../classCage.html#a657259499dfc23c63fc65aeaf8abbb17',1,'Cage']]],
-  ['_7ecell',['~Cell',['../classCell.html#a9fa559f7a28e2b4336c6879ca09304d8',1,'Cell']]],
-  ['_7edriver',['~Driver',['../classDriver.html#ac7645eea8d3ce2bc39ddbda5e840297a',1,'Driver']]],
-  ['_7epoint',['~Point',['../classPoint.html#a395fa04b4ec126b66fc053f829a30cc1',1,'Point']]],
-  ['_7ezoo',['~Zoo',['../classZoo.html#ab65ebe1fa60f6cf2a7cc55f78ff06ba5',1,'Zoo']]]
+  ['readanimal',['ReadAnimal',['../classZoo.html#a56db9c646afb72b7d277b6bea76e675c',1,'Zoo']]],
+  ['releaseanimal',['ReleaseAnimal',['../classCage.html#a84c0aac0bfd315ef7e5d0595dea5be5a',1,'Cage']]],
+  ['render',['Render',['../classAnimal.html#a0c8bf63a558039095c06ccb369f1ddda',1,'Animal::Render()'],['../classAnimal.html#a2651aa2a0b61dce72125919b52400550',1,'Animal::render()'],['../classCell.html#a886f694017e919827f9208d17d3836d3',1,'Cell::render()']]]
 ];

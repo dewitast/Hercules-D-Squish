@@ -1,8 +1,0 @@
-digraph "mammal" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_7d9fa14e413bd664dca6d5c8691fddd9 [shape=box, label="mammal", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7d9fa14e413bd664dca6d5c8691fddd9.html"];
-  dir_2d1529303373b6479b40ba3f97bfa6d2 [shape=box label="animal" URL="dir_2d1529303373b6479b40ba3f97bfa6d2.html"];
-  dir_7d9fa14e413bd664dca6d5c8691fddd9->dir_2d1529303373b6479b40ba3f97bfa6d2 [headlabel="1", labeldistance=1.5 headhref="dir_000031_000002.html"];
-}
