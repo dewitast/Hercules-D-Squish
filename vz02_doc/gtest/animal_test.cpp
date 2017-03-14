@@ -3,13 +3,6 @@
 
 #include "gtest/gtest.h"
 #include "../animal/animal.h"
-#include "../point/point.h"
-
-TEST(AnimalTest, GetPos) {
-	Animal a;
-	Point p(5,5);
-	EXPECT_NE(p, a.GetPos());
-}
 
 TEST(AnimalTest, GetSpecies) {
 	Animal a;
@@ -19,11 +12,6 @@ TEST(AnimalTest, GetSpecies) {
 TEST(AnimalTest, GetFoodType) {
 	Animal a;
 	EXPECT_EQ("Herbivore", a.GetFoodType());
-}
-
-TEST(AnimalTest, GetHabitat) {
-	Animal a;
-	EXPECT_EQ("Water", a.GetHabitat());
 }
 
 TEST(AnimalTest, GetWeight) {
