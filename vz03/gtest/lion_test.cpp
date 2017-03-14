@@ -1,11 +1,11 @@
-/**	@file  lion_test.h
+/**	@file  lion_test.cpp
   */
 
 #include "gtest/gtest.h"
 #include "../lion/lion.h"
 
 TEST(LionTest, Interact) {
-	Lion l(150, 7.5, false);
+	Lion l;
 	EXPECT_EQ("Roaarr!", l.Interact());
 }
 

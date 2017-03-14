@@ -1,11 +1,11 @@
-/**	@file  orca_test.h
+/**	@file  orca_test.cpp
   */
 
 #include "gtest/gtest.h"
 #include "../orca/orca.h"
 
 TEST(OrcaTest, Interact) {
-	Orca r(4000, 200, false);
+	Orca r;
 	EXPECT_EQ("Ngiak!", r.Interact());
 }
 
