@@ -87,8 +87,18 @@ ostream& operator<<(ostream& o,const Zoo& z)
 	cout << "Absis kiri atas : "; cin >> abs;
 	cout << "Ordinat kiri atas : "; cin >> ord;
 	P1.SetAbsis(abs); P1.SetOrdinat(ord);
+	if ((abs<0)||(abs>=z.GetBeff())||(ord<0)||(ord>=z.GetKeff()))
+	{
+		o << "Input salah" << endl;
+		return o;	
+	}
 	cout << "Absis kanan bawah : "; cin >> abs;
 	cout << "Ordinat kanan bawah : "; cin >> ord;
+	if ((abs<P1.GetAbsis())||(ord<P1.GetOrdinat())||(abs>=z.GetBeff())||(ord>=z.GetKeff()))
+	{
+		o << "Input salah" << endl;
+		return o;
+	}
 	P2.SetAbsis(abs); P2.SetOrdinat(ord);
 	char m[z.GetBeff()][z.GetKeff()];
 	for (int i=P1.GetAbsis();i<=P2.GetAbsis();++i)
