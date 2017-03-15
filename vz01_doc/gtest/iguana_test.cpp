@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../iguana/iguana.h"
+#include "../../vz01/iguana/iguana.h"
 
 TEST(IguanaTest, Interact) {
 	Iguana l;

@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../lion/lion.h"
+#include "../../vz01/lion/lion.h"
 
 TEST(LionTest, Interact) {
 	Lion l;

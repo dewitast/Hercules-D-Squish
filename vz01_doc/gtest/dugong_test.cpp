@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../dugong/dugong.h"
+#include "../../vz01/dugong/dugong.h"
 
 TEST(DugongTest, Interact) {
 	Dugong u;

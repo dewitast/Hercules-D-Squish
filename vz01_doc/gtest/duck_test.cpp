@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../duck/duck.h"
+#include "../../vz01/duck/duck.h"
 
 TEST(DuckTest, Interact) {
 	Duck d;

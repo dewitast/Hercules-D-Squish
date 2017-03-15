@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../goat/goat.h"
+#include "../../vz01/goat/goat.h"
 
 TEST(GoatTest, Interact) {
 	Goat l;

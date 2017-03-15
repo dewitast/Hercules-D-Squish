@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../eagle/eagle.h"
+#include "../../vz01/eagle/eagle.h"
 
 TEST(EagleTest, Interact) {
 	Eagle e;
