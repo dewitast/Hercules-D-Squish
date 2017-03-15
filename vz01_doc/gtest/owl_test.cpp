@@ -10,6 +10,6 @@ TEST(OwlTest, Interact) {
 }
 
 TEST(OwlTest, Render) {
-	Owl o(1.5,0.075,true);
+	Owl o;
 	EXPECT_EQ('O', o.Render());
 }

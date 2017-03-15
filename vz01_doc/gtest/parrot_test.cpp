@@ -10,6 +10,6 @@ TEST(ParrotTest, Interact) {
 }
 
 TEST(ParrotTest, Render) {
-	Parrot p(1.2,0.06,true);
+	Parrot p;
 	EXPECT_EQ('P', p.Render());
 }

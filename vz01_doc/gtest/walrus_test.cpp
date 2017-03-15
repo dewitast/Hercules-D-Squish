@@ -10,6 +10,6 @@ TEST(WalrusTest, Interact) {
 }
 
 TEST(WalrusTest, Render) {
-	Walrus w(1000,50,false);
+	Walrus w;
 	EXPECT_EQ('W', w.Render());
 }

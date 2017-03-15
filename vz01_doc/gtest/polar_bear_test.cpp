@@ -10,6 +10,6 @@ TEST(PolarBearTest, Interact) {
 }
 
 TEST(PolarBearTest, Render) {
-	PolarBear b(300,15,false);
+	PolarBear b;
 	EXPECT_EQ('B', b.Render());
 }

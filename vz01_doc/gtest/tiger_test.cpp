@@ -10,6 +10,6 @@ TEST(TigerTest, Interact) {
 }
 
 TEST(TigerTest, Render) {
-	Tiger t(200, 10, false);
+	Tiger t;
 	EXPECT_EQ('T', t.Render());
 }

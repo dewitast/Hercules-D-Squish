@@ -10,6 +10,6 @@ TEST(DugongTest, Interact) {
 }
 
 TEST(DugongTest, Render) {
-	Dugong u(500,25,true);
+	Dugong u;
 	EXPECT_EQ('U', u.Render());
 }

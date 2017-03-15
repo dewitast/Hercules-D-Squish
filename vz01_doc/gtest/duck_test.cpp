@@ -10,6 +10,6 @@ TEST(DuckTest, Interact) {
 }
 
 TEST(DuckTest, Render) {
-	Duck d(12,0.6,true);
+	Duck d;
 	EXPECT_EQ('D', d.Render());
 }
