@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../lion/lion.h"
+#include "../../vz01/lion/lion.h"
 
 TEST(LionTest, Interact) {
 	Lion l;
@@ -10,6 +10,6 @@ TEST(LionTest, Interact) {
 }
 
 TEST(LionTest, Render) {
-	Lion l(150, 7.5, false);
+	Lion l;
 	EXPECT_EQ('L', l.Render());
 }

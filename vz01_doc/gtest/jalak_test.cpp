@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../jalak/jalak.h"
+#include "../../vz01/jalak/jalak.h"
 
 TEST(JalakTest, Interact) {
 	Jalak j;
@@ -10,6 +10,6 @@ TEST(JalakTest, Interact) {
 }
 
 TEST(JalakTest, Render) {
-	Jalak j(0.1,0.005,true);
+	Jalak j;
 	EXPECT_EQ('J', j.Render());
 }

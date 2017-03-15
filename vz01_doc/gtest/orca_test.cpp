@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../orca/orca.h"
+#include "../../vz01/orca/orca.h"
 
 TEST(OrcaTest, Interact) {
 	Orca r;
@@ -10,6 +10,6 @@ TEST(OrcaTest, Interact) {
 }
 
 TEST(OrcaTest, Render) {
-	Orca r(4000, 200, false);
+	Orca r;
 	EXPECT_EQ('R', r.Render());
 }

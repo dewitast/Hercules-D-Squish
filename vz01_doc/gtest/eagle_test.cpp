@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../eagle/eagle.h"
+#include "../../vz01/eagle/eagle.h"
 
 TEST(EagleTest, Interact) {
 	Eagle e;
@@ -10,6 +10,6 @@ TEST(EagleTest, Interact) {
 }
 
 TEST(EagleTest, Render) {
-	Eagle e(5.8,0.29,false);
+	Eagle e;
 	EXPECT_EQ('E', e.Render());
 }

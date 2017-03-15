@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../dugong/dugong.h"
+#include "../../vz01/dugong/dugong.h"
 
 TEST(DugongTest, Interact) {
 	Dugong u;
@@ -10,6 +10,6 @@ TEST(DugongTest, Interact) {
 }
 
 TEST(DugongTest, Render) {
-	Dugong u(500,25,true);
+	Dugong u;
 	EXPECT_EQ('U', u.Render());
 }

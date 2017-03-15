@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../owl/owl.h"
+#include "../../vz01/owl/owl.h"
 
 TEST(OwlTest, Interact) {
 	Owl o;
@@ -10,6 +10,6 @@ TEST(OwlTest, Interact) {
 }
 
 TEST(OwlTest, Render) {
-	Owl o(1.5,0.075,true);
+	Owl o;
 	EXPECT_EQ('O', o.Render());
 }

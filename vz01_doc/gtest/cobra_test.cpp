@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../cobra/cobra.h"
+#include "../../vz01/cobra/cobra.h"
 
 TEST(CobraTest, Interact) {
 	Cobra c;
@@ -10,6 +10,6 @@ TEST(CobraTest, Interact) {
 }
 
 TEST(CobraTest, Render) {
-	Cobra c(20,1,false);
+	Cobra c;
 	EXPECT_EQ('C', c.Render());
 }

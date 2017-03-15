@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../tiger/tiger.h"
+#include "../../vz01/tiger/tiger.h"
 
 TEST(TigerTest, Interact) {
 	Tiger t;
@@ -10,6 +10,6 @@ TEST(TigerTest, Interact) {
 }
 
 TEST(TigerTest, Render) {
-	Tiger t(200, 10, false);
+	Tiger t;
 	EXPECT_EQ('T', t.Render());
 }

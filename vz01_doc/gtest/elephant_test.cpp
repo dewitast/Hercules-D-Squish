@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../elephant/elephant.h"
+#include "../../vz01/elephant/elephant.h"
 
 TEST(ElephantTest, Interact) {
 	Elephant h;
@@ -10,6 +10,6 @@ TEST(ElephantTest, Interact) {
 }
 
 TEST(ElephantTest, Render) {
-	Elephant h(5000,250,true);
+	Elephant h;
 	EXPECT_EQ('H', h.Render());
 }

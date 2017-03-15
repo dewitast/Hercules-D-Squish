@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../parrot/parrot.h"
+#include "../../vz01/parrot/parrot.h"
 
 TEST(ParrotTest, Interact) {
 	Parrot p;
@@ -10,6 +10,6 @@ TEST(ParrotTest, Interact) {
 }
 
 TEST(ParrotTest, Render) {
-	Parrot p(1.2,0.06,true);
+	Parrot p;
 	EXPECT_EQ('P', p.Render());
 }

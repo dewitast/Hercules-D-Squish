@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../komodo/komodo.h"
+#include "../../vz01/komodo/komodo.h"
 
 TEST(KomodoTest, Interact) {
 	Komodo k;
@@ -10,6 +10,6 @@ TEST(KomodoTest, Interact) {
 }
 
 TEST(KomodoTest, Render) {
-	Komodo k(120,6,false);
+	Komodo k;
 	EXPECT_EQ('K', k.Render());
 }

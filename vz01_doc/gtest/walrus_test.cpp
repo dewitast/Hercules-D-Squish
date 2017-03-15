@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../walrus/walrus.h"
+#include "../../vz01/walrus/walrus.h"
 
 TEST(WalrusTest, Interact) {
 	Walrus w;
@@ -10,6 +10,6 @@ TEST(WalrusTest, Interact) {
 }
 
 TEST(WalrusTest, Render) {
-	Walrus w(1000,50,false);
+	Walrus w;
 	EXPECT_EQ('W', w.Render());
 }

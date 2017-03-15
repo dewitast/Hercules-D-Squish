@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../cormorant/cormorant.h"
+#include "../../vz01/cormorant/cormorant.h"
 
 TEST(CormorantTest, Interact) {
 	Cormorant m;
@@ -10,6 +10,6 @@ TEST(CormorantTest, Interact) {
 }
 
 TEST(CormorantTest, Render) {
-	Cormorant m(3.6,0.18,true);
+	Cormorant m;
 	EXPECT_EQ('M', m.Render());
 }

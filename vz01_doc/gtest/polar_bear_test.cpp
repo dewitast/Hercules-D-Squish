@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../polar_bear/polar_bear.h"
+#include "../../vz01/polar_bear/polar_bear.h"
 
 TEST(PolarBearTest, Interact) {
 	PolarBear b;
@@ -10,6 +10,6 @@ TEST(PolarBearTest, Interact) {
 }
 
 TEST(PolarBearTest, Render) {
-	PolarBear b(300,15,false);
+	PolarBear b;
 	EXPECT_EQ('B', b.Render());
 }

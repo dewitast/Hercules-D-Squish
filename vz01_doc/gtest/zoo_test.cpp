@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../zoo/zoo.h"
+#include "../../vz01/zoo/zoo.h"
 
 TEST(ZooTest, GetJumlahCage) {
 	Zoo z;

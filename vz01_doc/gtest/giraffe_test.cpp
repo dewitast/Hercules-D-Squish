@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../giraffe/giraffe.h"
+#include "../../vz01/giraffe/giraffe.h"
 
 TEST(GiraffeTest, Interact) {
 	Giraffe f;
@@ -10,6 +10,6 @@ TEST(GiraffeTest, Interact) {
 }
 
 TEST(GiraffeTest, Render) {
-	Giraffe f(1100,55,true);
+	Giraffe f;
 	EXPECT_EQ('F', f.Render());
 }
