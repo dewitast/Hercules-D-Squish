@@ -62,7 +62,6 @@ void Driver::GetExperience()
 
 void Driver::TourZoo()
 {
-	srand (time(NULL));
 	int random;
 	bool found = false;
 	if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))
