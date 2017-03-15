@@ -227,8 +227,8 @@ void Zoo::ReadAnimal()
 		myfile >> abs;
 		myfile >> ord;
 		Point p;
-		p.SetAbsis(abs-1);
-		p.SetOrdinat(ord-1);
+		p.SetAbsis(-1);
+		p.SetOrdinat(-1);
 		if (c == 'A')
 		{	
 			string* h;

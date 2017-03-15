@@ -74,7 +74,6 @@ void Cage::AdoptAnimal(Animal& A)
 	if (IsFull()) cout << "Kandang penuh." << endl;
 	else if (IsInCage(A)==-1)
 	{
-		srand (time(NULL));
 		int random = rand() % size;
 		while (IsOccupied(random))
 			random = rand() % size;
