@@ -66,7 +66,6 @@ void Driver::TourZoo()
 {
 	for (int i=0;i<Z.GetJumlahCage();++i)
 		Z.GetCage(i).Move();
-	srand (time(NULL));
 	int random;
 	bool found = false;
 	if ((P.GetAbsis()==-1)&&(P.GetOrdinat()==-1))

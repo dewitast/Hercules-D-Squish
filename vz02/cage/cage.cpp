@@ -74,7 +74,6 @@ void Cage::AdoptAnimal(Animal A)
 	{
 		if (CanPut(A))
 		{
-			srand (time(NULL));
 			int random = rand() % size;
 			while (IsOccupied(random))
 				random = rand() % size;
@@ -164,7 +163,6 @@ bool Cage::CanPut(const Animal& A) const
 
 bool Cage::Move()
 {
-	srand (time(NULL));
 	int random;
 	Point p2;
 	for (int i=0;i<TotalAnimal;++i)
