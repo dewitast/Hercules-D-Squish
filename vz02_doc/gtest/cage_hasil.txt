@@ -1,0 +1,17 @@
+Running main() from gtest_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from CageTest
+[ RUN      ] CageTest.IsFull
+[       OK ] CageTest.IsFull (0 ms)
+[ RUN      ] CageTest.GetSize
+[       OK ] CageTest.GetSize (0 ms)
+[ RUN      ] CageTest.GetTotalAnimal
+[       OK ] CageTest.GetTotalAnimal (0 ms)
+[ RUN      ] CageTest.IsEmpty
+[       OK ] CageTest.IsEmpty (0 ms)
+[----------] 4 tests from CageTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 4 tests.

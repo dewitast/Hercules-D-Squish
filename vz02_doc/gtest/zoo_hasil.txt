@@ -1,0 +1,15 @@
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from ZooTest
+[ RUN      ] ZooTest.GetJumlahCage
+[       OK ] ZooTest.GetJumlahCage (1 ms)
+[ RUN      ] ZooTest.GetBeff
+[       OK ] ZooTest.GetBeff (1 ms)
+[ RUN      ] ZooTest.GetKeff
+[       OK ] ZooTest.GetKeff (1 ms)
+[----------] 3 tests from ZooTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 3 tests.

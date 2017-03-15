@@ -1,0 +1,27 @@
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from CellTest
+[ RUN      ] CellTest.GetObjectType
+[       OK ] CellTest.GetObjectType (0 ms)
+[ RUN      ] CellTest.GetRender
+[       OK ] CellTest.GetRender (0 ms)
+[ RUN      ] CellTest.IsHabitat
+[       OK ] CellTest.IsHabitat (0 ms)
+[ RUN      ] CellTest.IsLandHabitat
+[       OK ] CellTest.IsLandHabitat (0 ms)
+[ RUN      ] CellTest.IsAirHabitat
+[       OK ] CellTest.IsAirHabitat (0 ms)
+[ RUN      ] CellTest.IsWaterHabitat
+[       OK ] CellTest.IsWaterHabitat (0 ms)
+[ RUN      ] CellTest.IsExit
+[       OK ] CellTest.IsExit (0 ms)
+[ RUN      ] CellTest.IsRoad
+[       OK ] CellTest.IsRoad (0 ms)
+[ RUN      ] CellTest.IsEntrance
+[       OK ] CellTest.IsEntrance (0 ms)
+[----------] 9 tests from CellTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
