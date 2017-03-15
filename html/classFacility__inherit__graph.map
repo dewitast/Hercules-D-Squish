@@ -1,9 +1,0 @@
-<map id="Facility" name="Facility">
-<area shape="rect" id="node4" href="$classPark.html" title="{Park\n||+ Render()\l+ Clone()\l}" alt="" coords="5,711,89,803"/>
-<area shape="rect" id="node5" href="$classRestaurant.html" title="{Restaurant\n||+ Render()\l+ Clone()\l}" alt="" coords="113,711,200,803"/>
-<area shape="rect" id="node6" href="$classRoad.html" title="{Road\n||+ render()\l+ clone()\l+ dummy()\l}" alt="" coords="225,704,310,811"/>
-<area shape="rect" id="node2" href="$classCell.html" title="{Cell\n||+ render()\l+ clone()\l+ IsLandHabitat()\l+ IsWaterHabitat()\l+ IsAirHabitat()\l+ IsRoad()\l+ IsPark()\l+ IsRestaurant()\l+ IsExit()\l+ IsEntrance()\l+ IsHabitat()\l}" alt="" coords="91,131,222,355"/>
-<area shape="rect" id="node3" href="$classRenderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="113,5,201,83"/>
-<area shape="rect" id="node7" href="$classEntrance.html" title="{Entrance\n||+ Render()\l+ Clone()\l}" alt="" coords="172,859,256,951"/>
-<area shape="rect" id="node8" href="$classExit.html" title="{Exit\n||+ Render()\l+ Clone()\l}" alt="" coords="280,859,364,951"/>
-</map>

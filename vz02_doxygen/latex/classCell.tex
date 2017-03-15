@@ -1,0 +1,260 @@
+\hypertarget{classCell}{}\section{Cell Class Reference}
+\label{classCell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
+
+
+Collaboration diagram for Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classCell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classCell_1_1Kelas}{Kelas}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCell_a394510643e8664cf12b5efaf5cb99f71}{Cell} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Menciptakan \hyperlink{classCell}{Cell} kosong. \end{DoxyCompactList}\item 
+\hyperlink{classCell_a26ca23bd35b1be145b8c161ac36b9bda}{Cell} (string ot)
+\begin{DoxyCompactList}\small\item\em Constructor dengan parameter. Menciptakan \hyperlink{classCell}{Cell} kosong dengan tipe objek ot dan render r. \end{DoxyCompactList}\item 
+\hyperlink{classCell_a9fa559f7a28e2b4336c6879ca09304d8}{$\sim$\+Cell} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \hyperlink{classCell_a6218f05e1d9dcdf9ed61c5196040b1bd}{Get\+Object\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk object type. \end{DoxyCompactList}\item 
+char \hyperlink{classCell_a81e6357d206db3a6e6299029dc2273e5}{Get\+Render} () const 
+\begin{DoxyCompactList}\small\item\em Getter untuk render. \end{DoxyCompactList}\item 
+void \hyperlink{classCell_ad814dd782c42728917888c893b99b9df}{Set\+Object\+Type} (string ot)
+\begin{DoxyCompactList}\small\item\em Setter untuk object type dari \hyperlink{classCell}{Cell}. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_ab44ecb9c8347d20216b335af4e7c3700}{Is\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Is\+Habitat. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_a87c65d914c0be7928836fe8c46b5408e}{Is\+Land\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Is\+Land\+Habitat. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_af270b6bea6287714d585bae539edebc8}{Is\+Air\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Is\+Air\+Habitat. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_a06f065280a20d0008af9980ac4e053d0}{Is\+Water\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Is\+Water\+Habitat. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_a01c619a613088130f13c7d090121cbf5}{Is\+Exit} ()
+\begin{DoxyCompactList}\small\item\em Is\+Exit. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_aaaabb185d3c3d8ae23ac70dbc1148768}{Is\+Road} ()
+\begin{DoxyCompactList}\small\item\em Is\+Road. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_a15995ac65537db9e5bd3e6e1df7476e3}{Is\+Entrance} ()
+\begin{DoxyCompactList}\small\item\em Is\+Entrance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classCell_a800313ab2d6d6686a999e0179695737f}{object\+\_\+type}
+\item 
+char \hyperlink{classCell_a886f694017e919827f9208d17d3836d3}{render}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Cell()}{Cell()}}]{\setlength{\rightskip}{0pt plus 5cm}Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a394510643e8664cf12b5efaf5cb99f71}{}\label{classCell_a394510643e8664cf12b5efaf5cb99f71}
+
+
+Constructor. Menciptakan \hyperlink{classCell}{Cell} kosong. 
+
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Cell(string ot)}{Cell(string ot)}}]{\setlength{\rightskip}{0pt plus 5cm}Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{string}]{ot}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a26ca23bd35b1be145b8c161ac36b9bda}{}\label{classCell_a26ca23bd35b1be145b8c161ac36b9bda}
+
+
+Constructor dengan parameter. Menciptakan \hyperlink{classCell}{Cell} kosong dengan tipe objek ot dan render r. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ot} & Object type dari \hyperlink{classCell}{Cell}. \\
+\hline
+{\em r} & Render dari \hyperlink{classCell}{Cell}. \\
+\hline
+\end{DoxyParams}
+\index{Cell@{Cell}!````~Cell@{$\sim$\+Cell}}
+\index{````~Cell@{$\sim$\+Cell}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cell()}{~Cell()}}]{\setlength{\rightskip}{0pt plus 5cm}Cell\+::$\sim$\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a9fa559f7a28e2b4336c6879ca09304d8}{}\label{classCell_a9fa559f7a28e2b4336c6879ca09304d8}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Cell@{Cell}!Get\+Object\+Type@{Get\+Object\+Type}}
+\index{Get\+Object\+Type@{Get\+Object\+Type}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Get\+Object\+Type() const }{GetObjectType() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Cell\+::\+Get\+Object\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classCell_a6218f05e1d9dcdf9ed61c5196040b1bd}{}\label{classCell_a6218f05e1d9dcdf9ed61c5196040b1bd}
+
+
+Getter untuk object type. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan object type dari \hyperlink{classCell}{Cell}. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Get\+Render@{Get\+Render}}
+\index{Get\+Render@{Get\+Render}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Get\+Render() const }{GetRender() const }}]{\setlength{\rightskip}{0pt plus 5cm}char Cell\+::\+Get\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classCell_a81e6357d206db3a6e6299029dc2273e5}{}\label{classCell_a81e6357d206db3a6e6299029dc2273e5}
+
+
+Getter untuk render. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan render dari \hyperlink{classCell}{Cell}. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Air\+Habitat@{Is\+Air\+Habitat}}
+\index{Is\+Air\+Habitat@{Is\+Air\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Air\+Habitat()}{IsAirHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Air\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_af270b6bea6287714d585bae539edebc8}{}\label{classCell_af270b6bea6287714d585bae539edebc8}
+
+
+Is\+Air\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Air Habitat. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Entrance@{Is\+Entrance}}
+\index{Is\+Entrance@{Is\+Entrance}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Entrance()}{IsEntrance()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Entrance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a15995ac65537db9e5bd3e6e1df7476e3}{}\label{classCell_a15995ac65537db9e5bd3e6e1df7476e3}
+
+
+Is\+Entrance. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Entrance. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Exit@{Is\+Exit}}
+\index{Is\+Exit@{Is\+Exit}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Exit()}{IsExit()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a01c619a613088130f13c7d090121cbf5}{}\label{classCell_a01c619a613088130f13c7d090121cbf5}
+
+
+Is\+Exit. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Exit. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Habitat@{Is\+Habitat}}
+\index{Is\+Habitat@{Is\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Habitat()}{IsHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_ab44ecb9c8347d20216b335af4e7c3700}{}\label{classCell_ab44ecb9c8347d20216b335af4e7c3700}
+
+
+Is\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Land, Air, atau Water Habitat. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Land\+Habitat@{Is\+Land\+Habitat}}
+\index{Is\+Land\+Habitat@{Is\+Land\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Land\+Habitat()}{IsLandHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Land\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a87c65d914c0be7928836fe8c46b5408e}{}\label{classCell_a87c65d914c0be7928836fe8c46b5408e}
+
+
+Is\+Land\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Land Habitat. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Road@{Is\+Road}}
+\index{Is\+Road@{Is\+Road}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Road()}{IsRoad()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Road (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_aaaabb185d3c3d8ae23ac70dbc1148768}{}\label{classCell_aaaabb185d3c3d8ae23ac70dbc1148768}
+
+
+Is\+Road. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Road. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Water\+Habitat@{Is\+Water\+Habitat}}
+\index{Is\+Water\+Habitat@{Is\+Water\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Water\+Habitat()}{IsWaterHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Water\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_a06f065280a20d0008af9980ac4e053d0}{}\label{classCell_a06f065280a20d0008af9980ac4e053d0}
+
+
+Is\+Water\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Water Habitat. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Set\+Object\+Type(string ot)}{SetObjectType(string ot)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cell\+::\+Set\+Object\+Type (
+\begin{DoxyParamCaption}
+\item[{string}]{ot}
+\end{DoxyParamCaption}
+)}\hypertarget{classCell_ad814dd782c42728917888c893b99b9df}{}\label{classCell_ad814dd782c42728917888c893b99b9df}
+
+
+Setter untuk object type dari \hyperlink{classCell}{Cell}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ot} & Nilai object type yang akan di-\/set pada \hyperlink{classCell}{Cell}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Cell@{Cell}!object\+\_\+type@{object\+\_\+type}}
+\index{object\+\_\+type@{object\+\_\+type}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{object\+\_\+type}{object_type}}]{\setlength{\rightskip}{0pt plus 5cm}string Cell\+::object\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCell_a800313ab2d6d6686a999e0179695737f}{}\label{classCell_a800313ab2d6d6686a999e0179695737f}
+\index{Cell@{Cell}!render@{render}}
+\index{render@{render}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{render}{render}}]{\setlength{\rightskip}{0pt plus 5cm}char Cell\+::render\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCell_a886f694017e919827f9208d17d3836d3}{}\label{classCell_a886f694017e919827f9208d17d3836d3}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cell/\hyperlink{cell_8h}{cell.\+h}\item 
+cell/\hyperlink{cell_8cpp}{cell.\+cpp}\end{DoxyCompactItemize}

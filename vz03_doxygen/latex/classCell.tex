@@ -1,0 +1,262 @@
+\hypertarget{classCell}{}\section{Cell Class Reference}
+\label{classCell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
+
+
+Inheritance diagram for Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classCell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classCell_1_1Kelas}{Kelas}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual char \hyperlink{classCell_a1d72940d69d96132a445212155e3e789}{Render} ()=0
+\begin{DoxyCompactList}\small\item\em render. \end{DoxyCompactList}\item 
+virtual \hyperlink{classCell}{Cell} $\ast$ \hyperlink{classCell_aaa64e56d1ecf0d0a390f2400c189b169}{Clone} () const =0
+\begin{DoxyCompactList}\small\item\em clone. Melakukan cloning untuk menciptakan objek baru. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_a6cc005c27ee600d76a91459b7733b90e}{Is\+Land\+Habitat} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Land\+Habitat. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_af620aac2cb7ce59657ca158255462fef}{Is\+Water\+Habitat} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Water\+Habitat. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_a24f8abceee9ce115d47b588992407a4d}{Is\+Air\+Habitat} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Air\+Habitat. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_a6afd033fa34492761e1de9fd1f7c8a95}{Is\+Road} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Road. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_ad87cbdb9c06b19c7c6571053c3888a51}{Is\+Park} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Park. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_a804041eef60df6b659032dc5a1fe3854}{Is\+Restaurant} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Restaurant. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_adfef5e446c31ace0e9fef1235e4f8fef}{Is\+Exit} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Exit. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCell_ab10ef0ffe5c971c59d0e6167131dd521}{Is\+Entrance} ()=0
+\begin{DoxyCompactList}\small\item\em Is\+Entrance. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_ab44ecb9c8347d20216b335af4e7c3700}{Is\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Is\+Habitat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Cell@{Cell}!Clone@{Clone}}
+\index{Clone@{Clone}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Clone() const =0}{Clone() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cell}$\ast$ Cell\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_aaa64e56d1ecf0d0a390f2400c189b169}{}\label{classCell_aaa64e56d1ecf0d0a390f2400c189b169}
+
+
+clone. Melakukan cloning untuk menciptakan objek baru. 
+
+\begin{DoxyReturn}{Returns}
+Mengeluarkan pointer to cell objek tersebut. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAirHabitat_a23b2fa15b4211838a9911ab7c5afac07}{Air\+Habitat}, \hyperlink{classEntrance_a360c7c24284c6004fcdacb09afa0d8ac}{Entrance}, \hyperlink{classExit_a827f84ddccdd30e9db0ed6918560d8d4}{Exit}, \hyperlink{classLandHabitat_a8cd927afc8d52a9fb8cdc5701893ad81}{Land\+Habitat}, \hyperlink{classPark_a573db7d7f393802c02c753572c33bef4}{Park}, \hyperlink{classRestaurant_adb881493e1b2cc348aaefb3c7b2ff7aa}{Restaurant}, \hyperlink{classWaterHabitat_a6ae8f71f1b999dd7802acd1f5fb71bea}{Water\+Habitat}, and \hyperlink{classRoad_a23ca807031dc27cb76d16a808e08beb7}{Road}.
+
+\index{Cell@{Cell}!Is\+Air\+Habitat@{Is\+Air\+Habitat}}
+\index{Is\+Air\+Habitat@{Is\+Air\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Air\+Habitat()=0}{IsAirHabitat()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Air\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_a24f8abceee9ce115d47b588992407a4d}{}\label{classCell_a24f8abceee9ce115d47b588992407a4d}
+
+
+Is\+Air\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Air \hyperlink{classHabitat}{Habitat}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFacility_a6092a86c14a7c2003e2b020aa28fc06f}{Facility}, and \hyperlink{classHabitat_aef29f87fdc6be7ae4e44279d816e173b}{Habitat}.
+
+\index{Cell@{Cell}!Is\+Entrance@{Is\+Entrance}}
+\index{Is\+Entrance@{Is\+Entrance}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Entrance()=0}{IsEntrance()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Entrance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_ab10ef0ffe5c971c59d0e6167131dd521}{}\label{classCell_ab10ef0ffe5c971c59d0e6167131dd521}
+
+
+Is\+Entrance. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode \hyperlink{classEntrance}{Entrance}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFacility_a256cb0f3621b6545ec212d56672d5b3e}{Facility}, and \hyperlink{classHabitat_aedc03784a83bef591a2441d1c062cd57}{Habitat}.
+
+\index{Cell@{Cell}!Is\+Exit@{Is\+Exit}}
+\index{Is\+Exit@{Is\+Exit}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Exit()=0}{IsExit()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_adfef5e446c31ace0e9fef1235e4f8fef}{}\label{classCell_adfef5e446c31ace0e9fef1235e4f8fef}
+
+
+Is\+Exit. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode \hyperlink{classExit}{Exit}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFacility_aa6ed2cd4c8b1dc21a478c26707d16ef5}{Facility}, and \hyperlink{classHabitat_aece5f38292630cf5860001ae8fdd084d}{Habitat}.
+
+\index{Cell@{Cell}!Is\+Habitat@{Is\+Habitat}}
+\index{Is\+Habitat@{Is\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Habitat()}{IsHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::\+Is\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCell_ab44ecb9c8347d20216b335af4e7c3700}{}\label{classCell_ab44ecb9c8347d20216b335af4e7c3700}
+
+
+Is\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Land, Air, atau Water \hyperlink{classHabitat}{Habitat}. 
+\end{DoxyReturn}
+\index{Cell@{Cell}!Is\+Land\+Habitat@{Is\+Land\+Habitat}}
+\index{Is\+Land\+Habitat@{Is\+Land\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Land\+Habitat()=0}{IsLandHabitat()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Land\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_a6cc005c27ee600d76a91459b7733b90e}{}\label{classCell_a6cc005c27ee600d76a91459b7733b90e}
+
+
+Is\+Land\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Land \hyperlink{classHabitat}{Habitat}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFacility_a1a8bbfab30dce85b0c581715cb4af1dd}{Facility}, and \hyperlink{classHabitat_aaf69aab7e1ce1075188651d2cb388b6b}{Habitat}.
+
+\index{Cell@{Cell}!Is\+Park@{Is\+Park}}
+\index{Is\+Park@{Is\+Park}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Park()=0}{IsPark()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Park (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_ad87cbdb9c06b19c7c6571053c3888a51}{}\label{classCell_ad87cbdb9c06b19c7c6571053c3888a51}
+
+
+Is\+Park. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode \hyperlink{classPark}{Park}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classHabitat_aa4cd06885065d8b7e3c4477c626d2fe7}{Habitat}, and \hyperlink{classFacility_acd5c991c33b331d67bb559f962d3bbc0}{Facility}.
+
+\index{Cell@{Cell}!Is\+Restaurant@{Is\+Restaurant}}
+\index{Is\+Restaurant@{Is\+Restaurant}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Restaurant()=0}{IsRestaurant()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Restaurant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_a804041eef60df6b659032dc5a1fe3854}{}\label{classCell_a804041eef60df6b659032dc5a1fe3854}
+
+
+Is\+Restaurant. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode \hyperlink{classRestaurant}{Restaurant}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classHabitat_a0ab72de6d88706b4eb693ea2a2c7de53}{Habitat}, and \hyperlink{classFacility_a2fb6a0e98e709b46b21e35cb8aeeeda7}{Facility}.
+
+\index{Cell@{Cell}!Is\+Road@{Is\+Road}}
+\index{Is\+Road@{Is\+Road}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Road()=0}{IsRoad()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Road (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_a6afd033fa34492761e1de9fd1f7c8a95}{}\label{classCell_a6afd033fa34492761e1de9fd1f7c8a95}
+
+
+Is\+Road. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode \hyperlink{classRoad}{Road}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classHabitat_aafd95775cc1e0876b40955c3e0126fe3}{Habitat}, and \hyperlink{classFacility_ae2975cf479c3907e13fc200464b7443b}{Facility}.
+
+\index{Cell@{Cell}!Is\+Water\+Habitat@{Is\+Water\+Habitat}}
+\index{Is\+Water\+Habitat@{Is\+Water\+Habitat}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Is\+Water\+Habitat()=0}{IsWaterHabitat()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Cell\+::\+Is\+Water\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_af620aac2cb7ce59657ca158255462fef}{}\label{classCell_af620aac2cb7ce59657ca158255462fef}
+
+
+Is\+Water\+Habitat. 
+
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika code pada layar merupakan kode Water \hyperlink{classHabitat}{Habitat}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFacility_acaa21936227ef88450ab6834b5711a5c}{Facility}, and \hyperlink{classHabitat_acfdb3e3911d536c5564c91d60c368fc4}{Habitat}.
+
+\index{Cell@{Cell}!Render@{Render}}
+\index{Render@{Render}!Cell@{Cell}}
+\subsubsection[{\texorpdfstring{Render()=0}{Render()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual char Cell\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCell_a1d72940d69d96132a445212155e3e789}{}\label{classCell_a1d72940d69d96132a445212155e3e789}
+
+
+render. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan char yang merupakan representasi objek yang dicetak. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRenderable_a923171f6811c24ae6808c1a8639a5c81}{Renderable}.
+
+
+
+Implemented in \hyperlink{classAirHabitat_a6dd1a0d8235d9687874bb229099d40ff}{Air\+Habitat}, \hyperlink{classEntrance_a7226e0cd3d04f8370ede2573bc2852f3}{Entrance}, \hyperlink{classExit_a9239e8b13c101d1aee8fde738e8a5fdc}{Exit}, \hyperlink{classFacility_a177b3f9cd142fe4521c1d15b00d3675c}{Facility}, \hyperlink{classHabitat_ad1bf10205d38e8e308eb9acc3aa2872c}{Habitat}, \hyperlink{classLandHabitat_ad2147498f493b01429ae315f0145d3a9}{Land\+Habitat}, \hyperlink{classPark_a98b2a346d5ec6703b2e988588950947e}{Park}, \hyperlink{classRestaurant_a8a44dac5fd1d460aed3a5631e9eb732a}{Restaurant}, \hyperlink{classRoad_a72268486a71718b5b7957b63ecd565bc}{Road}, and \hyperlink{classWaterHabitat_a014ef4d2a9e5f37ac70a61d3f060b983}{Water\+Habitat}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cell/\hyperlink{cell_8h}{cell.\+h}\end{DoxyCompactItemize}

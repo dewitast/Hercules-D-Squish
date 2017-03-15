@@ -6,10 +6,10 @@
 
 TEST(DolphinTest, Interact) {
 	Dolphin l(75,3.75,true);
-	EXPECT_EQ("Grrrrrr", l.Interact());
+	EXPECT_EQ("A a a a a", l.Interact());
 }
 
 TEST(DolphinTest, Render) {
 	Dolphin l(75,3.75,true);
-	EXPECT_EQ('A', l.Render());
+	EXPECT_EQ('N', l.Render());
 }

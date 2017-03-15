@@ -1,0 +1,13 @@
+<map id="Mammal" name="Mammal">
+<area shape="rect" id="node3" href="$classDolphin.html" title="{Dolphin\n||+ Dolphin()\l+ Dolphin()\l+ ~Dolphin()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,447,100,597"/>
+<area shape="rect" id="node4" href="$classDugong.html" title="{Dugong\n||+ Dugong()\l+ Dugong()\l+ ~Dugong()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="124,447,219,597"/>
+<area shape="rect" id="node5" href="$classElephant.html" title="{Elephant\n||+ Elephant()\l+ Elephant()\l+ ~Elephant()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="243,447,345,597"/>
+<area shape="rect" id="node6" href="$classGiraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Giraffe()\l+ ~Giraffe()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="369,447,459,597"/>
+<area shape="rect" id="node7" href="$classGoat.html" title="{Goat\n||+ Goat()\l+ Goat()\l+ ~Goat()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="483,447,569,597"/>
+<area shape="rect" id="node8" href="$classLion.html" title="{Lion\n||+ Lion()\l+ Lion()\l+ ~Lion()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="593,447,680,597"/>
+<area shape="rect" id="node9" href="$classOrca.html" title="{Orca\n||+ Orca()\l+ Orca()\l+ ~Orca()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="704,447,791,597"/>
+<area shape="rect" id="node10" href="$classPolarBear.html" title="{PolarBear\n||+ PolarBear()\l+ PolarBear()\l+ ~PolarBear()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="815,447,922,597"/>
+<area shape="rect" id="node11" href="$classTiger.html" title="{Tiger\n||+ Tiger()\l+ Tiger()\l+ ~Tiger()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="947,447,1033,597"/>
+<area shape="rect" id="node12" href="$classWalrus.html" title="{Walrus\n||+ Walrus()\l+ Walrus()\l+ ~Walrus()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="1058,447,1149,597"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="529,5,633,273"/>
+</map>

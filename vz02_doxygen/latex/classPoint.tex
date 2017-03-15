@@ -1,0 +1,225 @@
+\hypertarget{classPoint}{}\section{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+
+
+Collaboration diagram for Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classPoint__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint_ad92f2337b839a94ce97dcdb439b4325a}{Point} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Menciptakan point kosong dengan absis dan ordinat sama dengan 0. \end{DoxyCompactList}\item 
+\hyperlink{classPoint_a3634e1e4d94c1268ddaca3909f23b39b}{Point} (int abs, int ord)
+\begin{DoxyCompactList}\small\item\em Constructor dengan parameter. Menciptakan point kosong dengan absis abs dan ordinat ord. \end{DoxyCompactList}\item 
+\hyperlink{classPoint_a7e32c5a7f878c49ed9f1777b622cc06c}{Point} (const \hyperlink{classPoint}{Point} \&P)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \& \hyperlink{classPoint_a24f658e4631df755120d856de77e3cbb}{operator=} (const \hyperlink{classPoint}{Point} \&P)
+\begin{DoxyCompactList}\small\item\em Operator =. \end{DoxyCompactList}\item 
+\hyperlink{classPoint_a395fa04b4ec126b66fc053f829a30cc1}{$\sim$\+Point} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classPoint_af9d064339ffb2f87abb6574dbfc9cdb2}{Get\+Absis} () const 
+\begin{DoxyCompactList}\small\item\em Getter absis. \end{DoxyCompactList}\item 
+int \hyperlink{classPoint_ace648a3faea60f8102d645d4b5a40b1a}{Get\+Ordinat} () const 
+\begin{DoxyCompactList}\small\item\em Getter ordinat. \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_a0ba1dc33923b3aaa7678a07ffa022b06}{Set\+Absis} (int abs)
+\begin{DoxyCompactList}\small\item\em Setter absis. \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_ae672d4952c6c730d104588a67304aed1}{Set\+Ordinat} (int ord)
+\begin{DoxyCompactList}\small\item\em Setter ordinat. \end{DoxyCompactList}\item 
+bool \hyperlink{classPoint_a19e146331c9acef35c6941bee733925e}{Is\+Same} (\hyperlink{classPoint}{Point} P) const 
+\begin{DoxyCompactList}\small\item\em Memeriksa kesamaan dua point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPoint_a6160d46b20dd62135d3b6d35b1c7acda}{absis}
+\item 
+int \hyperlink{classPoint_a4bb57d12596300e493165c14ddb8f699}{ordinat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas \hyperlink{classPoint}{Point} merupakan kelas dengan atribut absis dan ordinat 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point()}{Point()}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_ad92f2337b839a94ce97dcdb439b4325a}{}\label{classPoint_ad92f2337b839a94ce97dcdb439b4325a}
+
+
+Constructor. Menciptakan point kosong dengan absis dan ordinat sama dengan 0. 
+
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point(int abs, int ord)}{Point(int abs, int ord)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+\item[{int}]{abs, }
+\item[{int}]{ord}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a3634e1e4d94c1268ddaca3909f23b39b}{}\label{classPoint_a3634e1e4d94c1268ddaca3909f23b39b}
+
+
+Constructor dengan parameter. Menciptakan point kosong dengan absis abs dan ordinat ord. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abs} & Nilai absis point. \\
+\hline
+{\em ord} & Nilai ordinat point. \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point(const Point \&\+P)}{Point(const Point &P)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a7e32c5a7f878c49ed9f1777b622cc06c}{}\label{classPoint_a7e32c5a7f878c49ed9f1777b622cc06c}
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & Objek yang akan di-\/copy. \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!````~Point@{$\sim$\+Point}}
+\index{````~Point@{$\sim$\+Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{$\sim$\+Point()}{~Point()}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::$\sim$\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPoint_a395fa04b4ec126b66fc053f829a30cc1}{}\label{classPoint_a395fa04b4ec126b66fc053f829a30cc1}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Point@{Point}!Get\+Absis@{Get\+Absis}}
+\index{Get\+Absis@{Get\+Absis}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Get\+Absis() const }{GetAbsis() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::\+Get\+Absis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPoint_af9d064339ffb2f87abb6574dbfc9cdb2}{}\label{classPoint_af9d064339ffb2f87abb6574dbfc9cdb2}
+
+
+Getter absis. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan nilai absis point. 
+\end{DoxyReturn}
+\index{Point@{Point}!Get\+Ordinat@{Get\+Ordinat}}
+\index{Get\+Ordinat@{Get\+Ordinat}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Get\+Ordinat() const }{GetOrdinat() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::\+Get\+Ordinat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPoint_ace648a3faea60f8102d645d4b5a40b1a}{}\label{classPoint_ace648a3faea60f8102d645d4b5a40b1a}
+
+
+Getter ordinat. 
+
+\begin{DoxyReturn}{Returns}
+Mengembalikan nilai ordinat point. 
+\end{DoxyReturn}
+\index{Point@{Point}!Is\+Same@{Is\+Same}}
+\index{Is\+Same@{Is\+Same}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Is\+Same(\+Point P) const }{IsSame(Point P) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Point\+::\+Is\+Same (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{P}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPoint_a19e146331c9acef35c6941bee733925e}{}\label{classPoint_a19e146331c9acef35c6941bee733925e}
+
+
+Memeriksa kesamaan dua point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & Objek yang akan dibandingkan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Menghasilkan true jika P memiliki nilai yang sama dengan current object. 
+\end{DoxyReturn}
+\index{Point@{Point}!operator=@{operator=}}
+\index{operator=@{operator=}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator=(const Point \&\+P)}{operator=(const Point &P)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} \& Point\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a24f658e4631df755120d856de77e3cbb}{}\label{classPoint_a24f658e4631df755120d856de77e3cbb}
+
+
+Operator =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & Objek yang akan diassign. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Menghasilkan objek hasil copy objek P. 
+\end{DoxyReturn}
+\index{Point@{Point}!Set\+Absis@{Set\+Absis}}
+\index{Set\+Absis@{Set\+Absis}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Set\+Absis(int abs)}{SetAbsis(int abs)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::\+Set\+Absis (
+\begin{DoxyParamCaption}
+\item[{int}]{abs}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a0ba1dc33923b3aaa7678a07ffa022b06}{}\label{classPoint_a0ba1dc33923b3aaa7678a07ffa022b06}
+
+
+Setter absis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abs} & Nilai absis yang akan di-\/set pada point. \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!Set\+Ordinat@{Set\+Ordinat}}
+\index{Set\+Ordinat@{Set\+Ordinat}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Set\+Ordinat(int ord)}{SetOrdinat(int ord)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::\+Set\+Ordinat (
+\begin{DoxyParamCaption}
+\item[{int}]{ord}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_ae672d4952c6c730d104588a67304aed1}{}\label{classPoint_ae672d4952c6c730d104588a67304aed1}
+
+
+Setter ordinat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ord} & Nilai ord yang akan di-\/set pada point. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Point@{Point}!absis@{absis}}
+\index{absis@{absis}!Point@{Point}}
+\subsubsection[{\texorpdfstring{absis}{absis}}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::absis\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPoint_a6160d46b20dd62135d3b6d35b1c7acda}{}\label{classPoint_a6160d46b20dd62135d3b6d35b1c7acda}
+\index{Point@{Point}!ordinat@{ordinat}}
+\index{ordinat@{ordinat}!Point@{Point}}
+\subsubsection[{\texorpdfstring{ordinat}{ordinat}}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::ordinat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPoint_a4bb57d12596300e493165c14ddb8f699}{}\label{classPoint_a4bb57d12596300e493165c14ddb8f699}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+point/\hyperlink{point_8h}{point.\+h}\item 
+point/\hyperlink{point_8cpp}{point.\+cpp}\end{DoxyCompactItemize}
