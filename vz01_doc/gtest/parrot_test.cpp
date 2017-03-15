@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../parrot/parrot.h"
+#include "../../vz01/parrot/parrot.h"
 
 TEST(ParrotTest, Interact) {
 	Parrot p;

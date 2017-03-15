@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../elephant/elephant.h"
+#include "../../vz01/elephant/elephant.h"
 
 TEST(ElephantTest, Interact) {
 	Elephant h;

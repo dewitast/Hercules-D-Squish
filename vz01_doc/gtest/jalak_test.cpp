@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../jalak/jalak.h"
+#include "../../vz01/jalak/jalak.h"
 
 TEST(JalakTest, Interact) {
 	Jalak j;

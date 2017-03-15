@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../orca/orca.h"
+#include "../../vz01/orca/orca.h"
 
 TEST(OrcaTest, Interact) {
 	Orca r;

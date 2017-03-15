@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../walrus/walrus.h"
+#include "../../vz01/walrus/walrus.h"
 
 TEST(WalrusTest, Interact) {
 	Walrus w;

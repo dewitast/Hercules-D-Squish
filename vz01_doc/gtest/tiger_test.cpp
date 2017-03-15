@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../tiger/tiger.h"
+#include "../../vz01/tiger/tiger.h"
 
 TEST(TigerTest, Interact) {
 	Tiger t;

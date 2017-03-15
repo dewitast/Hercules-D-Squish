@@ -1,0 +1,13 @@
+Running main() from gtest_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from DolphinTest
+[ RUN      ] DolphinTest.Interact
+[       OK ] DolphinTest.Interact (0 ms)
+[ RUN      ] DolphinTest.Render
+[       OK ] DolphinTest.Render (0 ms)
+[----------] 2 tests from DolphinTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.

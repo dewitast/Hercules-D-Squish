@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../giraffe/giraffe.h"
+#include "../../vz01/giraffe/giraffe.h"
 
 TEST(GiraffeTest, Interact) {
 	Giraffe f;

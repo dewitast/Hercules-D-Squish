@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../komodo/komodo.h"
+#include "../../vz01/komodo/komodo.h"
 
 TEST(KomodoTest, Interact) {
 	Komodo k;

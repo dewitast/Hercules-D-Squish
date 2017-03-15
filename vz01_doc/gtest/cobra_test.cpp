@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../cobra/cobra.h"
+#include "../../vz01/cobra/cobra.h"
 
 TEST(CobraTest, Interact) {
 	Cobra c;

@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../owl/owl.h"
+#include "../../vz01/owl/owl.h"
 
 TEST(OwlTest, Interact) {
 	Owl o;

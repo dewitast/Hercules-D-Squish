@@ -1,0 +1,13 @@
+Running main() from gtest_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from GiraffeTest
+[ RUN      ] GiraffeTest.Interact
+[       OK ] GiraffeTest.Interact (0 ms)
+[ RUN      ] GiraffeTest.Render
+[       OK ] GiraffeTest.Render (0 ms)
+[----------] 2 tests from GiraffeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
