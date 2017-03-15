@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../cage/cage.h"
+#include "../../vz01/cage/cage.h"
 
 TEST(CageTest, IsFull) {
 	Cage c(10);

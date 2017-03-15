@@ -2,7 +2,7 @@
   */
 
 #include "gtest/gtest.h"
-#include "../point/point.h"
+#include "../../vz01/point/point.h"
 
 TEST(PointTest, GetAbsis) {
 	Point p;
