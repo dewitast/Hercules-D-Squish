@@ -10,6 +10,6 @@ TEST(CobraTest, Interact) {
 }
 
 TEST(CobraTest, Render) {
-	Cobra c(20,1,false);
+	Cobra c;
 	EXPECT_EQ('C', c.Render());
 }

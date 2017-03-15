@@ -10,6 +10,6 @@ TEST(CormorantTest, Interact) {
 }
 
 TEST(CormorantTest, Render) {
-	Cormorant m(3.6,0.18,true);
+	Cormorant m;
 	EXPECT_EQ('M', m.Render());
 }

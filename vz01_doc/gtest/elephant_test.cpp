@@ -10,6 +10,6 @@ TEST(ElephantTest, Interact) {
 }
 
 TEST(ElephantTest, Render) {
-	Elephant h(5000,250,true);
+	Elephant h;
 	EXPECT_EQ('H', h.Render());
 }

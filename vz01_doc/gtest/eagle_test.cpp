@@ -10,6 +10,6 @@ TEST(EagleTest, Interact) {
 }
 
 TEST(EagleTest, Render) {
-	Eagle e(5.8,0.29,false);
+	Eagle e;
 	EXPECT_EQ('E', e.Render());
 }

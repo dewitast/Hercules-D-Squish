@@ -10,6 +10,6 @@ TEST(LionTest, Interact) {
 }
 
 TEST(LionTest, Render) {
-	Lion l(150, 7.5, false);
+	Lion l;
 	EXPECT_EQ('L', l.Render());
 }

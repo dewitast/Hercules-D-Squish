@@ -10,6 +10,6 @@ TEST(KomodoTest, Interact) {
 }
 
 TEST(KomodoTest, Render) {
-	Komodo k(120,6,false);
+	Komodo k;
 	EXPECT_EQ('K', k.Render());
 }

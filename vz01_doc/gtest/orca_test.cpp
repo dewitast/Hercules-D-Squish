@@ -10,6 +10,6 @@ TEST(OrcaTest, Interact) {
 }
 
 TEST(OrcaTest, Render) {
-	Orca r(4000, 200, false);
+	Orca r;
 	EXPECT_EQ('R', r.Render());
 }
