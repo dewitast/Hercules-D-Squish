@@ -1,8 +1,0 @@
-<map id="land_habitat/land_habitat.h" name="land_habitat/land_habitat.h">
-<area shape="rect" id="node2" href="$zoo_8h.html" title="zoo/zoo.h" alt="" coords="191,80,270,107"/>
-<area shape="rect" id="node3" href="$cage_8cpp.html" title="cage/cage.cpp" alt="" coords="5,155,112,181"/>
-<area shape="rect" id="node4" href="$driver_8h.html" title="driver/driver.h" alt="" coords="136,155,237,181"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title="main/main.cpp" alt="" coords="221,229,328,256"/>
-<area shape="rect" id="node7" href="$zoo_8cpp.html" title="zoo/zoo.cpp" alt="" coords="312,155,405,181"/>
-<area shape="rect" id="node5" href="$driver_8cpp.html" title="driver/driver.cpp" alt="" coords="83,229,197,256"/>
-</map>

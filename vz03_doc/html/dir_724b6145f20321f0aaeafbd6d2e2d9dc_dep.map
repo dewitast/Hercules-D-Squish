@@ -1,9 +1,0 @@
-<map id="iguana" name="iguana">
-<area shape="rect" id="node1" href="dir_724b6145f20321f0aaeafbd6d2e2d9dc.html" title="iguana" alt="" coords="103,5,175,53"/>
-<area shape="rect" id="node2" href="dir_fa7757de16a5f4e19850c013963341ae.html" title="reptile" alt="" coords="5,101,77,149"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000024_000040.html" title="1" alt="" coords="80,87,88,102"/>
-<area shape="rect" id="node3" href="dir_d4ca59e490dfb2dbec08597c24ba1a3e.html" title="herbivore" alt="" coords="101,101,176,149"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000024_000023.html" title="1" alt="" coords="143,76,151,90"/>
-<area shape="rect" id="node4" href="dir_83a52d803fb4dfb8ef6086e0996b54b1.html" title="land_animal" alt="" coords="200,101,291,149"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000024_000027.html" title="1" alt="" coords="207,76,215,90"/>
-</map>

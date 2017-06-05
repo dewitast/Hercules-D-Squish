@@ -1,6 +1,0 @@
-<map id="Tiger" name="Tiger">
-<area shape="rect" id="node2" href="$classLandAnimal.html" title="{LandAnimal\n||}" alt="" coords="5,521,96,599"/>
-<area shape="rect" id="node3" href="$classAnimal.html" title="{Animal\n||+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="38,277,130,472"/>
-<area shape="rect" id="node5" href="$classMammal.html" title="{Mammal\n||}" alt="" coords="120,521,192,599"/>
-<area shape="rect" id="node4" href="$classPoint.html" title="{Point\n||+ Point()\l+ Point()\l+ Point()\l+ operator=()\l+ ~Point()\l+ GetAbsis()\l+ GetOrdinat()\l+ SetAbsis()\l+ SetOrdinat()\l+ IsSame()\l}" alt="" coords="31,5,137,215"/>
-</map>

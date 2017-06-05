@@ -1,7 +1,0 @@
-<map id="Reptile" name="Reptile">
-<area shape="rect" id="node3" href="$classAlligator.html" title="{Alligator\n||+ Alligator()\l+ ~Alligator()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,373,103,509"/>
-<area shape="rect" id="node4" href="$classCobra.html" title="{Cobra\n||+ Cobra()\l+ ~Cobra()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="127,373,213,509"/>
-<area shape="rect" id="node5" href="$classIguana.html" title="{Iguana\n||+ Iguana()\l+ ~Iguana()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="237,373,327,509"/>
-<area shape="rect" id="node6" href="$classKomodo.html" title="{Komodo\n||+ Komodo()\l+ ~Komodo()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="351,373,450,509"/>
-<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# pos\l|+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="180,5,272,200"/>
-</map>

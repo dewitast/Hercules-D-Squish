@@ -1,5 +1,0 @@
-<map id="PolarBear" name="PolarBear">
-<area shape="rect" id="node2" href="$classLandAnimal.html" title="{LandAnimal\n||}" alt="" coords="5,248,96,325"/>
-<area shape="rect" id="node3" href="$classAnimal.html" title="{Animal\n|# pos\l|+ Animal()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ IsSame()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="57,5,149,200"/>
-<area shape="rect" id="node4" href="$classMammal.html" title="{Mammal\n||}" alt="" coords="120,248,192,325"/>
-</map>

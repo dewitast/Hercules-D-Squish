@@ -1,6 +1,0 @@
-<map id="Zoo" name="Zoo">
-<area shape="rect" id="node2" href="$classCell.html" title="{Cell\n|&#45; object_type\l&#45; render\l|+ Cell()\l+ Cell()\l+ ~Cell()\l+ GetObjectType()\l+ GetRender()\l+ SetObjectType()\l+ IsHabitat()\l+ IsLandHabitat()\l+ IsAirHabitat()\l+ IsWaterHabitat()\l+ IsExit()\l+ IsRoad()\l+ IsEntrance()\l}" alt="" coords="5,696,136,964"/>
-<area shape="rect" id="node3" href="$classCage.html" title="{Cage\n|&#45; MaxSize\l&#45; size\l&#45; TotalAnimal\l|+ Cage()\l+ Cage()\l+ Cage()\l+ Cage()\l+ operator=()\l+ ~Cage()\l+ IsFull()\l+ GetSize()\l+ GetAnimal()\l+ GetTotalAnimal()\land 12 more...\l}" alt="" coords="161,703,293,957"/>
-<area shape="rect" id="node4" href="$classAnimal.html" title="{Animal\n|&#45; species\l&#45; sound\l&#45; food_type\l&#45; habitat\l&#45; weight\l&#45; food\l&#45; number_habitat\l&#45; tame\l&#45; render\l|+ Animal()\l+ Animal()\l+ Animal()\l+ operator=()\l+ ~Animal()\l+ GetPos()\l+ SetPoint()\l+ SetPoint()\l+ GetSpecies()\l+ GetFoodType()\land 8 more...\l}" alt="" coords="241,292,362,633"/>
-<area shape="rect" id="node5" href="$classPoint.html" title="{Point\n|&#45; absis\l&#45; ordinat\l|+ Point()\l+ Point()\l+ Point()\l+ operator=()\l+ ~Point()\l+ GetAbsis()\l+ GetOrdinat()\l+ SetAbsis()\l+ SetOrdinat()\l+ IsSame()\l}" alt="" coords="173,5,278,229"/>
-</map>

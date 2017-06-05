@@ -1,6 +1,0 @@
-<map id="entrance/entrance.h" name="entrance/entrance.h">
-<area shape="rect" id="node2" href="$road_8h.html" title="../road/road.h" alt="" coords="41,80,139,107"/>
-<area shape="rect" id="node3" href="$facility_8h.html" title="../facility/facility.h" alt="" coords="27,155,153,181"/>
-<area shape="rect" id="node4" href="$cell_8h.html" title="../cell/cell.h" alt="" coords="45,229,135,256"/>
-<area shape="rect" id="node5" href="$renderable_8h.html" title="../renderable/renderable.h" alt="" coords="5,304,175,331"/>
-</map>

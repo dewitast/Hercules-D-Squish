@@ -1,6 +1,0 @@
-<map id="Duck" name="Duck">
-<area shape="rect" id="node2" href="$classWaterAnimal.html" title="{WaterAnimal\n||}" alt="" coords="5,321,103,399"/>
-<area shape="rect" id="node3" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="114,5,218,273"/>
-<area shape="rect" id="node4" href="$classOmnivore.html" title="{Omnivore\n||}" alt="" coords="127,321,205,399"/>
-<area shape="rect" id="node5" href="$classAves.html" title="{Aves\n||}" alt="" coords="229,321,281,399"/>
-</map>

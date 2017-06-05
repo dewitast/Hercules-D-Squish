@@ -24,7 +24,7 @@ int main() {
   	  }
     }
     else {
-  	  cout << "Your input is invalid. Please choose a number from range 1 to 4." << endl << endl;
+  	  cout << "Your input is invalid. Please choose a number from range 1 to 3." << endl << endl;
     }
     d.DisplayMenu();
     cin >> x;

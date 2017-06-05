@@ -1,4 +1,0 @@
-<map id="Driver" name="Driver">
-<area shape="rect" id="node2" href="$classZoo.html" title="{Zoo\n||+ Zoo()\l+ Zoo()\l+ Zoo()\l+ operator=()\l+ ~Zoo()\l+ ReadAnimal()\l+ GetElement()\l+ GetElement()\l+ GetJumlahCage()\l+ GetCage()\l+ GetBeff()\l+ GetKeff()\l+ SearchPoint()\l+ SearchPoint()\l+ AddCage()\l}" alt="" coords="5,5,141,288"/>
-<area shape="rect" id="node3" href="$classPoint.html" title="{Point\n||+ Point()\l+ Point()\l+ Point()\l+ operator=()\l+ ~Point()\l+ GetAbsis()\l+ GetOrdinat()\l+ SetAbsis()\l+ SetOrdinat()\l+ IsSame()\l}" alt="" coords="165,42,270,251"/>
-</map>

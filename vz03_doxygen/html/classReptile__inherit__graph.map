@@ -1,7 +1,0 @@
-<map id="Reptile" name="Reptile">
-<area shape="rect" id="node3" href="$classAlligator.html" title="{Alligator\n||+ Alligator()\l+ Alligator()\l+ ~Alligator()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="5,447,103,597"/>
-<area shape="rect" id="node4" href="$classCobra.html" title="{Cobra\n||+ Cobra()\l+ Cobra()\l+ ~Cobra()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="127,447,213,597"/>
-<area shape="rect" id="node5" href="$classIguana.html" title="{Iguana\n||+ Iguana()\l+ Iguana()\l+ ~Iguana()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="237,447,327,597"/>
-<area shape="rect" id="node6" href="$classKomodo.html" title="{Komodo\n||+ Komodo()\l+ Komodo()\l+ ~Komodo()\l+ Interact()\l+ Clone()\l+ Render()\l}" alt="" coords="351,447,450,597"/>
-<area shape="rect" id="node2" href="$classAnimal.html" title="{Animal\n|# weight\l# food\l# tame\l# pos\l|+ Animal()\l+ Animal()\l+ ~Animal()\l+ GetWeight()\l+ GetFood()\l+ GetTame()\l+ GetPos()\l+ SetWeight()\l+ SetFood()\l+ SetTame()\land 6 more...\l}" alt="" coords="174,5,278,273"/>
-</map>
